@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import Logo from "../../assets/Logotipo_vagamundo_RGB_v1-01.png";
 
 
@@ -6,9 +7,9 @@ function Navbar() {
     const [searchInput, setSearchInput] = useState(true);
     const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
     const [showMenu, setShowMenu] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
 
-   
         return (
             <div className="dark:bg-gray-900">
                 <div>
@@ -17,37 +18,39 @@ function Navbar() {
                         
                         {/* For md screen size */}
                         {/* For large screens */}
-                        <div className="dark:bg-gray-900 bg-gray-50 px-6 py-2">
+                        <div className="bg-purple-500 px-6 py-2">
                             <div className="container mx-auto flex items-center justify-between">
-                                <h1 className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white" aria-label="the Crib.">
+                                <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
                             <img src={Logo} alt="Logo" className="h-13 w-13 mr-3" />
                             </div>
 
                                 </h1>
-                                <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
+                                <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 text-white">
                                     <li>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotres
-                                        </a>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Destinos
-                                        </a>
+                                        </button>
                                     </li>
+
+                                     
                                     <li>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Experiencias                                        </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Ahorra
 
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Servicios
 
                                         </a>
@@ -78,6 +81,8 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Mobile nav */}
                         {/* For small screen */}
                         <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}>
                             <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
@@ -107,7 +112,7 @@ function Navbar() {
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Furniture
+                                        Nosotres
                                             <div>
                                                 <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
@@ -117,7 +122,7 @@ function Navbar() {
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Lookbook
+                                        Destinos
                                             <div>
                                                 <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
@@ -127,7 +132,27 @@ function Navbar() {
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Support
+                                        Experiencias
+                                            <div>
+                                                <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Ahorra
+                                            <div>
+                                                <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Servicios
                                             <div>
                                                 <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
