@@ -12,7 +12,7 @@ function App() {
     <>
     <Navbar/>
     <Banner/>
-    <Newsletter/>
+    <NotFound/>
 
     <Footer/>
 
