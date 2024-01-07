@@ -18,7 +18,7 @@ function Navbar() {
                         
                         {/* For md screen size */}
                         {/* For large screens */}
-                        <div className="bg-purple-500 px-6 py-2">
+                        <div className="bg-purple-600 px-6 py-2">
                             <div className="container mx-auto flex items-center justify-between">
                                 <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
