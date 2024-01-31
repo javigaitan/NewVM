@@ -1,42 +1,45 @@
 import React from 'react'
-import MALTA from '../../assets/Img/yomalta.png'
-import IRLANDA from '../../assets/Img//yoirlanda.png'
+import BGR from '../../assets/Img/fondoBanner.jpg'
 
 
 const Banner = () => {
-  return (
-
-<div className="sm:mx-auto sm:container px-6 xl:px-0">
-            <div className="flex items-center justify-between md:flex-row flex-col py-12 space-y-6 md:space-y-0 w-full">
-                <div className="hidden md:block">
-                    <img className="hidden xl:block w-full" src={MALTA} alt="Foto ilustrativa de malta " />
-                    <img className="xl:hidden w-full" src={MALTA} alt="Foto ilustrativa de malta " />
-                </div>
-                <div className="flex justify-center items-center flex-col xl:w-2/5 md:px-6 sm:w-3/4 md:w-2/4">
-                    <div className="">
-                        <h1 className="xl:text-4xl text-3xl font-semibold leading-9 text-gray-800 text-center">Estas a un paso de comenzar tu viaje!</h1>
-                    </div>
-                    <div className="mt-4">
-                        <p className="xl:text-xl text-base leading-7 text-center text-gray-600">Si no saber por donde comenzar podes hacerlo desde aca</p>
-                    </div>
-                    <div className="mt-8 flex justify-center items-center w-full">
-                        <button className="hover:opacity-75 flex justify-center bg-purple-800 sm:w-32 w-full h-10 py-3">
-                            <p className="text-base font-medium leading-none text-white">Comenzar!</p>
-                        </button>
-                    </div>
-                </div>
-                <div className="flex md:w-auto w-full justify-center flex-row space-x-4 md:space-x-0">
-                    <div className="w-full">
-                        <img className="hidden xl:block w-full" src={IRLANDA} alt="Foto ilustrativa de IRLANDA" />
-                        <img className="xl:hidden w-full" src={IRLANDA} alt="Foto ilustrativa de IRLANDA" />
-                    </div>
-                    <div className="md:hidden w-full">
-                        <img className="hidden xl:block w-full" src={MALTA} alt="Foto ilustrativa de malta "  />
-                        <img className="xl:hidden w-full" src={MALTA} alt="Foto ilustrativa de malta "  />
-                    </div>
-                </div>
+    return (
+        <div className="lg:max-w-[1440px] relative inset-0 md:max-w-[1440px] max-w-[800px] mx-auto">
+          <div className="relative">
+            <img
+              src={BGR}
+              className="w-full h-auto object-cover lg:h-[500px] lg:block md:hidden hidden"
+              alt="Banner Background"
+            />
+            <div className="w-full h-full bg-black opacity-40 absolute top-0 left-0" />
+            <img
+              src={BGR}
+              className="lg:hidden md:block hidden"
+              alt="Banner Background"
+            />
+            <img
+              src={BGR}
+              className="lg:hidden md:hidden block"
+              alt="Banner Background"
+            />
+            <div className="absolute lg:bottom-8 md:bottom-3 bottom-0 lg:px-7 md:px-10 px-4 py-4">
+              <h1 className="lg:text-4xl md:text-2xl text-2xl font-bold leading-9 text-white">
+                ¡El mundo te espera!
+              </h1>
+              <h2 className="lg:text-3xl md:text-xl text-g font-normal leading-7 text-white">
+                Estudia y trabaja en el exterior
+              </h2>
+      
+              <div className="inline-block py-5">
+                <button className="elementor-button bg-purple-900 text-white rounded-full text-base font-medium py-1 px-6 transition-all duration-300">
+                  Solicita tu cotización
+                </button>
+              </div>
             </div>
-        </div>  )
+          </div>
+        </div>
+      );
+      
 }
 
 export default Banner
