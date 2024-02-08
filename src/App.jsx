@@ -11,6 +11,7 @@ import WhatsAppButton from "./Componentes/BtnWs/WhatsAppButton"
 import Service from "./Componentes/Service/Service"
 import Nosotras from "./Pages/Nosotras/Nosotras"
 import PorqueVM from "./Componentes/Porque VM/PorqueVM"
+import Blogs from "./Pages/Blogs/Blogs"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Service/>
     <PorqueVM/>
     <Review/>
+    <Blogs/>
 
 
 

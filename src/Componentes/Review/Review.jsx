@@ -80,8 +80,8 @@ const Review = () => {
                                     </defs>
                                 </svg>
                                 <p className="xl:w-80 text-base leading-normal text-center mt-4">
-						Todo comenzó con un simple “te imaginás si pudiéramos hacerlo...” y hoy hace 4 meses que estamos en Irlanda, ambos trabajando y viviendo
-una experiencia única e inolvidable, donde estamos aprendiendo un idioma, conociendo muchas culturas y lugares. Sin dudas que todo fue gracias a la confianza y ¿ el apoyo que Vagamundo nos brindó constantemente. Estamos muy agradecidos por el asesoramiento antes y durante la experiencia. ¡Muchas gracias!										</p>
+                                    Todo comenzó con un simple “te imaginás si pudiéramos hacerlo...” y hoy hace 4 meses que estamos en Irlanda, ambos trabajando y viviendo
+                                    una experiencia única e inolvidable, donde estamos aprendiendo un idioma, conociendo muchas culturas y lugares. Sin dudas que todo fue gracias a la confianza y ¿ el apoyo que Vagamundo nos brindó constantemente. Estamos muy agradecidos por el asesoramiento antes y durante la experiencia. ¡Muchas gracias!										</p>
                             </div>
                             <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,13 +129,13 @@ una experiencia única e inolvidable, donde estamos aprendiendo un idioma, conoc
                                     </defs>
                                 </svg>
                                 <p className="xl:w-80 text-base leading-normal text-center mt-4">
-						
-                                ¡Estoy encantada en Cork!
-Gracias a Vaga-Mundo por el soporte necesario para
-llegar hasta Irlanda.
-Salir de mi país y aventurarme hasta aquí de forma
-segura está siendo posible gracias al respaldo de
-este gran equipo. ¡Ahora a disfrutar y aprender Ingles!																				</p>
+
+                                    ¡Estoy encantada en Cork!
+                                    Gracias a Vaga-Mundo por el soporte necesario para
+                                    llegar hasta Irlanda.
+                                    Salir de mi país y aventurarme hasta aquí de forma
+                                    segura está siendo posible gracias al respaldo de
+                                    este gran equipo. ¡Ahora a disfrutar y aprender Ingles!																				</p>
                             </div>
                             <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
