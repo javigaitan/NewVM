@@ -10,6 +10,7 @@ import DestinosCarrucel from "./Componentes/DestinosCarrucel/DestinosCarrucel"
 import WhatsAppButton from "./Componentes/BtnWs/WhatsAppButton"
 import Service from "./Componentes/Service/Service"
 import Nosotras from "./Pages/Nosotras/Nosotras"
+import PorqueVM from "./Componentes/Porque VM/PorqueVM"
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
     <Navbar/>
     <Banner/>
     <Service/>
+    <PorqueVM/>
+
+
+
     <Partners/>
-    <Nosotras/>
 
 
 

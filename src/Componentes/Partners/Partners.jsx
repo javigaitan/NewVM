@@ -49,16 +49,16 @@ const Partners = () => {
   return (
     <div className="my-25">
 
-<div className="mb-10">
-            <h2 className="text-3xl font-semibold leading-9 text-center text-gray-800 lg:text-4xl">
-            Nuestros Partners
-</h2>
-          </div>
+      <div className="mb-10">
+        <h2 className="text-3xl font-semibold leading-9 text-center text-gray-800 lg:text-4xl">
+          Nuestros Partners
+        </h2>
+      </div>
 
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <Slider {...settings}>
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <img src={ASSIST} width="150px" height="150px" alt="/" />
               </div>
@@ -67,7 +67,7 @@ const Partners = () => {
             </div>
           </div>
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <img src={ASSISTCARD} width="150px" height="150px" alt="/" />
               </div>
@@ -76,7 +76,7 @@ const Partners = () => {
             </div>
           </div>
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
-          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <img src={MAPA} width="150px" height="150px" alt="/" />
               </div>
@@ -113,7 +113,7 @@ const Partners = () => {
               </div>
             </div>
           </div>
-       
+
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -132,8 +132,8 @@ const Partners = () => {
               </div>
             </div>
           </div>
-        
-          
+
+
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -143,25 +143,25 @@ const Partners = () => {
               </div>
             </div>
           </div>
-       
+
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <img src={IMG7} width="200px" height="200px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                
+
               </div>
             </div>
           </div>
-  
-      
+
+
         </Slider>
       </div>
-            </div>
+    </div>
 
   );
-  
+
 }
 
 export default Partners
