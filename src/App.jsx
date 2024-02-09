@@ -12,6 +12,7 @@ import Service from "./Componentes/Service/Service"
 import Nosotras from "./Pages/Nosotras/Nosotras"
 import PorqueVM from "./Componentes/Porque VM/PorqueVM"
 import Blogs from "./Pages/Blogs/Blogs"
+import ServiciosNew from "./Componentes/ServiciosNew/ServiciosNew"
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <>
     <Navbar/>
     <Banner/>
-    <Service/>
+    <ServiciosNew/>
     <PorqueVM/>
     <Review/>
     <Blogs/>
@@ -29,6 +30,7 @@ function App() {
 
 
     <Partners/>
+    <WhatsAppButton/>
 
 
 
