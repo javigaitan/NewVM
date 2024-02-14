@@ -15,20 +15,27 @@ function Navbar() {
     const [showAhorroMenu, setShowAhorroMenu] = useState(false);
     const [showServiceMenu, setShowServiceMenu] = useState(false);
 
+    const [openSubMenu, setOpenSubMenu] = useState(null);
+
+    const handleSubMenuToggle = (menu) => {
+        setOpenSubMenu(openSubMenu === menu ? null : menu);
+
+    }
     return (
         <div className="dark:bg-gray-900">
             <div>
                 <div className="relative">
                     {/* For large screens */}
                     <div className="relative z-10 bg-purple-900 px-6 py-2">
-                        <div className="container mx-auto flex items-center justify-between ">
+                        <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
-                                    <img src={Logo} alt="Logo" className="h-13 w-13 mr-3" />
+                                    <img src={Logo} alt="Logo" className="h-auto w-24 md:w-auto md:h-auto mr-3" />
                                 </div>
-
                             </h1>
-                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 text-white">
+
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 text-white"
+                            >
                                 <li>
                                     <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Nosotras

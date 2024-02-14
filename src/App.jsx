@@ -23,13 +23,13 @@ function App() {
     <Navbar/>
     <Banner/>
     <ServiciosNew/>
-    <PorqueVM/>
     <Review/>
     <Blogs/>
 
 
 
     <Partners/>
+    <Footer/>
     <WhatsAppButton/>
 
 

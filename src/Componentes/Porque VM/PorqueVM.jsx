@@ -13,7 +13,7 @@ const PorqueVM = () => {
 
             <div class="mx-auto container my-20 lg:mt-48 lg:mb-24">
                 <div className="mb-10">
-                    <h2 className="text-4xl font-semibold leading-9 text-center text-gray-800 lg:text-5xl">
+                    <h2 className="text-4xl font-semibold leading-8 text-center text-gray-800 lg:text-5xl">
                         ¿Por qué Vaga-Mundo?
                     </h2>
                 </div>

@@ -2,10 +2,9 @@
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {
-
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
     },
-
   },
   variants: {},
 

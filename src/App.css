@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Poppins", Sans-serif;
+
 }
 
 .logo {
@@ -43,6 +45,7 @@
 
 body {
   font-family: "Poppins", Sans-serif;
+  
 }
 
 
