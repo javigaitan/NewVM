@@ -7,11 +7,6 @@ import Marru from '../../assets/Fotos/Marru.jpg';
 import Estudio from '../../assets/Fotos/becca-tapert-GnY_mW1Q6Xc-unsplash.jpg';
 import Cafe from '../../assets/Fotos/brooke-cagle-9fHMo1-5Io8-unsplash.jpg';
 import Uni from '../../assets/Fotos/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
-import Comuni from '../../assets/Img/communication.png'
-import Expe from '../../assets/Img/excursion.png'
-import Visa from '../../assets/Img/passport.png'
-import Place from '../../assets/Img/place.png'
-import Tips from '../../assets/Img/list.png'
 
 
 

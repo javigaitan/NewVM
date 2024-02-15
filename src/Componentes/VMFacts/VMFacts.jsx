@@ -49,7 +49,7 @@ const VMFacts = () => {
                         <div className="mx-auto container w-full flex flex-col justify-center items-center">
                             <div className="flex justify-center items-center flex-col">
                                 <div className="mt-20">
-                                    <h2 className="lg:text-6xl md:text-5xl text-4xl font-semibold leading-10 text-white">¿Por qué Vaga-Mundo?
+                                    <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-white mt-6 text-center">¿Por qué Vaga-Mundo?
                                     </h2>
                                 </div>
                                 <div className="mt-6 mx-2 md:mx-0 text-center">

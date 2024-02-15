@@ -29,7 +29,6 @@ function App() {
     <Blogs/>
     <Partners/>
     <Footer/>
-    <WhatsAppButton/>
 
 
 

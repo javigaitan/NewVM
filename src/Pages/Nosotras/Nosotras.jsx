@@ -1,5 +1,5 @@
 import React from 'react';
-import FOTO from '../../assets/Img/IMG_0225-1024x683.jpg';
+import FOTO from '../../assets/Img/Marruecos.jpg';
 import CARI from '../../assets/Avatars/Cari.png';
 import JaviG from '../../assets/Avatars/JaviG.png';
 import Carlos from '../../assets/Avatars/Carlos.png';

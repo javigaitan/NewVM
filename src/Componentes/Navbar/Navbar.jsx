@@ -236,7 +236,6 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <WhatsAppButton />
         </div>
 
 
