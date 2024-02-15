@@ -31,7 +31,7 @@ const Banner = () => {
               </h2>
       
               <div className="inline-block py-5">
-                <button className="elementor-button bg-purple-900 text-white rounded-full text-base font-medium py-1 px-6 transition-all duration-300">
+                <button className="elementor-button bg-primaryVio text-white rounded-full text-base font-medium py-1 px-6 transition-all duration-300">
                   Solicita tu cotización
                 </button>
               </div>

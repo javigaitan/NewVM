@@ -5,6 +5,14 @@ export default {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
+    extend: {
+      colors: {
+        primaryVio: '#4B0077',
+        secondaryTur: '#6EC1E4',
+        secondaryTur2: '#61E5BE',
+        colorText: '#707070',
+      },
+    },
   },
   variants: {},
 

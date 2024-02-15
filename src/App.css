@@ -13,9 +13,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -24,6 +26,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,7 +48,14 @@
 
 body {
   font-family: "Poppins", Sans-serif;
-  
+
 }
 
 
+.zoom-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1);
+}

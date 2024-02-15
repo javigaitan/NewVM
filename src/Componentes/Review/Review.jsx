@@ -13,8 +13,8 @@ const Review = () => {
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Testimonios</h1>
                 <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6">
                     <div>
-                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
-                            <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
+                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-primaryVio cursor-pointer shadow-md md:p-12 p-6">
+                            <div className="text-colorText group-hover:text-white flex flex-col items-center">
                                 <svg width={26} height={27} viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0)">
                                         <path d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z" fill="currentColor" />
@@ -34,7 +34,7 @@ const Review = () => {
                                     con el seguimiento y están siempre al pendiente de
                                     tí. ¡Felicidades por su excelente trabajo!										</p>
                             </div>
-                            <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+                            <div className="text-white group-hover:text-primaryVio absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_dd)">
                                         <path d="M17 19L28.2583 3.25H5.74167L17 19Z" fill="currentColor" />
@@ -66,8 +66,8 @@ const Review = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
-                            <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
+                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-primaryVio cursor-pointer shadow-md md:p-12 p-6">
+                            <div className="text-colorText group-hover:text-white flex flex-col items-center">
                                 <svg width={26} height={27} viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0)">
                                         <path d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z" fill="currentColor" />
@@ -83,7 +83,7 @@ const Review = () => {
                                     Todo comenzó con un simple “te imaginás si pudiéramos hacerlo...” y hoy hace 4 meses que estamos en Irlanda, ambos trabajando y viviendo
                                     una experiencia única e inolvidable, donde estamos aprendiendo un idioma, conociendo muchas culturas y lugares. Sin dudas que todo fue gracias a la confianza y ¿ el apoyo que Vagamundo nos brindó constantemente. Estamos muy agradecidos por el asesoramiento antes y durante la experiencia. ¡Muchas gracias!										</p>
                             </div>
-                            <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+                            <div className="text-white group-hover:text-primaryVio absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_dd)">
                                         <path d="M17 19L28.2583 3.25H5.74167L17 19Z" fill="currentColor" />
@@ -115,8 +115,8 @@ const Review = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-indigo-700 cursor-pointer shadow-md md:p-12 p-6">
-                            <div className="text-gray-600 group-hover:text-white flex flex-col items-center">
+                        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-primaryVio cursor-pointer shadow-md md:p-12 p-6">
+                            <div className="text-colorText group-hover:text-white flex flex-col items-center">
                                 <svg width={26} height={27} viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0)">
                                         <path d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z" fill="currentColor" />
@@ -137,7 +137,7 @@ const Review = () => {
                                     segura está siendo posible gracias al respaldo de
                                     este gran equipo. ¡Ahora a disfrutar y aprender Ingles!																				</p>
                             </div>
-                            <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
+                            <div className="text-white group-hover:text-primaryVio absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_dd)">
                                         <path d="M17 19L28.2583 3.25H5.74167L17 19Z" fill="currentColor" />

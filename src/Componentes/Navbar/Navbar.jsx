@@ -26,7 +26,7 @@ function Navbar() {
             <div>
                 <div className="relative">
                     {/* For large screens */}
-                    <div className="relative z-10 bg-purple-900 px-6 py-2">
+                    <div className="relative z-10 bg-primaryVio px-6 py-2">
                         <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
@@ -55,7 +55,7 @@ function Navbar() {
                                         <div
                                             onMouseEnter={() => setShowDestinosMenu(true)}
                                             onMouseLeave={() => setShowDestinosMenu(false)}
-                                            className="absolute bg-white rounded-lg shadow-lg py-2 px-4 text-purple-900 mt-2 z-20"
+                                            className="absolute bg-white rounded-lg shadow-lg py-2 px-4 text-primaryVio mt-2 z-20"
                                         >
                                             <ul className="space-y-2">
                                                 <li><a href="#">Alemania</a></li>
@@ -75,7 +75,6 @@ function Navbar() {
 
 
                                 <li
-                                    onMouseEnter={() => setShowExperienciasMenu(true)}
                                     className="relative"
                                 >
                                     <button
@@ -83,27 +82,11 @@ function Navbar() {
                                     >
                                         Experiencias
                                     </button>
-                                    {/* Submenu */}
-                                    {showExperienciasMenu && (
-                                        <div
-                                            onMouseEnter={() => setShowExperienciasMenu(true)}
-                                            onMouseLeave={() => setShowExperienciasMenu(false)}
-                                            className="absolute bg-white rounded-lg shadow-lg py-2 px-4 text-purple-900 mt-2 z-20"
-                                        >
-                                            <ul className="space-y-2">
-                                                <li><a href="#">Trabajar en el exterior</a></li>
-                                                <li><a href="#">Carreras Universitarias y Posgrados</a></li>
-                                                <li><a href="#">Cursos de Idiomas</a></li>
-                                                <li><a href="#">Viajes en Grupo</a></li>
-                                                <li><a href="#">Ciudadanía Italiana en Italia</a></li>
 
 
-                                            </ul>
-                                        </div>
-                                    )}
+
                                 </li>
                                 <li
-                                    onMouseEnter={() => setShowAhorroMenu(true)}
                                     className="relative"
                                 >
                                     <button
@@ -111,24 +94,9 @@ function Navbar() {
                                     >
                                         Ahorro
                                     </button>
-                                    {/* Submenu */}
-                                    {showAhorroMenu && (
-                                        <div
-                                            onMouseEnter={() => setShowAhorroMenu(true)}
-                                            onMouseLeave={() => setShowAhorroMenu(false)}
-                                            className="absolute bg-white rounded-lg shadow-lg py-2 px-4 text-purple-900 mt-2 z-20"
-                                        >
-                                            <ul className="space-y-2">
-                                                <li><a href="#">Programa de Referides</a></li>
-                                                <li><a href="#">Me Casocon Viajar</a></li>
-                                                <li><a href="#">Financia tu Viaje con Rifas</a></li>
 
-                                            </ul>
-                                        </div>
-                                    )}
                                 </li>
                                 <li
-                                    onMouseEnter={() => setShowServiceMenu(true)}
                                     className="relative"
                                 >
                                     <button
@@ -136,21 +104,7 @@ function Navbar() {
                                     >
                                         Servicios
                                     </button>
-                                    {/* Submenu */}
-                                    {showServiceMenu && (
-                                        <div
-                                            onMouseEnter={() => setShowServiceMenu(true)}
-                                            onMouseLeave={() => setShowServiceMenu(false)}
-                                            className="absolute bg-white rounded-lg shadow-lg py-2 px-4 text-purple-900 mt-2 z-20"
-                                        >
-                                            <ul className="space-y-2">
-                                                <li><a href="#">Alojamiento</a></li>
-                                                <li><a href="#">Asistencia al Viajere</a></li>
-                                                <li><a href="#">Arrival Packages</a></li>
 
-                                            </ul>
-                                        </div>
-                                    )}
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">

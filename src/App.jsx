@@ -13,6 +13,7 @@ import Nosotras from "./Pages/Nosotras/Nosotras"
 import PorqueVM from "./Componentes/Porque VM/PorqueVM"
 import Blogs from "./Pages/Blogs/Blogs"
 import ServiciosNew from "./Componentes/ServiciosNew/ServiciosNew"
+import VMFacts from "./Componentes/VMFacts/VMFacts"
 
 
 function App() {
@@ -23,11 +24,9 @@ function App() {
     <Navbar/>
     <Banner/>
     <ServiciosNew/>
+    <VMFacts/>
     <Review/>
     <Blogs/>
-
-
-
     <Partners/>
     <Footer/>
     <WhatsAppButton/>

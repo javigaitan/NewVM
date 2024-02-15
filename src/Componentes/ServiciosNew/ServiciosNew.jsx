@@ -18,12 +18,12 @@ import Tips from '../../assets/Img/list.png'
 const ServiciosNew = () => {
     return (
         <div>
+                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios</h1>
 
             <CarouselProvider isIntrinsicHeight={true} totalSlides={5}>
                 <div className="lg:hidden px-5 xl:px-0 overflow-y-hidden">
                     <div className="container mx-auto">
                         <div className="flex flex-col lg:items-center justify-center w-full  py-1">
-                            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios</h1>
                         </div>
                         <div className="w-full flex flex-col items-end justify-center">
                             <p className="text-lg text-gray-100">
@@ -164,7 +164,6 @@ const ServiciosNew = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-row">
                             <div role="article" className="flex flex-col items-left justify-center w-full py-10">
-                                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios</h1>
                             </div>
                             <div className="w-full flex flex-col items-end justify-end pr-24 my-3">
                                 <p className="text-lg text-gray-100">
@@ -298,51 +297,7 @@ const ServiciosNew = () => {
                 </div>
             </CarouselProvider>
 
-                <div className="mb-10">
-                    <h2 className="text-4xl font-semibold leading-8 text-center text-gray-800 lg:text-5xl">
-                        ¿Por qué Vaga-Mundo?
-                    </h2>
-                </div>
-                <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-                    <div class="flex justify-center w-full  py-4">
-                        <img src={Comuni} class="w-32 h-auto transform scale-50" alt="Imagen de Comuni" >
-                        </img>
-                        <div class="text-gray-800 pl-6 w-1/2">
-                            <h2 class="text-base lg:text-lg mt-3 leading-5 tracking-wide">Te escuchamos
-                                atentamente</h2>
-                        </div>
-
-                    </div>
-                    <div class="flex justify-center w-full  py-6">
-                    <img src={Expe} class="w-32 h-auto transform scale-50" alt="Imagen de Comuni" >
-                        </img>
-                        <div class="text-gray-800 pl-6 w-1/2">
-                            <h2 class="text-base lg:text-lg mt-3 leading-5 tracking-wide">Seleccionamos experiencias</h2>
-                        </div>
-                    </div>
-                    <div class="flex justify-center w-full   py-6">
-                    <img src={Visa} class="w-32 h-auto transform scale-50" alt="Imagen de Comuni" >
-                        </img>
-                        <div class="text-gray-800 pl-6 w-1/2">
-                            <h2 class="text-base lg:text-lg mt-3 leading-5 tracking-wide">Acompañamiento en visados</h2>
-                        </div>
-                    </div>
-                    <div class="flex justify-center w-full   py-6">
-                    <img src={Place} class="w-32 h-auto transform scale-50" alt="Imagen de Comuni" >
-                        </img>
-                        <div class="text-gray-800 pl-6 w-1/2">
-                            <h2 class="text-base lg:text-lg mt-3 leading-5 tracking-wide">Las mejores instituciones</h2>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-center w-full   py-6">
-                    <img src={Tips} class="w-32 h-auto transform scale-50" alt="Imagen de Comuni" >
-                        </img>
-                        <div class="text-gray-800 pl-6 w-1/2">
-                            <h2 class="text-base lg:text-lg mt-3 leading-5 tracking-wide">Todos los tips</h2>
-                        </div>
-                    </div>
-                </div>
+               
 
 
         </div>
