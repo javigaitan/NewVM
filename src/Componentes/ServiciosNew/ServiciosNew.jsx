@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Trabajo from '../../assets/Img/DUBLIN (5).jpg';
-import Marru from '../../assets/Fotos/IMG_6108.jpg';
+import Marru from '../../assets/Fotos/Marru.jpg';
 import Estudio from '../../assets/Fotos/becca-tapert-GnY_mW1Q6Xc-unsplash.jpg';
 import Cafe from '../../assets/Fotos/brooke-cagle-9fHMo1-5Io8-unsplash.jpg';
 import Uni from '../../assets/Fotos/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
