@@ -8,15 +8,12 @@ import Estudio from '../../assets/Fotos/becca-tapert-GnY_mW1Q6Xc-unsplash.jpg';
 import Cafe from '../../assets/Fotos/brooke-cagle-9fHMo1-5Io8-unsplash.jpg';
 import Uni from '../../assets/Fotos/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
 
-
-
-const ServiciosNew = () => {
-
+const Experienciasvm = () => {
     const [hovered, setHovered] = useState(false);
 
     return (
         <div>
-            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios</h1>
+            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Cuales son mis posibilidades? </h1>
 
             <CarouselProvider isIntrinsicHeight={true} totalSlides={5}>
                 <div className="lg:hidden px-5 xl:px-0 overflow-y-hidden">
@@ -112,42 +109,7 @@ const ServiciosNew = () => {
                                         </div>
                                     </div>
                                 </Slide>
-                                <Slide index={3}>
-                                    <div className="w-full px-5">
-                                        <div className="w-full flex justify-center items-center flex-col rounded-md">
-                                            <div className="relative">
-                                                <img src={Marru} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                <div className="absolute bottom-0 right-0 m-4">
-                                                    <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Viajes Grupales</h1>
-
-                                        </div>
-                                    </div>
-                                </Slide>
-                                <Slide index={4}>
-                                    <div className="w-full px-5">
-                                        <div className="w-full flex justify-center items-center flex-col rounded-md">
-                                            <div className="relative">
-                                                <img src={Trabajo} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                <div className="absolute bottom-0 right-0 m-4">
-                                                    <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Comunidad Viajera</h1>
-
-                                        </div>
-                                    </div>
-                                </Slide>
+                               
                             </Slider>
                         </div>
                     </div>
@@ -169,28 +131,7 @@ const ServiciosNew = () => {
                                     <span className="text-gray-800"></span>
                                 </p>
                             </div>
-                            <div className="my-4 flex items-center">
-                                <ButtonBack>
-                                    <button aria-controls="slide" aria-label="slide back" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer mr-4 p-2 flex items-center justify-center ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="5" y1="12" x2="9" y2="16" />
-                                            <line x1="5" y1="12" x2="9" y2="8" />
-                                        </svg>
-                                    </button>
-                                </ButtonBack>
-                                <ButtonNext>
-                                    <div aria-controls="slide" aria-label="slide forward" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer flex items-center justify-center  ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4338CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="15" y1="16" x2="19" y2="12" />
-                                            <line x1="15" y1="8" x2="19" y2="12" />
-                                        </svg>
-                                    </div>
-                                </ButtonNext>
-                            </div>
+                            
                         </div>
                         <div id="slide" aria-roledescription="carousel" aria-label="about healt care" className="slider3">
                             <div className="slide-ana3">
@@ -257,46 +198,7 @@ const ServiciosNew = () => {
                                             </div>
                                         </div>
                                     </Slide>
-                                    <Slide index={1}>
-                                        <div className="grid grid-cols-3 gap-6">
-                                            <div className="">
-                                                <div aria-live="off" aria-roledescription="slide4" className=" w-full flex justify-center items-center flex-colrounded-md ">
-                                                    <div className="relative">
-                                                        <img src={Marru} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Viajes Grupales</h1>
-
-                                            </div>
-                                            <div className="">
-                                                <div aria-live="off" aria-roledescription="slide4" className=" w-full flex justify-center items-center flex-colrounded-md ">
-                                                    <div className="relative">
-                                                        <img src={Trabajo} alt="Comunidad viajera" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Comunidad Viajera</h1>
-
-                                            </div>
-
-                                        </div>
-                                    </Slide>
-
+                                
                                 </Slider>
                             </div>
                         </div>
@@ -313,4 +215,5 @@ const ServiciosNew = () => {
     )
 }
 
-export default ServiciosNew
+
+export default Experienciasvm

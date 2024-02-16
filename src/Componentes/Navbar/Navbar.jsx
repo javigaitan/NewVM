@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import Logo from "../../assets/Logotipo_vagamundo_RGB_v1-01.png";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
@@ -30,16 +31,23 @@ function Navbar() {
                         <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
-                                    <img src={Logo} alt="Logo" className="h-auto w-24 md:w-auto md:h-auto mr-3" />
+                                    <Link to='/'>
+
+                                        <img src={Logo} alt="Logo" className="h-auto w-24 md:w-auto md:h-auto mr-3" />
+                                    </Link>
+
                                 </div>
                             </h1>
 
                             <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 text-white"
                             >
                                 <li>
-                                    <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Nosotras
-                                    </button>
+                                    <Link to='/nosotras'>
+
+                                        <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Nosotras
+                                        </button>
+                                    </Link>
                                 </li>
                                 <li
                                     onMouseEnter={() => setShowDestinosMenu(true)}
@@ -77,11 +85,15 @@ function Navbar() {
                                 <li
                                     className="relative"
                                 >
+                                                                        <Link to='/experiencias'>
+
                                     <button
                                         className="dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                     >
                                         Experiencias
                                     </button>
+                                    </Link>
+
 
 
 
@@ -171,14 +183,17 @@ function Navbar() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                        Nosotras
-                                        <div>
-                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
-                                        </div>
-                                    </a>
+                                    <Link to='/nosotras'>
+
+                                        <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Nosotras
+                                            <div>
+                                                <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">

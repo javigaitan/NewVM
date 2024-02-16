@@ -1,5 +1,6 @@
 import React from "react"
-import  Navbar  from "./Componentes/Navbar/Navbar"
+import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+import Navbar from "./Componentes/Navbar/Navbar"
 import NotFound from './Componentes/NotFound'
 import Banner from "./Componentes/BannerCTA/Banner"
 import Footer from "./Componentes/Footer/Footer"
@@ -14,24 +15,25 @@ import PorqueVM from "./Componentes/Porque VM/PorqueVM"
 import Blogs from "./Pages/Blogs/Blogs"
 import ServiciosNew from "./Componentes/ServiciosNew/ServiciosNew"
 import VMFacts from "./Componentes/VMFacts/VMFacts"
+import Landing from "./Pages/Landing/Landing";
+import  ExperienciasHome  from "./Pages/Experiencias/ExperienciasHome";
 
 
 function App() {
-  
+
 
   return (
     <>
-    <Navbar/>
-    <Banner/>
-    <ServiciosNew/>
-    <VMFacts/>
-    <Review/>
-    <Blogs/>
-    <Partners/>
-    <Footer/>
+      <Router>
+        <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/nosotras" element={<Nosotras />} />
+        <Route path="/experiencias" element={<ExperienciasHome />} />
 
 
 
+        </Routes>
+      </Router>
     </>
   )
 }
