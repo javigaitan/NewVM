@@ -1,0 +1,50 @@
+[
+    {
+        "Name": "Irlanda",
+        "descripcion": "Irlanda tiene una de las mejores visas para personas que quieren estudiar y trabajar en Europa. Contratando un curso de inglés de un mínimo de 25 semanas, podés trabajar y seguir practicando el idioma mientras solventás tus gastos. Durante el tiempo de cursada, podés trabajar part time (20 horas) y luego full time en las 8 semanas de vacaciones (40 horas). Además, por si ocho meses te parecen poco, la visa con permiso de trabajo puede extenderse uno o dos años y te autoriza trabajar full time en el caso de hacer cursos universitarios. ¿Te gustaría sumergirte en la cultura irlandesa, certificar tu nivel de inglés y trabajar en Europa? ¡Entonces esta experiencia es para vos!",
+        "requisitos": [
+            "No es necesario tener pasaporte o ciudadanía europea",
+            "No hay que esperar a una fecha determinada para aplicar",
+            "No permite traer personas a cargo (hijes/familiares)",
+            "Meses de vacaciones: mayo, junio, julio y agosto y del 15 de diciembre al 15 de enero"
+        ],
+        "foto": "./AssetsWork/malta"
+
+    },
+    {
+        "Name": "Francia",
+        "descripcion": "¿Te gustaría estudiar y trabajar en Francia para cubrir los gastos de tu estadía? ¡No te pierdas la oportunidad de enriquecerte con esta experiencia única! Caminar sus calles, conocer su cultura, probar los mejores platos, empaparte de arte y, sobre todo, aprender la quinta lengua más hablada del mundo.¿Qué esperas para que Francia sea tu puerta de acceso a toda Europa?",
+        "requisitos": [
+            "Curso de francés con duración de mínima 18 semanas",
+            "Pasaje de retorno o de salida",
+            "Formulario de pre-registro en Campus France",
+            "Último diploma alcanzado",
+            "Alojamiento por los primeros 3 meses"
+
+        ],
+        "foto": "https://panavision-tours.es/viajes/francia-turismo/turismo-francia.jpg"
+    },
+    {
+        "Name": "Malta",
+        "descripcion": "Malta es el destino elegido por quienes quieren estudiar y trabajar en un verano eterno. Al contratar un curso de inglés puedes tramitar una visa para trabajar a medio tiempo (20 horas) y así solventar tus gastos. Este destino tan multicultural también es una buena opción para continuar estudios superiores y de esta manera extender tu estadía. ¿Te gustaría sumergirte en la cultura de esta joya del Mediterráneo, certificar tu nivel de inglés y trabajar en Europa? ¡Entonces Malta es tu experiencia!",
+        "requisitos": [
+            "Pasaporte vigente",
+            "Curso de inglés de 24 semanas o más",
+            "Demostrar solvencia económica",
+            "eguro de asistencia al viajere",
+            "Contrato de alquiler por la duración del visado"
+        ]
+    },
+    {
+        "Name": "Portugal",
+        "descripcion": "¿Quieres mejorar tus habilidades de comunicación en portugués y disfrutar de una bellísima cultura? Entonces estudiar en Portugal puede ser una gran idea para ti.Portugal te permite tramitar tu visa de trabajo una vez que estés en el destino y consigas tu primer empleo. ¿Te imaginas perfeccionar o aprender portugués en un lugar mágico mientras trabajas para solventar tus gastos y practicar compartiendo con personas locales y viajeres de todo el mundo?",
+        "requisitos": [
+            "Demostrar solvencia económica",
+            "Pasaje de retorno o de salida",
+            "Curso de portugués con duración de mínima 18 semanas",
+            "Itinerario de viaje",
+            "Antecedentes Penales"
+
+        ]
+    }
+]

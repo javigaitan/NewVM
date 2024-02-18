@@ -157,7 +157,7 @@ const ServiciosNew = () => {
 
 
 
-            <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={3}>
+            <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={2}>
                 <div className="hidden lg:block px-6 xl:px-0 ">
                     <div className="container mx-auto">
                         <div className="flex flex-row">
@@ -197,41 +197,27 @@ const ServiciosNew = () => {
                                 <Slider>
                                     <Slide index={0}>
                                         <div className="grid grid-cols-3 gap-6">
-                                        <div
-            className="relative bg-cover w-full flex justify-center flex-col rounded-md"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <div className="relative flex items-center justify-center">
-                <img src={Cafe} className='opacity-80' alt="Grupo de VM en Irlanda listo para el día de introducción" />
-                <div className="absolute top-0 w-full flex flex-col items-center justify-center py-10">
-                    <h2 className="xl:px-10 md:px-2 px-7 text-2xl font-semibold leading-normal text-center text-black">Trabajo en el Exterior</h2>
-                    {hovered && (
-                        <div className="mt-4">
-                            <button className="hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-2 px-6 bg-white focus:outline-none">
-                                Leer más
-                            </button>
-                        </div>
-                    )}
-                </div>
-            </div>
-        </div>
-
-
-
-
-
+                                            <div
+                                                className="relative bg-cover w-full flex justify-center flex-col rounded-md">
+                                                <div className="relative flex items-center justify-center">
+                                                    <img src={Cafe} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <div className="absolute bottom-0 right-0 m-4">
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Trabaja en el exterior</h1>
+                                            </div>
                                             <div className="">
                                                 <div aria-live="off" aria-roledescription="slide2" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
+                                                    <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <div className="absolute bottom-0 right-0 m-4">
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
+                                                    </div>
                                                     </div>
 
                                                 </div>
@@ -241,14 +227,12 @@ const ServiciosNew = () => {
                                             <div className="">
                                                 <div aria-live="off" aria-roledescription="slide3" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Estudio} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
+                                                    <img src={Estudio} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <div className="absolute bottom-0 right-0 m-4">
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
+                                                    </div>
                                                     </div>
 
                                                 </div>
@@ -262,14 +246,14 @@ const ServiciosNew = () => {
                                             <div className="">
                                                 <div aria-live="off" aria-roledescription="slide4" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Marru} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
+                                                    <img src={Marru} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <div className="absolute bottom-0 right-0 m-4">
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
+                                                    </div>
+                                                   
+
                                                     </div>
 
                                                 </div>
@@ -279,14 +263,14 @@ const ServiciosNew = () => {
                                             <div className="">
                                                 <div aria-live="off" aria-roledescription="slide4" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Trabajo} alt="Comunidad viajera" className="w-full h-auto rounded-md opacity-80" />
-                                                        <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
+                                                    <img src={Trabajo} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <div className="absolute bottom-0 right-0 m-4">
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
+                                                    </div>
+                                                   
+
                                                     </div>
 
                                                 </div>
