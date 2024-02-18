@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import Trabajo from '../../assets/Img/DUBLIN (5).jpg';
-import Marru from '../../assets/Fotos/Marru.jpg';
-import Estudio from '../../assets/Fotos/becca-tapert-GnY_mW1Q6Xc-unsplash.jpg';
-import Cafe from '../../assets/Fotos/brooke-cagle-9fHMo1-5Io8-unsplash.jpg';
-import Uni from '../../assets/Fotos/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
+import Work from '../../assets/Img/workandstudy.jpg'
+import Inser from '../../assets/Img/insercion.jpg'
+import Hotel from '../../assets/Img/hoteleria.jpg'
+
+
 
 const Experienciasvm = () => {
     const [hovered, setHovered] = useState(false);
@@ -15,7 +15,7 @@ const Experienciasvm = () => {
         <div>
             <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Cuales son mis posibilidades? </h1>
 
-            <CarouselProvider isIntrinsicHeight={true} totalSlides={5}>
+            <CarouselProvider isIntrinsicHeight={true} totalSlides={3}>
                 <div className="lg:hidden px-5 xl:px-0 overflow-y-hidden">
                     <div className="container mx-auto">
                         <div className="flex flex-col lg:items-center justify-center w-full  py-1">
@@ -52,20 +52,21 @@ const Experienciasvm = () => {
                             <Slider>
                                 <Slide index={0}>
                                     <div className="w-full px-5">
-                                        <div className="w-full flex justify-center items-center flex-col rounded-md">
-                                            <div className="relative bg-cover w-full flex justify-center flex-col rounded-md">
+                                        <div className="w-full flex justify-center  flex-col rounded-md">
+                                            <div className="relative bg-cover w-full flex flex-col rounded-md">
                                                 <div className="relative">
-                                                    <img src={Cafe} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                    <img src={Work} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                     <div className="absolute bottom-0 right-0 m-4">
-                                                        <button className="focus:outline-none bg-black rounded-full p-2 hover:purple-800">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
+                                                        <Link to='/work&study'>
+                                                            <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                        </Link>
                                                     </div>
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Trabajo en el exterior</h1>
 
+                                            </div>
+                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+
+                                            <div className="px-4 md:w-auto w-full">
                                             </div>
                                         </div>
                                     </div>
@@ -74,18 +75,20 @@ const Experienciasvm = () => {
                                     <div className="w-full px-5">
                                         <div className="w-full flex justify-center items-center flex-col rounded-md">
                                             <div className="relative">
-                                                <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                <img src={Hotel} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
-                                                    <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                    </button>
+                                                    <Link to='/hoteleria'>
+                                                        <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                    </Link>
+
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Cursos de Idiomas</h1>
+                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+
+                                        <div className="px-4 md:w-auto w-full">
+                                        </div>
 
 
 
@@ -95,21 +98,24 @@ const Experienciasvm = () => {
                                     <div className="w-full px-5">
                                         <div className="w-full flex justify-center items-center flex-col rounded-md">
                                             <div className="relative">
-                                                <img src={Estudio} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                <img src={Inser} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
-                                                    <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                    </button>
+                                                    <Link to='/insercionlaboral'>
+                                                        <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                    </Link >
+
                                                 </div>
                                             </div>
-                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Carreras Universitarias y Posgrados</h1>
 
+                                        </div>
+                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Inserción
+                                            laboral</h1>
+
+                                        <div className="px-4 md:w-auto w-full">
                                         </div>
                                     </div>
                                 </Slide>
-                               
+
                             </Slider>
                         </div>
                     </div>
@@ -131,32 +137,14 @@ const Experienciasvm = () => {
                                     <span className="text-gray-800"></span>
                                 </p>
                             </div>
-                            
+
                         </div>
                         <div id="slide" aria-roledescription="carousel" aria-label="about healt care" className="slider3">
                             <div className="slide-ana3">
                                 <Slider>
                                     <Slide index={0}>
                                         <div className="grid grid-cols-3 gap-6">
-                                        <div
-            className="relative bg-cover w-full flex justify-center flex-col rounded-md"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <div className="relative flex items-center justify-center">
-                <img src={Cafe} className='opacity-80' alt="Grupo de VM en Irlanda listo para el día de introducción" />
-                <div className="absolute top-0 w-full flex flex-col items-center justify-center py-10">
-                    <h2 className="xl:px-10 md:px-2 px-7 text-2xl font-semibold leading-normal text-center text-black">Trabajo en el Exterior</h2>
-                    {hovered && (
-                        <div className="mt-4">
-                            <button className="hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-2 px-6 bg-white focus:outline-none">
-                                Leer más
-                            </button>
-                        </div>
-                    )}
-                </div>
-            </div>
-        </div>
+
 
 
 
@@ -165,40 +153,64 @@ const Experienciasvm = () => {
                                             <div className="">
                                                 <div aria-live="off" aria-roledescription="slide2" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                        <img src={Work} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                         <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
+                                                            <Link to='/work&study'>
+                                                                <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                            </Link >
+
                                                         </div>
                                                     </div>
 
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Cursos de Idiomas</h1>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Programas Work & Study</h1>
+
+                                                <div className="px-4 md:w-auto w-full">
+                                                </div>
 
                                             </div>
                                             <div className="">
-                                                <div aria-live="off" aria-roledescription="slide3" className=" w-full flex justify-center items-center flex-colrounded-md ">
+                                                <div aria-live="off" aria-roledescription="slide2" className=" w-full flex justify-center items-center flex-colrounded-md ">
                                                     <div className="relative">
-                                                        <img src={Estudio} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                        <img src={Hotel} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                         <div className="absolute bottom-0 right-0 m-4">
-                                                            <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                                </svg>
-                                                            </button>
+                                                            <Link to='/hoteleria'>
+                                                                <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                            </Link >
+
                                                         </div>
                                                     </div>
 
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Carreras Universitarias y Posgrados</h1>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+
+                                                <div className="px-4 md:w-auto w-full">
+                                                </div>
+
+                                            </div>
+                                            <div className="">
+                                                <div aria-live="off" aria-roledescription="slide2" className=" w-full flex justify-center items-center flex-colrounded-md ">
+                                                    <div className="relative">
+                                                        <img src={Inser} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
+                                                        <div className="absolute bottom-0 right-0 m-4">
+                                                            <Link to='/insercionlaboral'>
+                                                                <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
+                                                            </Link >
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Inserción
+                                                    laboral</h1>
+
+                                                <div className="px-4 md:w-auto w-full">
+                                                </div>
 
                                             </div>
                                         </div>
                                     </Slide>
-                                
+
                                 </Slider>
                             </div>
                         </div>

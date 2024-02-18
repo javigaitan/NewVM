@@ -17,6 +17,9 @@ import ServiciosNew from "./Componentes/ServiciosNew/ServiciosNew"
 import VMFacts from "./Componentes/VMFacts/VMFacts"
 import Landing from "./Pages/Landing/Landing";
 import  ExperienciasHome  from "./Pages/Experiencias/ExperienciasHome";
+import WorkStudy from "./Componentes/Experienciasvm/WorkStudy/WorkStudy";
+import Insercion from "./Componentes/Experienciasvm/Insercion/Insercion";
+import Hoteleria from "./Componentes/Experienciasvm/Hoteleria/Hoteleria";
 
 
 function App() {
@@ -29,6 +32,11 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/nosotras" element={<Nosotras />} />
         <Route path="/experiencias" element={<ExperienciasHome />} />
+        <Route path="/notfound" element={<NotFound />} />
+        <Route path="/work&study" element={<WorkStudy />} />
+        <Route path="/insercionlaboral" element={<Insercion />} />
+        <Route path="/hoteleria" element={<Hoteleria />} />
+
 
 
 

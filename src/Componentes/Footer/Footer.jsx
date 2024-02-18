@@ -29,13 +29,13 @@ const Footer = () => {
                             <FaFacebook />
                         </a>
                        
-                        <a href="https://www.linkedin.com/company/vaga-mundo/" className="opacity-50 w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <a href="https://www.linkedin.com/company/vaga-mundo/" className=" w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-secondaryTur2 rounded-full flex items-center justify-center">
                             <FaLinkedin />
                         </a>
-                        <a href="https://twitter.com/VagaMun02520247" className="opacity-50 w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <a href="https://twitter.com/VagaMun02520247" className=" w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-secondaryTur2 rounded-full flex items-center justify-center">
                             <FaTwitter />
                         </a>
-                        <a href="tel:+54%209%2011%203875-0336" className="opacity-50 w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-gray-700 rounded-full flex items-center justify-center">
+                        <a href="tel:+54%209%2011%203875-0336" className=" w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-secondaryTur2 rounded-full flex items-center justify-center">
                             <FaPhone />
                         </a>
                     </div>

@@ -1,33 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Error10 = () => {
-    const mensajeWhatsApp = "Hola, quisiera saber mas sobre sus servicios ";
+const NotFound = () => {
 
-  const handleWhatsAppClick = () => {
-    window.open(`https://api.whatsapp.com/send?phone=1138750336&text=${encodeURIComponent(mensajeWhatsApp)}`, '_blank');
-  };
     return (
-        <>
-        <div className="flex items-center flex-col justify-center lg:flex-row  px-6 md:px-15 md: lg:py-3 gap-16 lg:gap-28">
-            <div className="w-full lg:w-1/2">
-                <img className="hidden lg:block" src="https://static.vecteezy.com/system/resources/previews/012/988/805/non_2x/gear-icon-style-vector.jpg" alt="" />
-                <img className="hidden md:block lg:hidden" src="https://static.vecteezy.com/system/resources/previews/012/988/805/non_2x/gear-icon-style-vector.jpg" alt="" />
-                <img className="md:hidden" src="https://static.vecteezy.com/system/resources/previews/012/988/805/non_2x/gear-icon-style-vector.jpg" alt="" />
-            </div>
-            <div className="w-full lg:w-1/2">
-                <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-gray-800">¡Nos estamos renovando!</h1>
-                <p className="py-4 text-base text-gray-800">Te pedimos disculpas por no estar disponibles para que nos visites.</p>
-                <p className="py-2 text-base text-gray-800">Pero te dejamos este enlace para que puedas consultarnos lo que necesites.</p>
-                <button
-                    onClick={handleWhatsAppClick}
-                    className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
-                >
-                    Contáctanos
-                </button>
+        <div>
+            <div className="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+                <div className="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
+                    <div className="relative">
+                        <div className="absolute">
+                            <div className>
+                                <h1 className="my-2 text-gray-800 font-bold text-2xl">
+                                    Parece que has encontrado la
+                                    puerta hacia la gran nada
+                                </h1>
+                                <p className="my-2 text-gray-800">¡Lo siento por eso! Por favor visita nuestra página de inicio para llegar a donde necesitas ir.</p>
+                                <Link to='/'>
+                                <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">¡Llévame allí!</button>
+                                </Link>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
+                </div>
             </div>
         </div>
-        </>
     );
 };
 
-export default Error10;
+export default NotFound;
