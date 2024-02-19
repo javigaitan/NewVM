@@ -1,19 +1,7 @@
-import React from "react"
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
-import Navbar from "./Componentes/Navbar/Navbar"
-import NotFound from './Componentes/NotFound'
-import Banner from "./Componentes/BannerCTA/Banner"
-import Footer from "./Componentes/Footer/Footer"
-import Newsletter from "./Componentes/NewsletterPopUp/Newsletter"
-import Partners from "./Componentes/Partners/Partners"
-import Review from "./Componentes/Review/Review"
-import DestinosCarrucel from "./Componentes/DestinosCarrucel/DestinosCarrucel"
-import WhatsAppButton from "./Componentes/BtnWs/WhatsAppButton"
-import Service from "./Componentes/Service/Service"
-import Nosotras from "./Pages/Nosotras/Nosotras"
-import Blogs from "./Pages/Blogs/Blogs"
-import ServiciosNew from "./Componentes/ServiciosNew/ServiciosNew"
-import VMFacts from "./Componentes/VMFacts/VMFacts"
+import NotFound from './Componentes/NotFound';
+import Nosotras from "./Pages/Nosotras/Nosotras";
 import Landing from "./Pages/Landing/Landing";
 import  ExperienciasHome  from "./Pages/Experiencias/ExperienciasHome";
 import WorkStudy from "./Componentes/Experienciasvm/WorkStudy/WorkStudy";
@@ -21,6 +9,9 @@ import Insercion from "./Componentes/Experienciasvm/Insercion/Insercion";
 import Hoteleria from "./Componentes/Experienciasvm/Hoteleria/Hoteleria";
 import Contactanos from "./Pages/Contactanos/Contactanos";
 import CursosIdiomas from "./Pages/CursosIdiomas/CursosIdiomas";
+import Universidades from "./Pages/Universidad/Universidades";
+import ComunidadVm from "./Pages/Comunidad/Comunidad";
+import ViajesGrupales from "./Pages/ViajesGrupales/ViajesGrupales";
 
 
 function App() {
@@ -39,10 +30,9 @@ function App() {
         <Route path="/hoteleria" element={<Hoteleria />} />
         <Route path="/contacto" element={<Contactanos />} />
         <Route path="/cursos-idiomas" element={<CursosIdiomas />} />
-
-
-
-
+        <Route path="/carreras-universitarias" element={<Universidades />} />
+        <Route path="/comunidad" element={<ComunidadVm />} />
+        <Route path="/viajes-grupales" element={<ViajesGrupales />} />
 
 
         </Routes>
