@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaYoutube, FaPhone, FaFacebook, FaTiktok, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Logo from "../../assets/Mesa de trabajo 192.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,10 +14,19 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8 text-white">
-                        <p className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Inicio</p>
-                        <p className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Contáctanos</p>
-                        <p className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Términos y condiciones</p>
-                        <p className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Políticas de privacidad</p>
+                        <Link to='/'>
+                        <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Inicio</a>
+                        </Link>
+                        <Link to='/contacto'>
+                        <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Contáctanos</a>
+                        </Link>
+                        <Link to='/'>
+                        <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Términos y condiciones</a>
+                        </Link>
+
+                        <Link to='/'>
+                        <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Políticas de privacidad</a>
+                        </Link>
                     </div>
                     <div className="flex items-center gap-x-10 mt-8">
                         <a href="https://www.instagram.com/vagamundo_travellers/" className=" w-8 h-8 flex-shrink-0 bg-white cursor-pointer hover:bg-secondaryTur2 rounded-full flex items-center justify-center">

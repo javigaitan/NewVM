@@ -26,7 +26,7 @@ const Insercion = () => {
                         <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">¿Cómo podemos ayudarte?
 </h2>
 
-
+    
 
                         <p className=" font-normal text-base leading-6 text-gray-600 mt-7">Nuestro objetivo como comunidad Vaga-Mundo es acompañar y asesorar de forma personalizada en todo el proceso de inserción laboral en el país de selección.
 

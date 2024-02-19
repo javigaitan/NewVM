@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect  } from 'react';
 import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import ScrollReveal from 'scrollreveal';
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Trabajo from '../../assets/Img/DUBLIN (5).jpg';
 import Marru from '../../assets/Fotos/Marru.jpg';
@@ -13,9 +14,20 @@ import Uni from '../../assets/Fotos/priscilla-du-preez-XkKCui44iM0-unsplash.jpg'
 const ServiciosNew = () => {
 
     const [hovered, setHovered] = useState(false);
+    useEffect(() => {
+        // Configuración de ScrollReveal
+        ScrollReveal().reveal('.carousel-container', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+    }, []);
 
     return (
-        <div>
+        <div className="carousel-container">
             <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios</h1>
 
             <CarouselProvider isIntrinsicHeight={true} totalSlides={5}>

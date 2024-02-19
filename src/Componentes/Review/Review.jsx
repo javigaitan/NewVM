@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 import Mayera from '../../assets/Img/Mayera Rivera.png';
 import Maria from '../../assets/Img/maria-lucia-prieto.png';
 import Nunez from '../../assets/Img/nunez.png';
@@ -7,9 +9,21 @@ import Nunez from '../../assets/Img/nunez.png';
 
 
 const Review = () => {
+
+    useEffect(() => {
+        // Configuración de ScrollReveal
+        ScrollReveal().reveal('.review-container', {
+            delay: 300,
+            distance: '50px',
+            origin: 'top',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+    }, []);
     return (
         <>
-            <div>
+            <div className='review-container'>
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Testimonios</h1>
                 <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6">
                     <div>

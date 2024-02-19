@@ -10,7 +10,6 @@ import DestinosCarrucel from "../../Componentes/DestinosCarrucel/DestinosCarruce
 import WhatsAppButton from "../../Componentes/BtnWs/WhatsAppButton"
 import Service from "../../Componentes/Service/Service"
 import Nosotras from "../../Pages/Nosotras/Nosotras"
-import PorqueVM from "../../Componentes/Porque VM/PorqueVM"
 import Blogs from "../../Pages/Blogs/Blogs"
 import ServiciosNew from "../../Componentes/ServiciosNew/ServiciosNew"
 import VMFacts from "../../Componentes/VMFacts/VMFacts"

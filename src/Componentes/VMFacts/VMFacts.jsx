@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 
 const VMFacts = () => {
     const [count1, setCount1] = useState(0);
@@ -39,11 +41,24 @@ const VMFacts = () => {
             clearInterval(interval4);
         };
     }, [count1, count2, count3, count4]);
+    const [hovered, setHovered] = useState(false);
+
+    useEffect(() => {
+        // Configuración de ScrollReveal
+        ScrollReveal().reveal('.facts-container', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+    }, []);
 
     return (
 
         <>
-            <div className="dark:bg-gray-900">
+            <div className="dark:bg-gray-900 facts-container">
                 <div className="pb-20">
                     <div className="mx-auto bg-gradient-to-l from-primaryVio to-primaryVio h-96">
                         <div className="mx-auto container w-full flex flex-col justify-center items-center">
