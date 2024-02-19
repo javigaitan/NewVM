@@ -20,6 +20,7 @@ import WorkStudy from "./Componentes/Experienciasvm/WorkStudy/WorkStudy";
 import Insercion from "./Componentes/Experienciasvm/Insercion/Insercion";
 import Hoteleria from "./Componentes/Experienciasvm/Hoteleria/Hoteleria";
 import Contactanos from "./Pages/Contactanos/Contactanos";
+import CursosIdiomas from "./Pages/CursosIdiomas/CursosIdiomas";
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
         <Route path="/insercionlaboral" element={<Insercion />} />
         <Route path="/hoteleria" element={<Hoteleria />} />
         <Route path="/contacto" element={<Contactanos />} />
+        <Route path="/cursos-idiomas" element={<CursosIdiomas />} />
+
 
 
 

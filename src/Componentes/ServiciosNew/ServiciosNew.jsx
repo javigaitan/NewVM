@@ -72,11 +72,15 @@ const ServiciosNew = () => {
                                                 <div className="relative">
                                                     <img src={Cafe} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                     <div className="absolute bottom-0 right-0 m-4">
+                                                    <Link to='/work&study'>
+
                                                         <button className="focus:outline-none bg-black rounded-full p-2 hover:purple-800">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                             </svg>
                                                         </button>
+                                                        </Link>
+
                                                     </div>
                                                 </div>
                                                 <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Trabajo en el exterior</h1>
@@ -91,11 +95,15 @@ const ServiciosNew = () => {
                                             <div className="relative">
                                                 <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
+                                                <Link to='/cursos-idiomas'>
+
                                                     <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                         </svg>
                                                     </button>
+                                                    </Link>
+
                                                 </div>
                                             </div>
 
@@ -112,11 +120,13 @@ const ServiciosNew = () => {
                                             <div className="relative">
                                                 <img src={Estudio} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
+                                                <Link to='/'>
                                                     <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                         </svg>
                                                     </button>
+                                                   </Link>
                                                 </div>
                                             </div>
                                             <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Carreras Universitarias y Posgrados</h1>
@@ -130,11 +140,13 @@ const ServiciosNew = () => {
                                             <div className="relative">
                                                 <img src={Marru} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
+                                                <Link to='/'>
                                                     <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                         </svg>
                                                     </button>
+                                                  </Link>
                                                 </div>
                                             </div>
                                             <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Viajes Grupales</h1>
@@ -148,11 +160,13 @@ const ServiciosNew = () => {
                                             <div className="relative">
                                                 <img src={Trabajo} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
+                                                <Link to='/'>
                                                     <button className="focus:outline-none bg-black rounded-full p-2 hover:opacity-75">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                                         </svg>
                                                     </button>
+                                                   </Link>
                                                 </div>
                                             </div>
                                             <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Comunidad Viajera</h1>
@@ -226,7 +240,7 @@ const ServiciosNew = () => {
                                                     <div className="relative">
                                                     <img src={Uni} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                     <div className="absolute bottom-0 right-0 m-4">
-                                                        <Link to='/work&study'>
+                                                        <Link to='/cursos-idiomas'>
                                                             <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                         </Link>
                                                     </div>

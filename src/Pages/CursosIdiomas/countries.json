@@ -1,0 +1,88 @@
+[
+    {
+        "Name": "INGLÉS",
+        "descripcion": "Desde América del Norte a Australia, nuestra oferta de cursos de inglés a lo largo del mapa es muy amplia. El inglés es el idioma que domina el mundo, tanto a nivel profesional como personal el inglés siempre está presente en nuestras vidas. ¿Vos que tipo de curso elegis?",
+        "Destinos": "Inglaterra, Irlanda, USA, Canadá, Australia, New Zealand, Malta, Singapore y South Africa",
+        "requisitos": [
+            "Inglés General",
+            "Inglés de Negocios             ",
+            "Cursos Juniors            ",
+            "Preparación Examen IELTS, Cambridge            ",
+            "Preparación Examen IELTS, Cambridge            ",
+            "Cursos para Profesores (CELTA/TEFL)            ",
+            "Inglés enfocado a Carreras Universitarias (Abogacía, Medicina, Marketing, Deportes y otros)            "
+
+        ],
+        "foto": "./AssetsWork/malta"
+
+    },
+    {
+        "Name": "ITALIANO",
+        "Destinos": "Roma, Florencia, Milán, Verona, Siena, Bolonia, Génova y más.",
+        "descripcion": "El italiano es probablemente el idioma más vinculado al mundo del arte y de la cultura. Puedes encontrar influencia italiana en todas las áreas relevantes de la vida y la cultura: desde la pintura, las artes o la arquitectura hasta la literatura y la música, la moda, y el vino. Por otro lado es uno de los Idiomas más fáciles para los hispanohablantes.",
+        "requisitos": [
+            "Italiano en todos los niveles            ",
+            "Italiano + turismo            ",
+            "Italiano + moda",
+            "Italiano + arte",
+            "Italiano + vino y cocina"
+
+        ],
+        "foto": "https://panavision-tours.es/viajes/francia-turismo/turismo-francia.jpg"
+    },
+    {
+        "Name": "FRANCES",
+        "Destinos": "Paris, Lyon, Montpellier y Niza",
+
+        "descripcion": "Más de 200 millones de personas hablan francés en los 5 continentes. Aprender francés te ayudará a mejorar tus oportunidades laborales y desarrollar tu carrera profesional.",
+        "requisitos": [
+            "Francés",
+            "Francés + Preparación Exámenes",
+            "Francés + Negocios",
+            "Francés + Cocina",
+            "Francés + Yoga"
+        ]
+    },
+    {
+        "Name": "PORTUGUÉS",
+        "Destinos": "Inglaterra, Irlanda, USA, Canadá, Australia, New Zealand, Malta, Singapore y South Africa",
+
+        "descripcion": "¿Quieres mejorar tus habilidades de comunicación en portugués y disfrutar de una bellísima cultura? Entonces estudiar en Portugal puede ser una gran idea para ti.Portugal te permite tramitar tu visa de trabajo una vez que estés en el destino y consigas tu primer empleo. ¿Te imaginas perfeccionar o aprender portugués en un lugar mágico mientras trabajas para solventar tus gastos y practicar compartiendo con personas locales y viajeres de todo el mundo?",
+        "requisitos": [
+            "Demostrar solvencia económica",
+            "Pasaje de retorno o de salida",
+            "Curso de portugués con duración de mínima 18 semanas",
+            "Itinerario de viaje",
+            "Antecedentes Penales"
+
+        ]
+    },
+    {
+        "Name": "ALEMAN",
+        "Destinos": "Inglaterra, Irlanda, USA, Canadá, Australia, New Zealand, Malta, Singapore y South Africa",
+
+        "descripcion": "¿Quieres mejorar tus habilidades de comunicación en portugués y disfrutar de una bellísima cultura? Entonces estudiar en Portugal puede ser una gran idea para ti.Portugal te permite tramitar tu visa de trabajo una vez que estés en el destino y consigas tu primer empleo. ¿Te imaginas perfeccionar o aprender portugués en un lugar mágico mientras trabajas para solventar tus gastos y practicar compartiendo con personas locales y viajeres de todo el mundo?",
+        "requisitos": [
+            "Demostrar solvencia económica",
+            "Pasaje de retorno o de salida",
+            "Curso de portugués con duración de mínima 18 semanas",
+            "Itinerario de viaje",
+            "Antecedentes Penales"
+
+        ]
+    },
+    {
+        "Name": "ESPAÑOL",
+        "Destinos": "Inglaterra, Irlanda, USA, Canadá, Australia, New Zealand, Malta, Singapore y South Africa",
+
+        "descripcion": "¿Quieres mejorar tus habilidades de comunicación en portugués y disfrutar de una bellísima cultura? Entonces estudiar en Portugal puede ser una gran idea para ti.Portugal te permite tramitar tu visa de trabajo una vez que estés en el destino y consigas tu primer empleo. ¿Te imaginas perfeccionar o aprender portugués en un lugar mágico mientras trabajas para solventar tus gastos y practicar compartiendo con personas locales y viajeres de todo el mundo?",
+        "requisitos": [
+            "Demostrar solvencia económica",
+            "Pasaje de retorno o de salida",
+            "Curso de portugués con duración de mínima 18 semanas",
+            "Itinerario de viaje",
+            "Antecedentes Penales"
+
+        ]
+    }
+]

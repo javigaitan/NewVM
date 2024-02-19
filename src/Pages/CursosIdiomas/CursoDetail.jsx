@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import countriesData from './countries.json';
-import RequisitosList from './RequisitosList';
+import CursosList from './CursosList';
 import ScrollReveal from 'scrollreveal';
+import RequisitosList from '../../Componentes/Experienciasvm/WorkStudy/RequisitosList';
 
 
 
-const WorkDetail = ({ country }) => {
+const CursoDetail = ({ country }) => {
     const countryDetails = countriesData.find((c) => c.Name === country);
 
     if (!countryDetails) {
-        return <div>País no encontrado</div>;
+        return <div>Idioma no encontrado</div>;
     }
 
     useEffect(() => {
@@ -34,10 +35,11 @@ const WorkDetail = ({ country }) => {
 
                     <div className="  w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
                         <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">{countryDetails.Name}</h2>
-
-
-
                         <p className=" font-normal text-base leading-6 text-gray-600 mt-7">{countryDetails.descripcion}</p>
+
+                        <h3 className="font-semibold lg:text-3xl text-2xl lg:leading-9 leading-7 text-gray-800 mt-4">Destinos</h3>
+                        <p className=" font-normal text-base leading-6 text-gray-600 mt-7">{countryDetails.Destinos}</p>
+
 
 
                         <div className='py-5'>
@@ -55,18 +57,11 @@ const WorkDetail = ({ country }) => {
                         <div className=" w-full lg:w-8/12 bg-white flex justify-center items-center">
                             <img src={countryDetails.foto} alt="Imagen ilustrativa del pais" />
                         </div>
-                        <div className=" w-full lg:w-4/12 grid lg:grid-cols-1 sm:grid-cols-4 grid-cols-2 gap-6">
-                            <div className="bg-white flex justify-center items-center py-4">
-                                <img src="https://i.ibb.co/0jX1zmR/sam-moqadam-kvmds-Tr-GOBM-unsplash-removebg-preview-1-1.png" alt="Wooden chair - preview 1" />
-                            </div>
-                            <div className="bg-white flex justify-center items-center py-4">
-                                <img src="https://i.ibb.co/7zv1N5Q/sam-moqadam-kvmds-Tr-GOBM-unsplash-removebg-preview-2.png" alt="Wooden chair - preview 2" />
-                            </div>
+                       
 
-                        </div>
                     </div>
                 </div>
-                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Requisitos </h1>
+                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Tipos de cursos </h1>
 
                 <RequisitosList requisitos={countryDetails.requisitos} /> {/* Renderiza los requisitos */}
 
@@ -76,4 +71,4 @@ const WorkDetail = ({ country }) => {
     )
 }
 
-export default WorkDetail
+export default CursoDetail
