@@ -32,7 +32,7 @@ const WorkStudy = () => {
             <div className="bg-gray-50 py-20 flex flex-col items-center justify-center">
                 <div className="xl:w-1/2 w-11/12">
                     <h1 role="heading" tabIndex={0} className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
-                        Dinos tu destino y te diremos que necesitas
+                        Contanos tu destino y te diremos que necesitas
                     </h1>
                     <h2 role="contentinfo" tabIndex={0} className="text-base leading-normal text-center text-gray-600 mt-5">
                         A continuacion tenes un resumen de lo que necesitas , pero se aconsejamos consultar con nuetros asesores para despejar mas dudas.

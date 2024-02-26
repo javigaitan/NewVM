@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../../Navbar/Navbar'
-import Footer from '../../Footer/Footer'
-import BannerIMG from '../../../assets/Img/malta.avif'
+import Navbar from '../../Componentes/Navbar/Navbar'
+import Footer from '../../Componentes/Footer/Footer'
+import BannerIMG from '../../assets/Img/malta.avif'
 
 
-const Insercion = () => {
+const Seguros = () => {
   return (
     <div>
-      <Navbar />
-      <div className>
+    <Navbar/>
+    <div className>
         <div className="flex justify-end items-center">
           <img className="object-cover md:hidden  w-full h-60 " src={BannerIMG} alt="background" />
           <img className="hidden md:block object-cover  w-full h-56 lg:h-52 " src={BannerIMG} alt="background" />
@@ -23,16 +23,20 @@ const Insercion = () => {
           {/* <!-- Description Div --> */}
 
           <div className="  w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
-            <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">¿Cómo podemos ayudarte?
+            <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">La asistencia en viaje más completa y económica
             </h2>
+            <h3>¡Nos importa que estés bien dónde y quiera que estés!
+</h3>
 
 
 
-            <p className=" font-normal text-base leading-6 text-gray-600 mt-7">Nuestro objetivo como comunidad Vaga-Mundo es acompañar y asesorar de forma personalizada en todo el proceso de inserción laboral en el país de selección.
+            <p className=" font-normal text-base leading-6 text-gray-600 mt-7">¡PARA NO TENER QUE AFRONTAR GASTOS INESPERADOS EN TU VIAJE, ES FUNDAMENTAL VIAJAR CON ASISTENCIA MÉDICA!
+            <br /><br />
 
-              La propuesta consiste en un diagnóstico situacional de quien se acerque a nosotras, netamente ajustado a las condiciones, requisitos y realidad de quien contrata nuestros servicios, para poder ofrecer una eficiente proximidad con el mercado laboral postulante.
 
-              El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.</p>
+Planes para viajes por turismo, en familia, sole, acompañade, a estudiar, a trabajar o con visas Work & Holidays. 
+
+Cobertura médica por enfermedad o accidente y/o cobertura de enfermedades preexistentes. Atención en Español!</p>
 
 
             <div className='py-5'>
@@ -47,9 +51,9 @@ const Insercion = () => {
 
 
 
-      <Footer />
-    </div>
+    <Footer/>
+</div>
   )
 }
 
-export default Insercion
+export default Seguros

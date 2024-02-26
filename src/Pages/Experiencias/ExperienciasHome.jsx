@@ -1,16 +1,32 @@
-import React from 'react'
+import React, { useState,useEffect  } from 'react';
 import Navbar from '../../Componentes/Navbar/Navbar'
 import BannerIMG from '../../assets/Img/experiencia.jpg'
 import Experienciasvm from '../../Componentes/Experienciasvm/Experienciasvm'
 import Footer from '../../Componentes/Footer/Footer'
+import ScrollReveal from 'scrollreveal';
+import "pure-react-carousel/dist/react-carousel.es.css";
 
 
 const ExperienciasHome = () => {
+
+  const [hovered, setHovered] = useState(false);
+    useEffect(() => {
+        // Configuración de ScrollReveal
+        ScrollReveal().reveal('.carousel-container', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+    }, []);
+
   return (
     <>
       <Navbar />
       <div className>
-        <div className="flex justify-end items-center">
+        <div className=" carousel-container flex justify-end items-center">
           <img className="object-cover md:hidden  w-full h-60 opacity-50" src={BannerIMG} alt="background" />
           <img className="hidden md:block object-cover  w-full h-56 lg:h-52 opacity-50" src={BannerIMG} alt="background" />
           <div className=" flex xl:px-20 justify-start items-start flex-col absolute">

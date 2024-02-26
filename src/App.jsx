@@ -12,6 +12,12 @@ import CursosIdiomas from "./Pages/CursosIdiomas/CursosIdiomas";
 import Universidades from "./Pages/Universidad/Universidades";
 import ComunidadVm from "./Pages/Comunidad/Comunidad";
 import ViajesGrupales from "./Pages/ViajesGrupales/ViajesGrupales";
+import Ahorro from "./Pages/Ahorro/Ahorro";
+import PagesBlogs from "./Pages/Blogs/PagesBlogs";
+import PagesService from "./Pages/PagesService/PagesService";
+import Alojamientos from "./Pages/PagesService/Alojamientos";
+import Seguros from "./Pages/PagesService/Seguros";
+import Arrival from "./Pages/PagesService/Arrival";
 
 
 function App() {
@@ -33,7 +39,13 @@ function App() {
         <Route path="/carreras-universitarias" element={<Universidades />} />
         <Route path="/comunidad" element={<ComunidadVm />} />
         <Route path="/viajes-grupales" element={<ViajesGrupales />} />
-
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="/ahorro" element={<Ahorro />} />
+        <Route path="/blogs" element={<PagesBlogs />} />
+        <Route path="/servicios" element={<PagesService />} />
+        <Route path="/servicios-alojamientos" element={<Alojamientos />} />
+        <Route path="/servicios-seguros" element={<Seguros />} />
+        <Route path="/servicios-arrival-packages" element={<Arrival />} />
 
         </Routes>
       </Router>

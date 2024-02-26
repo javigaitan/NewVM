@@ -1,31 +1,32 @@
-import React, { useState,useEffect  } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import ScrollReveal from 'scrollreveal';
+import Navbar from '../../Componentes/Navbar/Navbar'
+import Footer from '../../Componentes/Footer/Footer'
+import BannerIMG from '../../assets/Img/experiencia.jpg'
 import Work from '../../assets/Img/workandstudy.jpg'
 import Inser from '../../assets/Img/insercion.jpg'
 import Hotel from '../../assets/Img/hoteleria.jpg'
 
+const PagesService = () => {
+  const [hovered, setHovered] = useState(false);
 
-
-const Experienciasvm = () => {
-    const [hovered, setHovered] = useState(false);
-    useEffect(() => {
-        // Configuración de ScrollReveal
-        ScrollReveal().reveal('.carousel-container', {
-            delay: 300,
-            distance: '50px',
-            origin: 'bottom',
-            duration: 1000,
-            easing: 'ease-in-out',
-            reset: true
-        });
-    }, []);
-
-    return (
-        <div className='carousel-container'>
-            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Cuales son mis posibilidades? </h1>
+  return (
+<div>
+        <Navbar/>
+        <div className>
+        <div className="flex justify-end items-center">
+          <img className="object-cover md:hidden  w-full h-60 opacity-50" src={BannerIMG} alt="background" />
+          <img className="hidden md:block object-cover  w-full h-56 lg:h-52 opacity-50" src={BannerIMG} alt="background" />
+          <div className=" flex xl:px-20 justify-start items-start flex-col absolute">
+            <h1 className="text0-xl xl:text-2xl font-medium leading-5 xl:leading-normal text-gray-800">Deja todo listo para tu viaje con nuetros servicios</h1>
+            
+          </div>
+        </div>
+        </div>
+        <div>
+            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Servicios Extras</h1>
 
             <CarouselProvider isIntrinsicHeight={true} totalSlides={3}>
                 <div className="lg:hidden px-5 xl:px-0 overflow-y-hidden">
@@ -69,14 +70,15 @@ const Experienciasvm = () => {
                                                 <div className="relative">
                                                     <img src={Work} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                     <div className="absolute bottom-0 right-0 m-4">
-                                                        <Link to='/work&study'>
+                                                        <Link to='/servicios-alojamientos'>
                                                             <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                         </Link>
                                                     </div>
                                                 </div>
 
                                             </div>
-                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+                                            <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                              Alojamientos </h1>
 
                                             <div className="px-4 md:w-auto w-full">
                                             </div>
@@ -89,7 +91,7 @@ const Experienciasvm = () => {
                                             <div className="relative">
                                                 <img src={Hotel} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
-                                                    <Link to='/hoteleria'>
+                                                    <Link to='/servicios-seguros'>
                                                         <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                     </Link>
 
@@ -97,7 +99,8 @@ const Experienciasvm = () => {
                                             </div>
 
                                         </div>
-                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                          Asistencia al Viajero</h1>
 
                                         <div className="px-4 md:w-auto w-full">
                                         </div>
@@ -112,7 +115,7 @@ const Experienciasvm = () => {
                                             <div className="relative">
                                                 <img src={Inser} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                 <div className="absolute bottom-0 right-0 m-4">
-                                                    <Link to='/insercionlaboral'>
+                                                    <Link to='/servicios-arrival-packages'>
                                                         <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                     </Link >
 
@@ -120,8 +123,8 @@ const Experienciasvm = () => {
                                             </div>
 
                                         </div>
-                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Inserción
-                                            laboral</h1>
+                                        <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                          Arrival Packages</h1>
 
                                         <div className="px-4 md:w-auto w-full">
                                         </div>
@@ -167,7 +170,7 @@ const Experienciasvm = () => {
                                                     <div className="relative">
                                                         <img src={Work} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                         <div className="absolute bottom-0 right-0 m-4">
-                                                            <Link to='/work&study'>
+                                                            <Link to='/servicios-alojamientos'>
                                                                 <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                             </Link >
 
@@ -175,7 +178,8 @@ const Experienciasvm = () => {
                                                     </div>
 
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Programas Work & Study</h1>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                                  Alojamientos</h1>
 
                                                 <div className="px-4 md:w-auto w-full">
                                                 </div>
@@ -186,7 +190,7 @@ const Experienciasvm = () => {
                                                     <div className="relative">
                                                         <img src={Hotel} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                         <div className="absolute bottom-0 right-0 m-4">
-                                                            <Link to='/hoteleria'>
+                                                            <Link to='/servicios-seguros'>
                                                                 <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                             </Link >
 
@@ -194,7 +198,8 @@ const Experienciasvm = () => {
                                                     </div>
 
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Pasantías en hoteles y turismo</h1>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                                  Asistencia al Viajero</h1>
 
                                                 <div className="px-4 md:w-auto w-full">
                                                 </div>
@@ -205,7 +210,7 @@ const Experienciasvm = () => {
                                                     <div className="relative">
                                                         <img src={Inser} alt="Trabajo" className="w-full h-auto rounded-md opacity-80" />
                                                         <div className="absolute bottom-0 right-0 m-4">
-                                                            <Link to='/insercionlaboral'>
+                                                            <Link to='/servicios-arrival-packages'>
                                                                 <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-medium leading-none text-center text-gray-800 py-4 px-12 bg-white focus:outline-none">Leer más</button>
                                                             </Link >
 
@@ -213,8 +218,8 @@ const Experienciasvm = () => {
                                                     </div>
 
                                                 </div>
-                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">Inserción
-                                                    laboral</h1>
+                                                <h1 className="w-40 text-black font-semibold text-lg absolute left-0 mt-7 ml-7 rounded h-64 relative">
+                                                  Arrival Packages</h1>
 
                                                 <div className="px-4 md:w-auto w-full">
                                                 </div>
@@ -236,8 +241,10 @@ const Experienciasvm = () => {
         </div>
 
 
-    )
+
+        <Footer/>
+    </div>
+      )
 }
 
-
-export default Experienciasvm
+export default PagesService
