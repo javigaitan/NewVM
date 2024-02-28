@@ -89,7 +89,7 @@ const VMFacts = () => {
                             </div>
                             <div className="flex justify-center flex-col items-center w-36 h-36 md:w-44 md:h-48 lg:w-56 lg:h-56 bg-white shadow rounded-2xl">
                                 <h2 className="lg:text-5xl md:text-4xl text-2xl font-extrabold leading-10 text-center text-gray-800">{count4}+</h2>
-                                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center text-colorText">A;os de experiencia</p>
+                                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center text-colorText">Años de experiencia</p>
                             </div>
                         </div>
                     </div>

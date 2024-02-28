@@ -13,6 +13,7 @@ import Nosotras from "../../Pages/Nosotras/Nosotras"
 import Blogs from "../../Pages/Blogs/Blogs"
 import ServiciosNew from "../../Componentes/ServiciosNew/ServiciosNew"
 import VMFacts from "../../Componentes/VMFacts/VMFacts"
+import GoogleReviews from '../../Componentes/Review/GooglReviews'
 
 const Landing = () => {
     return (
@@ -21,7 +22,7 @@ const Landing = () => {
             <Banner />
             <ServiciosNew />
             <VMFacts />
-            <Review />
+            <GoogleReviews/>
             <Blogs />
             <Partners />
             <Footer />

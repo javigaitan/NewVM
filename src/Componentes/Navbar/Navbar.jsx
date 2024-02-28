@@ -14,13 +14,17 @@ function Navbar() {
     const [showExperienciasMenu, setShowExperienciasMenu] = useState(false);
     const [showAhorroMenu, setShowAhorroMenu] = useState(false);
     const [showServiceMenu, setShowServiceMenu] = useState(false);
-
     const [openSubMenu, setOpenSubMenu] = useState(null);
+
 
     const handleSubMenuToggle = (menu) => {
         setOpenSubMenu(openSubMenu === menu ? null : menu);
 
     }
+    const handleMenuClick = () => {
+        setShowMenu(false); // Esto ocultará el menú cuando se hace clic en cualquier enlace del menú
+    };
+
     return (
         <div className="dark:bg-gray-900">
             <div>
@@ -131,7 +135,7 @@ function Navbar() {
 
                     {/* Mobile nav */}
                     {/* For small screen */}
-                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}>
+            <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}>
                         <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
                                 <div>
@@ -148,7 +152,7 @@ function Navbar() {
                         <div className="mt-6 p-4">
                             <ul className="flex flex-col space-y-6">
                                 <li>
-                                    <Link to='/'>
+                                    <Link to='/'onClick={handleMenuClick}>
 
                                         <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Home
