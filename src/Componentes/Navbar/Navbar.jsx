@@ -178,7 +178,8 @@ function Navbar() {
                                         </a>
                                     </Link>
                                 </li>
-                                
+                                <Link to='/experiencias'>
+
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Experiencias
@@ -189,6 +190,9 @@ function Navbar() {
                                         </div>
                                     </a>
                                 </li>
+                                </Link>
+                                <Link to='/ahorro'>
+
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Financia tu viaje
@@ -199,7 +203,10 @@ function Navbar() {
                                         </div>
                                     </a>
                                 </li>
-                                <li>                                                                    <Link to='/servicios'>
+                                </Link>
+
+                                <li>
+                                    <Link to='/servicios'>
 
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     Servicios Extras
@@ -212,6 +219,7 @@ function Navbar() {
                                 </Link>
 
                                 </li>
+                                <Link to='/blogs'>
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Blog
@@ -222,6 +230,7 @@ function Navbar() {
                                         </div>
                                     </a>
                                 </li>
+                                </Link>
                             </ul>
                         </div>
 
