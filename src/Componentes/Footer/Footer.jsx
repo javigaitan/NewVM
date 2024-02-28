@@ -17,7 +17,7 @@ const Footer = () => {
                         <Link to='/'>
                         <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Inicio</a>
                         </Link>
-                        <Link to='/contacto'>
+                        <Link to='/contactanos'>
                         <a className="hover:text-secondaryTur2 text-base cursor-pointer leading-4 text-white">Contáctanos</a>
                         </Link>
                         <Link to='/'>

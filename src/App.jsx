@@ -21,6 +21,7 @@ import Arrival from "./Pages/PagesService/Arrival";
 import Rifas from "./Pages/Ahorro/Rifas";
 import MeCaso from "./Pages/Ahorro/MeCaso";
 import Referidos from "./Pages/Ahorro/Referidos";
+import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
 
 
 
@@ -53,6 +54,9 @@ function App() {
         <Route path="/financia-con-rifas" element={<Rifas />} />
         <Route path="/me-caso-con-viajar" element={<MeCaso />} />
         <Route path="/programa-referidos" element={<Referidos />} />
+        <Route path="/contactanos" element={<ContactanosNew />} />
+
+
 
 
 
