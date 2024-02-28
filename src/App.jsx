@@ -18,6 +18,9 @@ import PagesService from "./Pages/PagesService/PagesService";
 import Alojamientos from "./Pages/PagesService/Alojamientos";
 import Seguros from "./Pages/PagesService/Seguros";
 import Arrival from "./Pages/PagesService/Arrival";
+import Rifas from "./Pages/Ahorro/Rifas";
+import MeCaso from "./Pages/Ahorro/MeCaso";
+import Referidos from "./Pages/Ahorro/Referidos";
 
 
 function App() {
@@ -46,6 +49,11 @@ function App() {
         <Route path="/servicios-alojamientos" element={<Alojamientos />} />
         <Route path="/servicios-seguros" element={<Seguros />} />
         <Route path="/servicios-arrival-packages" element={<Arrival />} />
+        <Route path="/financia-con-rifas" element={<Rifas />} />
+        <Route path="/me-caso-con-viajar" element={<MeCaso />} />
+        <Route path="/programa-referidos" element={<Referidos />} />
+
+
 
         </Routes>
       </Router>

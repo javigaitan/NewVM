@@ -5,10 +5,10 @@ import BannerIMG from '../../assets/Img/experiencia.jpg'
 
 
 const Arrival = () => {
-  return (
-    <div>
-        <Navbar/>
-        <div className>
+    return (
+        <div>
+            <Navbar />
+            <div className>
                 <div className="flex justify-end items-center">
                     <img className="object-cover md:hidden  w-full h-60 opacity-50" src={BannerIMG} alt="background" />
                     <img className="hidden md:block object-cover  w-full h-56 lg:h-52 opacity-50" src={BannerIMG} alt="background" />
@@ -28,26 +28,37 @@ const Arrival = () => {
 
                         <div className="  w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
                             <h2 className="font-semibold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 mt-4">Arrival Packages para Irlanda
-</h2>
+                            </h2>
 
 
 
                             <p className=" font-normal text-base leading-6 text-gray-600 mt-7">Los primeros días en un destino nuevo pueden presentar muchas dudas e inquietudes. Por eso te ofrecemos un paquete de bienvenida y te acompañamos en tu llegada a Irlanda.</p>
 
 
-                            <div className='py-5'>
-                                <button className=" py-3 elementor-button bg-primaryVio text-white rounded-full text-base font-medium py-1 px-6 transition-all duration-300">
-                                    Solicita mas informacion
-                                </button>
-                            </div>
+
                         </div>
 
 
-                        {/* <!-- Preview Images Div For larger Screen--> */}
 
                         <div className=" w-3/4   sm:w-96 md:w-8/12  lg:w-6/12 flex lg:flex-row flex-col lg:gap-8 sm:gap-6 gap-4">
+                            {/* <!-- Aqui lo necesito al componente nuevo --> */}
+                            <div className="bg-white text-black p-4 rounded-lg shadow-lg">
+                                <h3 className="text-lg font-semibold mb-2">Tres opciones disponibles:</h3>
+                                <ul className="list-disc pl-5">
+                                    <li className="my-2 flex items-center"><span className="text-primaryVio mr-2">&#10003;</span>Premium</li>
+                                    <li className="my-2 flex items-center"><span className="text-primaryVio mr-2">&#10003;</span>Plus</li>
+                                    <li className="my-2 flex items-center"><span className="text-primaryVio mr-2">&#10003;</span>Premium</li>
 
-                            
+                                </ul>
+                                <div className='py-5'>
+                                    <button className=" py-3 elementor-button bg-primaryVio text-white rounded-full text-base font-medium py-1 px-6 transition-all duration-300">
+                                        Solicita mas informacion
+                                    </button>
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -56,9 +67,9 @@ const Arrival = () => {
             </div>
 
 
-        <Footer/>
-    </div>
-  )
+            <Footer />
+        </div>
+    )
 }
 
 export default Arrival
