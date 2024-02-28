@@ -4,7 +4,7 @@ const CardBlog = ({ foto, destino, fecha, titulo, resumen }) => {
   return (
     <div>
       <img className="w-full" src={foto} alt="Blog" /> {/* Usar la URL de la imagen proporcionada en el JSON */}
-      <div className="py-2 px-4 w-full flex justify-between bg-indigo-700">
+      <div className="py-2 px-4 w-full flex justify-between bg-primaryVio">
         <p className="text-sm text-white font-semibold tracking-wide">{destino}</p> {/* Mostrar el destino del blog */}
         <p className="text-sm text-white font-semibold tracking-wide">{fecha}</p> {/* Mostrar la fecha del blog */}
       </div>

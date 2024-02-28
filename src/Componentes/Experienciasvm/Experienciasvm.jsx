@@ -25,7 +25,7 @@ const Experienciasvm = () => {
 
     return (
         <div className='carousel-container'>
-            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Cuales son mis posibilidades? </h1>
+            <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">¿Cuáles son mis posibilidades? </h1>
 
             <CarouselProvider isIntrinsicHeight={true} totalSlides={3}>
                 <div className="lg:hidden px-5 xl:px-0 overflow-y-hidden">

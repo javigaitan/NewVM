@@ -63,7 +63,7 @@ function Navbar() {
                                         <button
                                             className="dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Quiero viajar!
+¡Quiero viajar!
                                         </button>
                                     </Link>
 
@@ -155,7 +155,7 @@ function Navbar() {
                                     <Link to='/'onClick={handleMenuClick}>
 
                                         <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Home
+                                            Inicio
                                             <div>
                                                 <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
@@ -182,8 +182,8 @@ function Navbar() {
 
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                        Experiencias
-                                        <div>
+                                    ¡Quiero viajar!
+                                                                            <div>
                                             <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
@@ -195,7 +195,7 @@ function Navbar() {
 
                                 <li>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                        Financia tu viaje
+                                    Financia tu viaje
                                         <div>
                                             <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />

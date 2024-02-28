@@ -23,7 +23,7 @@ const GoogleReviews = () => {
             <Slider {...settings}>
                 {reviewsData.map((review, index) => (
                     <div className="px-4 text-sm" key={index}>
-                        <Typography variant="p" className="mb-5 text-sm text-colorText md:text-5xl text-1xl">
+                        <Typography variant="p" className="mb-5  text-colorText md:text-5xl lg:text-lg"> {/* Modificación aquí */}
                             &quot;{review.comment}&quot;
                         </Typography>
                         <div className="flex justify-center">

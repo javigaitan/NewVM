@@ -8,7 +8,7 @@ const Blogs = () => {
         <div className="2xl:mx-auto 2xl:container lg:py-16 lg:px-40 xl:px-20 md:py-12 md:px-6 py-9 px-4">
             <div className="flex flex-col items-center justify-center">
                 <h1 className="text-4xl font-semibold leading-9 text-gray-800">Blog VM</h1>
-                <p className="text-base leading-6 text-center text-colorText sm:w-96 md:w-9/12 lg:w-5/12 mt-4">Entérate de las últimas noticias que nos trae la comunidad Vaga-Mundo.</p>
+                <p className="text-base leading-6 text-center text-colorText sm:w-96 md:w-9/12 lg:w-5/12 mt-4">Entérate de las últimas noticias que nos trae la comunidad</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-8 md:gap-6 gap-4 lg:mt-12 md:mt-9 mt-6">
                 <div className="relative flex items-center justify-center">
