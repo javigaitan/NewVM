@@ -57,7 +57,7 @@ const Nosotras = () => {
                         <div className="xl:w-4/6 md:w-1/2 w-full xl:pl-48">
 
                             <div className="w-full">
-                                <img src={FOTO} alt="Purple flowers on a book" className="md:w-full sm:w-1/2 w-full" />
+                                <img src={FOTO} alt="Equipo de VM en marruecos" className="md:w-full sm:w-1/2 w-full rounded-lg " />
 
                             </div>
                         </div>

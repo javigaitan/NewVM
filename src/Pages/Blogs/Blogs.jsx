@@ -12,7 +12,7 @@ const Blogs = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-8 md:gap-6 gap-4 lg:mt-12 md:mt-9 mt-6">
                 <div className="relative flex items-center justify-center">
-                    <img src={IrlandaInd} className='opacity-80' alt="Grupo de VM en Irlanda listo para el día de introducción" />
+                    <img src={IrlandaInd} className='w-80 h-auto rounded-lg opacity-80' alt="Grupo de VM en Irlanda listo para el día de introducción" />
                     <div className="absolute top-0 flex flex-col w-80 md:w-80 lg:w-80 xl:w-96 h-full items-center justify-between py-10">
                         <div className="flex items-center justify-center flex-col h-full">
                             <h2 className="xl:px-10 md:px-2 px-7 text-2xl font-semibold leading-normal text-center text-black">Induction Day</h2>
@@ -24,7 +24,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div className="relative flex items-center justify-center">
-                    <img src={Irlanda3}  className='opacity-80' alt="Grupo de 4 chicas de VM sosteniendo una bandera de la marca VM" />
+                    <img src={Irlanda3}  className='w-80 h-auto rounded-lg opacity-80' alt="Grupo de 4 chicas de VM sosteniendo una bandera de la marca VM" />
                     <div className="absolute top-0 flex flex-col w-80 md:w-80 lg:w-80 xl:w-96 h-full items-center justify-between py-10">
                         <div className="flex items-center justify-center flex-col h-full">
                             <h2 className="xl:px-10 md:px-2 px-7 text-2xl font-semibold leading-7 lg:leading-7 text-center text-black">Experiencia de Majo</h2>
@@ -36,7 +36,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div className="relative flex items-center justify-center">
-                    <img src={Blog} className='opacity-80' alt="Foto de playa con 2 chicas charlando" />
+                    <img src={Blog} className='w-80 h-auto rounded-lg opacity-80' alt="Foto de playa con 2 chicas charlando" />
                     <div className="absolute top-0 flex flex-col w-80 md:w-80 lg:w-80 xl:w-96 h-full items-center justify-between py-10">
                         <div className="flex items-center justify-center flex-col h-full">
                             <h2 className="xl:px-10 md:px-2 px-7 text-2xl font-semibold sm:w-auto leading-normal text-center text-black">Nuevo destino en Irlanda: Athlone</h2>

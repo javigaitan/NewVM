@@ -27,7 +27,7 @@ const PagesBlogs = () => {
           <div className="mt-12 lg:mt-24">
             <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
               <div>
-                <img className="w-full" src={MajoBlog} alt="computer" />
+                <img className="w-full rounded-lg" src={MajoBlog} alt="computer" />
                 <div className="py-4 px-8 w-full flex justify-between bg-primaryVio">
                   <p className="text-sm text-white font-semibold tracking-wide">Malta</p>
                   <p className="text-sm text-white font-semibold tracking-wide">29 de Marzo 2021</p>
