@@ -4,14 +4,15 @@ module.exports = withMT({
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
+      sans: ['Poppins', 'sans-serif', 'Gilroy'],
     },
     extend: {
       colors: {
-        primaryVio: '#4B0077',
-        secondaryTur: '#6EC1E4',
-        secondaryTur2: '#61E5BE',
+        primaryVio: '#60007F',
+        secondaryTur: '#00E2B8',
+        secondaryTur2: '#70ED00',
         colorText: '#707070',
+        colorWhite: '#FFFFFF', 
       },
     },
   },

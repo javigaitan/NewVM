@@ -1,0 +1,11 @@
+.rounded-bl-custom {
+    border-bottom-left-radius: 100px; 
+
+
+}
+
+
+.rounded-bl-custom-overlay {
+    border-bottom-left-radius: 100px;
+    background: rgba(0, 0, 0, 0.4); /* Ajusta el color y la opacidad según sea necesario */
+}

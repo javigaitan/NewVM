@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
-import Logo from "../../assets/Logotipo_vagamundo_RGB_v1-01.png";
+import Logo from "../../assets/Logos/LogoTurquesa.png";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
 
-
+ 
 
 function Navbar() {
     const [searchInput, setSearchInput] = useState(true);
@@ -15,6 +15,15 @@ function Navbar() {
     const [showAhorroMenu, setShowAhorroMenu] = useState(false);
     const [showServiceMenu, setShowServiceMenu] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownOpen(false);
+    };
 
 
     const handleSubMenuToggle = (menu) => {
@@ -30,7 +39,7 @@ function Navbar() {
             <div>
                 <div className="relative">
                     {/* For large screens */}
-                    <div className="relative z-10 bg-primaryVio px-6 py-2">
+                    <div className="relative z-10 bg-primaryVio px-7 py-6">
                         <div className="container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
@@ -42,40 +51,68 @@ function Navbar() {
                                 </div>
                             </h1>
 
-                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 text-white"
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 text-colorWhite"
                             >
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <button href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Nosotras
+                                        <button href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Nosotros
                                         </button>
                                     </Link>
                                 </li>
                                 
+                                <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <Link to='/experiencias'>
+                    <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                        ¡Quiero viajar!
+                    </button>
+                </Link>
 
+                {isDropdownOpen && (
+                    <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                    <Link to='/pais1' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-12 h-8 rounded-lg mr-3"/>
+                        <span className="text-primaryVio">Irlanda</span>
+                        <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-12 h-8 rounded-lg mr-3"/>
 
-                                <li
-                                    className="relative"
-                                >
-                                    <Link to='/experiencias'>
+                    </Link>
+                    <hr className="border-gray-300"/>
+                    <Link to='/pais2' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-12 h-8 rounded-lg mr-3"/>
+                        <span className="text-primaryVio">Malta</span>
+                        <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-12 h-8 rounded-lg mr-3"/>
 
-                                        <button
-                                            className="dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
-                                        >
-¡Quiero viajar!
-                                        </button>
-                                    </Link>
+                    </Link>
+                    <hr className="border-gray-300"/>
+                    <Link to='/pais3' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <span className="text-primaryVio">España</span>
+                        <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-12 h-8 rounded-lg mr-3"/>
 
+                    </Link>
+                    <hr className="border-gray-300"/>
+                    <Link to='/pais4' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <span className="text-primaryVio" >Francia</span>
+                        <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-12 h-8 rounded-lg mr-3"/>
 
+                    </Link>
+                    <hr className="border-gray-300"/>
+                    <Link to='/pais5' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <span className="text-primaryVio">Alemania</span>
+                        <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-12 h-8 rounded-lg mr-3"/>
 
-
-                                </li>
+                    </Link>
+                    </div>
+                )}
+            </li>
                                 <li
                                     className="relative"
                                 ><Link to='/ahorro'>
                                         <button
-                                            className="dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Financia tu viaje
                                         </button>
@@ -87,9 +124,9 @@ function Navbar() {
                                     <Link to='/servicios'>
 
                                         <button
-                                            className="dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Servicios Extras 
+                                            Otros Servicios 
                                         </button>
                                     </Link>
 
@@ -97,7 +134,7 @@ function Navbar() {
                                 </li>
                                 <li>
                                     <Link to='/blogs'>
-                                        <a href="javascript:void(0)" className="dark:text-white text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
 
                                         </a>
@@ -138,9 +175,7 @@ function Navbar() {
             <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}>
                         <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
-                                <div>
-
-                                </div>
+                            
                             </div>
                             <button onClick={() => setShowMenu(false)} aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                 <svg className="fill-stroke text-gray-800 dark:text-white" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,10 +189,10 @@ function Navbar() {
                                 <li>
                                     <Link to='/'onClick={handleMenuClick}>
 
-                                        <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Inicio
                                             <div>
-                                                <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </div>
@@ -168,10 +203,10 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            Nosotras
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                            Nosotros
                                             <div>
-                                                <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </div>
@@ -181,10 +216,10 @@ function Navbar() {
                                 <Link to='/experiencias'>
 
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     ¡Quiero viajar!
                                                                             <div>
-                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -194,10 +229,10 @@ function Navbar() {
                                 <Link to='/ahorro'>
 
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     Financia tu viaje
                                         <div>
-                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -208,10 +243,10 @@ function Navbar() {
                                 <li>
                                     <Link to='/servicios'>
 
-                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     Servicios Extras
                                         <div>
-                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
@@ -221,10 +256,10 @@ function Navbar() {
                                 </li>
                                 <Link to='/blogs'>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Blog
                                         <div>
-                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
