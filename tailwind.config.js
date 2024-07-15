@@ -4,7 +4,7 @@ module.exports = withMT({
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif', 'Gilroy'],
+      sans: ['Gilroy', 'sans-serif'],
     },
     extend: {
       colors: {

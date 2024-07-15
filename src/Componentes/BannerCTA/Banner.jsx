@@ -27,11 +27,11 @@ const Banner = () => {
                         ¡El mundo te espera!
                     </h1>
                     <h2 className="lg:text-4xl md:text-3xl text-2xl font-normal leading-snug text-white">
-                        Estudia y trabaja en el exterior
+                        Vive, estudia y trabaja en el extranjero
                     </h2>
 
                     <div className="inline-block py-8"> {/* Aumentar el padding */}
-                        <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium py-3 px-8 transition-all duration-300">
+                        <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                             Solicita tu cotización
                         </button>
                     </div>

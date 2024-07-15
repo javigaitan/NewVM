@@ -51,12 +51,12 @@ function Navbar() {
                                 </div>
                             </h1>
 
-                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 text-colorWhite"
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-colorWhite"
                             >
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <button href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
                                     </Link>
@@ -72,37 +72,37 @@ function Navbar() {
                 {isDropdownOpen && (
                     <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                     <Link to='/pais1' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                        <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-16 h-12 rounded-lg mr-3"/>
                         <span className="text-primaryVio">Irlanda</span>
-                        <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3"/>
 
                     </Link>
                     <hr className="border-gray-300"/>
                     <Link to='/pais2' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                        <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-16 h-12 rounded-lg mr-3"/>
                         <span className="text-primaryVio">Malta</span>
-                        <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3"/>
 
                     </Link>
                     <hr className="border-gray-300"/>
                     <Link to='/pais3' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                        <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-16 h-12 rounded-lg mr-3"/>
                         <span className="text-primaryVio">España</span>
-                        <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3"/>
 
                     </Link>
                     <hr className="border-gray-300"/>
                     <Link to='/pais4' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                        <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-16 h-12 rounded-lg mr-3"/>
                         <span className="text-primaryVio" >Francia</span>
-                        <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3"/>
 
                     </Link>
                     <hr className="border-gray-300"/>
                     <Link to='/pais5' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                        <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-16 h-12 rounded-lg mr-3"/>
                         <span className="text-primaryVio">Alemania</span>
-                        <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-12 h-8 rounded-lg mr-3"/>
+                        <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3"/>
 
                     </Link>
                     </div>
