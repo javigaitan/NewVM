@@ -11,7 +11,7 @@ module.exports = withMT({
         primaryVio: '#60007F',
         secondaryTur: '#00E2B8',
         secondaryTur2: '#70ED00',
-        colorText: '#707070',
+        colorText: '#606060',
         colorWhite: '#FFFFFF', 
       },
     },

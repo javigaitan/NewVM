@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Icon1 from '../../assets/Facts/Fact1.png';
-import Icon2 from '../../assets/Facts/2.png';
-import Icon3 from '../../assets/Facts/3.png';
-import Icon4 from '../../assets/Facts/4.png';
-import Icon5 from '../../assets/Facts/5.png';
+import Icon2 from '../../assets/Facts/Fact2.png';
+import Icon3 from '../../assets/Facts/Fact3.png';
+import Icon4 from '../../assets/Facts/Fact4.png';
+import Icon5 from '../../assets/Facts/Fact5.png';
 import IconPass from '../../assets/Facts/pasaporte.png';
 
 const VMFacts = () => {
@@ -32,18 +32,16 @@ const VMFacts = () => {
                         </div>
                     </div>
                     <img src={IconPass} alt="Icon Pass" className="absolute top-4 right-16 w-28 h-auto transform transition-transform duration-300 hover:scale-110" />
-                    </div>
-                <div className="mx-auto container md:-mt-28 -mt-20 flex justify-center items-center">
+                </div>
+                <div className="mx-auto container md:-mt-40 -mt-30 flex justify-center items-center"> {/* Ajustar márgenes superiores aquí */}
                     <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-2 gap-x-2 gap-y-3 lg:gap-x-6 md:gap-x-6 md:gap-y-6">
                         <div className="flex justify-center flex-col items-center">
                             <img src={Icon1} alt="Icon 1" className="w-full h-auto transform transition-transform duration-300 hover:scale-110" />
                         </div>
                         <div className="flex justify-center flex-col items-center relative">
-    <img src={Icon2} alt="Icon 2" className="w-full h-auto transform transition-transform duration-300 hover:scale-110" />
-    <h2 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center text-semibold text-primaryVio text-sm md:text-base p-8 ">
-        Acompañamiento personalizado, integral y gratuito durante todo el proceso.
-    </h2>
-</div>
+                            <img src={Icon2} alt="Icon 2" className=" text-bold w-full h-auto transform transition-transform duration-300 hover:scale-110" />
+                            
+                        </div>
                         <div className="flex justify-center flex-col items-center">
                             <img src={Icon3} alt="Icon 3" className="w-full h-auto transform transition-transform duration-300 hover:scale-110" />
                         </div>
