@@ -13,6 +13,7 @@ module.exports = withMT({
         secondaryTur2: '#70ED00',
         colorText: '#606060',
         colorWhite: '#FFFFFF', 
+        colorGrey: '#E9E0D6',
       },
     },
   },

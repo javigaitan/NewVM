@@ -11,10 +11,10 @@ import GoogleReviews from '../../Componentes/Review/GooglReviews'
 const Landing = () => {
     return (
         <>
-            <Navbar />
+            {/*<Navbar />
             <Banner />
             <ServiciosNew />
-            <VMFacts />
+            <VMFacts />*/}
             <GoogleReviews/>
             <Blogs />
             <Partners />
