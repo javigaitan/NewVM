@@ -14,9 +14,9 @@ const Landing = () => {
             {/*<Navbar />
             <Banner />
             <ServiciosNew />
-            <VMFacts />*/}
+            <VMFacts />
             <GoogleReviews/>
-            <Blogs />
+            <Blogs />*/}
             <Partners />
             <Footer />
         </>
