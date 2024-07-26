@@ -4,8 +4,8 @@ import './BannerCTA.css'; // Asegúrate de que la ruta sea correcta
 
 const Banner = () => {
     return (
-      <div className="lg:max-w-[1440px] relative inset-0 md:max-w-[1440px] max-w-[800px] mx-auto">
-      <div className="relative">
+      <div className="lg:max-w-[1440px] relative inset-0 md:max-w-[1440px] max-w-[800px] mx-auto text-start" >
+      <div className="relative" >
           <img
               src={BGR}
               className="w-full h-auto object-cover lg:h-[500px] lg:block md:hidden hidden rounded-bl-custom"
@@ -22,7 +22,8 @@ const Banner = () => {
               className="lg:hidden md:hidden block rounded-bl-custom"
               alt="Banner Background"
           />
-                <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4"> {/* Ajuste aquí */}
+                <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4" style={{ paddingLeft: '55px', left: '50px' }}
+                > 
                     <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold leading-tight text-white">
                         ¡El mundo te espera!
                     </h1>

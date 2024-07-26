@@ -1,5 +1,6 @@
 import React from 'react';
-import BGF from "../../assets/Textura/Group 127.png";
+import { Link } from 'react-router-dom';
+import BGF from "../../assets/Textura/footer2.png";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
@@ -14,8 +15,9 @@ const Footer = () => {
         alt="Footer background image"
         className="object-cover w-full h-[850px] absolute inset-0 z-0 "
       />
-      <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center"> 
-      <div className="flex space-x-4 pt-30">
+      <div className="p-6  text-center absolute inset-0 z-10 flex flex-col items-center pt-30 
+        " style={{paddingTop: '55px'}}> 
+      <div className="flex space-x-4 pt-50">
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <img src={INTA} alt="Instagram icon" className="w-16 h-16" />
           </a>
@@ -32,18 +34,40 @@ const Footer = () => {
             <img src={TIK} alt="TikTok icon" className="w-16 h-16" />
           </a>
         </div>
-        <div className="text-center relative">
-  <div className="flex flex-col items-center mt-20">
-    <div className="text-white text-center">
-      <p className="text-2xl font-bold">Opción 1</p>
-      <hr className="w-11/12 border-t border-green-500" />
-      <p className="text-2xl font-semibold">n 2</p>
-      <hr className="w-11/12 border-t border-green-500" />
-      {/* ... otras opciones ... */}
+        <div className="text-center relative " style={{ paddingLeft: '460px' }} >
+      <div className="flex flex-col items-center mt-60">
+        <div className="w-full">
+          <ul className="menu-list">
+            <li className="menu-item">
+              <Link to="/" className="text-white">
+                <p className="text-2xl font-bold">Inicio</p>
+                <hr className="line" />
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/contact" className="text-white">
+                <p className="text-2xl font-semibold">Contáctanos</p>
+                <hr className="line" />
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/terms" className="text-white">
+                <p className="text-2xl font-semibold">Términos y condiciones</p>
+                <hr className="line" />
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/privacy" className="text-white">
+                <p className="text-2xl font-semibold">Políticas de privacidad</p>
+                <hr className="line" />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
       
-  </div>
+  
 
       </div>
     </div>

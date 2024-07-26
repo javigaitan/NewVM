@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import Idiomas from '../../assets/ServiciosVM/curso idioma.png';
-import WyS from '../../assets/ServiciosVM/estudio y trabajo.png';
-import universitarios from '../../assets/ServiciosVM/carreras_posgrados.png';
+import WyS from '../../assets/ServiciosVM/estudio y trabajo en el exterior.png';
+import universitarios from '../../assets/ServiciosVM/posgrados.png';
 
 const ServiciosNew = () => {
     useEffect(() => {

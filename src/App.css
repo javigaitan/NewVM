@@ -60,3 +60,12 @@ body {
   transform: scale(1.1);
 }
 
+.menu-item { /* Agregamos una clase para mejor organización */
+  text-align: start; /* Centramos el texto horizontalmente */
+
+  .line { /* Clase para la línea */
+    width: 100%; /* Que la línea ocupe todo el ancho */
+    border-top: 1px solid green;
+    margin-top: 10px; /* Espacio entre el texto y la línea */
+  }
+}
