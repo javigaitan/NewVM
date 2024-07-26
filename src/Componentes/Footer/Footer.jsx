@@ -37,7 +37,7 @@ const Footer = () => {
     <div className="text-white text-center">
       <p className="text-2xl font-bold">Opción 1</p>
       <hr className="w-11/12 border-t border-green-500" />
-      <p className="text-2xl font-semibold">Opción 2</p>
+      <p className="text-2xl font-semibold">n 2</p>
       <hr className="w-11/12 border-t border-green-500" />
       {/* ... otras opciones ... */}
     </div>
