@@ -39,25 +39,25 @@ const Footer = () => {
         <div className="w-full">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/" className="text-white">
+              <Link to="/" className="text-colorWhite">
                 <p className="text-2xl font-bold">Inicio</p>
                 <hr className="line" />
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/contact" className="text-white">
+              <Link to="/contact" className="text-colorWhite">
                 <p className="text-2xl font-semibold">Contáctanos</p>
                 <hr className="line" />
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/terms" className="text-white">
+              <Link to="/terms" className="text-colorWhite">
                 <p className="text-2xl font-semibold">Términos y condiciones</p>
                 <hr className="line" />
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/privacy" className="text-white">
+              <Link to="/privacy" className="text-colorWhite">
                 <p className="text-2xl font-semibold">Políticas de privacidad</p>
                 <hr className="line" />
               </Link>
