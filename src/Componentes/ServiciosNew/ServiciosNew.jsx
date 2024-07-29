@@ -35,7 +35,7 @@ const ServiciosNew = () => {
                         </div>
                         <div className="absolute bottom-0 left-0 w-full">
                             <Link to='/work&study'>
-                                <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
                                     Cursos de Idiomas
                                 </button>
                             </Link>
@@ -53,7 +53,7 @@ const ServiciosNew = () => {
                             />
                             <div className="absolute bottom-0 left-0 w-full">
                                 <Link to='/viajes-grupales'>
-                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
                                         Estudio y trabajo en el exterior
                                     </button>
                                 </Link>
@@ -72,7 +72,7 @@ const ServiciosNew = () => {
                             />
                             <div className="absolute bottom-0 left-0 w-full">
                                 <Link to='/carreras-universitarias'>
-                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
                                         Carreras y posgrados universitarios
                                     </button>
                                 </Link>

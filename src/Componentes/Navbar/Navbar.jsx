@@ -78,7 +78,7 @@ function Navbar() {
                                         <Link to='/pais1' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                           <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
                                           <span className="text-primaryVio">Irlanda</span>
-                                          <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-12 h-8 rounded-lg mr-3" />
+                                          <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                         </Link>
 
                                             <hr className="border-gray-300" />
@@ -130,7 +130,7 @@ function Navbar() {
                                         <button
                                             className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Otros Servicios
+                                            Otros servicios
                                         </button>
                                     </Link>
 

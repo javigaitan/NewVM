@@ -1,0 +1,32 @@
+/* FormContactanos.css */
+.relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+  
+  .from-secondaryTur {
+    --tw-gradient-from: #00e2b8;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 226, 184, 0));
+  }
+  
+  .to-secondaryTur2 {
+    --tw-gradient-to: #70ed00;
+  }
+  
+  .rounded-t-full {
+    border-radius: 50% 50% 0 0;
+  }
+  
+  /* FormContactanos.css */
+.bg-white {
+    width: 100% !important; /* Fuerza el ancho al 100% */
+    max-width: 100% !important; /* Asegúrate de que no haya un límite de ancho máximo */
+  }
+  

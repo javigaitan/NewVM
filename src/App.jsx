@@ -43,7 +43,6 @@ function App() {
         <Route path="/cursos-idiomas" element={<CursosIdiomas />} />
         <Route path="/carreras-universitarias" element={<Universidades />} />
         <Route path="/comunidad" element={<ComunidadVm />} />
-        <Route path="/viajes-grupales" element={<ViajesGrupales />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/ahorro" element={<Ahorro />} />
         <Route path="/blogs" element={<PagesBlogs />} />

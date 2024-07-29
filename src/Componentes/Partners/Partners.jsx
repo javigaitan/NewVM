@@ -2,18 +2,21 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import ALAN from '../../assets/Partners/Group.png'
 import ASSIST from '../../assets/Partners/Group (1).png';
 import ASSISTCARD from '../../assets/Partners/Group (2).png';
-import MAPA from '../../assets/Partners/Group (3).png';
-import PLANET from '../../assets/Partners/Group (4).png';
-import IMG2 from '../../assets/Partners/Group (5).png';
-import IMG3 from '../../assets/Partners/Group (6).png';
-import IMG4 from '../../assets/Partners/Group (7).png';
-import IMG5 from '../../assets/Partners/Group (8).png';
-import IMG6 from '../../assets/Partners/Group (9).png';
-import IMG7 from '../../assets/Partners/Group (10).png';
-import IMG8 from '../../assets/Partners/Group (11).png';
-import IMG9 from '../../assets/Partners/Group (12).png';
+import ERASMUSU from '../../assets/Partners/Group (3).png';
+import HOLAFLY from '../../assets/Partners/Group (4).png';
+import HOLASIM from '../../assets/Partners/Group (5).png';
+import MONEY from '../../assets/Partners/Group (6).png';
+import PAMPA from '../../assets/Partners/Group (7).png';
+import PAX from '../../assets/Partners/Group (8).png';
+import PLANET01 from '../../assets/Partners/Group (9).png';
+import AMERICANSHOP from '../../assets/Partners/Group (10).png';
+import SPOTHOME from '../../assets/Partners/Group (11).png';
+import TWC from '../../assets/Partners/Group (12).png';
+import WORD from '../../assets/Partners/Group 106.png';
+
 
 const Partners = () => {
   const settings = {
@@ -57,6 +60,11 @@ const Partners = () => {
 
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <Slider {...settings}>
+        <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="flex justify-center items-center">
+              <img src={ALAN} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            </div>
+          </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={ASSIST} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
@@ -69,54 +77,63 @@ const Partners = () => {
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={PLANET} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={ERASMUSU} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={MAPA} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={HOLAFLY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG2} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={HOLASIM} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG3} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={MONEY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG4} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={PAMPA} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG5} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={PAX} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG6} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={PLANET01} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG7} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={AMERICANSHOP} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG8} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={SPOTHOME} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            </div>
+          </div>
+    
+          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="flex justify-center items-center">
+              <img src={TWC} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
-              <img src={IMG9} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+              <img src={WORD} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          
+          
+          
         </Slider>
       </div>
     </div>
