@@ -34,7 +34,7 @@ const ServiciosNew = () => {
                             />
                         </div>
                         <div className="absolute bottom-0 left-0 w-full">
-                            <Link to='/work&study'>
+                            <Link to='/curso-de-idiomas'>
                                 <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
                                     Cursos de Idiomas
                                 </button>
@@ -52,7 +52,7 @@ const ServiciosNew = () => {
                                 className="w-full h-auto rounded-lg " 
                             />
                             <div className="absolute bottom-0 left-0 w-full">
-                                <Link to='/viajes-grupales'>
+                                <Link to='/work&study'>
                                     <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
                                         Estudio y trabajo en el exterior
                                     </button>
