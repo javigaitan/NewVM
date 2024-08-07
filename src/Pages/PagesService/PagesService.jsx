@@ -5,6 +5,16 @@ import Logo from "../../assets/Logos/LogoVioleta.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import Icons1 from '../../assets/OtrosServicios/Icono1.png';
 import Seguros from '../../assets/OtrosServicios/Asistencia médica en viajes 1.png';
+import Pass from '../../assets/OtrosServicios/Tickets aereos.png'
+import Icons2 from '../../assets/OtrosServicios/Iconspass.png';
+import Icons3 from '../../assets/OtrosServicios/Icons3.png';
+import Resi from '../../assets/OtrosServicios/Residencia VM 2024.png';
+import Icons4 from '../../assets/OtrosServicios/Icons4.png';
+import TRABAJO from '../../assets/OtrosServicios/Job Workshop (documento) 1.png';
+import Icons5 from '../../assets/OtrosServicios/Icons5.png';
+import Grupal from '../../assets/OtrosServicios/viajes grupales.png';
+import Footer from "../../Componentes/Footer/Footer";
+
 
 
 
@@ -38,7 +48,7 @@ const PagesService = () => {
     };
 
     return (
-        <div className="dark:bg-gray-900">
+        <div className="dark:bg-gray-900 items-center">
             <div>
                 <div className="relative">
                     {/* For large screens */}
@@ -283,8 +293,9 @@ const PagesService = () => {
 
                     </div>
                 </div>
+
                 <div className="w-full bg-secondariVerde px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-3xl font-bold text-primaryVio dark:text-white mb-4 pt-14">Otros Servicios</h1>
+                    <h1 className="text-3xl font-bold text-primaryVio dark:text-white mb-10 pt-14">Otros Servicios</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-primaryVio dark:text-primaryVio pb-5">
                             En Vaga-Mundo nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones 360º diseñadas para maximizar su experiencia de viaje.
@@ -292,37 +303,204 @@ const PagesService = () => {
                     </div>
                 </div>
 
-                <div className="border-2 border-gray-300 rounded-lg flex p-4"> {/* Agregado padding al div completo */}
-    {/* Mitad izquierda */}
-    <div className="w-1/2 flex flex-col justify-start"> {/* Alineado al inicio */}
-        <img src={Icons1} alt="Descripción de la imagen" className="w-24 h-auto rounded-lg mb-2 mx-auto" />
-        <h2 className="text-2xl font-bold text-primaryVio text-left mb-2">Seguros y asistencias al viajero</h2> {/* Cambiado a text-left */}
-        <p className="text-lg text-gray-700 text-left"> {/* Cambiado a text-left */}
-            Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.
-
-            Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida 
-            y asistencia médica 24/7 en tu mismo idioma.
-
-            Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
-        </p>
-        <button className="mt-4 bg-primaryVio text-white px-4 py-2 rounded hover:bg-secondaryVio">
-            Botón
-        </button>
-    </div>
-    {/* Mitad derecha */}
-    <div className="w-1/2">
-        <img src={Seguros} alt="Descripción de la imagen derecha" className="w-434 h-804 object-cover rounded-r-lg" /> {/* Ajustado a h-804 */}
-    </div>
-</div>
-
-
-
-
-
-
             </div>
 
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-12">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
+                        <div>
+                            <img src={Icons1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Seguros y asistencias al viajero</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.
+                                <br />
+                                <br />
+                                Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida
+                                y asistencia médica 24/7 en tu mismo idioma.
+                                <br />
+                                <br />
+                                Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
+                            </p>
+                        </div>
+                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+                        <img src={Seguros} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-12">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
+                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
+
+                        <div>
+                            <img src={Icons2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Tickets aéreos, alquiler de autos, atracciones y mucho más.</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Una de los primeros pasos que realizamos para materializar el viaje de nuestros sueños es la compra del boleto de avión, ya sea que viajes solo, acompañado, en familia o con amigos.
+                                <br />
+                                <br />
+
+
+                                Por eso, en Vaga-Mundo tenemos las mejores opciones en tickets aéreos, alquileres de auto, atracciones y mucho más, dentro o fuera de Europa.
+
+                            </p>
+                        </div>
+                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-12">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
+                        <div>
+                            <img src={Icons3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Alojamientos propios y externos</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Un gran miedo que enfrentamos al momento de vivir una experiencia en el exterior es el saber dónde nos alojaremos.
+                                <br />
+                                <br />
+
+
+                                Por eso, en Vaga-Mundo contamos con alojamiento propio en Dublín, Irlanda para que nuestros estudiantes se sientan como en casa, una vez arribados a la isla verde.
+                                <br />
+                                <br />
+
+                                Asimismo, tanto en Irlanda como en otros destinos del mundo tenemos convenios con partners como pueden ser alojamientos estudiantiles, host family o las mismas escuelas de inglés, para que nuestros estudiantes se sientan cómodos.
+
+                            </p>
+                        </div>
+                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+                        <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-12">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
+                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+                        <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
+
+                        <div>
+                            <img src={Icons4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programas de inserción laboral</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Una experiencia de estudio en el extranjero se termina de resignificar si a esta le sumamos una experiencia laboral.
+                                <br />
+                                <br />
+
+                                Por eso, desde Vaga-Mundo, además de los talleres que brindamos de forma gratuita para ayudar a nuestros estudiantes a conseguir empleo en Europa, ofrecemos este programa de inserción laboral.
+                                <br />
+                                <br />
+
+                                La propuesta consiste en un diagnóstico situacional del aplicante para poder ofrecer una eficiente proximidad con el mercado laboral postulante. El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.
+
+                            </p>
+                        </div>
+                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-12 pb-30">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
+                        <div>
+                            <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Viajes grupales y actividades en comunidad</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                En Vaga-Mundo sabemos la importancia de hacer comunidad en los diferentes destinos y una forma de mantener vivo este espíritu son los viajes grupales.
+                                Ya sea una escapada de fin de semana al interior de los países donde están estudiando, o bien un viaje a otro continente, como puede ser conocer la multisensorial Marruecos.
+                                <br />
+                                <br />
+
+
+                                En Vaga-Mundo siempre estamos planificando una próxima experiencia viajera en comunidad.
+                                <br />
+                                <br />
+
+
+                                Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí.
+
+                            </p>
+                        </div>
+                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+                        <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+
+
+            <Footer />
         </div>
+
 
     )
 }
