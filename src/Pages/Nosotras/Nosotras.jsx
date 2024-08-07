@@ -21,7 +21,7 @@ const Nosotras = () => {
         <div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container relative z-10">
           <div className="md:flex items-center justify-between w-full">
             <div className="w-full text-left mb-8">
-              <h1 className="text-4xl b-10 pb-10 font-bold">Sobre nosotros</h1>
+              <h1 className="text-4xl b-10 pb-10 font-bold text-primaryVio">Sobre nosotros</h1>
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
