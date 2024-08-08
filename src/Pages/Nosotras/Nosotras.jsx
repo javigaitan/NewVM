@@ -16,7 +16,7 @@ const Nosotras = () => {
           src={LINEAPUNTEADA}
           alt="Línea punteada"
           className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
-          style={{ height: '94%', width: '97%' }}
+          style={{ height: '96%', width: '97%' }}
         />
         <div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container relative z-10">
           <div className="md:flex items-center justify-between w-full">
@@ -26,7 +26,7 @@ const Nosotras = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0" >
-              <p className="text-lg text-primaryVio" >Somos una agencia de turismo educativo de origen latino pensada para <strong>latinos</strong> con más de <strong>7 años</strong> de experiencia.</p>
+              <p className="text-xl text-primaryVio" >Somos una agencia de turismo educativo de origen latino pensada para <strong>latinos</strong> con más de <strong>7 años</strong> de experiencia.</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -49,13 +49,13 @@ const Nosotras = () => {
     paddingRight: '40px',
     borderRightWidth: '40px'
   }}>
-  <p className="text-lg text-primaryVio">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
+  <p className="text-xl text-primaryVio">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
 </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-lg text-primaryVio">Nuestra comunidad ya suma <strong>+2.500 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
+              <p className="text-xl text-primaryVio">Nuestra comunidad ya suma <strong>+2.500 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -75,7 +75,7 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-lg text-primaryVio">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
+              <p className="text-xl text-primaryVio">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
             </div>
           </div>
 
@@ -90,7 +90,7 @@ const Nosotras = () => {
                     className="absolute top-0 left-0 w-full h-full"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/KEfaVKVG9OU?si=VbyUGB1ZRBGaExWv"
+                    src="https://www.youtube.com/embed/pqbzDDw02D4?si=Ge0wZC7mIr02fI8t"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

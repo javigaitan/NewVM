@@ -456,7 +456,7 @@ const PagesService = () => {
             {/* Fin de los contenedores */}
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-12 pb-30">
+            <div className="dark:bg-[#F2F2F2] pt-12 pb-10">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>

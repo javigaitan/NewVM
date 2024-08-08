@@ -75,14 +75,14 @@ function Navbar() {
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                        <Link to='/pais1' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
+                                        <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                           <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
                                           <span className="text-primaryVio">Irlanda</span>
                                           <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                         </Link>
 
                                             <hr className="border-gray-300" />
-                                            <Link to='/pais2' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
                                                 <span className="text-primaryVio">Malta</span>
                                                 <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />

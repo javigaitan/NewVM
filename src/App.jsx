@@ -22,6 +22,7 @@ import Rifas from "./Pages/Ahorro/Rifas";
 import MeCaso from "./Pages/Ahorro/MeCaso";
 import Referidos from "./Pages/Ahorro/Referidos";
 import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
+import DestinoIrlanda from "./Componentes/Destinos/DestinoIrlanda";
 
 
 
@@ -54,10 +55,7 @@ function App() {
         <Route path="/me-caso-con-viajar" element={<MeCaso />} />
         <Route path="/programa-referidos" element={<Referidos />} />
         <Route path="/contactanos" element={<ContactanosNew />} />
-
-
-
-
+        <Route path="/destino-irlanda" element={<DestinoIrlanda />} />
 
         </Routes>
       </Router>
