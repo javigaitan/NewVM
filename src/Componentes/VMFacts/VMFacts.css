@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .facts-container  {
+      background: #60007F; /* Violeta sólido para pantallas más pequeñas */
+    }
+  
+    .facts-container img[src*='pasaporte.png'] {
+      display: none; /* Ocultar imagen del pasaporte en pantallas móviles */
+    }
+  }

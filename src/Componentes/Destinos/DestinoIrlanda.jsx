@@ -22,7 +22,7 @@ const DestinoIrlanda = () => {
             <div className="relative">
                 <img
                     src={BannerIrlanda}
-                    className="w-full h-auto object-cover lg:h-[500px] lg:block md:hidden hidden rounded-bl-custom"
+                    className="w-full h-auto object-cover lg:h-[500px] lg:block md:hidden hidden rounded-bl-custom  "
                     alt="Banner Background"
                 />
                 <div className="w-full h-full bg-black opacity-30 absolute top-0 left-0 rounded-bl-custom" />
@@ -127,7 +127,7 @@ const DestinoIrlanda = () => {
                     </ul>
                 </div>
             </div>
-            <div className="bg-primaryVio  h-24">
+            <div className="bg-primaryVio opacity-5 h-24">
     <h1>
         fondo
     </h1>

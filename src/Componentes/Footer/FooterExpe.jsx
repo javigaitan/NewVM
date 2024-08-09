@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/footer2.png";
+import BGF from "../../assets/Textura/footerExp.png";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
@@ -40,25 +40,25 @@ const Footer = () => {
               <ul className="menu-list">
                 <li className="menu-item">
                   <Link to="/" className="text-colorWhite">
-                    <p className="text-2xl font-bold hover:text-secondaryTur2 ">Inicio</p>
+                    <p className="text-2xl font-bold">Inicio</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/contact" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Contáctanos</p>
+                    <p className="text-2xl font-semibold">Contáctanos</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Términos y condiciones</p>
+                    <p className="text-2xl font-semibold">Términos y condiciones</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/privacy" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Políticas de privacidad</p>
+                    <p className="text-2xl font-semibold">Políticas de privacidad</p>
                     <hr className="line" />
                   </Link>
                 </li>

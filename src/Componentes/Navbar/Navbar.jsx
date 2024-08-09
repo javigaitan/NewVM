@@ -18,6 +18,10 @@ function Navbar() {
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
+    };
+
     const handleMouseEnter = () => {
         setDropdownOpen(true);
     };
@@ -64,7 +68,7 @@ function Navbar() {
                                 </li>
 
                                 <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <Link to='/experiencias'>
+                                    <Link to='/not-found'>
                                         <div className="flex items-center">  
                                             <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                                 ¡Quiero viajar!
@@ -145,6 +149,10 @@ function Navbar() {
                                     </Link>
                                 </li>
                             </ul>
+
+
+
+
                             <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
 
                                 <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
@@ -217,19 +225,85 @@ function Navbar() {
                                         </a>
                                     </Link>
                                 </li>
-                                <Link to='/experiencias'>
+                                 <Link to='/experiencias'>
+                <li>
+                    <a
+                        href="javascript:void(0)"
+                        className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+                        onClick={toggleDropdown}
+                    >
+                        ¡Quiero viajar!
+                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                        <div>
+                            <svg
+                                className="fill-stroke text-black dark:text-colorWhite"
+                                width={12}
+                                height={12}
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M4.5 3L7.5 6L4.5 9"
+                                    stroke="currentColor"
+                                    strokeWidth="0.75"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+            </Link>
 
-                                    <li>
-                                        <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                                            ¡Quiero viajar!
-                                            <div>
-                                                <svg className="fill-stroke text-black dark:text-colorWhite" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </Link>
+            {isDropdownOpen && (
+                <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                    <Link to='/destino-irlanda' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img
+                            src="/src/assets/PaisesDesplegables/BanderaIrlanda.png"
+                            alt="Bandera de Irlanda"
+                            className="w-10 h-6 rounded-lg mr-3"
+                        />
+                        <span className="text-primaryVio">Irlanda</span>
+                    </Link>
+                    <hr className="border-gray-300" />
+                    <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img
+                            src="/src/assets/PaisesDesplegables/BanderaMalta.png"
+                            alt="Bandera de Malta"
+                            className="w-10 h-6 rounded-lg mr-3"
+                        />
+                        <span className="text-primaryVio">Malta</span>
+                    </Link>
+                    <hr className="border-gray-300" />
+                    <Link to='/pais3' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img
+                            src="/src/assets/PaisesDesplegables/BanderaEspa.png"
+                            alt="Bandera de España"
+                            className="w-10 h-6 rounded-lg mr-3"
+                        />
+                        <span className="text-primaryVio">España</span>
+                    </Link>
+                    <hr className="border-gray-300" />
+                    <Link to='/pais4' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img
+                            src="/src/assets/PaisesDesplegables/BanderaFrancia.png"
+                            alt="Bandera de Francia"
+                            className="w-10 h-6 rounded-lg mr-3"
+                        />
+                        <span className="text-primaryVio">Francia</span>
+                    </Link>
+                    <hr className="border-gray-300" />
+                    <Link to='/pais5' className="flex items-center px-4 py-3 hover:bg-gray-100">
+                        <img
+                            src="/src/assets/PaisesDesplegables/BanderaAlemani.png"
+                            alt="Bandera de Alemania"
+                            className="w-10 h-6 rounded-lg mr-3"
+                        />
+                        <span className="text-primaryVio">Alemania</span>
+                    </Link>
+                </div>
+            )}
                                 <Link to='/ahorro'>
 
                                     <li>

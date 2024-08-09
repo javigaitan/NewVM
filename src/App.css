@@ -69,3 +69,10 @@ body {
     margin-top: 10px; /* Espacio entre el texto y la línea */
   }
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  #root {
+    background-size: 90%; /* Ajusta el tamaño del fondo para móviles */
+  }
+}

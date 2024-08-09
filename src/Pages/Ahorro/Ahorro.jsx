@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
+import ScrollReveal from 'scrollreveal';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import Ahorro1 from '../../assets/Ahorro/Ahorro1.png';
@@ -42,24 +43,55 @@ const Ahorro = () => {
         setShowMenu(false); // Esto ocultará el menú cuando se hace clic en cualquier enlace del menú
     };
 
+    useEffect(() => {
+        ScrollReveal().reveal('.card', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.item', {
+            delay: 300,
+            distance: '50px',
+            origin: 'top',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.text', {
+            delay: 300,
+            distance: '50px',
+            origin: 'left',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+
+    }, []);
+
     return (
-        <div className="dark:bg-gray-900 items-center">
+        <div className=" dark:bg-gray-900 items-center">
             <div>
                 <div className="relative">
                     {/* For large screens */}
-                    <div className="relative z-10 bg-primaryVio px-7 py-6">
+                    <div className=" relative z-10 bg-primaryVio px-7 py-6">
                         <div className="container mx-auto flex items-center justify-between pb-12">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
                                     <Link to='/'>
 
-                                        <img src={Logo} alt="Logo" className="h-auto w-24 md:w-auto md:h-auto mr-3" />
+                                        <img src={Logo} alt="Logo" className="item h-auto w-24 md:w-auto md:h-auto mr-3" />
                                     </Link>
 
                                 </div>
                             </h1>
 
-                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-colorWhite"
+                            <ul className="item hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-colorWhite"
                             >
                                 <li>
                                     <Link to='/nosotras'>
@@ -289,7 +321,7 @@ const Ahorro = () => {
                     </div>
                 </div>
 
-                <div className="w-full bg-primaryVio px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
+                <div className="text w-full bg-primaryVio px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
                     <h1 className="text-3xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">Financia tu viaje</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-colorWhite dark:text-primaryVio pb-5">
@@ -301,7 +333,7 @@ const Ahorro = () => {
             </div>
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-12">
+            <div className="card dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>
@@ -336,7 +368,7 @@ const Ahorro = () => {
 
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-12">
+            <div className=" card dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
                         <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
@@ -375,7 +407,7 @@ const Ahorro = () => {
             {/* Fin de los contenedores */}
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-12">
+            <div className="card dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>
@@ -405,7 +437,7 @@ const Ahorro = () => {
             </div>
             {/* Fin de los contenedores */}
             {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-12 mb-10"> 
+<div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
         <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
             <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />

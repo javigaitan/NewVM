@@ -6,6 +6,7 @@ import Icon3 from '../../assets/Facts/Fact3.png';
 import Icon4 from '../../assets/Facts/Fact4.png';
 import Icon5 from '../../assets/Facts/Fact5.png';
 import IconPass from '../../assets/Facts/pasaporte.png';
+import './VMFacts.css'; 
 
 const VMFacts = () => {
     useEffect(() => {

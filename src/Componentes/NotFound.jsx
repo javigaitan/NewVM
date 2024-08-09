@@ -1,35 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Error404 from '../assets/Textura/404error.jpg';
+
 
 const NotFound = () => {
 
     return (
         <div>
-            <div className="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
-                <div className="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
-                    <div className="relative">
-                        <div className="absolute">
-                            <div className>
-                                <h1 className="my-2 text-gray-800 font-bold text-2xl">
-                                    Parece que has encontrado la
-                                    puerta hacia la gran nada
-                                </h1>
-                                <p className="my-2 text-gray-800">¡Lo siento por eso! Por favor visita nuestra página de inicio para llegar a donde necesitas ir.</p>
-                                <Link to='/'>
-                                <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">¡Llévame allí!</button>
-                                </Link>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
-                </div>
+           <div className="card dark:bg-[#F2F2F2] pt-12 pb-10 rounded-lg">
+    <div className="h-screen pb-8 mb-32 rounded-lg"> {/* Ajusté mb-32 para más espacio */}
+        <div className="flex items-center justify-center py-12">
+            <div className="bg-white border rounded-md flex items-center justify-center mx-4 md:w-2/3 ">
+                <div className="flex flex-col items-center py-16 ">
+                    <img className="px-4 hidden md:block" src={Error404} alt="" />
+                    <img className="md:hidden" src={Error404} alt="" />
+                    <h1 className="px-4 pt-8 pb-4 text-center text-5xl font-bold leading-10 text-gray-800">OOPS!</h1>
+                    <p className="px-4 pb-10 text-base leading-none text-center text-gray-600">¡Ni Google Maps nos encuentra aquí! ¿Intentamos de nuevo?</p>
+                    <Link to='/'>
+                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Volver a Home
+                            </button>             
+                            </Link> </div>
             </div>
         </div>
+        </div>
+        </div>
+        </div>
+
     );
 };
 

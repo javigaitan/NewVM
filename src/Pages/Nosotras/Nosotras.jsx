@@ -84,22 +84,20 @@ const Nosotras = () => {
               Conoce a nuestra Comunidad
             </h1>
             <div className="flex justify-center mt-8">
-              <div className="w-full md:w-2/3 lg:w-1/2">
-                <div className="relative overflow-hidden pb-[56.25%] h-0">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/pqbzDDw02D4?si=Ge0wZC7mIr02fI8t"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
+  <div className="w-full md:w-2/3 lg:w-1/2">
+    <div className="relative overflow-hidden pb-[56.25%] h-0">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://player.vimeo.com/video/951536763?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+        title="Webinar de Malta vs Irlanda"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
         <Footer />
