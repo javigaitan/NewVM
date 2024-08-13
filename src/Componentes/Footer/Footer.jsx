@@ -45,7 +45,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/contact" className="text-colorWhite">
+                  <Link to="/contacto" className="text-colorWhite">
                     <p className="text-2xl font-semibold hover:text-secondaryTur2">Contáctanos</p>
                     <hr className="line" />
                   </Link>

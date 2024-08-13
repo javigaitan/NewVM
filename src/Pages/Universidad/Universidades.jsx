@@ -16,9 +16,9 @@ const Universidades = () => {
                     <img src={universitarios} alt="Curso de Idiomas" className="w-full h-auto" />
                 </div>
                 <div className="w-full md:w-1/2 p-4">
-                    <h1 className="text-3xl font-bold mb-4">Carreras y posgrados universitarios</h1>
+                    <h1 className="text-3xl font-bold mb-4 text-start text-primaryVio">Carreras y posgrados universitarios</h1>
                     <div className="text-left">
-                        <p className="text-lg">
+                        <p className="text-lg text-colorText">
                         Este tipo de experiencia es ideal para quienes tienen un buen nivel de inglés y desean comenzar una carrera de grado en el extranjero. También es una excelente opción para aquellos que ya tienen un título universitario en su país de origen e invierten en su desarrollo profesional realizando un posgrado o máster en el extranjero, ya sea en su mismo idioma o en otro. Asimismo, dependiendo del destino elegido, algunas opciones académicas permiten que el interesado adquiera experiencia laboral con la misma visa de estudiante luego de finalizada la cursada.</p>
                     </div>
                 </div>

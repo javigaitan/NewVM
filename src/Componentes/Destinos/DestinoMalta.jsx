@@ -6,21 +6,20 @@ import WyS from '../../assets/ServiciosVM/estudio y trabajo en el exterior.png';
 import universitarios from '../../assets/ServiciosVM/posgrados.png';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
-import BannerIrlanda from '../../assets/Experiencias/Foto de Irlanda.png';
-import FondoVioleta from '../../assets/Textura/texturafondoexperienciairlanda.png';
-import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapairlanda2.png';
-import Cork from '../../Componentes/Destinos/DestinosImg/cork.png';
-import Dublin from '../../Componentes/Destinos/DestinosImg/dublin.png';
-import Galway from '../../Componentes/Destinos/DestinosImg/galway.png';
-import Foto1 from '../../Componentes/Destinos/DestinosImg/Trebol.png';
-import Foto2 from '../../Componentes/Destinos/DestinosImg/cerveza.png';
+import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/bannerMalta.png';
+import FondoVioleta from '../../Componentes/Destinos/DestinosImg/fondomalta.png';
+import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapamalta.png';
+import Sliema from '../../Componentes/Destinos/DestinosImg/sliema.png';
+import Julian from '../../Componentes/Destinos/DestinosImg/julian.png';
+import Valletta from '../../Componentes/Destinos/DestinosImg/valletta.png';
+import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
+import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
+import BanderaMalta from '../../Componentes/Destinos/DestinosImg/banderamalta.png'
 import Footer from "../Footer/Footer";
 
 
-
-
-const DestinoIrlanda = () => {
+const DestinoMalta = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
     const handleMouseEnter = () => {
@@ -170,10 +169,10 @@ const DestinoIrlanda = () => {
 
                     <div className="flex items-center justify-center">
                         <h1 className="text-white text-3xl md:text-4xl font-bold text-center">
-                            ¡Bienvenidos a Irlanda
-                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-11 h-7 rounded-lg inline-block mx-2" />
+                            ¡Bienvenidos a Malta
+                            <img src={BanderaMalta} alt="Bandera de Malta" className="w-11 h-7 rounded-lg inline-block mx-2" />
                             <br /> {/* Forzamos un salto de línea */}
-                            <span>la isla esmeralda!</span>
+                            <span>el paraíso del mediterráneo!</span>
                         </h1>
                     </div>
 
@@ -188,15 +187,15 @@ const DestinoIrlanda = () => {
                 >
                     {/* Parte izquierda */}
                     <div className="w-1/2 flex flex-col justify-center items-end p-8">
-                        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
+                        <h1 className="text-primaryVio text-5xl font-bold self-end pb-10 text-end">Exploremos Malta</h1>
                         <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-1/2 self-end" />
                     </div>
 
                     {/* Parte derecha con 3 imágenes en columna */}
                     <div className="w-1/2 flex flex-col justify-center items-center p-8">
-                        <img src={Cork} alt="Dublín" className="mb-4 w-1/3" />
-                        <img src={Cork} alt="Cork" className="mb-4 w-1/3" />
-                        <img src={Galway} alt="Galway" className="mb-4 w-1/3" />
+                        <img src={Julian} alt="Dublín" className="mb-4 w-1/3" />
+                        <img src={Sliema} alt="Cork" className="mb-4 w-1/3" />
+                        <img src={Valletta} alt="Galway" className="mb-4 w-1/3" />
                     </div>
                 </div>
 
@@ -209,21 +208,21 @@ const DestinoIrlanda = () => {
                 {/* Parte izquierda con el texto */}
                 <div className="w-1/2 flex flex-col justify-center items-start p-8">
                     <h2 className="text-primaryVio text-4xl text-start font-semibold">¿Por qué es el <br />destino más elegido?</h2>
-                    <p className="flex items-start text-primaryVio text-base mt-4">
+                    <p className="flex items-start  text-start text-primaryVio text-base mt-4">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
+                        <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
                     </p>
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
+                        <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
                     </p>
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
+                        <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
                     </p>
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
+                        <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
                     </p>
                 </div>
 
@@ -310,9 +309,9 @@ const DestinoIrlanda = () => {
             <div className="mt-6 mb-8">
                 <div className="flex items-center justify-center">
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
-                        Comunidad VM en Irlanda
+                        Comunidad VM en Malta
                     </h1>
-                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-11 h-7 rounded-lg" />
+                    <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-11 h-7 rounded-lg" />
                 </div>
 
 
@@ -320,14 +319,7 @@ const DestinoIrlanda = () => {
                 <div className="flex justify-center mt-8">
                     <div className="w-full md:w-2/3 lg:w-1/2">
                         <div className="relative overflow-hidden pb-[56.25%] h-0">
-                            <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                src="https://player.vimeo.com/video/968787846?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                frameBorder="0"
-                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                title="Webinar de Malta vs Irlanda"
-                                allowFullScreen
-                            ></iframe>
+                            <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/LIakpVh7BgQ?si=GBS6UrWJlD3nb46l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -342,4 +334,4 @@ const DestinoIrlanda = () => {
     );
 }
 
-export default DestinoIrlanda;
+export default DestinoMalta

@@ -46,8 +46,7 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-2 md:mb-0 p-2" style={{
-    paddingRight: '40px',
-    borderRightWidth: '40px'
+    paddingRight: '80px',
   }}>
   <p className="text-xl text-primaryVio">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
 </div>

@@ -6,12 +6,13 @@ import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import Ahorro1 from '../../assets/Ahorro/Ahorro1.png';
 import Ahorro2 from '../../assets/Ahorro/Ahorro2.png';
-import Ahorro3 from '../../assets/Ahorro/Ahorro3.png';
+import Ahorro3 from '../../assets/Ahorro/iconoavion.png';
 import Ahorro4 from '../../assets/Ahorro/Ahorro4.png';
 import AhorroFoto1 from '../../assets/Ahorro/AhorroFoto1.png';
 import AhorroFoto2 from '../../assets/Ahorro/AhorroFoto2.png';
 import AhorroFoto3 from '../../assets/Ahorro/AhorroFoto3.png';
 import AhorroFoto4 from '../../assets/Ahorro/AhorroFoto4.png';
+import Bandera from '../../assets/Textura/banderauru.png';
 import Footer from "../../Componentes/Footer/Footer";
 
 
@@ -75,7 +76,7 @@ const Ahorro = () => {
     }, []);
 
     return (
-        <div className=" dark:bg-gray-900 items-center">
+        <div className="dark:bg-gray-900 items-center">
             <div>
                 <div className="relative">
                     {/* For large screens */}
@@ -332,133 +333,73 @@ const Ahorro = () => {
 
             </div>
 
-            {/* Comienza los contenedores */}
-            <div className="card dark:bg-[#F2F2F2] pt-12">
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
-                        <div>
-                            <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Referidos</h2>
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.
-                                <br />
-                                <br />
-                                Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.
-                                <br />
-                                <br />
-                                Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.</p>
-                        </div>
-                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
-                        </div>
-                    </div>
-                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={AhorroFoto1} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
-                    </div>
-                </div>
-            </div>
-            {/* Fin de los contenedores */}
-
-
-
-            {/* Comienza los contenedores */}
-            <div className=" card dark:bg-[#F2F2F2] pt-12">
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
-                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
-                    </div>
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
-
-                        <div>
-                            <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Rifas</h2>
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.
-                                <br />
-                                <br />
-                                Para ello, nos aliamos con <strong>Planet01</strong> para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.
-                                <br />
-                                <br />
-                                ¿Cómo funciona el programa?<br />
-                                Te inscribes y haces la seña de tu curso con Vaga-Mundo.
-                                Coordinas con tu asesor la cantidad de boletas de reserva.
-                                Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.
-                            </p>
-                        </div>
-                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            {/* Fin de los contenedores */}
-
-            {/* Comienza los contenedores */}
-            <div className="card dark:bg-[#F2F2F2] pt-12">
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
-                        <div>
-                            <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
-                        </div>
-                        <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.
-                                <br />
-                                <br />
-     A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.
-                            </p>
-                        </div>
-                        <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
-                        </div>
-                    </div>
-                    <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
-                    </div>
-                </div>
-            </div>
-            {/* Fin de los contenedores */}
-            {/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
-        </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
-
+           {/* Comienza los contenedores */}
+<div className="card dark:bg-[#F2F2F2] pt-12">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
             </div>
-            <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
-                <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programas de inserción laboral</h2>
+            <div className="md:mt-3 pl-4">
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Referidos</h2>
             </div>
-            <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
+            <div className="md:mt-3 pl-4">
                 <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.
-                <br />
-                <br />
-                Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins.
+                    Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.
+                    <br />
+                    <br />
+                    Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.
+                    <br />
+                    <br />
+                    Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.
                 </p>
             </div>
-            <div className="pl-4 mt-8"> {/* Añadí pl-4 y mt-8 */}
+            <div className="pl-4 mt-8">
+                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                    Solicita más información
+                </button>
+            </div>
+        </div>
+        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+            <img src={AhorroFoto1} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+        </div>
+    </div>
+</div>
+{/* Fin de los contenedores */}
+
+
+{/* Comienza los contenedores */}
+<div className="card dark:bg-[#F2F2F2] pt-12">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+        </div>
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+            <div>
+                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+            </div>
+            <div className="md:mt-3 pl-4 flex items-center">
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Rifas</h2>
+                <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3" />
+            </div>
+            <div className="md:mt-3 pl-4">
+                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                    Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.
+                    <br />
+                    <br />
+                    Para ello, nos aliamos con <strong>Planet01</strong> para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.
+                    <br />
+                    <br />
+                    <i>¿Cómo funciona el programa?</i>
+                    <br />
+                </p>
+                <ul className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left list-disc pl-5">
+                    <li>Te inscribes y haces la seña de tu curso con Vaga-Mundo.</li>
+                    <li>Coordinas con tu asesor la cantidad de boletas de reserva.</li>
+                    <li>Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.</li>
+                </ul>
+            </div>
+            <div className="pl-4 mt-8">
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
@@ -468,8 +409,71 @@ const Ahorro = () => {
 </div>
 {/* Fin de los contenedores */}
 
-  <Footer />
-        </div > 
 
+{/* Comienza los contenedores */}
+<div className="card dark:bg-[#F2F2F2] pt-12">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+            <div>
+                <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+            </div>
+            <div className="md:mt-3 pl-4">
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
+            </div>
+            <div className="md:mt-3 pl-4">
+                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                    A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.
+                    <br />
+                    <br />
+                    A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.
+                </p>
+            </div>
+            <div className="pl-4 mt-8">
+                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                    Solicita más información
+                </button>
+            </div>
+        </div>
+        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+        </div>
+    </div>
+</div>
+{/* Fin de los contenedores */}
+
+
+{/* Comienza los contenedores */}
+<div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
+            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+        </div>
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+            <div>
+                <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+            </div>
+            <div className="md:mt-3 pl-4">
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Embajadores VM</h2>
+            </div>
+            <div className="md:mt-3 pl-4">
+                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                    Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.
+                    <br />
+                    <br />
+                    Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins.
+                </p>
+            </div>
+            <div className="pl-4 mt-8">
+                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                    Solicita más información
+                </button>
+            </div>   
+        </div> 
+    </div> 
+</div>
+{/* Fin de los contenedores */}
+
+    < Footer />
+</div > 
 )}
 export default Ahorro

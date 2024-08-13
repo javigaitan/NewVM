@@ -15,9 +15,9 @@ const WorkandStudy = () => (
                     <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                 </div>
                 <div className="w-full md:w-1/2 p-4">
-                    <h1 className="text-3xl font-bold mb-4">Estudio y trabajo en el exterior</h1>
+                    <h1 className="text-3xl font-bold mb-4 text-start text-primaryVio">Estudio y trabajo en el exterior</h1>
                     <div className="text-left">
-                        <p className="text-lg">
+                        <p className="text-lg text-colorText">
                             Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos. Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales, y su gestión se puede realizar antes o al momento de llegar al destino. Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.
                         </p>
                     </div>
@@ -44,8 +44,8 @@ const WorkandStudy = () => (
                                 className="w-full h-auto rounded-lg " />
                             <div className="absolute bottom-0 left-0 w-full">
                                 <Link to='/curso-de-idiomas'>
-                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Estudio y trabajo en el exterior
+                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                        Cursos de Idiomas
                                     </button>
                                 </Link>
                             </div>

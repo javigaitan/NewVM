@@ -23,6 +23,8 @@ import MeCaso from "./Pages/Ahorro/MeCaso";
 import Referidos from "./Pages/Ahorro/Referidos";
 import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
 import DestinoIrlanda from "./Componentes/Destinos/DestinoIrlanda";
+import DestinoMalta from "./Componentes/Destinos/DestinoMalta";
+
 
 
 
@@ -56,6 +58,8 @@ function App() {
         <Route path="/programa-referidos" element={<Referidos />} />
         <Route path="/contactanos" element={<ContactanosNew />} />
         <Route path="/destino-irlanda" element={<DestinoIrlanda />} />
+        <Route path="/destino-malta" element={<DestinoMalta />} />
+
 
         </Routes>
       </Router>

@@ -45,7 +45,7 @@ const FormContactanos = () => {
 
       {/* Contenedor para el h1 */}
       <div className="absolute top-20 text-center z-20 w-full">
-        <h1 className="text-primaryVio text-2xl font-bold mb-4">ESCRÍBENOS</h1>
+        <h1 className="text-primaryVio text-4xl font-bold mb-4">ESCRÍBENOS</h1>
       </div>
 
       {/* Contenedor del formulario con margen superior */}
@@ -88,7 +88,7 @@ const FormContactanos = () => {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/contact" className="text-colorWhite">
+                  <Link to="/contacto" className="text-colorWhite">
                     <p className="text-2xl font-semibold">Contáctanos</p>
                     <hr className="line" />
                   </Link>
