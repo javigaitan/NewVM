@@ -87,7 +87,7 @@ const DestinoMalta = () => {
                         <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold text-colorWhite">
                             <li>
                                 <Link to='/nosotras'>
-                                    <button className="font-semibold dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Nosotros
                                     </button>
                                 </Link>
@@ -95,7 +95,7 @@ const DestinoMalta = () => {
 
                             <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                     <div className="flex items-center">
-                                        <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             ¡Quiero viajar!
                                         </button>
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
@@ -138,21 +138,21 @@ const DestinoMalta = () => {
                             </li>
                             <li className="relative">
                                 <Link to='/ahorro'>
-                                    <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Financia tu viaje
                                     </button>
                                 </Link>
                             </li>
                             <li className="relative">
                                 <Link to='/servicios'>
-                                    <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Otros servicios
                                     </button>
                                 </Link>
                             </li>
                             <li>
                                 <Link to='/blogs'>
-                                    <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Blog
                                     </button>
                                 </Link>
