@@ -1,17 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import ScrollReveal from 'scrollreveal';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
-import Ahorro1 from '../../assets/Ahorro/Ahorro1.png';
-import Ahorro2 from '../../assets/Ahorro/Ahorro2.png';
-import Ahorro3 from '../../assets/Ahorro/Ahorro3.png';
-import Ahorro4 from '../../assets/Ahorro/Ahorro4.png';
-import AhorroFoto1 from '../../assets/Ahorro/AhorroFoto1.png';
-import AhorroFoto2 from '../../assets/Ahorro/AhorroFoto2.png';
-import AhorroFoto3 from '../../assets/Ahorro/AhorroFoto3.png';
-import AhorroFoto4 from '../../assets/Ahorro/AhorroFoto4.png';
 import Footer from "../../Componentes/Footer/Footer";
 import Error404 from '../../assets/Textura/404error.jpg';
 

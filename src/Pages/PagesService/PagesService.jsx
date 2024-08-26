@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
-import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import Logo from "../../assets/Logos/LogoVioleta.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import Icons1 from '../../assets/OtrosServicios/Icono1.png';
@@ -107,14 +106,12 @@ const PagesService = () => {
                                 </li>
 
                                 <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <Link to='/experiencias'>
                                         <div className="flex items-center">
                                             <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                                 ¡Quiero viajar!
                                             </button>
                                             <img src={Flecha} alt="Flecha" className="ml-2" />
                                         </div>
-                                    </Link>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
