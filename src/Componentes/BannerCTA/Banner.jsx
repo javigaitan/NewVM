@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BGR from '../../assets/BannerHome/FOTO BANNER.png';
 import './BannerCTA.css'; 
 
@@ -30,9 +31,12 @@ const Banner = () => {
                         Vive, estudia y trabaja en el extranjero
                     </h2>
                     <div className="inline-block py-8">
-                        <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                        <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
+                        <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
                             Solicita tu cotización
                         </button>
+                        </Link>
+
                     </div>
                 </div>
             </div>
