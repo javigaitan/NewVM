@@ -100,7 +100,7 @@ const FormContactanos = () => {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/privacy" className="text-colorWhite">
+                  <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
                     <p className="text-2xl font-semibold">Políticas de privacidad</p>
                     <hr className="line" />
                   </Link>

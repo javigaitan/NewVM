@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import ScrollReveal from 'scrollreveal';
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
@@ -39,13 +40,44 @@ function Navbar() {
         setShowMenu(false); // Esto ocultará el menú cuando se hace clic en cualquier enlace del menú
     };
 
+    useEffect(() => {
+        ScrollReveal().reveal('.card', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.item', {
+            delay: 300,
+            distance: '50px',
+            origin: 'top',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.text', {
+            delay: 300,
+            distance: '50px',
+            origin: 'left',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+
+    }, []);
+
     return (
         <div className="dark:bg-gray-900">
             <div>
                 <div className="relative">
                     {/* For large screens */}
                     <div className="relative z-10 bg-primaryVio px-7 py-6">
-                        <div className="container mx-auto flex items-center justify-between">
+                        <div className="item container mx-auto flex items-center justify-between">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
                                     <Link to='/'>
@@ -61,21 +93,19 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
                                     </Link>
                                 </li>
 
                                 <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <Link to='/not-found'>
                                         <div className="flex items-center">  
-                                            <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                                 ¡Quiero viajar!
                                             </button>
                                             <img src={Flecha} alt="Flecha" className="ml-2" />  
                                         </div>
-                                    </Link>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
@@ -120,7 +150,7 @@ function Navbar() {
                                     className="relative"
                                 ><Link to='/ahorro'>
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Financia tu viaje
                                         </button>
@@ -132,7 +162,7 @@ function Navbar() {
                                     <Link to='/servicios'>
 
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Otros servicios
                                         </button>
@@ -142,7 +172,7 @@ function Navbar() {
                                 </li>
                                 <li>
                                     <Link to='/blogs'>
-                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
 
                                         </a>

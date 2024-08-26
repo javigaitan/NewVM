@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ALAN from '../../assets/Partners/Group.png'
@@ -60,36 +61,57 @@ const Partners = () => {
 
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <Slider {...settings}>
+
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
         <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={ALAN} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={ASSIST} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={ASSISTCARD} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={ERASMUSU} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={HOLAFLY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={HOLASIM} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={MONEY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
@@ -100,37 +122,56 @@ const Partners = () => {
               <img src={PAMPA} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={PAX} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={PLANET01} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={AMERICANSHOP} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={SPOTHOME} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
     
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={TWC} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={WORD} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
           
           
           

@@ -41,21 +41,12 @@ function App() {
         <Route path="/notfound" element={<NotFound />} />
         <Route path="/curso-de-idiomas" element={<CursoDeIdiomas />} />
         <Route path="/work&study" element={<WorkandStudy />} />
-        <Route path="/insercionlaboral" element={<Insercion />} />
-        <Route path="/hoteleria" element={<Hoteleria />} />
         <Route path="/contacto" element={<Contactanos />} />
         <Route path="/carreras-universitarias" element={<Universidades />} />
-        <Route path="/comunidad" element={<ComunidadVm />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/ahorro" element={<Ahorro />} />
         <Route path="/blogs" element={<PagesBlogs />} />
         <Route path="/servicios" element={<PagesService />} />
-        <Route path="/servicios-alojamientos" element={<Alojamientos />} />
-        <Route path="/servicios-seguros" element={<Seguros />} />
-        <Route path="/servicios-arrival-packages" element={<Arrival />} />
-        <Route path="/financia-con-rifas" element={<Rifas />} />
-        <Route path="/me-caso-con-viajar" element={<MeCaso />} />
-        <Route path="/programa-referidos" element={<Referidos />} />
         <Route path="/contactanos" element={<ContactanosNew />} />
         <Route path="/destino-irlanda" element={<DestinoIrlanda />} />
         <Route path="/destino-malta" element={<DestinoMalta />} />

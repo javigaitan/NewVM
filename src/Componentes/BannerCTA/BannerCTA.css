@@ -1,42 +1,42 @@
 .rounded-bl-custom {
-    border-bottom-left-radius: 100px; 
+  border-bottom-left-radius: 100px; 
 
 
 }
 
 
 .rounded-bl-custom-overlay {
-    border-bottom-left-radius: 100px;
-    background: rgba(0, 0, 0, 0.4); /* Ajusta el color y la opacidad según sea necesario */
+  border-bottom-left-radius: 100px;
+  background: rgba(0, 0, 0, 0.4); /* Ajusta el color y la opacidad según sea necesario */
 }
 
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
-    .banner-image {
-      height: auto;
-      border-radius: 0 0 50px 50px; /* Esquinas inferiores redondeadas */
-    }
-  
-    .banner-overlay {
-      border-radius: 0 0 50px 50px; /* Esquinas inferiores redondeadas */
-    }
-  
-    .banner-content {
-      padding: 4px;
-      padding-left: 16px;
-      left: 16px;
-    }
-  
-    .banner-content h1 {
-      font-size: 2rem;
-    }
-  
-    .banner-content h2 {
-      font-size: 1.5rem;
-    }
-  
-    .banner-content .cta-button {
-      font-size: 1rem;
-      padding: 12px 24px;
-    }
+  .banner-image {
+    height: auto;
+    border-radius: 0 0 50px 50px; /* Esquinas inferiores redondeadas */
   }
+
+  .banner-overlay {
+    border-radius: 0 0 50px 50px; /* Esquinas inferiores redondeadas */
+  }
+
+  .banner-content {
+    padding: 4px;
+    padding-left: 16px;
+    left: 16px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content .cta-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}

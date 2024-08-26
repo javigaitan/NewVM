@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Navbar from '../../Componentes/Navbar/Navbar';
 import Footer from '../../Componentes/Footer/Footer';
 import LINEAPUNTEADA from '../../assets/Nosotros/lineapunteada.png';
@@ -8,10 +9,11 @@ import IMG3 from '../../assets/Nosotros/nosotros3.png';
 import IMG4 from '../../assets/Nosotros/nosotros4.png';
 
 const Nosotras = () => {
+
   return (
     <>
-      <Navbar />
-      <div className="relative min-h-screen">
+      <Navbar/>
+      <div className="relative min-h-screen pb-4">
         <img
           src={LINEAPUNTEADA}
           alt="Línea punteada"
@@ -65,7 +67,7 @@ const Nosotras = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
+          <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10 pb-6">
             <div className="w-full md:w-1/2">
               <img
                 src={IMG4}
@@ -78,7 +80,7 @@ const Nosotras = () => {
             </div>
           </div>
 
-          <div className="relative z-10">
+          <div className="relative z-10 pt-6 pb-3">
             <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio mt-6 text-center">
               Conoce a nuestra Comunidad
             </h1>

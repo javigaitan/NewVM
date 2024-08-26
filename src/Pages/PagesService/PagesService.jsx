@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import ScrollReveal from 'scrollreveal';
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import Logo from "../../assets/Logos/LogoVioleta.png";
 import Flecha from '../../assets/Textura/Vector.png';
@@ -47,18 +48,48 @@ const PagesService = () => {
         setShowMenu(false); // Esto ocultará el menú cuando se hace clic en cualquier enlace del menú
     };
 
+    useEffect(() => {
+        ScrollReveal().reveal('.card', {
+            delay: 300,
+            distance: '50px',
+            origin: 'bottom',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.item', {
+            delay: 300,
+            distance: '50px',
+            origin: 'top',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.text', {
+            delay: 300,
+            distance: '50px',
+            origin: 'left',
+            duration: 1000,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+    })
+
     return (
         <div className="dark:bg-gray-900 items-center">
             <div>
                 <div className="relative">
                     {/* For large screens */}
                     <div className="relative z-10 bg-secondariVerde px-7 py-6">
-                        <div className="container mx-auto flex items-center justify-between pb-12">
+                        <div className="item container mx-auto flex items-center justify-between pb-12">
                             <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                                 <div className="mr-10 flex items-center">
                                     <Link to='/'>
 
-                                        <img src={Logo} alt="Logo" className="h-auto w-24 md:w-auto md:h-auto mr-3" />
+                                        <img src={Logo} alt="Logo" className="  h-auto w-24 md:w-auto md:h-auto mr-3" />
                                     </Link>
 
                                 </div>
@@ -69,7 +100,7 @@ const PagesService = () => {
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
                                     </Link>
@@ -78,7 +109,7 @@ const PagesService = () => {
                                 <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                     <Link to='/experiencias'>
                                         <div className="flex items-center">
-                                            <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                                 ¡Quiero viajar!
                                             </button>
                                             <img src={Flecha} alt="Flecha" className="ml-2" />
@@ -128,7 +159,7 @@ const PagesService = () => {
                                     className="relative"
                                 ><Link to='/ahorro'>
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Financia tu viaje
                                         </button>
@@ -140,7 +171,7 @@ const PagesService = () => {
                                     <Link to='/servicios'>
 
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Otros servicios
                                         </button>
@@ -150,7 +181,7 @@ const PagesService = () => {
                                 </li>
                                 <li>
                                     <Link to='/blogs'>
-                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
 
                                         </a>
@@ -294,11 +325,11 @@ const PagesService = () => {
                     </div>
                 </div>
 
-                <div className="w-full bg-secondariVerde px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
+                <div className="text w-full bg-secondariVerde px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
                     <h1 className="text-3xl font-bold text-primaryVio dark:text-white mb-10 pt-14">Otros Servicios</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-primaryVio dark:text-primaryVio pb-5">
-                            En Vaga-Mundo nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones 360º diseñadas para maximizar su experiencia de viaje.
+                            En <strong>Vaga-Mundo</strong> nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones <strong>360º</strong> diseñadas para maximizar su experiencia de viaje.
                         </p>
                     </div>
                 </div>
@@ -306,11 +337,11 @@ const PagesService = () => {
             </div>
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-12">
+            <div className=" card dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>
-                            <img src={Icons1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                            <img src={Icons1} alt="Icono de seguro" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
                             <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Seguros y asistencias al viajero</h2>
@@ -334,7 +365,7 @@ const PagesService = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={Seguros} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                        <img src={Seguros} alt="Foto de vaijera" className="w-334 h-704 object-cover rounded-r-lg " style={{ marginLeft: '35px' }} />
                     </div>
                 </div>
             </div>
@@ -346,12 +377,12 @@ const PagesService = () => {
             <div className="dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginRight: '35px' }} />
                     </div>
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
 
                         <div>
-                            <img src={Icons2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                            <img src={Icons2} alt="Icono de pass" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
                             <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Tickets aéreos, alquiler de autos, atracciones y mucho más.</h2>
@@ -383,7 +414,7 @@ const PagesService = () => {
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>
-                            <img src={Icons3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                            <img src={Icons3} alt="Icono de Alojamiento" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
                             <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Alojamientos propios y externos</h2>
@@ -410,7 +441,7 @@ const PagesService = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                        <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginLeft: '35px' }} />
                     </div>
                 </div>
             </div>
@@ -420,12 +451,12 @@ const PagesService = () => {
             <div className="dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                        <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg " style={{ marginRight: '35px' }}/>
                     </div>
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
 
                         <div>
-                            <img src={Icons4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                            <img src={Icons4} alt="Icono de Insercion" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
                             <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Programas de inserción laboral</h2>
@@ -460,7 +491,7 @@ const PagesService = () => {
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]"> {/* Cambiado max-w-5xl a max-w-4xl */}
                     <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajusté lg:w-2/5 a lg:w-3/5 y añadí lg:px-4 */}
                         <div>
-                            <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                            <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4"> {/* Añadí pl-4 */}
                             <h2 className="text-colorText dark:text-white  text-left lg:text-3xl text-2xl font-extrabold leading-9">Viajes grupales y actividades en comunidad</h2>
@@ -489,7 +520,7 @@ const PagesService = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-                        <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+                        <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg " style={{ marginLeft: '35px' }}/>
                     </div>
                 </div>
             </div>

@@ -97,21 +97,19 @@ const Ahorro = () => {
                                 <li>
                                     <Link to='/nosotras'>
 
-                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
                                     </Link>
                                 </li>
 
                                 <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <Link to='/experiencias'>
                                         <div className="flex items-center">
-                                            <button className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                                 ¡Quiero viajar!
                                             </button>
                                             <img src={Flecha} alt="Flecha" className="ml-2" />
                                         </div>
-                                    </Link>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
@@ -156,7 +154,7 @@ const Ahorro = () => {
                                     className="relative"
                                 ><Link to='/ahorro'>
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Financia tu viaje
                                         </button>
@@ -168,7 +166,7 @@ const Ahorro = () => {
                                     <Link to='/servicios'>
 
                                         <button
-                                            className="dark:text-colorWhite text-base focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                            className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
                                             Otros servicios
                                         </button>
@@ -178,7 +176,7 @@ const Ahorro = () => {
                                 </li>
                                 <li>
                                     <Link to='/blogs'>
-                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-base  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <a href="javascript:void(0)" className="dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
 
                                         </a>
@@ -333,12 +331,14 @@ const Ahorro = () => {
 
             </div>
 
+
+
            {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12">
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
             <div className="md:mt-3 pl-4">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Referidos</h2>
@@ -355,13 +355,16 @@ const Ahorro = () => {
                 </p>
             </div>
             <div className="pl-4 mt-8">
+
+                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
+                </Link>
             </div>
         </div>
         <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto1} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+            <img src={AhorroFoto1} alt="Foto de grupo vm" className="w-335 h-710 object-cover rounded-r-lg" style={{ marginLeft: '35px' }} />
         </div>
     </div>
 </div>
@@ -372,15 +375,15 @@ const Ahorro = () => {
 <div className="card dark:bg-[#F2F2F2] pt-12">
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
         <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginRight: '35px' }}/>
         </div>
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 " />
             </div>
             <div className="md:mt-3 pl-4 flex items-center">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Rifas</h2>
-                <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3" />
+                <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3 ml-3" />
             </div>
             <div className="md:mt-3 pl-4">
                 <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
@@ -400,9 +403,11 @@ const Ahorro = () => {
                 </ul>
             </div>
             <div className="pl-4 mt-8">
+                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
+                </Link>
             </div>
         </div>
     </div>
@@ -415,7 +420,7 @@ const Ahorro = () => {
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
             <div className="md:mt-3 pl-4">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
@@ -429,13 +434,15 @@ const Ahorro = () => {
                 </p>
             </div>
             <div className="pl-4 mt-8">
+                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
+                </Link>
             </div>
         </div>
         <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginLeft: '35px' }} />
         </div>
     </div>
 </div>
@@ -444,13 +451,13 @@ const Ahorro = () => {
 
 {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible">
         <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" />
+            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg " style={{ marginRight: '35px' }} />
         </div>
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto" />
+                <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
             <div className="md:mt-3 pl-4">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Embajadores VM</h2>
@@ -472,8 +479,10 @@ const Ahorro = () => {
     </div> 
 </div>
 {/* Fin de los contenedores */}
+<div >
+< Footer />
 
-    < Footer />
+</div>
 </div > 
 )}
 export default Ahorro

@@ -9,7 +9,7 @@ import TIK from '../../assets/iconsRedes/tiktok.png';
 
 const Footer = () => {
   return (
-    <div className="relative w-full h-[750px]">
+    <div className="relative w-full h-[800px] pt-8 mt-5">
       <img
         src={BGF}
         alt="Footer background image"
@@ -57,8 +57,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="/privacy" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Políticas de privacidad</p>
+                  <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Política de privacidad</p>
                     <hr className="line" />
                   </Link>
                 </li>

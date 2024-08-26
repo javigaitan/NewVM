@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  font-family: "Poppins", Sans-serif;
+  font-family: "Gilroy","Poppins", Sans-serif;
   background-image: url(./assets/Textura/textura.png);
   background-size: cover;
   background-repeat: repeat;
@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Poppins", Sans-serif;
+  font-family: "Gilroy", "Poppins", Sans-serif;
 
 }
 
@@ -67,12 +67,5 @@ body {
     width: 100%; /* Que la línea ocupe todo el ancho */
     border-top: 1px solid green;
     margin-top: 10px; /* Espacio entre el texto y la línea */
-  }
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 600px) {
-  #root {
-    background-size: 90%; /* Ajusta el tamaño del fondo para móviles */
   }
 }

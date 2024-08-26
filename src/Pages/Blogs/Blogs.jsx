@@ -61,7 +61,7 @@ const Blogs = () => {
                                 <img src={image} className='w-[90%] max-h-[677px] object-cover rounded-3xl opacity-80' alt={`Blog ${index}`} />
                                 <div className="absolute top-0 flex flex-col w-full h-full items-center justify-between py-10">
                                     <div className="flex items-center justify-center flex-col h-full">
-                                        <h2 className="text-2xl font-semibold leading-normal text-center text-colorWhite">Blog Title {index + 1}</h2>
+                                        <h2 className="text-2xl font-semibold leading-normal text-center text-colorWhite">Induccion Day {index + 1}</h2>
                                         <p className="text-base leading-normal text-center text-colorWhite mt-4">Description for Blog {index + 1}.</p>
                                         <div className='pt-20'>
                                             <button className="w-full hover:bg-secondaryTur2 transition duration-150 text-base font-bold leading-none text-center rounded-full text-primaryVio border border-primaryVio border-solid py-4 px-12 bg-colorWhite focus:outline-none">Leer más</button>
