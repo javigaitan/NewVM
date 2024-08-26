@@ -186,7 +186,7 @@ const DestinoMalta = () => {
                     {/* Parte izquierda */}
                     <div className="w-1/2 flex flex-col justify-center items-end p-8">
                         <h1 className="text-primaryVio text-5xl font-bold self-end pb-10 text-end">Exploremos Malta</h1>
-                        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-1/2 self-end" />
+                        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" />
                     </div>
 
                     {/* Parte derecha con 3 imágenes en columna */}
@@ -201,31 +201,37 @@ const DestinoMalta = () => {
             </div>
 
             {/* Dividido en dos partes */}
-            <div className="flex my-12 py-12">
+            <div className="flex my-10 py-12 ml-6">
 
                 {/* Parte izquierda con el texto */}
-                <div className="w-1/2 flex flex-col justify-center items-start p-8">
-                    <h2 className="text-primaryVio text-4xl text-start font-semibold">¿Por qué es el <br />destino más elegido?</h2>
+                <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-9 text-left">
+                    <h2 className="text-primaryVio text-5xl font-semibold pl-12">¿Por qué es el <br />destino más elegido?</h2>
+                    <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
                     <p className="flex items-start  text-start text-primaryVio text-base mt-4">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
                         <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
-                    </p>
+                    </p>        <br/>
+
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
                         <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
-                    </p>
+                    </p>        <br/>
+
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
                         <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
-                    </p>
+                    </p>        <br/>
+
                     <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
                         <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
                     </p>
+                    </div>
+
                 </div>
 
                 {/* Parte derecha con las imágenes en diagonal */}
-                <div className="w-1/2 flex flex-col justify-between p-8">
+                <div className="w-1/2 flex flex-col justify-between mr-9">
                     <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
                     <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
                 </div>
