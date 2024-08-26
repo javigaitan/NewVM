@@ -10,7 +10,7 @@ import BannerIrlanda from '../../assets/Experiencias/Foto de Irlanda.png';
 import FondoVioleta from '../../assets/Textura/texturafondoexperienciairlanda.png';
 import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapairlanda2.png';
 import Cork from '../../Componentes/Destinos/DestinosImg/cork.png';
-import Dublin from '../../Componentes/Destinos/DestinosImg/dublin.png';
+import Dublin from '../../Componentes/Destinos/DestinosImg/DublinExperiencia.png';
 import Galway from '../../Componentes/Destinos/DestinosImg/galway.png';
 import Foto1 from '../../Componentes/Destinos/DestinosImg/Trebol.png';
 import Foto2 from '../../Componentes/Destinos/DestinosImg/cerveza.png';
@@ -183,56 +183,61 @@ const DestinoIrlanda = () => {
 
 
                 {/* Fondo violeta debajo del contenido */}
-                <div
-                    className="flex pt-14" // Agrega más espacio en la parte superior con `pt-8`
-                >
-                    {/* Parte izquierda */}
-                    <div className="w-1/2 flex flex-col justify-center items-end p-8">
-                        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
-                        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-1/2 self-end" />
-                    </div>
+               <div className="flex pt-14">
+    {/* Parte izquierda */}
+    <div className="w-1/2 flex flex-col justify-center items-end p-8 ml-3">
+        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
+        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" /> {/* Ajuste de tamaño */}
+    </div>
 
-                    {/* Parte derecha con 3 imágenes en columna */}
-                    <div className="w-1/2 flex flex-col justify-center items-center p-8">
-                        <img src={Cork} alt="Dublín" className="mb-4 w-1/3" />
-                        <img src={Cork} alt="Cork" className="mb-4 w-1/3" />
-                        <img src={Galway} alt="Galway" className="mb-4 w-1/3" />
-                    </div>
-                </div>
+    {/* Parte derecha con 3 imágenes en columna */}
+    <div className="w-1/2 flex flex-col justify-center items-center p-8">
+        <img src={Dublin} alt="Dublín" className="mb-4 w-1/3" />
+        <img src={Cork} alt="Cork" className="mb-4 w-1/3" />
+        <img src={Galway} alt="Galway" className="mb-4 w-1/3" />
+    </div>
+</div>
+
 
 
             </div>
 
             {/* Dividido en dos partes */}
-            <div className="flex my-12 py-12">
+            <div className="flex my-10 py-12 ml-6 ">
+    {/* Parte izquierda con el texto */}
+    <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-9 text-left">
+    <h2 className="text-primaryVio text-5xl font-semibold pl-12">¿Por qué es el <br />destino más elegido?</h2>
+    <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
+        <p className="flex items-start text-primaryVio text-base mt-4">
+            <img src={Icon} alt="Viñeta" className="mr-2" />
+            <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
+        </p>
+        <br/>
+        <p className="flex items-start text-primaryVio text-base mt-2">
+            <img src={Icon} alt="Viñeta" className="mr-2" />
+            <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
+        </p>
+        <br/>
+        <p className="flex items-start text-primaryVio text-base mt-2">
+            <img src={Icon} alt="Viñeta" className="mr-2" />
+            <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
+        </p>
+        <br/>
+        <p className="flex items-start text-primaryVio text-base mt-2">
+            <img src={Icon} alt="Viñeta" className="mr-2" />
+            <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
+        </p>
+    </div>
+</div>
 
-                {/* Parte izquierda con el texto */}
-                <div className="w-1/2 flex flex-col justify-center items-start p-8">
-                    <h2 className="text-primaryVio text-4xl text-start font-semibold">¿Por qué es el <br />destino más elegido?</h2>
-                    <p className="flex items-start text-primaryVio text-base mt-4">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
-                    </p>
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
-                    </p>
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
-                    </p>
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
-                    </p>
-                </div>
 
-                {/* Parte derecha con las imágenes en diagonal */}
-                <div className="w-1/2 flex flex-col justify-between p-8">
-                    <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
-                    <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
-                </div>
-            </div>
+    {/* Parte derecha con las imágenes en diagonal */}
+    <div className="w-1/2 flex flex-col justify-between  mr-9">
+        <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
+        <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
+    </div>
+</div>
+
 
 
 
