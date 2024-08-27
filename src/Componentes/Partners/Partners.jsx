@@ -117,6 +117,9 @@ const Partners = () => {
               <img src={MONEY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
             </div>
           </div>
+          </Link>
+          <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
+
           <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
             <div className="flex justify-center items-center">
               <img src={PAMPA} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />

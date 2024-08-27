@@ -1,0 +1,12 @@
+/* LoaderAvionPopUp.css */
+.loader-popup {
+    position: fixed; /* Permite que el componente se quede en una posición fija en la pantalla */
+    top: 0; /* Alineado al top de la página */
+    left: 0; /* Alineado al left de la página */
+    width: 100%; /* Ancho completo de la vista */
+    height: 100vh; /* Alto completo de la vista */
+    z-index: 9999; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
