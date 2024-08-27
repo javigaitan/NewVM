@@ -162,15 +162,13 @@ const DestinoMalta = () => {
 
                     </div>
 
-                    {/* Titulo en Banner */}
+                     {/* Titulo en Banner */}
 
-
-                    <div className="flex items-center justify-center">
-                        <h1 className="text-white text-3xl md:text-4xl font-bold text-center">
-                            ¡Bienvenidos a Malta
-                            <img src={BanderaMalta} alt="Bandera de Malta" className="w-11 h-7 rounded-lg inline-block mx-2" />
-                            <br /> {/* Forzamos un salto de línea */}
-                            <span>el paraíso del mediterráneo!</span>
+                     <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
+                        <h1 className="text-white text-5xl md:text-5xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
+                        ¡Bienvenidos a Malta
+                            <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-13 h-9 inline-block mx-2" />
+                            <span style={{ display: 'block', lineHeight: '5rem' }}>el paraíso del mediterráneo!</span>
                         </h1>
                     </div>
 

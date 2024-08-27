@@ -5,6 +5,7 @@ import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
 import Flecha from '../../assets/Textura/Vector.png'
+import BtnIdiomas from "../BtnIdioma/BtnIdiomas";
 
 
 
@@ -178,6 +179,8 @@ function Navbar() {
                                         </a>
                                     </Link>
                                 </li>
+
+                              
                             </ul>
 
 

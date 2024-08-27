@@ -15,6 +15,7 @@ import Galway from '../../Componentes/Destinos/DestinosImg/galway.png';
 import Foto1 from '../../Componentes/Destinos/DestinosImg/Trebol.png';
 import Foto2 from '../../Componentes/Destinos/DestinosImg/cerveza.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
+import Avion from '../../Componentes/Destinos/DestinosImg/avionvolando.png';
 import Footer from "../Footer/Footer";
 
 
@@ -75,8 +76,8 @@ const DestinoIrlanda = () => {
                 </div>
 
                 {/* Contenido sobre la imagen de fondo */}
-                <div className="absolute top-0 left-0 w-full">
-                    <div className="container mx-auto flex items-center justify-between py-6">
+                <div className="absolute top-0 left-0 w-full ">
+                    <div className="container mx-auto flex items-center justify-between text-start py-6">
                         <h1 className="md:w-2/12 cursor-pointer" aria-label="Vaga Mundo">
                             <div className="mr-10 flex items-center">
                                 <Link to='/'>
@@ -95,14 +96,14 @@ const DestinoIrlanda = () => {
                             </li>
 
                             <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                
-                                    <div className="flex items-center">
-                                        <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            ¡Quiero viajar!
-                                        </button>
-                                        <img src={Flecha} alt="Flecha" className="ml-2" />
-                                    </div>
-                              
+
+                                <div className="flex items-center">
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        ¡Quiero viajar!
+                                    </button>
+                                    <img src={Flecha} alt="Flecha" className="ml-2" />
+                                </div>
+
 
                                 {isDropdownOpen && (
                                     <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
@@ -160,6 +161,7 @@ const DestinoIrlanda = () => {
                                     </button>
                                 </Link>
                             </li>
+                          
                         </ul>
 
 
@@ -167,15 +169,17 @@ const DestinoIrlanda = () => {
 
                     {/* Titulo en Banner */}
 
-
-                    <div className="flex items-center justify-center">
-                        <h1 className="text-white text-3xl md:text-4xl font-bold text-center">
+                    <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
+                        <h1 className="text-white text-5xl md:text-5xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
                             ¡Bienvenidos a Irlanda
-                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-11 h-7 rounded-lg inline-block mx-2" />
-                            <br /> {/* Forzamos un salto de línea */}
-                            <span>la isla esmeralda!</span>
+                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-13 h-9 inline-block mx-2" />
+                            <span style={{ display: 'block', lineHeight: '5rem' }}>la isla esmeralda!</span>
                         </h1>
                     </div>
+
+
+
+
 
 
                 </div>
@@ -183,20 +187,21 @@ const DestinoIrlanda = () => {
 
 
                 {/* Fondo violeta debajo del contenido */}
-               <div className="flex pt-14">
-    {/* Parte izquierda */}
-    <div className="w-1/2 flex flex-col justify-center items-end p-8 ml-3">
-        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
-        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" /> {/* Ajuste de tamaño */}
-    </div>
+                <div className="flex pt-14">
+                    {/* Parte izquierda */}
+                    <div className="w-1/2 flex flex-col justify-center items-end p-8 ml-3">
+                        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
 
-    {/* Parte derecha con 3 imágenes en columna */}
-    <div className="w-1/2 flex flex-col justify-center items-center p-8">
-        <img src={Dublin} alt="Dublín" className="mb-4 w-1/3" />
-        <img src={Cork} alt="Cork" className="mb-4 w-1/3" />
-        <img src={Galway} alt="Galway" className="mb-4 w-1/3" />
-    </div>
-</div>
+                        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" /> {/* Ajuste de tamaño */}
+                    </div>
+
+                    {/* Parte derecha con 3 imágenes en columna */}
+                    <div className="w-1/2 flex flex-col justify-center items-center p-8">
+                        <img src={Dublin} alt="Dublín" className="mb-4 w-1/3" />
+                        <img src={Cork} alt="Cork" className="mb-4 w-1/3" />
+                        <img src={Galway} alt="Galway" className="mb-4 w-1/3" />
+                    </div>
+                </div>
 
 
 
@@ -204,39 +209,39 @@ const DestinoIrlanda = () => {
 
             {/* Dividido en dos partes */}
             <div className="flex my-10 py-12 ml-6 ">
-    {/* Parte izquierda con el texto */}
-    <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-9 text-left">
-    <h2 className="text-primaryVio text-5xl font-semibold pl-12">¿Por qué es el <br />destino más elegido?</h2>
-    <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
-        <p className="flex items-start text-primaryVio text-base mt-4">
-            <img src={Icon} alt="Viñeta" className="mr-2" />
-            <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
-        </p>
-        <br/>
-        <p className="flex items-start text-primaryVio text-base mt-2">
-            <img src={Icon} alt="Viñeta" className="mr-2" />
-            <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
-        </p>
-        <br/>
-        <p className="flex items-start text-primaryVio text-base mt-2">
-            <img src={Icon} alt="Viñeta" className="mr-2" />
-            <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
-        </p>
-        <br/>
-        <p className="flex items-start text-primaryVio text-base mt-2">
-            <img src={Icon} alt="Viñeta" className="mr-2" />
-            <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
-        </p>
-    </div>
-</div>
+                {/* Parte izquierda con el texto */}
+                <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-9 text-left">
+                    <h2 className="text-primaryVio text-5xl font-semibold pl-12">¿Por qué es el <br />destino más elegido?</h2>
+                    <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
+                        <p className="flex items-start text-primaryVio text-base mt-4">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
+                        </p>
+                        <br />
+                        <p className="flex items-start text-primaryVio text-base mt-2">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
+                        </p>
+                        <br />
+                        <p className="flex items-start text-primaryVio text-base mt-2">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
+                        </p>
+                        <br />
+                        <p className="flex items-start text-primaryVio text-base mt-2">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
+                        </p>
+                    </div>
+                </div>
 
 
-    {/* Parte derecha con las imágenes en diagonal */}
-    <div className="w-1/2 flex flex-col justify-between  mr-9">
-        <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
-        <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
-    </div>
-</div>
+                {/* Parte derecha con las imágenes en diagonal */}
+                <div className="w-1/2 flex flex-col justify-between  mr-9">
+                    <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
+                    <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
+                </div>
+            </div>
 
 
 
