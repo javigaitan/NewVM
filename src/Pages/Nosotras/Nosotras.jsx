@@ -89,7 +89,7 @@ const Nosotras = () => {
     <div className="relative overflow-hidden pb-[56.25%] h-0">
       <iframe
         className="absolute top-0 left-0 w-full h-full"
-        src="https://player.vimeo.com/video/951536763?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        src="https://www.youtube.com/embed/vF9afFz-xTw?si=HfC_RY0uJsE0uqk0"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
         title="Webinar de Malta vs Irlanda"

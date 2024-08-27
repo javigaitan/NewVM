@@ -313,7 +313,7 @@ const DestinoMalta = () => {
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
                         Comunidad VM en Malta
                     </h1>
-                    <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-11 h-7 rounded-lg" />
+                    <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-14 h-9" />
                 </div>
 
 
