@@ -16,21 +16,31 @@ const PagesBlogs = () => {
     const [showAhorroMenu, setShowAhorroMenu] = useState(false);
     const [showServiceMenu, setShowServiceMenu] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const handleMouseEnter = () => {
-        setDropdownOpen(true);
+    // Función para manejar el clic en el botón del dropdown
+    const handleDropdownClick = () => {
+        setIsDropdownOpen(prevState => !prevState);
     };
 
-    const handleMouseLeave = () => {
-        setDropdownOpen(false);
+    // Función para cerrar el dropdown cuando se selecciona una opción
+    const handleOptionClick = () => {
+        setIsDropdownOpen(false);
     };
 
+    // Función para cerrar el dropdown al hacer scroll
+    const handleScroll = () => {
+        if (isDropdownOpen) {
+            setIsDropdownOpen(false);
+        }
+    };
 
-    const handleSubMenuToggle = (menu) => {
-        setOpenSubMenu(openSubMenu === menu ? null : menu);
-
-    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isDropdownOpen]);
     const handleMenuClick = () => {
         setShowMenu(false); // Esto ocultará el menú cuando se hace clic en cualquier enlace del menú
     };
@@ -94,53 +104,48 @@ const PagesBlogs = () => {
                                     </Link>
                                 </li>
 
-                                <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                        <div className="flex items-center">
-                                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                                ¡Quiero viajar!
-                                            </button>
-                                            <img src={Flecha} alt="Flecha" className="ml-2" />
-                                        </div>
+                                <li className="relative">
+                        <div className="flex items-center" onClick={handleDropdownClick}>
+                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                ¡Quiero viajar!
+                            </button>
+                            <img src={Flecha} alt="Flecha" className="ml-2" />
+                        </div>
 
-                                    {isDropdownOpen && (
-                                        <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
-                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
-                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                            </Link>
-
-                                            <hr className="border-gray-300" />
-                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
-                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-
-                                            </Link>
-                                            <hr className="border-gray-300" />
-                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
-                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-
-                                            </Link>
-                                            <hr className="border-gray-300" />
-                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100">
-                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio" >Francia</span>
-                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-
-                                            </Link>
-                                            <hr className="border-gray-300" />
-                                            <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
-                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
-                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-
-                                            </Link>
-                                        </div>
-                                    )}
-                                </li>
+                        {isDropdownOpen && (
+                            <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                    <span className="text-primaryVio">Irlanda</span>
+                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                </Link>
+                                <hr className="border-gray-300" />
+                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                    <span className="text-primaryVio">Malta</span>
+                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                </Link>
+                                <hr className="border-gray-300" />
+                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                    <span className="text-primaryVio">España</span>
+                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                </Link>
+                                <hr className="border-gray-300" />
+                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                    <span className="text-primaryVio">Francia</span>
+                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                </Link>
+                                <hr className="border-gray-300" />
+                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                    <span className="text-primaryVio">Alemania</span>
+                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                </Link>
+                            </div>
+                        )}
+                    </li>
                                 <li
                                     className="relative"
                                 ><Link to='/ahorro'>
