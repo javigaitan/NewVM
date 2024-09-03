@@ -339,8 +339,8 @@ const Ahorro = () => {
 
 
            {/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+           <div className="card dark:bg-[#F2F2F2] pt-12">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
                 <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
@@ -360,31 +360,33 @@ const Ahorro = () => {
                 </p>
             </div>
             <div className="pl-4 mt-8">
-
                 <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
+                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                        Solicita más información
+                    </button>
                 </Link>
             </div>
         </div>
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto1} alt="Foto de grupo vm" className="w-335 h-710 object-cover rounded-r-lg" style={{ marginLeft: '35px' }} />
+        <div className="flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+            <img src={AhorroFoto1} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} /> {/* Redondeo aumentado */}
         </div>
     </div>
 </div>
-{/* Fin de los contenedores */}
 
+
+
+{/* Fin de los contenedores */}
 
 {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginRight: '35px' }}/>
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Alto ajustado a 700px */}
+        {/* Imagen a la izquierda, ajustada para sobresalir */}
+        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginRight: '40px', marginTop: '-2px' }} /> {/* Redondeo aumentado */}
         </div>
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
-                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 " />
+                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
             <div className="md:mt-3 pl-4 flex items-center">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Rifas</h2>
@@ -409,9 +411,9 @@ const Ahorro = () => {
             </div>
             <div className="pl-4 mt-8">
                 <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
+                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                        Solicita más información
+                    </button>
                 </Link>
             </div>
         </div>
@@ -422,7 +424,7 @@ const Ahorro = () => {
 
 {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2]">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
                 <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
@@ -440,25 +442,26 @@ const Ahorro = () => {
             </div>
             <div className="pl-4 mt-8">
                 <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
+                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                        Solicita más información
+                    </button>
                 </Link>
             </div>
         </div>
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg" style={{ marginLeft: '35px' }} />
+        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
     </div>
 </div>
 {/* Fin de los contenedores */}
 
 
+
 {/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible">
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-704 object-cover rounded-r-lg " style={{ marginRight: '35px' }} />
+<div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
+        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
         <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
             <div>
@@ -483,6 +486,8 @@ const Ahorro = () => {
         </div> 
     </div> 
 </div>
+{/* Fin de los contenedores */}
+
 {/* Fin de los contenedores */}
 <div >
 < Footer />
