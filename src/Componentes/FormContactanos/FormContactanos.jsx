@@ -61,19 +61,19 @@ const FormContactanos = () => {
       />
       <div className="p-6  text-center absolute inset-0 z-10 flex flex-col items-center pt-30" style={{ paddingTop: '55px' }}>
         <div className="flex space-x-4 pt-50">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
             <img src={INTA} alt="Instagram icon" className="w-16 h-16" />
           </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
             <img src={FB} alt="Facebook icon" className="w-16 h-16" />
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
             <img src={LINK} alt="Link icon" className="w-16 h-16" />
           </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
             <img src={YT} alt="YouTube icon" className="w-16 h-16" />
           </a>
-          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
             <img src={TIK} alt="TikTok icon" className="w-16 h-16" />
           </a>
         </div>
