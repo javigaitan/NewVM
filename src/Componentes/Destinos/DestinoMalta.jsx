@@ -102,7 +102,7 @@ const DestinoMalta = () => {
 
                         <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold text-colorWhite">
                             <li>
-                                <Link to='/nosotras'>
+                                <Link to='/nosotros'>
                                     <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Nosotros
                                     </button>
@@ -217,8 +217,8 @@ const DestinoMalta = () => {
             <div className="flex my-10 py-12 ml-6">
 
                 {/* Parte izquierda con el texto */}
-                <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-9 text-left">
-                    <h2 className="text-primaryVio text-5xl font-semibold pl-12">¿Por qué es el <br />destino más elegido?</h2>
+                <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-10 text-left pt-0">
+                    <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">¿Por qué es el <br />destino más elegido?</h2>
                     <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
                     <p className="flex items-start  text-start text-primaryVio text-base mt-4">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
@@ -245,8 +245,8 @@ const DestinoMalta = () => {
 
                 {/* Parte derecha con las imágenes en diagonal */}
                 <div className="w-1/2 flex flex-col justify-between mr-9">
-                    <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start" />
-                    <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end" />
+                    <img src={Foto1} alt="Imagen 1" className="w-1/2 self-start pt-4" />
+                    <img src={Foto2} alt="Imagen 2" className="w-1/2 self-end mr-10" />
                 </div>
             </div>
 

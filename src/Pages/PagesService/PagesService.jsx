@@ -107,7 +107,7 @@ const PagesService = () => {
                             <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-primaryVio"
                             >
                                 <li>
-                                    <Link to='/nosotras'>
+                                    <Link to='/nosotros'>
 
                                         <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
@@ -256,7 +256,7 @@ const PagesService = () => {
 
                                 </li>
                                 <li>
-                                    <Link to='/nosotras'>
+                                    <Link to='/nosotros'>
 
                                         <a href="javascript:void(0)" className="dark:text-colorWhite flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                             Nosotros

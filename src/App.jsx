@@ -5,22 +5,12 @@ import Nosotras from "./Pages/Nosotras/Nosotras";
 import Landing from "./Pages/Landing/Landing";
 import  ExperienciasHome  from "./Pages/Experiencias/ExperienciasHome";
 import CursoDeIdiomas from "./Componentes/Experienciasvm/WorkStudy/CursoDeIdiomas";
-import Insercion from "./Componentes/Experienciasvm/Insercion/Insercion";
-import Hoteleria from "./Componentes/Experienciasvm/Hoteleria/Hoteleria";
 import Contactanos from "./Pages/Contactanos/Contactanos";
-import CursosIdiomas from "./Pages/CursosIdiomas/CursosIdiomas";
 import Universidades from "./Pages/Universidad/Universidades";
-import ComunidadVm from "./Pages/Comunidad/Comunidad";
 import WorkandStudy from "./Pages/Work&StudyNew/Work&StudyNew";
 import Ahorro from "./Pages/Ahorro/Ahorro";
 import PagesBlogs from "./Pages/Blogs/PagesBlogs";
 import PagesService from "./Pages/PagesService/PagesService";
-import Alojamientos from "./Pages/PagesService/Alojamientos";
-import Seguros from "./Pages/PagesService/Seguros";
-import Arrival from "./Pages/PagesService/Arrival";
-import Rifas from "./Pages/Ahorro/Rifas";
-import MeCaso from "./Pages/Ahorro/MeCaso";
-import Referidos from "./Pages/Ahorro/Referidos";
 import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
 import DestinoIrlanda from "./Componentes/Destinos/DestinoIrlanda";
 import DestinoMalta from "./Componentes/Destinos/DestinoMalta";
@@ -36,7 +26,7 @@ function App() {
       <Router>
         <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/nosotras" element={<Nosotras />} />
+        <Route path="/nosotros" element={<Nosotras />} />
         <Route path="/experiencias" element={<ExperienciasHome />} />
         <Route path="/notfound" element={<NotFound />} />
         <Route path="/curso-de-idiomas" element={<CursoDeIdiomas />} />

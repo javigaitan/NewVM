@@ -76,7 +76,7 @@ function Navbar() {
 
                             <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold text-colorWhite">
                                 <li>
-                                    <Link to='/nosotras'>
+                                    <Link to='/nosotros'>
                                         <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
@@ -190,7 +190,7 @@ function Navbar() {
                         <div className="mt-4 mx-4">
                             <ul className="flex flex-col space-y-4">
                                 <li>
-                                    <Link to='/nosotras' onClick={() => setShowMenu(false)}>
+                                    <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>

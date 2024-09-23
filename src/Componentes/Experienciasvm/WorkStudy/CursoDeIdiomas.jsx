@@ -16,13 +16,20 @@ const CursoDeIdiomas = () => {
                         <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                     </div>
                     <div className="w-full md:w-1/2 p-4">
-                        <h1 className="text-3xl font-bold mb-4 text-primaryVio text-start ">Cursos de Idioma</h1>
+                        <h1 className="text-4xl font-bold mb-4 text-primaryVio text-start ">Cursos de Idioma</h1>
                         <div className="text-left">
                             <p className="text-lg text-colorText">
                                 Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.
                                 También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.
                                 Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.
                             </p>
+                        </div>
+                        <div className='text-start pt-10 pb-8'>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
+                                <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
+                                    Solicita tu cotización
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

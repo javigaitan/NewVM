@@ -27,7 +27,7 @@ const Nosotras = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0" >
-              <p className="text-xl text-primaryVio" >Somos una agencia de turismo educativo de origen latino pensada para <strong>latinos</strong> con más de <strong>7 años</strong> de experiencia.</p>
+              <p className="text-2xl text-primaryVio" >Somos una agencia de turismo educativo de origen latino pensada para <strong>latinos</strong> con más de <strong>7 años</strong> de experiencia.</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -55,7 +55,7 @@ const Nosotras = () => {
 
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-xl text-primaryVio">Nuestra comunidad ya suma <strong>+3.000 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
+              <p className="text-2xl text-primaryVio">Nuestra comunidad ya suma <strong>+3.000 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -75,7 +75,7 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-xl text-primaryVio pl-5">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
+              <p className="text-2xl text-primaryVio pl-5">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
             </div>
           </div>
 
