@@ -29,13 +29,15 @@ const Landing = () => {
         <>
             <Navbar />
             <Banner />
+            
             <ServiciosNew />
-            {showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} {/* Pass the close function */}
+            {showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} 
             <VMFacts />
             <GoogleReviews />
             <Blogs />
             <Partners />
             <Footer />
+            
         </>
     );
 };

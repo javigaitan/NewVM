@@ -32,16 +32,16 @@ const VMFacts = () => {
                             </div>
                         </div>
                     </div>
-                    <img src={IconPass} alt="Icon Pass" className="absolute top-4 right-16 w-28 h-auto transform transition-transform duration-300 hover:scale-110" />
+                    {/* Cambia el tamaño y posición de IconPass */}
+                    <img src={IconPass} alt="Icon Pass" className="absolute top-14 right-16 w-32 h-auto transform transition-transform duration-300 hover:scale-110" /> {/* Ajuste top y w */}
                 </div>
-                <div className="mx-auto container md:-mt-40 -mt-30 flex justify-center items-center"> {/* Ajustar márgenes superiores aquí */}
+                <div className="mx-auto container md:-mt-40 -mt-30 flex justify-center items-center">
                     <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-2 gap-x-2 gap-y-3 lg:gap-x-6 md:gap-x-6 md:gap-y-6">
                         <div className="flex justify-center flex-col items-center">
                             <img src={Icon1} alt="Icon 1" className="w-full h-auto transform transition-transform duration-300 hover:scale-110" />
                         </div>
                         <div className="flex justify-center flex-col items-center relative">
                             <img src={Icon2} alt="Icon 2" className=" text-bold w-full h-auto transform transition-transform duration-300 hover:scale-110" />
-                            
                         </div>
                         <div className="flex justify-center flex-col items-center">
                             <img src={Icon3} alt="Icon 3" className="w-full h-auto transform transition-transform duration-300 hover:scale-110" />

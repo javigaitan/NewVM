@@ -1,12 +1,11 @@
 import React from 'react';
-
 import Navbar from '../../Componentes/Navbar/Navbar';
 import Footer from '../../Componentes/Footer/Footer';
 import LINEAPUNTEADA from '../../assets/Nosotros/lineapunteada.png';
 import IMG1 from '../../assets/Nosotros/nosotros1.png';
 import IMG2 from '../../assets/Nosotros/nosotros2.png';
 import IMG3 from '../../assets/Nosotros/nosotros3.png';
-import IMG4 from '../../assets/Nosotros/nosotros4.png';
+import IMG4 from '../../assets/Nosotros/nosotros5.png';
 
 const Nosotras = () => {
 
@@ -23,7 +22,7 @@ const Nosotras = () => {
         <div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container relative z-10">
           <div className="md:flex items-center justify-between w-full">
             <div className="w-full text-left mb-8">
-              <h1 className="text-4xl b-10 pb-10 font-bold text-primaryVio">Sobre nosotros</h1>
+              <h1 className="text-5xl b-10 pb-10 text-start font-bold text-primaryVio">Sobre nosotros</h1>
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
@@ -50,13 +49,13 @@ const Nosotras = () => {
             <div className="w-full md:w-1/2 text-center md:text-left mb-2 md:mb-0 p-2" style={{
     paddingRight: '80px',
   }}>
-  <p className="text-xl text-primaryVio">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
+  <p className="text-xl text-primaryVio pl-14">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
 </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-xl text-primaryVio">Nuestra comunidad ya suma <strong>+2.500 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
+              <p className="text-xl text-primaryVio">Nuestra comunidad ya suma <strong>+3.000 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -76,7 +75,7 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="text-xl text-primaryVio">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
+              <p className="text-xl text-primaryVio pl-5">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
             </div>
           </div>
 

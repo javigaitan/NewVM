@@ -12,7 +12,7 @@ import Resi from '../../assets/OtrosServicios/Residencia VM 2024.png';
 import Icons4 from '../../assets/OtrosServicios/Icons4.png';
 import TRABAJO from '../../assets/OtrosServicios/Job Workshop (documento) 1.png';
 import Icons5 from '../../assets/OtrosServicios/Icons5.png';
-import Grupal from '../../assets/OtrosServicios/viajes grupales.png';
+import Grupal from '../../assets/OtrosServicios/grupalvm.png';
 import Footer from "../../Componentes/Footer/Footer";
 
 
@@ -328,7 +328,7 @@ const PagesService = () => {
                 </div>
 
                 <div className="text w-full bg-secondariVerde px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-3xl font-bold text-primaryVio dark:text-white mb-10 pt-14">Otros Servicios</h1>
+                    <h1 className="text-5xl font-bold text-primaryVio dark:text-white mb-10 pt-14">Otros Servicios</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-primaryVio dark:text-primaryVio pb-5">
                             En <strong>Vaga-Mundo</strong> nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones <strong>360º</strong> diseñadas para maximizar su experiencia de viaje.
@@ -341,7 +341,7 @@ const PagesService = () => {
            {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajustado para el contenido principal */}
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5"> {/* Ajustado para el contenido principal */}
             <div>
                 <img src={Icons1} alt="Icono de seguro" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
@@ -379,10 +379,10 @@ const PagesService = () => {
           {/* Comienza los contenedores */}
 <div className="dark:bg-[#F2F2F2] pt-12 mb-10"> 
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
+        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible "> {/* Añadido overflow-visible para la imagen */}
             <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
             <div>
                 <img src={Icons2} alt="Icono de pass" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
@@ -413,13 +413,13 @@ const PagesService = () => {
            {/* Comienza los contenedores */}
 <div className="dark:bg-[#F2F2F2] pt-12 mb-10">
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5"> {/* Ajuste de contenido principal */}
             <div>
                 <img src={Icons3} alt="Icono de Alojamiento" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
             <div className="md:mt-3 pl-4">
                 <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
-                    Alojamientos propios y externos
+                    Alojamiento propio y externos
                 </h2>
             </div>
             <div className="md:mt-3 pl-4">
@@ -452,7 +452,7 @@ const PagesService = () => {
         <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
             <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
             <div>
                 <img src={Icons4} alt="Icono de Inserción" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>

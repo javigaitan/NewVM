@@ -326,7 +326,7 @@ const Ahorro = () => {
                 </div>
 
                 <div className="text w-full bg-primaryVio px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-3xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">Financia tu viaje</h1>
+                    <h1 className="text-5xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">Financia tu viaje</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-colorWhite dark:text-primaryVio pb-5">
                             En <strong>Vaga-Mundo</strong> queremos ayudarte a cumplir el <strong>viaje de tus sueños</strong>, por eso creamos planes a medida para que puedas financiar tu experiencia educativa en el extranjero en cuotas o plazos.
@@ -341,7 +341,7 @@ const Ahorro = () => {
            {/* Comienza los contenedores */}
            <div className="card dark:bg-[#F2F2F2] pt-12">
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
             <div>
                 <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
@@ -384,7 +384,7 @@ const Ahorro = () => {
         <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
             <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginRight: '40px', marginTop: '-2px' }} /> {/* Redondeo aumentado */}
         </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5">
             <div>
                 <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
@@ -425,7 +425,7 @@ const Ahorro = () => {
 {/* Comienza los contenedores */}
 <div className="card dark:bg-[#F2F2F2] pt-12">
     <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
             <div>
                 <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>
@@ -463,7 +463,7 @@ const Ahorro = () => {
         <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
             <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
             <div>
                 <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
             </div>

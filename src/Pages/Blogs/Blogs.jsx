@@ -63,12 +63,12 @@ const blogData = [
       };
   
       return (
-          <div className="flex">
-              <div className="flex items-center justify-start" style={{ paddingTop: '75px', paddingBottom: '30px' }}>
+          <div className="flex items-center">
+              <div className="flex items-center justify-start" >
                   <img src={BlogBg} className="w-[80%] max-h-[677px] object-cover" alt="Background" />
               </div>
   
-              <div className="flex flex-col justify-end ml-5 w-1/2 pb-20 pt-30">
+              <div className="flex flex-col justify-end ml-5 w-1/2 pb-20 pt-30 mt-20">
                   <Slider {...settings}>
                       {blogData.map((blog, index) => (
                           <div key={index} className="flex items-center justify-center">

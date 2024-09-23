@@ -182,10 +182,10 @@ const DestinoIrlanda = () => {
 
                     {/* Titulo en Banner */}
 
-                    <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
-                        <h1 className="text-white text-5xl md:text-5xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
+                    <div className="flex items-center text-7xl justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
+                        <h1 className="text-white text-8xl md:text-6xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
                             ¡Bienvenidos a Irlanda
-                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-13 h-9 inline-block mx-2" />
+                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-15 h-11 inline-block mx-2" />
                             <span style={{ display: 'block', lineHeight: '5rem' }}>la isla esmeralda!</span>
                         </h1>
                     </div>

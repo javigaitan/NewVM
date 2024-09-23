@@ -24,7 +24,7 @@ const LoaderAvionPopUp = ({ onClose }) => {
                             </div>
                             <div className="pb-5">
                                 <p className="mt-6 sm:w-80 text-base leading-7 text-center text-colorText">
-                                    Conoce cómo llegar a tu destino de la mano de VM
+                                    Conoce cómo llegar a tu destino de la mano de Vaga-Mundo
                                 </p>
                             </div>
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
