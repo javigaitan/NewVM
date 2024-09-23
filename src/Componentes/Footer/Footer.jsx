@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/footer2.png";
+import BGF from "../../assets/Textura/texturafooter.png";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';

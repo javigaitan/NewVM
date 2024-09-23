@@ -5,7 +5,7 @@ import { Typography, Avatar, Rating } from "@material-tailwind/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BackTest from '../../assets/Textura/Group 120.png';
+import BackTest from '../../assets/Textura/texturadetestimonios.png';
 import TestimoniaCard from './TestimoniaCard';
 
 
@@ -49,7 +49,7 @@ const GoogleReviews = () => {
 
                 <div className="facts-container flex justify-start mt-8" style={{ paddingLeft: '110px', paddingTop: '150px' }}>
 
-                
+               
 
 
                    <div className="bg-white p-6 rounded-lg shadow-lg w-96 h-96 items-center">
