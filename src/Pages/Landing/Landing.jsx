@@ -28,15 +28,15 @@ const Landing = () => {
     return (
         <>
             <Navbar />
-            <Banner />
+             <Banner />
             
             <ServiciosNew />
-            {showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} 
+            {/*<{showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} */}
             <VMFacts />
-            <GoogleReviews />
+            {/*<GoogleReviews />
             <Blogs />
             <Partners />
-            <Footer />
+            <Footer /> */}
             
         </>
     );

@@ -84,13 +84,13 @@ function Navbar() {
                                 </li>
 
                                 <li className="relative">
-                                <button
-    onClick={toggleDropdown}
-    className="dark:text-colorWhite text-lg flex items-center focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
->
-    <span>¡Quiero viajar!</span>
-    <img src={Flecha} alt="Flecha" className="ml-2" />
-</button>
+                                    <button
+                                        onClick={toggleDropdown}
+                                        className="dark:text-colorWhite text-lg flex items-center focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
+                                    >
+                                        <span>¡Quiero viajar!</span>
+                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    </button>
 
 
                                     {isDropdownOpen && (
@@ -174,9 +174,11 @@ function Navbar() {
                             <div className="flex items-center space-x-3">
                                 <div>
                                     <Link to='/'>
-                                        <img src={Logo} alt="Logo" className="w-auto h-auto" />
+                                        <img src={Logo} alt="Logo" className="w-24 h-auto md:w-auto md:h-auto" />
                                     </Link>
                                 </div>
+                            </div>
+                            <div className="ml-auto"> {/* Añadir ml-auto para empujar el botón a la derecha */}
                                 <div onClick={() => setShowMenu(false)} className="text-white">
                                     <button aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
                                         <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,6 +189,7 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="mt-4 mx-4">
                             <ul className="flex flex-col space-y-4">
                                 <li>
