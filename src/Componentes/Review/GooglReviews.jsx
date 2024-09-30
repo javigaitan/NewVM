@@ -6,8 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BackTest from '../../assets/Textura/texturadetestimonios.png';
-import TestimoniaCard from './TestimoniaCard';
-
+import Recuadrotesti from '../../assets/Textura/recuadrofeed.png';
 
 const GoogleReviews = () => {
 
@@ -35,26 +34,35 @@ const GoogleReviews = () => {
 
     const reviewsToShow = reviewsData.slice(0, 3);
 
-
     return (
-        <div className="relative pb-10 px-4 md:px-8 min-h-screen items-center">
-            {/* Imagen de fondo */}
-            <img src={BackTest} alt="Background" className="absolute items-center inset-0 w-full h-full object-cover z-0" />
-            <div className="relative z-10 items-center">
+        <div className="relative pb-10  min-h-screen items-center">
+            {/* Imagen de fondo para la versión lg */}
+            <img src={BackTest} alt="Background" className="absolute items-center inset-0 w-full h-full object-cover z-0 lg:block hidden" />
 
+            {/* Contenedor para la versión móvil */}
+            <div className="bg-secondaryTur min-h-screen flex flex-col justify-center lg:hidden relative items-top bg-none">
+                {/* Título "Testimonios" */}
+                <h2 className="text-4xl font-semibold text-white  text-center">
+                    Testimonios
+                </h2>
+
+                {/* Imagen Recuadrotesti debajo del título */}
+                <img 
+                    src={Recuadrotesti} 
+                    alt="Recuadro Testimonios" 
+                    className="mt-2 w-6/7 h-auto mx-auto pl-7 " 
+                />
+            </div>
+
+            {/* Contenedor para la versión lg */}
+            <div className="relative z-10 items-center lg:block hidden">
                 {/* Título "Testimonios" */}
                 <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold text-colorWhite mt-5 text-center">
                     .
                 </h2>
 
                 <div className="facts-container flex justify-start mt-8" style={{ paddingLeft: '110px', paddingTop: '150px' }}>
-
-               
-
-
-                   <div className="bg-white p-6 rounded-lg shadow-lg w-96 h-96 items-center">
-
-
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-96 h-96 items-center">
                         <Slider {...settings}>
                             {reviewsToShow.map((review, index) => (
                                 <div className="flex flex-col items-center text-center pt-12" key={index}>
@@ -63,12 +71,10 @@ const GoogleReviews = () => {
                                             src={review.avatar}
                                             alt="image"
                                             size="md"
-                                            className=" mb-4 "
+                                            className="mb-4"
                                         />
-                                        <Typography variant="p" className="mb-4 text-colorText font-m md:text-lg lg:text-base"
-                                        >
+                                        <Typography variant="p" className="mb-4 text-colorText font-m md:text-lg lg:text-base">
                                             &quot;{review.author}&quot;
-
                                         </Typography>
                                     </div>
 
@@ -83,8 +89,6 @@ const GoogleReviews = () => {
                                 </div>
                             ))}
                         </Slider>
-
-
                     </div>
                 </div>
             </div>

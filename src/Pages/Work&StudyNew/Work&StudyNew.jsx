@@ -15,10 +15,15 @@ const WorkandStudy = () => (
                     <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                 </div>
                 <div className="w-full md:w-1/2 p-4">
-                    <h1 className="text-4xl font-bold mb-4 text-start text-primaryVio">Estudio y trabajo en el exterior</h1>
+                    <h1 className="text-4xl font-bold mb-3 pb-5 text-start text-primaryVio">Estudio y trabajo en el exterior</h1>
                     <div className="text-left">
                         <p className="text-lg text-colorText">
-                            Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos. Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales, y su gestión se puede realizar antes o al momento de llegar al destino. Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.
+                            Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos.
+                            <br/>
+                            <br/> Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales, y su gestión se puede realizar antes o al momento de llegar al destino.
+                            <br/> 
+                            <br/>Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.
+                            <br/>
                         </p>
                     </div>
                     <div className='text-start pt-10 pb-8'>
