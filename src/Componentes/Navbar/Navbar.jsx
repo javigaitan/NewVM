@@ -168,8 +168,11 @@ function Navbar() {
                         </div>
                     </div>
 
+
+
+
                     {/* Mobile nav */}
-                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-primaryVio flex-col h-screen w-full`}>
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-primaryVio flex-col h-screen w-full`}>
                         <div className="dark:bg-gray-900 flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
                                 <div>
@@ -191,22 +194,23 @@ function Navbar() {
                         </div>
 
                         <div className="mt-4 mx-4">
-                            <ul className="flex flex-col space-y-4">
+                            <ul className="flex flex-col space-y-4 items-center">
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Nosotros
                                         </button>
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <button onClick={toggleDropdown} className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <button onClick={toggleDropdown} className="dark:text-colorWhite text-white text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
                                         ¡Quiero viajar!
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
+
                                     {isDropdownOpen && (
-                                        <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                             <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                                 <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
                                                 <span className="text-primaryVio">Irlanda</span>
@@ -242,7 +246,7 @@ function Navbar() {
 
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Financia tu viaje
                                         </button>
                                     </Link>
@@ -250,7 +254,7 @@ function Navbar() {
 
                                 <li>
                                     <Link to='/servicios' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Otros servicios
                                         </button>
                                     </Link>
@@ -258,7 +262,7 @@ function Navbar() {
 
                                 <li>
                                     <Link to='/blogs' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
                                         </button>
                                     </Link>
