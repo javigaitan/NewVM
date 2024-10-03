@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom"
 import NotFound from './Componentes/NotFound';
 import Nosotras from "./Pages/Nosotras/Nosotras";
 import Landing from "./Pages/Landing/Landing";
-import  ExperienciasHome  from "./Pages/Experiencias/ExperienciasHome";
 import CursoDeIdiomas from "./Componentes/Experienciasvm/WorkStudy/CursoDeIdiomas";
 import Contactanos from "./Pages/Contactanos/Contactanos";
 import Universidades from "./Pages/Universidad/Universidades";
@@ -27,7 +26,6 @@ function App() {
         <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/nosotros" element={<Nosotras />} />
-        <Route path="/experiencias" element={<ExperienciasHome />} />
         <Route path="/notfound" element={<NotFound />} />
         <Route path="/curso-de-idiomas" element={<CursoDeIdiomas />} />
         <Route path="/work&study" element={<WorkandStudy />} />

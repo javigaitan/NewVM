@@ -64,7 +64,7 @@ const PagesService = () => {
             origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
         ScrollReveal().reveal('.item', {
@@ -73,7 +73,7 @@ const PagesService = () => {
             origin: 'top',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
         ScrollReveal().reveal('.text', {
@@ -82,7 +82,7 @@ const PagesService = () => {
             origin: 'left',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
     })
@@ -116,47 +116,47 @@ const PagesService = () => {
                                 </li>
 
                                 <li className="relative">
-                        <div className="flex items-center" onClick={handleDropdownClick}>
-                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                ¡Quiero viajar!
-                            </button>
-                            <img src={Flecha} alt="Flecha" className="ml-2" />
-                        </div>
+                                    <div className="flex items-center" onClick={handleDropdownClick}>
+                                        <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            ¡Quiero viajar!
+                                        </button>
+                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    </div>
 
-                        {isDropdownOpen && (
-                            <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Irlanda</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Malta</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">España</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Francia</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Alemania</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                            </div>
-                        )}
-                    </li>
+                                    {isDropdownOpen && (
+                                        <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Irlanda</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Malta</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">España</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Francia</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Alemania</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                        </div>
+                                    )}
+                                </li>
                                 <li
                                     className="relative"
                                 ><Link to='/ahorro'>
@@ -230,7 +230,7 @@ const PagesService = () => {
                     <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-secondariVerde flex-col h-screen w-full`}>
                         <div className="dark:bg-gray-900 flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
-                            <div>
+                                <div>
                                     <Link to='/'>
                                         <img src={Logo} alt="Logo" className="w-24 h-auto md:w-auto md:h-auto" />
                                     </Link>
@@ -246,7 +246,7 @@ const PagesService = () => {
                         </div>
                         <div className="mt-6 p-4">
                             <ul className="flex flex-col space-y-6 items-center">
-                              
+
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -261,41 +261,41 @@ const PagesService = () => {
                                     </button>
 
                                     {isDropdownOpen && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-primaryVio border border-gray-300 rounded-lg shadow-lg z-50">
-                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Irlanda</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Malta</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">España</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Francia</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Alemania</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                            </div>
-                        )}
+                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Irlanda</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Malta</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">España</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Francia</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Alemania</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                        </div>
+                                    )}
                                 </li>
-                                
-                                
+
+
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -336,126 +336,133 @@ const PagesService = () => {
 
             </div>
 
-           {/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12 mb-10"> 
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5"> {/* Ajustado para el contenido principal */}
-            <div>
-                <img src={Icons1} alt="Icono de seguro" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+            {/* Comienza los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9">
+                        <div>
+                            <img src={Icons1} alt="Icono de seguro" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Seguros y asistencias al viajero</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.
+                                <br />
+                                <br />
+                                Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida
+                                y asistencia médica 24/7 en tu mismo idioma.
+                                <br />
+                                <br />
+                                Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                    {/* Solo visible en la versión lg */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={Seguros} alt="Foto de viajera" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} />
+                    </div>
+                </div>
             </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Seguros y asistencias al viajero</h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.
-                    <br />
-                    <br />
-                    Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida
-                    y asistencia médica 24/7 en tu mismo idioma.
-                    <br />
-                    <br />
-                    Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>
-        </div>
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Ajuste en la posición y estilos de la imagen */}
-            <img src={Seguros} alt="Foto de viajera" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
+            {/* Fin de los contenedores */}
 
 
 
 
-          {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-12 mb-10"> 
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible "> {/* Añadido overflow-visible para la imagen */}
-            <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
-            <div>
-                <img src={Icons2} alt="Icono de pass" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
-                    Tickets aéreos, alquiler de autos, atracciones y mucho más.
-                </h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Uno de los primeros pasos que realizamos para materializar el viaje de nuestros sueños es la compra del boleto de avión, ya sea que viajes solo, acompañado, en familia o con amigos.
-                    <br />
-                    <br />
-                    Por eso, en Vaga-Mundo tenemos las mejores opciones en tickets aéreos, alquileres de auto, atracciones y mucho más, dentro o fuera de Europa.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
-
-
-           {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-12 mb-10">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5"> {/* Ajuste de contenido principal */}
-            <div>
-                <img src={Icons3} alt="Icono de Alojamiento" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
-                    Alojamiento propio y externos
-                </h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Un gran miedo que enfrentamos al momento de vivir una experiencia en el exterior es el saber dónde nos alojaremos.
-                    <br />
-                    <br />
-                    Por eso, en Vaga-Mundo contamos con alojamiento propio en Dublín, Irlanda para que nuestros estudiantes se sientan como en casa, una vez arribados a la isla verde.
-                    <br />
-                    <br />
-                    Asimismo, tanto en Irlanda como en otros destinos del mundo tenemos convenios con partners como pueden ser alojamientos estudiantiles, host family o las mismas escuelas de inglés, para que nuestros estudiantes se sientan cómodos.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>
-        </div>
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
-            <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
 
             {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-12 mb-10">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+            <div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+                    {/* Imagen a la izquierda, visible solo en lg */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
+                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
+                        <div>
+                            <img src={Icons2} alt="Icono de pass" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
+                                Tickets aéreos, alquiler de autos, atracciones y mucho más.
+                            </h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Uno de los primeros pasos que realizamos para materializar el viaje de nuestros sueños es la compra del boleto de avión, ya sea que viajes solo, acompañado, en familia o con amigos.
+                                <br />
+                                <br />
+                                Por eso, en Vaga-Mundo tenemos las mejores opciones en tickets aéreos, alquileres de auto, atracciones y mucho más, dentro o fuera de Europa.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+
+            {/* Comienza los contenedores */}
+            <div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+                    {/* Imagen a la izquierda, visible solo en lg */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
+                        <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 ml-5"> {/* Ajuste de contenido principal */}
+                        <div>
+                            <img src={Icons3} alt="Icono de Alojamiento" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
+                                Alojamiento propio y externos
+                            </h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Un gran miedo que enfrentamos al momento de vivir una experiencia en el exterior es el saber dónde nos alojaremos.
+                                <br />
+                                <br />
+                                Por eso, en Vaga-Mundo contamos con alojamiento propio en Dublín, Irlanda para que nuestros estudiantes se sientan como en casa, una vez arribados a la isla verde.
+                                <br />
+                                <br />
+                                Asimismo, tanto en Irlanda como en otros destinos del mundo tenemos convenios con partners como pueden ser alojamientos estudiantiles, host family o las mismas escuelas de inglés, para que nuestros estudiantes se sientan cómodos.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+            {/* Comienza los contenedores */}
+<div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+        {/* Imagen a la izquierda, visible solo en lg */}
+        <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
             <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
         </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
+        <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
             <div>
-                <img src={Icons4} alt="Icono de Inserción" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                <img src={Icons4} alt="Icono de Inserción" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
             </div>
             <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
                     Programas de inserción laboral
                 </h2>
             </div>
@@ -470,7 +477,7 @@ const PagesService = () => {
                     La propuesta consiste en un diagnóstico situacional del aplicante para poder ofrecer una eficiente proximidad con el mercado laboral postulante. El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.
                 </p>
             </div>
-            <div className="pl-4 mt-8">
+            <div className="lg:pl-4 mt-8">
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
@@ -481,17 +488,16 @@ const PagesService = () => {
 {/* Fin de los contenedores */}
 
 
-            {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-12 pb-10">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
+
+{/* Comienza los contenedores */}
+<div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
+    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+        <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9"> {/* Ajuste de contenido principal */}
             <div>
-                <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
             </div>
             <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
-                    Viajes grupales y actividades en comunidad
-                </h2>
+                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Viajes grupales y actividades en comunidad</h2>
             </div>
             <div className="md:mt-3 pl-4">
                 <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
@@ -505,14 +511,15 @@ const PagesService = () => {
                     Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí.
                 </p>
             </div>
-            <div className="pl-4 mt-8">
+            <div className="lg:pl-4 mt-8">
                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                     Solicita más información
                 </button>
             </div>
         </div>
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
-            <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+        {/* Solo visible en la versión lg */}
+        <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+            <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} />
         </div>
     </div>
 </div>
@@ -520,11 +527,8 @@ const PagesService = () => {
 
 
 
-
             <Footer />
         </div>
-
-
     )
 }
 

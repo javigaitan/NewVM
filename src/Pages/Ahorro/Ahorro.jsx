@@ -61,7 +61,7 @@ const Ahorro = () => {
             origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
         ScrollReveal().reveal('.item', {
@@ -70,7 +70,7 @@ const Ahorro = () => {
             origin: 'top',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
         ScrollReveal().reveal('.text', {
@@ -79,7 +79,7 @@ const Ahorro = () => {
             origin: 'left',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
 
 
@@ -114,47 +114,47 @@ const Ahorro = () => {
                                 </li>
 
                                 <li className="relative">
-                        <div className="flex items-center" onClick={handleDropdownClick}>
-                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                ¡Quiero viajar!
-                            </button>
-                            <img src={Flecha} alt="Flecha" className="ml-2" />
-                        </div>
+                                    <div className="flex items-center" onClick={handleDropdownClick}>
+                                        <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            ¡Quiero viajar!
+                                        </button>
+                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    </div>
 
-                        {isDropdownOpen && (
-                            <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Irlanda</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Malta</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">España</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Francia</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Alemania</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                            </div>
-                        )}
-                    </li>
+                                    {isDropdownOpen && (
+                                        <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Irlanda</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Malta</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">España</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Francia</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Alemania</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                        </div>
+                                    )}
+                                </li>
                                 <li
                                     className="relative"
                                 ><Link to='/ahorro'>
@@ -228,7 +228,7 @@ const Ahorro = () => {
                     <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-primaryVio flex-col h-screen w-full`}>
                         <div className="dark:bg-gray-900 flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
-                            <div>
+                                <div>
                                     <Link to='/'>
                                         <img src={Logo} alt="Logo" className="w-24 h-auto md:w-auto md:h-auto" />
                                     </Link>
@@ -244,7 +244,7 @@ const Ahorro = () => {
                         </div>
                         <div className="mt-6 p-4">
                             <ul className="flex flex-col space-y-6 items-center">
-                              
+
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -259,41 +259,41 @@ const Ahorro = () => {
                                     </button>
 
                                     {isDropdownOpen && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Irlanda</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Malta</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">España</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Francia</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Alemania</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                            </div>
-                        )}
+                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Irlanda</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Malta</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">España</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Francia</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Alemania</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                        </div>
+                                    )}
                                 </li>
-                                
-                                
+
+
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -335,160 +335,168 @@ const Ahorro = () => {
 
 
 
-           {/* Comienza los contenedores */}
-           <div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
-            <div>
-                <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+            {/* Comienza los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9">
+                        <div>
+                            <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                        </div>
+                        <div className="md:mt-3 pl-4 ">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Programa de Referidos</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.
+                                <br />
+                                <br />
+                                Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.
+                                <br />
+                                <br />
+                                Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    Solicita más información
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                    {/* Solo visible en la versión lg */}
+                    <div className="hidden lg:flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={AhorroFoto1} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} />
+                    </div>
+                </div>
             </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Referidos</h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.
-                    <br />
-                    <br />
-                    Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.
-                    <br />
-                    <br />
-                    Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
-                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                        Solicita más información
-                    </button>
-                </Link>
-            </div>
-        </div>
-        <div className="flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
-            <img src={AhorroFoto1} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} /> {/* Redondeo aumentado */}
-        </div>
-    </div>
-</div>
+            {/* Fin de los contenedores */}
 
 
 
-{/* Fin de los contenedores */}
-
-{/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Alto ajustado a 700px */}
-        {/* Imagen a la izquierda, ajustada para sobresalir */}
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
-            <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginRight: '40px', marginTop: '-2px' }} /> {/* Redondeo aumentado */}
-        </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 mr-5">
-            <div>
-                <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+            {/* Comienza los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-4 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible lg:h-[700px] md:h-[850px]"> {/* Ajuste de padding para md */}
+                    {/* Imagen a la izquierda, visible solo en lg */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginRight: '40px', marginTop: '-2px' }} />
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-4 px-2 lg:px-4 mr-5"> {/* Ajuste de padding interno para md */}
+                        <div>
+                            <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                        </div>
+                        <div className="md:mt-3 pl-4 flex items-center">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl md:pb-6 font-extrabold leading-9">Programa de Rifas</h2>
+                            <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3 ml-3" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.
+                                <br />
+                                <br />
+                                Para ello, nos aliamos con <strong>Planet01</strong> para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.
+                                <br />
+                                <br />
+                                <i>¿Cómo funciona el programa?</i>
+                                <br />
+                            </p>
+                            <ul className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left list-disc pl-5">
+                                <li>Te inscribes y haces la seña de tu curso con Vaga-Mundo.</li>
+                                <li>Coordinas con tu asesor la cantidad de boletas de reserva.</li>
+                                <li>Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.</li>
+                            </ul>
+                        </div>
+                        <div className="lg:pl-4 mt-8 w-full md:w-auto"> {/* Ajuste del contenedor del botón */}
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 w-full md:w-auto"> {/* Ancho completo en móvil */}
+                                    Solicita más información
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="md:mt-3 pl-4 flex items-center">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Rifas</h2>
-                <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3 ml-3" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.
-                    <br />
-                    <br />
-                    Para ello, nos aliamos con <strong>Planet01</strong> para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.
-                    <br />
-                    <br />
-                    <i>¿Cómo funciona el programa?</i>
-                    <br />
-                </p>
-                <ul className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left list-disc pl-5">
-                    <li>Te inscribes y haces la seña de tu curso con Vaga-Mundo.</li>
-                    <li>Coordinas con tu asesor la cantidad de boletas de reserva.</li>
-                    <li>Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.</li>
-                </ul>
-            </div>
-            <div className="pl-4 mt-8">
-                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
-                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                        Solicita más información
-                    </button>
-                </Link>
-            </div>
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
-
-
-{/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
-            <div>
-                <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.
-                    <br />
-                    <br />
-                    A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
-                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                        Solicita más información
-                    </button>
-                </Link>
-            </div>
-        </div>
-        <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
-            <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
+            {/* Fin de los contenedores */}
 
 
 
-{/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-        <div className="flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
-            <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 ml-5">
-            <div>
-                <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Embajadores VM</h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.
-                    <br />
-                    <br />
-                    Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins.
-                </p>
-            </div>
-            <div className="pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>   
-        </div> 
-    </div> 
-</div>
-{/* Fin de los contenedores */}
 
-<div >
-< Footer />
+            {/* Comienza los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-12">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5">
+                        <div>
+                            <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.
+                                <br />
+                                <br />
+                                A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    Solicita más información
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
 
-</div>
-</div > 
-)}
+                    {/* Imagen mostrada solo en lg, oculta en dispositivos md y más pequeños */}
+                    <div className="hidden lg:flex justify-center items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+                        <img src={AhorroFoto3} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+
+
+            {/* Comienza los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
+                    {/* Imagen mostrada solo en lg, oculta en dispositivos md y más pequeños */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+                        <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5">
+                        <div>
+                            <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Embajadores VM</h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.
+                                <br />
+                                <br />
+                                Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8">
+                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                Solicita más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+
+            <div >
+                < Footer />
+
+            </div>
+        </div >
+    )
+}
 export default Ahorro

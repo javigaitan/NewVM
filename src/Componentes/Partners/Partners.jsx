@@ -51,10 +51,10 @@ const Partners = () => {
   };
 
   return (
-    <div className="my-30 pb-50">
+    <div className="my-30  pb-50 "> 
 
-      <div className="mb-35">
-        <h2 className="text-3xl font-semibold leading-9 text-center text-colorText lg:text-4xl">
+      <div className="mb-35 ">
+        <h2 className="text-3xl font-semibold leading-9 text-center text-colorText lg:text-4xl mt-20 lg:mt-0">
           Nuestros Partners
         </h2>
       </div>
@@ -63,121 +63,121 @@ const Partners = () => {
         <Slider {...settings}>
 
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
-        <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={ALAN} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={ALAN} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
 
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={ASSIST} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={ASSIST} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={ASSISTCARD} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={ASSISTCARD} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={ERASMUSU} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={ERASMUSU} className="max-w-[250px] max-h-[250px] object-contain" alt="Hola Sim" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={HOLAFLY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={HOLAFLY} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={HOLASIM} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={HOLASIM} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={MONEY} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={MONEY} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={PAMPA} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={PAMPA} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={PAX} className="max-w-[200px] max-h-[200px] object-contain" alt="Hola Sim" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={PAX} className="max-w-[250px] max-h-[250px] object-contain" alt="Hola Sim" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={PLANET01} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={PLANET01} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={AMERICANSHOP} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={AMERICANSHOP} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={SPOTHOME} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={SPOTHOME} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-    
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={TWC} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={TWC} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
           <Link to={'https://blog.vaga-mundo.com/es/comunidad-vm?hs_preview=HAzPBfKZ-89982037197'}>
 
-          <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="flex justify-center items-center">
-              <img src={WORD} className="max-w-[200px] max-h-[200px] object-contain" alt="/" />
+            <div className="p-8  rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="flex justify-center items-center">
+                <img src={WORD} className="max-w-[250px] max-h-[250px] object-contain" alt="/" />
+              </div>
             </div>
-          </div>
           </Link>
-          
-          
-          
+
+
+
         </Slider>
       </div>
     </div>
