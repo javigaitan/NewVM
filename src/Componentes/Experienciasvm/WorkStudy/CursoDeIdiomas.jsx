@@ -11,20 +11,21 @@ const CursoDeIdiomas = () => {
         <div>
             <Navbar />
             <div className="container mx-auto px-4 py-8">
-                <div className="flex flex-col md:flex-row items-center">
-                    <div className="w-full md:w-1/2 p-4">
+                {/* Flex layout for lg, centered for md */}
+                <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
+                    <div className="w-full lg:w-1/2 p-4 flex justify-center">
                         <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                     </div>
-                    <div className="w-full md:w-1/2 p-4">
-                        <h1 className="text-4xl font-bold mb-4 text-primaryVio text-start ">Cursos de Idioma</h1>
-                        <div className="text-left">
-                            <p className="text-lg text-colorText">
-                                Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.
-                                También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.
-                                Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.
-                            </p>
-                        </div>
-                        <div className='text-start pt-10 pb-8'>
+                    <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                        <h1 className="text-4xl font-bold mb-4 text-primaryVio">Cursos de Idioma</h1>
+                        <p className="text-lg text-colorText">
+                            Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.
+                            <br/><br/>
+                            También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.
+                            <br/><br/>
+                            Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.
+                        </p>
+                        <div className='pt-10 pb-8'>
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
                                 <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
                                     Solicita tu cotización
@@ -35,61 +36,54 @@ const CursoDeIdiomas = () => {
                 </div>
             </div>
 
-
+            {/* Centered content for md */}
             <div>
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio mt-6 text-center">
-                    Otras experiencias            </h1>
+                    Otras experiencias
+                </h1>
 
-
-                    <div className="flex flex-wrap justify-center mt-8">
-
-                
-
-                <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
-                    <div className="relative bg-cover flex justify-center flex-col rounded-lg">
-                        <div className="relative">
-                            <img 
-                                src={WyS} 
-                                alt="work&study" 
-                                className="w-full h-auto rounded-lg " 
-                            />
-                            <div className="absolute bottom-0 left-0 w-full">
-                                <Link to='/work&study'>
-                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Estudio y trabajo en el exterior
-                                    </button>
-                                </Link>
+                <div className="flex flex-wrap justify-center mt-8">
+                    <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
+                        <div className="relative bg-cover flex justify-center flex-col rounded-lg">
+                            <div className="relative">
+                                <img 
+                                    src={WyS} 
+                                    alt="work&study" 
+                                    className="w-full h-auto rounded-lg mx-auto" 
+                                />
+                                <div className="absolute bottom-0 left-0 w-full">
+                                    <Link to='/work&study'>
+                                        <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                            Estudio y trabajo en el exterior
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
-                    <div className="relative bg-cover flex justify-center flex-col rounded-lg">
-                        <div className="relative">
-                            <img 
-                                src={universitarios} 
-                                alt="Carreras Universitarias" 
-                                className="w-full h-auto rounded-lg " 
-                            />
-                            <div className="absolute bottom-0 left-0 w-full">
-                                <Link to='/carreras-universitarias'>
-                                    <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Carreras y posgrados universitarios
-                                    </button>
-                                </Link>
+                    <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
+                        <div className="relative bg-cover flex justify-center flex-col rounded-lg">
+                            <div className="relative">
+                                <img 
+                                    src={universitarios} 
+                                    alt="Carreras Universitarias" 
+                                    className="w-full h-auto rounded-lg mx-auto" 
+                                />
+                                <div className="absolute bottom-0 left-0 w-full">
+                                    <Link to='/carreras-universitarias'>
+                                        <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
+                                            Carreras y posgrados universitarios
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
 
-            <FormContactanos/>
-
-
-
-
+            <FormContactanos />
         </div>
     );
 }
