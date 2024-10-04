@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
 import Idiomas from '../../assets/ServiciosVM/curso idioma.png';
@@ -57,6 +57,41 @@ const DestinoMalta = () => {
         });
     }, []);
 
+    const dropdownMemoized = useMemo(() => {
+        return isDropdownOpen ? (
+            <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                    <span className="text-primaryVio">Irlanda</span>
+                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                </Link>
+                <hr className="border-gray-300" />
+                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                    <span className="text-primaryVio">Malta</span>
+                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                </Link>
+                <hr className="border-gray-300" />
+                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                    <span className="text-primaryVio">España</span>
+                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                </Link>
+                <hr className="border-gray-300" />
+                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                    <span className="text-primaryVio">Francia</span>
+                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                </Link>
+                <hr className="border-gray-300" />
+                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                    <span className="text-primaryVio">Alemania</span>
+                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                </Link>
+            </div>
+        ) : null
+    }, [isDropdownOpen])
 
     return (
         <div className="dark:bg-gray-900 relative z-10 " >
@@ -110,14 +145,14 @@ const DestinoMalta = () => {
                             </li>
 
                             <li className="relative">
-                        <div className="flex items-center" onClick={handleDropdownClick}>
-                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                ¡Quiero viajar!
-                            </button>
-                            <img src={Flecha} alt="Flecha" className="ml-2" />
-                        </div>
-
-                        {isDropdownOpen && (
+                                <div className="flex items-center" onClick={handleDropdownClick}>
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        ¡Quiero viajar!
+                                    </button>
+                                    <img src={Flecha} alt="Flecha" className="ml-2" />
+                                </div>
+                                {dropdownMemoized}
+                                {/* {isDropdownOpen && (
                             <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                 <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                     <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
@@ -149,8 +184,8 @@ const DestinoMalta = () => {
                                     <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                 </Link>
                             </div>
-                        )}
-                    </li>
+                        )} */}
+                            </li>
                             <li className="relative">
                                 <Link to='/ahorro'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -177,11 +212,11 @@ const DestinoMalta = () => {
 
                     </div>
 
-                     {/* Titulo en Banner */}
+                    {/* Titulo en Banner */}
 
-                     <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
+                    <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
                         <h1 className="text-white text-8xl md:text-6xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
-                        ¡Bienvenidos a Malta
+                            ¡Bienvenidos a Malta
                             <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-13 h-9 inline-block mx-2" />
                             <span style={{ display: 'block', lineHeight: '5rem' }}>el paraíso del mediterráneo!</span>
                         </h1>
@@ -220,25 +255,25 @@ const DestinoMalta = () => {
                 <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-10 text-left pt-0">
                     <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">¿Por qué es el <br />destino más elegido?</h2>
                     <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
-                    <p className="flex items-start  text-start text-primaryVio text-base mt-4">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
-                    </p>        <br/>
+                        <p className="flex items-start  text-start text-primaryVio text-base mt-4">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
+                        </p>        <br />
 
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
-                    </p>        <br/>
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
+                        </p>        <br />
 
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
-                    </p>        <br/>
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
+                        </p>        <br />
 
-                    <p className="flex items-start text-primaryVio text-base mt-2 text-start">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
-                    </p>
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
+                        </p>
                     </div>
 
                 </div>
