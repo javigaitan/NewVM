@@ -64,7 +64,7 @@ const PagesService = () => {
             origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
         ScrollReveal().reveal('.item', {
@@ -73,7 +73,7 @@ const PagesService = () => {
             origin: 'top',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
         ScrollReveal().reveal('.text', {
@@ -82,7 +82,7 @@ const PagesService = () => {
             origin: 'left',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
     })
@@ -336,14 +336,21 @@ const PagesService = () => {
 
             </div>
 
-            {/* Comienza los contenedores */}
+
+
+            {/* Comienza MODELO los contenedores */}
             <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-auto md:h-auto lg:h-[700px]">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5  px-2 lg:px-4 lg:ml-5 md:pt-[20px]" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
-                            <img src={Icons1} alt="Icono de seguro" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                            <img src={Icons1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
-                        <div className="md:mt-3 pl-4">
+                        <div className="md:mt-3 pl-4 ">
                             <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Seguros y asistencias al viajero</h2>
                         </div>
                         <div className="md:mt-3 pl-4">
@@ -358,52 +365,68 @@ const PagesService = () => {
                                 Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
                             </p>
                         </div>
-                        <div className="lg:pl-4 mt-8">
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
+                        <div className="lg:pl-4 mt-8" style={{
+                            marginBottom: '20px',
+                            '@media (min-width: 768px) and (max-width: 1023px)': {
+                                paddingBottom: '20px',
+                            }
+                        }}>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    Solicita más información
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     {/* Solo visible en la versión lg */}
-                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
-                        <img src={Seguros} alt="Foto de viajera" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} />
+                    <div className="hidden lg:flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={Seguros} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} />
                     </div>
                 </div>
             </div>
             {/* Fin de los contenedores */}
 
-
-
-
+            
 
             {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-                    {/* Imagen a la izquierda, visible solo en lg */}
-                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
-                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+            <div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-auto md:h-auto lg:h-[700px]"> {/* Añadido h-auto para md */}
+                    {/* Imagen mostrada solo en lg, oculta en dispositivos md y más pequeños */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+                        <img src={Pass} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
                     </div>
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 mr-5"> {/* Ajuste de contenido principal */}
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
-                            <img src={Icons2} alt="Icono de pass" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                            <img src={Icons2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
-                                Tickets aéreos, alquiler de autos, atracciones y mucho más.
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">                                Tickets aéreos, alquiler de autos, atracciones y mucho más.
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                        <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
                                 Uno de los primeros pasos que realizamos para materializar el viaje de nuestros sueños es la compra del boleto de avión, ya sea que viajes solo, acompañado, en familia o con amigos.
                                 <br />
                                 <br />
                                 Por eso, en Vaga-Mundo tenemos las mejores opciones en tickets aéreos, alquileres de auto, atracciones y mucho más, dentro o fuera de Europa.
                             </p>
                         </div>
-                        <div className="lg:pl-4 mt-8">
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
+                        <div className="lg:pl-4 mt-8" style={{
+                            marginBottom: '20px',
+                            '@media (min-width: 768px) and (max-width: 1023px)': {
+                                paddingBottom: '20px',
+                            }
+                        }}>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                                <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
+                                    Solicita más información
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -412,24 +435,26 @@ const PagesService = () => {
 
 
 
-            {/* Comienza los contenedores */}
-            <div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-                    {/* Imagen a la izquierda, visible solo en lg */}
-                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible para la imagen */}
-                        <img src={Resi} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-                    </div>
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 ml-5"> {/* Ajuste de contenido principal */}
+
+
+            {/* Comienza MODELO los contenedores */}
+            <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-auto md:h-auto lg:h-[700px]">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5  px-2 lg:px-4 lg:ml-5 md:pt-[20px]" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
-                            <img src={Icons3} alt="Icono de Alojamiento" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                            <img src={Icons3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
-                        <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
-                                Alojamiento propio y externos
+                        <div className="md:mt-3 pl-4 ">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">                                Alojamiento propio y externos
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                        <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
                                 Un gran miedo que enfrentamos al momento de vivir una experiencia en el exterior es el saber dónde nos alojaremos.
                                 <br />
                                 <br />
@@ -439,10 +464,69 @@ const PagesService = () => {
                                 Asimismo, tanto en Irlanda como en otros destinos del mundo tenemos convenios con partners como pueden ser alojamientos estudiantiles, host family o las mismas escuelas de inglés, para que nuestros estudiantes se sientan cómodos.
                             </p>
                         </div>
-                        <div className="lg:pl-4 mt-8">
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
-                            </button>
+                        <div className="lg:pl-4 mt-8" style={{
+                            marginBottom: '20px',
+                            '@media (min-width: 768px) and (max-width: 1023px)': {
+                                paddingBottom: '20px',
+                            }
+                        }}>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20alojamientos!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    Solicita más información
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                    {/* Solo visible en la versión lg */}
+                    <div className="hidden lg:flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={Resi} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} />
+                    </div>
+                </div>
+            </div>
+            {/* Fin de los contenedores */}
+
+             {/* Comienza los contenedores */}
+             <div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-auto md:h-auto lg:h-[700px]"> {/* Añadido h-auto para md */}
+                    {/* Imagen mostrada solo en lg, oculta en dispositivos md y más pequeños */}
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
+                        <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
+                    </div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
+                        <div>
+                            <img src={Icons4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">                                Programas de inserción laboral
+                            </h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                        <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                Una experiencia de estudio en el extranjero se termina de resignificar si a esta le sumamos una experiencia laboral.
+                                <br />
+                                <br />
+                                Por eso, desde Vaga-Mundo, además de los talleres que brindamos de forma gratuita para ayudar a nuestros estudiantes a conseguir empleo en Europa, ofrecemos este programa de inserción laboral.
+                                <br />
+                                <br />
+                                La propuesta consiste en un diagnóstico situacional del aplicante para poder ofrecer una eficiente proximidad con el mercado laboral postulante. El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8" style={{
+                            marginBottom: '20px',
+                            '@media (min-width: 768px) and (max-width: 1023px)': {
+                                paddingBottom: '20px',
+                            }
+                        }}>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                                <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
+                                    Solicita más información
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -450,80 +534,56 @@ const PagesService = () => {
             {/* Fin de los contenedores */}
 
 
-            {/* Comienza los contenedores */}
-<div className="dark:bg-[#F2F2F2] pt-16 md:pt-24 mb-10"> {/* Aumentado el padding top para móviles */}
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-        {/* Imagen a la izquierda, visible solo en lg */}
-        <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
-            <img src={TRABAJO} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '35px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
-        </div>
-        <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4"> {/* Ajuste de contenido principal */}
-            <div>
-                <img src={Icons4} alt="Icono de Inserción" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
-            </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
-                    Programas de inserción laboral
-                </h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    Una experiencia de estudio en el extranjero se termina de resignificar si a esta le sumamos una experiencia laboral.
-                    <br />
-                    <br />
-                    Por eso, desde Vaga-Mundo, además de los talleres que brindamos de forma gratuita para ayudar a nuestros estudiantes a conseguir empleo en Europa, ofrecemos este programa de inserción laboral.
-                    <br />
-                    <br />
-                    La propuesta consiste en un diagnóstico situacional del aplicante para poder ofrecer una eficiente proximidad con el mercado laboral postulante. El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.
-                </p>
-            </div>
-            <div className="lg:pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
 
 
-
-{/* Comienza los contenedores */}
-<div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
-    <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-        <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9"> {/* Ajuste de contenido principal */}
-            <div>
-                <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+             {/* Comienza MODELO los contenedores */}
+             <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-auto md:h-auto lg:h-[700px]">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5  px-2 lg:px-4 lg:ml-5 md:pt-[20px]" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
+                        <div>
+                            <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
+                        </div>
+                        <div className="md:mt-3 pl-4 ">
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4"> Viajes grupales y actividades en comunidad
+                            </h2>
+                        </div>
+                        <div className="md:mt-3 pl-4">
+                        <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
+                                En Vaga-Mundo sabemos la importancia de hacer comunidad en los diferentes destinos y una forma de mantener vivo este espíritu son los viajes grupales.
+                                Ya sea una escapada de fin de semana al interior de los países donde están estudiando, o bien un viaje a otro continente, como puede ser conocer la multisensorial Marruecos.
+                                <br />
+                                <br />
+                                En Vaga-Mundo siempre estamos planificando una próxima experiencia viajera en comunidad.
+                                <br />
+                                <br />
+                                Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí.
+                            </p>
+                        </div>
+                        <div className="lg:pl-4 mt-8" style={{
+                            marginBottom: '20px',
+                            '@media (min-width: 768px) and (max-width: 1023px)': {
+                                paddingBottom: '20px',
+                            }
+                        }}>
+                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20viajes%20grupales!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    Solicita más información
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                    {/* Solo visible en la versión lg */}
+                    <div className="hidden lg:flex justify-start items-center lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                        <img src={Grupal} alt="Foto de grupo vm" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginLeft: '40px', marginTop: '-2px' }} />
+                    </div>
+                </div>
             </div>
-            <div className="md:mt-3 pl-4">
-                <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Viajes grupales y actividades en comunidad</h2>
-            </div>
-            <div className="md:mt-3 pl-4">
-                <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                    En Vaga-Mundo sabemos la importancia de hacer comunidad en los diferentes destinos y una forma de mantener vivo este espíritu son los viajes grupales.
-                    Ya sea una escapada de fin de semana al interior de los países donde están estudiando, o bien un viaje a otro continente, como puede ser conocer la multisensorial Marruecos.
-                    <br />
-                    <br />
-                    En Vaga-Mundo siempre estamos planificando una próxima experiencia viajera en comunidad.
-                    <br />
-                    <br />
-                    Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí.
-                </p>
-            </div>
-            <div className="lg:pl-4 mt-8">
-                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                    Solicita más información
-                </button>
-            </div>
-        </div>
-        {/* Solo visible en la versión lg */}
-        <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
-            <img src={Grupal} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginLeft: '35px', marginTop: '-2px' }} />
-        </div>
-    </div>
-</div>
-{/* Fin de los contenedores */}
+            {/* Fin de los contenedores */}
 
 
 

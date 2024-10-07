@@ -61,7 +61,7 @@ const Ahorro = () => {
             origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
         ScrollReveal().reveal('.item', {
@@ -70,7 +70,7 @@ const Ahorro = () => {
             origin: 'top',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
         ScrollReveal().reveal('.text', {
@@ -79,7 +79,7 @@ const Ahorro = () => {
             origin: 'left',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: false
+            reset: true
         });
 
 
@@ -424,8 +424,7 @@ const Ahorro = () => {
                         }
                     }}> {/* Ajuste del contenedor del botón */}
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
-                                <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  
-                        > {/* Ancho completo en móvil */}
+                                <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  > 
                                     Solicita más información
                                 </button>
                             </Link>
