@@ -27,12 +27,12 @@ const Landing = () => {
 
     return (
         <>
-          {/*<Navbar />
+          <Navbar />
              <Banner />
             
             <ServiciosNew />
-            <{showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} 
-            <VMFacts />*/}
+            {/*<{showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} */}
+            <VMFacts />
             <GoogleReviews /> 
             <Blogs />
             <Partners />

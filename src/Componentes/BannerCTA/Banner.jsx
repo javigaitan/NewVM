@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BGR from '../../assets/BannerHome/FOTO BANNER.png';
-import BGTMOVILE from '../../assets/BannerHome/bannermovile2.png';
+import BGTMOVILE from '../../assets/BannerHome/bannerbackok.png';
 import './BannerCTA.css';
 
 const Banner = () => {
@@ -32,11 +32,11 @@ const Banner = () => {
                 alt="Mobile Banner Background"
             />
 
-            <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4 lg:left-[50px] lg:pl-[55px] md:left-[50px] md:pl-[55px] pl-4 left-4">
+            <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4 lg:left-[50px] lg:pl-[55px] pl-4 left-4">
                 <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold leading-tight text-white">
                     ¡El mundo te espera!
                 </h1>
-                <h2 className="lg:text-4xl md:text-3xl text-2xl font-normal leading-snug text-white">
+                <h2 className="lg:text-4xl md:text-4xl text-2xl font-normal leading-snug text-white">
                     Vive, estudia y trabaja en el extranjero
                 </h2>
                 <div className="inline-block py-8">
