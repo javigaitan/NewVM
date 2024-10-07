@@ -338,7 +338,12 @@ const Ahorro = () => {
             {/* Comienza los contenedores */}
             <div className="card dark:bg-[#F2F2F2] pt-16 md:pt-24"> {/* Aumentado el padding top para móviles */}
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-0 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]">
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-0 px-2 lg:px-4 lg:ml-5 md:pt-9">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5  px-2 lg:px-4 lg:ml-5 md:pt-[20px]" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
                             <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
@@ -376,13 +381,19 @@ const Ahorro = () => {
 
             {/* Comienza los contenedores */}
             <div className="card dark:bg-[#F2F2F2] pt-12 mb-10">
-                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-4 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible lg:h-[700px] md:h-[850px]"> {/* Ajuste de padding para md */}
+                <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between md:px-4 px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible lg:h-[700px] md:h-[880px]"> {/* Ajuste de padding para md */}
                     {/* Imagen a la izquierda, visible solo en lg */}
-                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible">
+                    <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> 
                         <img src={AhorroFoto2} alt="Descripción de la imagen derecha" className="w-335 h-[705px] object-cover rounded-3xl" style={{ marginRight: '40px', marginTop: '-2px' }} />
                     </div>
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 md:px-4 px-2 lg:px-4 mr-5"> {/* Ajuste de padding interno para md */}
-                        <div>
+                    <div className="flex flex-col justify-start items-start lg:w-3/5  px-2 lg:px-4 lg:ml-5 md:pt-[20px]" style={{
+                        
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>                        
+                    <div>
                             <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4 flex items-center">
@@ -406,9 +417,15 @@ const Ahorro = () => {
                                 <li>Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.</li>
                             </ul>
                         </div>
-                        <div className="lg:pl-4 mt-8 w-full md:w-auto"> {/* Ajuste del contenedor del botón */}
+                        <div className="lg:pl-4 mt-8 w-full md:w-auto " style={{
+                            marginBottom: '20px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingBottom: '20px',
+                        }
+                    }}> {/* Ajuste del contenedor del botón */}
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
-                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 w-full md:w-auto"> {/* Ancho completo en móvil */}
+                                <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  
+                        > {/* Ancho completo en móvil */}
                                     Solicita más información
                                 </button>
                             </Link>
@@ -424,7 +441,12 @@ const Ahorro = () => {
             {/* Comienza los contenedores */}
             <div className="card dark:bg-[#F2F2F2] pt-12">
                 <div className="border-2 border-[#606060] container max-w-4xl mx-auto flex items-center md:flex-row flex-col justify-between px-6 lg:px-0 rounded-3xl bg-[#F2F2F2] overflow-visible h-[700px]"> {/* Añadido overflow-visible y altura */}
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
                             <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
@@ -466,7 +488,12 @@ const Ahorro = () => {
                     <div className="hidden lg:flex justify-center items-start lg:w-2/5 mt-10 md:mt-0 overflow-visible"> {/* Añadido overflow-visible */}
                         <img src={AhorroFoto4} alt="Descripción de la imagen derecha" className="w-334 h-[704px] object-cover rounded-3xl" style={{ marginRight: '37px', marginTop: '-2px' }} /> {/* Ajustes de redondeo y márgenes */}
                     </div>
-                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5">
+                    <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-4 lg:ml-5" style={{
+                        paddingTop: '30px',
+                        '@media (min-width: 768px) and (max-width: 1023px)': {
+                            paddingTop: '30px',
+                        }
+                    }}>
                         <div>
                             <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>

@@ -35,7 +35,7 @@ const GoogleReviews = () => {
     const reviewsToShow = reviewsData.slice(0, 3);
 
     return (
-        <div className="relative pb-10  min-h-screen items-center">
+        <div className="relative lg:pb-10  min-h-screen items-center">
             {/* Imagen de fondo para la versión lg */}
             <img src={BackTest} alt="Background" className="absolute items-center inset-0 w-full h-full object-cover z-0 lg:block hidden" />
 
