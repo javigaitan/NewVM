@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
 import Idiomas from '../../assets/ServiciosVM/curso idioma.png';
@@ -6,16 +6,21 @@ import WyS from '../../assets/ServiciosVM/estudio y trabajo en el exterior.png';
 import universitarios from '../../assets/ServiciosVM/posgrados.png';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
-import BannerIrlanda from '.././Destinos/DestinosImg/bannerirlanda.png';
-import MapIrlanda from '../../Componentes/Destinos/DestinosImg/bloque-mapa 2.png';
-import Foto1 from '../../Componentes/Destinos/DestinosImg/Trebol.png';
-import Foto2 from '../../Componentes/Destinos/DestinosImg/birra.png';
+import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/bannerMalta.png';
+import FondoVioleta from '../../Componentes/Destinos/DestinosImg/fondomalta.png';
+import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapamalta.png';
+import Sliema from '../../Componentes/Destinos/DestinosImg/sliema.png';
+import Julian from '../../Componentes/Destinos/DestinosImg/julian.png';
+import Valletta from '../../Componentes/Destinos/DestinosImg/valletta.png';
+import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
+import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
+import BanderaMalta from '../../Componentes/Destinos/DestinosImg/banderamalta.png'
 import Footer from "../Footer/Footer";
 
 
 
-const DestinoIrlandaResponsive = () => {
+const DestinoMaltaResponsive = () => {
 
     const [showMenu, setShowMenu] = useState(false);
 
@@ -110,31 +115,31 @@ const DestinoIrlandaResponsive = () => {
 
                             {isDropdownOpen && (
                                 <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                    <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleLinkClick}>
                                         <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
                                         <span className="text-primaryVio">Irlanda</span>
                                         <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
-                                    <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleLinkClick}>
                                         <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
                                         <span className="text-primaryVio">Malta</span>
                                         <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
-                                    <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleLinkClick}>
                                         <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
                                         <span className="text-primaryVio">España</span>
                                         <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
-                                    <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleLinkClick}>
                                         <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
                                         <span className="text-primaryVio">Francia</span>
                                         <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
-                                    <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleLinkClick}>
                                         <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
                                         <span className="text-primaryVio">Alemania</span>
                                         <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
@@ -414,9 +419,9 @@ const DestinoIrlandaResponsive = () => {
             <div className="mt-6 mb-8 ">
                 <div className="flex items-center justify-center ">
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
-                        Comunidad VM en Irlanda
+                        Comunidad VM en Malta
                     </h1>
-                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-14 h-9 " />
+                    <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-14 h-9 " />
                 </div>
 
 
@@ -426,7 +431,7 @@ const DestinoIrlandaResponsive = () => {
                         <div className="relative overflow-hidden pb-[56.25%] h-0">
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/wPG3UiqACSU?si=RcgT5wDjcL0i5RCw"
+                                src="https://www.youtube.com/embed/LIakpVh7BgQ?si=GBS6UrWJlD3nb46l"
                                 frameBorder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                                 title="YouTube video player"
@@ -447,4 +452,4 @@ const DestinoIrlandaResponsive = () => {
     )
 }
 
-export default DestinoIrlandaResponsive
+export default DestinoMaltaResponsive

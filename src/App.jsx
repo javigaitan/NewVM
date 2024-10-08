@@ -15,6 +15,7 @@ import DestinoIrlanda from "./Componentes/Destinos/DestinoIrlanda";
 import DestinoMalta from "./Componentes/Destinos/DestinoMalta";
 import DestinoIrlandaResponsive from "./Componentes/Destinos/DestinoIrlandaResponsive";
 import AdaptadorDestinos from "./Componentes/Destinos/AdaptadorDestinos";
+import AdaptadorDestinosMalta from "./Componentes/Destinos/AdaptadorDestinoMalta";
 
 
 
@@ -38,9 +39,7 @@ function App() {
         <Route path="/servicios" element={<PagesService />} />
         <Route path="/contactanos" element={<ContactanosNew />} />
         <Route path="/destino-irlanda" element={<AdaptadorDestinos />} />
-        <Route path="/destino-irlanda2" element={<DestinoIrlandaResponsive />} />
-
-        <Route path="/destino-malta" element={<DestinoMalta />} />
+        <Route path="/destino-malta" element={<AdaptadorDestinosMalta />} />
 
 
         </Routes>
