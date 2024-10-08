@@ -38,56 +38,55 @@ const GoogleReviews = () => {
         <div className="relative lg:pb-10 min-h-screen items-center">
             {/* Imagen de fondo para la versión lg */}
             <img src={BackTest} alt="Background" className="absolute items-center inset-0 w-full h-full object-cover z-0 lg:block hidden" />
-    
+
             {/* Contenedor para la versión móvil */}
             <div className="bg-secondaryTur min-h-screen flex flex-col justify-center lg:hidden relative items-top bg-none">
                 {/* Título "Testimonios" */}
                 <h2 className="text-4xl font-semibold text-white text-center">
                     Testimonios
                 </h2>
-    
-                {/* Imagen Recuadrotesti debajo del título */}
-                <img 
-                    src={Recuadrotesti} 
-                    alt="Recuadro Testimonios" 
-                    className="mt-2 w-6/7 h-auto mx-auto pl-7 " 
-                />
-    
+
+
+
                 {/* Slider para testimonios en versión móvil */}
-                <div className="mt-8 w-full">
-                    <Slider {...settings}>
-                        {reviewsToShow.map((review, index) => (
-                            <div className="flex flex-col items-center text-center pt-12 px-4" key={index}>
-                                <div>
-                                    <Avatar
-                                        src={review.avatar}
-                                        alt="image"
-                                        size="md"
-                                        className="mb-4"
-                                    />
+                <div className=" w-full relative"> {/* Añadido relative aquí */}
+                    <img
+                        src={Recuadrotesti}
+                        alt="Recuadro Testimonios"
+                        className="mt-2 w-6/7 h-auto mx-auto pl-7"
+                    />
+                    <div className="absolute top-0 left-0 w-full"> {/* Contenedor para el slider */}
+                        <Slider {...settings}>
+                            {reviewsToShow.map((review, index) => (
+                                <div className="flex flex-col items-center text-center pt-12 px-10" key={index}>
+                                    <div>
+                                       {/*  <Avatar
+                                            src={review.avatar}
+                                            alt="image"
+                                            size="md"
+                                            className="mb-4"
+                                        />*/}
+                                        <Typography variant="p" className="mt-9 mb-4 text-colorText font-m text-sm md:text-lg lg:text-base">
+                                            &quot;{review.author}&quot;
+                                        </Typography>
+                                    </div>
+
                                     <Typography variant="p" className="mb-4 text-colorText font-m text-sm md:text-lg lg:text-base">
-                                        &quot;{review.author}&quot;
+                                        &quot;{review.comment}&quot;
                                     </Typography>
+                                    <Rating
+                                        value={review.rating}
+                                        readonly
+                                        onClick={() => window.location.href = 'https://maps.app.goo.gl/8gQ39Ri2W3u1G31v7'}
+                                    />
                                 </div>
-    
-                                <Typography variant="p" className="mb-4 text-colorText font-m text-sm md:text-lg lg:text-base">
-                                    &quot;{review.comment}&quot;
-                                </Typography>
-                                <Rating
-                                    value={review.rating}
-                                    readonly
-                                    onClick={() => window.location.href = 'https://maps.app.goo.gl/8gQ39Ri2W3u1G31v7'}
-                                />
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    </div>
+
                 </div>
+
             </div>
-    
-
-
-
-
 
 
 
@@ -98,7 +97,7 @@ const GoogleReviews = () => {
                 <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold text-colorWhite mt-5 text-center">
                     .
                 </h2>
-    
+
                 <div className="facts-container flex justify-start mt-8" style={{ paddingLeft: '110px', paddingTop: '150px' }}>
                     <div className="bg-white p-6 rounded-lg shadow-lg w-96 h-96 items-center">
                         <Slider {...settings}>
@@ -115,7 +114,7 @@ const GoogleReviews = () => {
                                             &quot;{review.author}&quot;
                                         </Typography>
                                     </div>
-    
+
                                     <Typography variant="p" className="mb-4 text-colorText font-m md:text-lg lg:text-base">
                                         &quot;{review.comment}&quot;
                                     </Typography>
@@ -132,7 +131,7 @@ const GoogleReviews = () => {
             </div>
         </div>
     );
-    
+
 };
 
 export default GoogleReviews;
