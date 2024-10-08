@@ -6,12 +6,8 @@ import WyS from '../../assets/ServiciosVM/estudio y trabajo en el exterior.png';
 import universitarios from '../../assets/ServiciosVM/posgrados.png';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
-import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/bannerMalta.png';
-import FondoVioleta from '../../Componentes/Destinos/DestinosImg/fondomalta.png';
-import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapamalta.png';
-import Sliema from '../../Componentes/Destinos/DestinosImg/sliema.png';
-import Julian from '../../Componentes/Destinos/DestinosImg/julian.png';
-import Valletta from '../../Componentes/Destinos/DestinosImg/valletta.png';
+import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/navbarmalta.png';
+import MapIrlanda from '../../Componentes/Destinos/DestinosImg/bannermaltaresponsive 1.png';
 import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
 import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
@@ -318,25 +314,25 @@ const DestinoMaltaResponsive = () => {
                 </h2>
                 <div className="max-w-[95%] mr-0 md:max-w-full"> {/* Ajusta el ancho del contenedor en móvil */}
                     {/* Ajusta cada párrafo para centrar la imagen y el texto */}
-                    <p className="flex items-start text-primaryVio text-base mt-4">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
-                    </p>
-                    <br />
-                    <p className="flex items-start text-primaryVio text-base mt-2">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
-                    </p>
-                    <br />
-                    <p className="flex items-start text-primaryVio text-base mt-2">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
-                    </p>
-                    <br />
-                    <p className="flex items-start text-primaryVio text-base mt-2">
-                        <img src={Icon} alt="Viñeta" className="mr-2" />
-                        <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
-                    </p>
+                    <p className="flex items-start  text-start text-primaryVio text-base mt-4">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
+                        </p>        <br />
+
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
+                        </p>        <br />
+
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
+                        </p>        <br />
+
+                        <p className="flex items-start text-primaryVio text-base mt-2 text-start">
+                            <img src={Icon} alt="Viñeta" className="mr-2" />
+                            <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
+                        </p>
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-center w-full md:w-1/2 pt-5">
                     <div className="flex justify-start w-full md:w-1/2 p-2"> {/* Contenedor para la imagen izquierda */}
