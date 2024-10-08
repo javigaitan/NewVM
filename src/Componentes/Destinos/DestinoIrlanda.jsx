@@ -22,6 +22,8 @@ import Footer from "../Footer/Footer";
 
 
 const DestinoIrlanda = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     // Función para manejar el clic en el botón del dropdown
@@ -32,6 +34,14 @@ const DestinoIrlanda = () => {
     // Función para cerrar el dropdown cuando se selecciona una opción
     const handleOptionClick = () => {
         setIsDropdownOpen(false);
+    };
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
+    };
+
+    const handleLinkClick = () => {
+        setDropdownOpen(false);
+        setShowMenu(false);
     };
 
     // Función para cerrar el dropdown al hacer scroll
@@ -61,6 +71,9 @@ const DestinoIrlanda = () => {
 
 
     return (
+
+
+        
         <div className="dark:bg-gray-900 relative z-10 " >
             <div style={{
                 backgroundImage: `url(${FondoVioleta})`,
@@ -112,47 +125,47 @@ const DestinoIrlanda = () => {
                             </li>
 
                             <li className="relative">
-                        <div className="flex items-center" onClick={handleDropdownClick}>
-                            <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                ¡Quiero viajar!
-                            </button>
-                            <img src={Flecha} alt="Flecha" className="ml-2" />
-                        </div>
+                                <div className="flex items-center" onClick={handleDropdownClick}>
+                                    <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        ¡Quiero viajar!
+                                    </button>
+                                    <img src={Flecha} alt="Flecha" className="ml-2" />
+                                </div>
 
-                        {isDropdownOpen && (
-                            <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Irlanda</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Malta</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">España</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Francia</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                                <hr className="border-gray-300" />
-                                <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                    <span className="text-primaryVio">Alemania</span>
-                                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
-                                </Link>
-                            </div>
-                        )}
-                    </li>
+                                {isDropdownOpen && (
+                                    <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                        <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                            <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                            <span className="text-primaryVio">Irlanda</span>
+                                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                        </Link>
+                                        <hr className="border-gray-300" />
+                                        <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                            <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                            <span className="text-primaryVio">Malta</span>
+                                            <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                        </Link>
+                                        <hr className="border-gray-300" />
+                                        <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                            <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                            <span className="text-primaryVio">España</span>
+                                            <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                        </Link>
+                                        <hr className="border-gray-300" />
+                                        <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                            <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                            <span className="text-primaryVio">Francia</span>
+                                            <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                        </Link>
+                                        <hr className="border-gray-300" />
+                                        <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                            <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                            <span className="text-primaryVio">Alemania</span>
+                                            <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                        </Link>
+                                    </div>
+                                )}
+                            </li>
                             <li className="relative">
                                 <Link to='/ahorro'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
@@ -174,15 +187,132 @@ const DestinoIrlanda = () => {
                                     </button>
                                 </Link>
                             </li>
-                          
+
                         </ul>
+                        <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
+                            <div className="hidden lg:flex items-center space-x-4 xl:space-x-8"></div>
+                            <div className="flex lg:hidden">
+                                <button aria-label="open menu" onClick={() => setShowMenu(!showMenu)} className="text-white dark:text-white dark:hover:text-gray-300 focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                    <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M10 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M6 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+
 
 
                     </div>
 
-                    {/* Titulo en Banner */}
+                    {/* Mobile nav */}
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-primaryVio flex-col h-screen w-full`}>
+                        <div className="dark:bg-gray-900 flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
+                            <div className="flex items-center space-x-3">
+                                <div>
+                                    <Link to='/'>
+                                        <img src={Logo} alt="Logo" className="w-24 h-auto md:w-auto md:h-auto" />
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="ml-auto"> {/* Añadir ml-auto para empujar el botón a la derecha */}
+                                <div onClick={() => setShowMenu(false)} className="text-white">
+                                    <button aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                        <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 6L6 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M6 6L18 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div className="flex items-center text-7xl justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
+                        <div className="mt-4 mx-4">
+                            <ul className="flex flex-col space-y-4 items-center">
+                                <li>
+                                    <Link to='/nosotros' onClick={() => setShowMenu(false)}>
+                                        <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Nosotros
+                                        </button>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <button onClick={toggleDropdown} className="dark:text-colorWhite text-white text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
+                                        ¡Quiero viajar!
+                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    </button>
+
+                                    {isDropdownOpen && (
+                                        <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                                            <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
+                                                <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Irlanda</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/destino-malta' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                                <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Malta</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                                <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">España</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                                <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Francia</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                            <hr className="border-gray-300" />
+                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                                <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                                                <span className="text-primaryVio">Alemania</span>
+                                                <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                                            </Link>
+                                        </div>
+                                    )}
+                                </li>
+
+                                <li>
+                                    <Link to='/ahorro' onClick={() => setShowMenu(false)}>
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Financia tu viaje
+                                        </button>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link to='/servicios' onClick={() => setShowMenu(false)}>
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Otros servicios
+                                        </button>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link to='/blogs' onClick={() => setShowMenu(false)}>
+                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                            Blog
+                                        </button>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    {/* Título en Banner para pantallas grandes (lg) */}
+                    <div className="hidden lg:flex items-center text-7xl justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Se oculta en pantallas más pequeñas */}
                         <h1 className="text-white text-8xl md:text-6xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
                             ¡Bienvenidos a Irlanda
                             <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-15 h-11 inline-block mx-2" />
@@ -190,6 +320,14 @@ const DestinoIrlanda = () => {
                         </h1>
                     </div>
 
+                    {/* Título en Banner para pantallas medianas (md) */}
+                    <div className="lg:hidden flex items-center text-5xl md:text-6xl justify-center md:justify-start relative mt-4 md:ml-8 md:pl-5"> {/* Visible solo en pantallas medianas */}
+                        <h1 className="text-white text-6xl md:text-5xl font-bold text-center md:text-start" style={{ lineHeight: '2rem' }}>
+                            ¡Bienvenidos a Irlanda
+                            <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-12 h-10 inline-block mx-2" />
+                            <span style={{ display: 'block', lineHeight: '3.5rem' }}>la isla esmeralda!</span>
+                        </h1>
+                    </div>
 
 
 
