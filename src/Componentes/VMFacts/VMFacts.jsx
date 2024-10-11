@@ -23,13 +23,13 @@ const VMFacts = () => {
 
     return (
         <div className="dark:bg-gray-900 facts-container relative">
-            <div className="lg:pb-20 md:pb-5 ">
+            <div className="lg:pb-20 pb-7">
                 <div className="mx-auto bg-gradient-to-l from-primaryVio to-primaryVio lg:h-96  relative">
                     <div className="mx-auto container w-full flex flex-col justify-center items-center">
                         <div className="flex justify-center items-center flex-col">
-                            <div className="mt-20">
-                                <h2 className="lg:text-5xl md:text-4xl text-3xl font-semibold  leading-10 text-white mt-5 text-center md:pb-8">
-                                    ¿Por qué Vaga-Mundo?
+                            <div className="lg:mt-20">
+                                <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold  leading-10 text-white mt-5 text-center md:pb-8">
+                                    ¿Por qué <strong>Vaga-Mundo</strong>?
                                 </h2>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const VMFacts = () => {
 
 
                 {/* Versión de escritorio */}
-                <div className="lg:block md:hidden hidden">
+                <div className="lg:block md:hidden hidden ">
                     <div className="lg:mx-auto lg:container lg:flex lg:justify-center lg:items-center">
                         <div className="grid lg:grid-cols-5 gap-x-6 lg:-mt-40 -mt-30">
                             <div className="flex justify-center flex-col items-center">

@@ -32,14 +32,15 @@ const Banner = () => {
                 alt="Mobile Banner Background"
             />
 
-            <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4 lg:left-[50px] lg:pl-[55px] pl-4 left-4">
-                <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold leading-tight text-white">
+            <div className="absolute lg:bottom-0 md:bottom-0 bottom-0 lg:px-7 md:px-10 px-4 py-4 lg:left-[50px] lg:pl-[55px] pl-4 left-4 ">
+                <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold leading-tight text-white mb-3 lg:pb-2 pb-20">
                     ¡El mundo te espera!
                 </h1>
-                <h2 className="lg:text-4xl md:text-4xl text-2xl font-normal leading-snug text-white">
+                <h2 className="lg:text-4xl md:text-4xl text-2xl font-normal leading-snug text-white ">
                     Vive, estudia y trabaja en el extranjero
                 </h2>
-                <div className="inline-block py-8">
+                
+                <div className="inline-block py-8 lg:pl-0 pl-8">
                     <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
                         <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
                             Solicita tu cotización

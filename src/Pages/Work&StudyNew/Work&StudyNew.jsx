@@ -11,15 +11,21 @@ const WorkandStudy = () => (
         <Navbar />
         <div className="container mx-auto px-4 py-8">
             {/* Flex layout for lg, centered for md */}
+            <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:hidden">
+                    <h1 className="text-4xl font-bold mb-3  text-primaryVio">Estudio y trabajo en el exterior</h1>
+                    </div>
+
             <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
                 <div className="w-full lg:w-1/2 p-4 flex justify-center">
                     <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                 </div>
                 <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                    <h1 className="text-4xl font-bold mb-3 pb-5 text-primaryVio">Estudio y trabajo en el exterior</h1>
+                    <h1 className="text-4xl font-bold mb-3 pb-5 text-primaryVio hidden lg:block">Estudio y trabajo en el exterior</h1>
                     <p className="text-lg text-colorText">
                         Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos.
+                        <br />
                         <br />Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales.
+                        <br />
                         <br />Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.
                     </p>
                     <div className='pt-10 pb-8'>

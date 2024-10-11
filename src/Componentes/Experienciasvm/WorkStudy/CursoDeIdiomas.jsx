@@ -10,19 +10,27 @@ const CursoDeIdiomas = () => {
     return (
         <div>
             <Navbar />
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-4 py-7">
                 {/* Flex layout for lg, centered for md */}
+                <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:hidden">
+                    <h1 className="text-4xl font-bold mb-4 text-primaryVio">Cursos de Idioma</h1>
+                </div>
+
                 <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
                     <div className="w-full lg:w-1/2 p-4 flex justify-center">
+
                         <img src={CURSO} alt="Curso de Idiomas" className="w-full h-auto" />
                     </div>
-                    <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                        <h1 className="text-4xl font-bold mb-4 text-primaryVio">Cursos de Idioma</h1>
+                    <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left ">
+                    <h1 className="text-4xl font-bold mb-4 text-primaryVio hidden lg:block">
+    Cursos de Idioma
+</h1>
+
                         <p className="text-lg text-colorText">
                             Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.
-                            <br/><br/>
+                            <br /><br />
                             También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.
-                            <br/><br/>
+                            <br /><br />
                             Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.
                         </p>
                         <div className='pt-10 pb-8'>
@@ -46,10 +54,10 @@ const CursoDeIdiomas = () => {
                     <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
-                                <img 
-                                    src={WyS} 
-                                    alt="work&study" 
-                                    className="w-full h-auto rounded-lg mx-auto" 
+                                <img
+                                    src={WyS}
+                                    alt="work&study"
+                                    className="w-full h-auto rounded-lg mx-auto"
                                 />
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/work&study'>
@@ -65,10 +73,10 @@ const CursoDeIdiomas = () => {
                     <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
-                                <img 
-                                    src={universitarios} 
-                                    alt="Carreras Universitarias" 
-                                    className="w-full h-auto rounded-lg mx-auto" 
+                                <img
+                                    src={universitarios}
+                                    alt="Carreras Universitarias"
+                                    className="w-full h-auto rounded-lg mx-auto"
                                 />
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/carreras-universitarias'>

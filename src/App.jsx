@@ -11,11 +11,11 @@ import Ahorro from "./Pages/Ahorro/Ahorro";
 import PagesBlogs from "./Pages/Blogs/PagesBlogs";
 import PagesService from "./Pages/PagesService/PagesService";
 import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
-import DestinoIrlanda from "./Componentes/Destinos/DestinoIrlanda";
-import DestinoMalta from "./Componentes/Destinos/DestinoMalta";
-import DestinoIrlandaResponsive from "./Componentes/Destinos/DestinoIrlandaResponsive";
 import AdaptadorDestinos from "./Componentes/Destinos/AdaptadorDestinos";
 import AdaptadorDestinosMalta from "./Componentes/Destinos/AdaptadorDestinoMalta";
+import AdaptadorDestinosEspana from "./Componentes/Destinos/AdaptadorDestinoMalta";
+
+
 
 
 
@@ -40,6 +40,7 @@ function App() {
         <Route path="/contactanos" element={<ContactanosNew />} />
         <Route path="/destino-irlanda" element={<AdaptadorDestinos />} />
         <Route path="/destino-malta" element={<AdaptadorDestinosMalta />} />
+        <Route path="/destino-espana" element={<AdaptadorDestinosEspana />} />
 
 
         </Routes>

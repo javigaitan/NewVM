@@ -12,11 +12,15 @@ const Universidades = () => {
             <Navbar />
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
+                <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:hidden">
+                <h1 className="text-4xl font-bold mb-4 text-primaryVio">Carreras y posgrados universitarios</h1>
+                </div>
+
                     <div className="w-full lg:w-1/2 p-4 flex justify-center">
                         <img src={universitarios} alt="Curso de Idiomas" className="w-full h-auto" />
                     </div>
                     <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                        <h1 className="text-4xl font-bold mb-4 text-primaryVio">Carreras y posgrados universitarios</h1>
+                        <h1 className="text-4xl font-bold mb-4 text-primaryVio hidden lg:block">Carreras y posgrados universitarios</h1>
                         <p className="text-lg text-colorText">
                             Este tipo de experiencia es ideal para quienes tienen un buen nivel de inglés y desean comenzar una carrera de grado en el extranjero.
                             <br/> También es una excelente opción para aquellos que ya tienen un título universitario en su país de origen e invierten en su desarrollo profesional realizando un posgrado o máster en el extranjero.

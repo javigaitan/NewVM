@@ -15,23 +15,22 @@ const Landing = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowLoader(true);
-        }, 5000); // 5000 ms = 5 seconds
+        }, 5000); 
 
-        // Cleanup timer on component unmount
         return () => clearTimeout(timer);
     }, []);
 
     const handleClosePopup = () => {
-        setShowLoader(false); // Hide the popup when closed
+        setShowLoader(false); 
     };
 
     return (
         <>
-          <Navbar />
-             <Banner />
-            
+            <Navbar />
+            <Banner />
             <ServiciosNew />
-            {/*<{showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />} */}
+            {/*
+            {showLoader && <LoaderAvionPopUp onClose={handleClosePopup} />}  */}
             <VMFacts />
             <GoogleReviews /> 
             <Blogs />

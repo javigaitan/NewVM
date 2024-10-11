@@ -83,19 +83,19 @@ const Footer = () => {
         <div className="lg:hidden flex flex-col items-center">
           <div className="flex space-x-4 z-4 mb-5">
             <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
-              <img src={INTA} alt="Instagram icon" className="w-10 h-10 hover:scale-105" />
+              <img src={INTA} alt="Instagram icon" className="w-9 h-9 hover:scale-105" />
             </a>
             <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
-              <img src={FB} alt="Facebook icon" className="w-10 h-10 hover:scale-105" />
+              <img src={FB} alt="Facebook icon" className="w-9 h-9 hover:scale-105" />
             </a>
             <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
-              <img src={LINK} alt="LinkedIn icon" className="w-10 h-10 hover:scale-105" />
+              <img src={LINK} alt="LinkedIn icon" className="w-9 h-9 hover:scale-105" />
             </a>
             <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
-              <img src={YT} alt="YouTube icon" className="w-10 h-10 hover:scale-105" />
+              <img src={YT} alt="YouTube icon" className="w-9 h-9 hover:scale-105" />
             </a>
             <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
-              <img src={TIK} alt="TikTok icon" className="w-10 h-10 hover:scale-105" />
+              <img src={TIK} alt="TikTok icon" className="w-9 h-9 hover:scale-105" />
             </a>
           </div>
 

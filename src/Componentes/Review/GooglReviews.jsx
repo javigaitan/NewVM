@@ -42,7 +42,7 @@ const GoogleReviews = () => {
             {/* Contenedor para la versión móvil */}
             <div className="bg-secondaryTur min-h-screen flex flex-col justify-center lg:hidden relative items-top bg-none">
                 {/* Título "Testimonios" */}
-                <h2 className="text-4xl font-semibold text-white text-center">
+                <h2 className="text-4xl font-semibold text-primaryVio text-center">
                     Testimonios
                 </h2>
 
@@ -71,7 +71,7 @@ const GoogleReviews = () => {
                                         </Typography>
                                     </div>
 
-                                    <Typography variant="p" className="mb-4 text-colorText font-m text-sm md:text-lg lg:text-base">
+                                    <Typography variant="p" className="mb-4 text-colorText font-m text-sm md:text-lg lg:text-base pl-2 pr-2">
                                         &quot;{review.comment}&quot;
                                     </Typography>
                                     <Rating

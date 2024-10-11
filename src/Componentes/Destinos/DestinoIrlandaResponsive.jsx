@@ -307,11 +307,11 @@ const DestinoIrlandaResponsive = () => {
 
             </div>
 
-            <div className="w-full flex flex-col items-start pl-6 pt-7 pb-10 text-start md:w-full md:max-w-lg md:mx-auto"> {/* Cambia w-1/2 a w-full y añade max-w-lg para el tamaño máximo */}
+            <div className="w-full flex flex-col items-start pl-6 pr-6 pt-7 pb-10 text-start md:w-full md:max-w-lg md:mx-auto"> {/* Cambia w-1/2 a w-full y añade max-w-lg para el tamaño máximo */}
                 <h2 className="text-primaryVio text-3xl font-semibold pb-8 text-center md:pl-0"> {/* Alineación centrada y ajuste del padding */}
                     ¿Por qué es el <br />destino más elegido?
                 </h2>
-                <div className="max-w-[95%] mr-0 md:max-w-full"> {/* Ajusta el ancho del contenedor en móvil */}
+                <div className="max-w-[100%] mr-0 md:max-w-full"> {/* Ajusta el ancho del contenedor en móvil */}
                     {/* Ajusta cada párrafo para centrar la imagen y el texto */}
                     <p className="flex items-start text-primaryVio text-base mt-4">
                         <img src={Icon} alt="Viñeta" className="mr-2" />
@@ -345,8 +345,8 @@ const DestinoIrlandaResponsive = () => {
 
 
 
-            <div className="container mx-auto px-4 pt-10 pb-20">
-                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-colorText mt-6 text-center">
+            <div className="container mx-auto px-4 pb-20">
+                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-8 text-colorText mt-6 text-center">
                     ¿Qué experiencia educativa <br />te gustaría hacer?
                 </h1>
                 <div className="flex flex-wrap justify-center mt-8">
@@ -412,11 +412,13 @@ const DestinoIrlandaResponsive = () => {
 
 
             <div className="mt-6 mb-8 ">
-                <div className="flex items-center justify-center ">
-                    <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
+                <div className="flex items-center justify-center m-4 ">
+                    <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center ">
                         Comunidad VM en Irlanda
                     </h1>
+                    <div className=" mt-7">
                     <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-14 h-9 " />
+                    </div>
                 </div>
 
 

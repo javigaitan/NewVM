@@ -19,7 +19,7 @@ const ServiciosNew = () => {
 
     return (
         <div className="container mx-auto px-4 pt-10 pb-20">
-            <h1 className="lg:text-5xl md:text-5xl text-5xl font-semibold leading-10 text-primaryVio mt-6 text-center">
+            <h1 className="lg:text-5xl md:text-5xl text-4xl font-semibold leading-10 text-primaryVio mt-6 text-center lg:ml-0 lg:mr-0 ml-3 mr-3">
                 ¿Qué experiencias ofrecemos?
             </h1>
             <div className="flex flex-wrap justify-center mt-8">

@@ -7,7 +7,7 @@ import universitarios from '../../assets/ServiciosVM/posgrados.png';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/navbarmalta.png';
-import MapIrlanda from '../../Componentes/Destinos/DestinosImg/bannermaltaresponsive 1.png';
+import MapIrlanda from '../../Componentes/Destinos/DestinosImg/backmalta 1.png';
 import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
 import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
@@ -76,7 +76,7 @@ const DestinoMaltaResponsive = () => {
                 <div className="w-full h-full  absolute  " />
                 <img
                     src={BannerIrlanda}
-                    className="lg:hidden md:hidden block "
+                    className="lg:hidden md:hidden block opacity-100"
                     alt="Banner Background"
                 />
             </div>
@@ -282,11 +282,11 @@ const DestinoMaltaResponsive = () => {
                     </div>
 
                 </div>
-                <div className="flex items-center justify-center md:justify-start relative mt-12" style={{ top: '75px' }}>
-                    <h1 className="text-white text-4xl  font-bold text-center" style={{ lineHeight: '2.5rem' }}>
-                        ¡Bienvenidos a Irlanda
-                        <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="Bandera de Irlanda" className="w-10 h-8 md:w-15 md:h-11 inline-block mx-2" />
-                        <span style={{ display: 'block', lineHeight: '3rem' }}>la isla esmeralda!</span>
+                <div className="flex items-center justify-center md:justify-start relative mt-12 " style={{ top: '75px' }}>
+                    <h1 className="text-white text-4xl  font-bold text-center pl-1" style={{ lineHeight: '2.5rem' }}>
+                    ¡Bienvenidos a Malta
+                    <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-10 h-8 md:w-15 md:h-11 inline-block mx-2" />
+                        <span style={{ display: 'block', lineHeight: '3rem' }}>el paraíso del mediterráneo!</span>
                     </h1>
                 </div>
 
