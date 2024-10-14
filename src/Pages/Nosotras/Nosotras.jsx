@@ -12,17 +12,17 @@ const Nosotras = () => {
     <>
       <Navbar />
       <div className="relative min-h-screen pb-4">
-        {/* Imagen punteada visible solo en lg */}
+        {/* Imagen punteada visible solo en lg 
         <img
           src={LINEAPUNTEADA}
           alt="Línea punteada"
           className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
           style={{ height: '96%', width: '97%' }}
-        />
+        />*/}
         <div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container relative z-10">
           <div className="md:flex items-center justify-between w-full">
             <div className="w-full text-left mb-8">
-              <h1 className="lg:text-5xl text-4xl b-10 lg:pb-10 ßlg:text-start text-center font-bold text-primaryVio">Sobre nosotros</h1>
+              <h1 className="lg:text-5xl text-4xl b-10 lg:pb-10 lg:text-start text-center font-bold text-primaryVio">¿Quiénes somos?</h1>
             </div>
           </div>
 
