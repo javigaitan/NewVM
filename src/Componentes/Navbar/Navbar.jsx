@@ -89,7 +89,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotros'>
                                         <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Nosotros
+                                        ¿Quiénes somos?
                                         </button>
                                     </Link>
                                 </li>
@@ -209,7 +209,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Nosotros
+                                        ¿Quiénes somos?
                                         </button>
                                     </Link>
                                 </li>

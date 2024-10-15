@@ -17,6 +17,16 @@ import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
 import BanderaMalta from '../../Componentes/Destinos/DestinosImg/banderamalta.png'
 import Footer from "../Footer/Footer";
+import Irlanda from '../../assets/PaisesDesplegables/IRLANDA.png';
+import Malta from "../../assets/PaisesDesplegables/MALTA.png";
+import Espana from '../../assets/PaisesDesplegables/ESPAÑA.png';
+import Francia from '../../assets/PaisesDesplegables/FRANCIA.png';
+import Alemania from '../../assets/PaisesDesplegables/ALEMANIA.png';
+import IrlandaBandera from '../../assets/PaisesDesplegables/BanderaIrlanda.png';
+import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
+import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
+import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
+import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
 
 
 const DestinoMalta = () => {
@@ -61,33 +71,33 @@ const DestinoMalta = () => {
         return isDropdownOpen ? (
             <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                 <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                    <img src="/src/assets/PaisesDesplegables/IRLANDA.png" alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
+                    <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
                     <span className="text-primaryVio">Irlanda</span>
-                    <img src="/src/assets/PaisesDesplegables/BanderaIrlanda.png" alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
+                    <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                    <img src="/src/assets/PaisesDesplegables/MALTA.png" alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
+                    <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
                     <span className="text-primaryVio">Malta</span>
-                    <img src="/src/assets/PaisesDesplegables/BanderaMalta.png" alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
+                    <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                    <img src="/src/assets/PaisesDesplegables/ESPAÑA.png" alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
+                    <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
                     <span className="text-primaryVio">España</span>
-                    <img src="/src/assets/PaisesDesplegables/BanderaEspa.png" alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
+                    <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
-                    <img src="/src/assets/PaisesDesplegables/FRANCIA.png" alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
+                    <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
                     <span className="text-primaryVio">Francia</span>
-                    <img src="/src/assets/PaisesDesplegables/BanderaFrancia.png" alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
+                    <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
-                    <img src="/src/assets/PaisesDesplegables/ALEMANIA.png" alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
+                    <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
                     <span className="text-primaryVio">Alemania</span>
-                    <img src="/src/assets/PaisesDesplegables/BanderaAlemani.png" alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
+                    <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
             </div>
         ) : null
@@ -139,7 +149,7 @@ const DestinoMalta = () => {
                             <li>
                                 <Link to='/nosotros'>
                                     <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Nosotros
+                                    ¿Quiénes somos?
                                     </button>
                                 </Link>
                             </li>
