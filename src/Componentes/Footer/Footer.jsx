@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/texturafooter.png";
+import BGF from "../../assets/Textura/footernew.png";
 import BGFM from '../../assets/Textura/bgfooterresponsive.png';
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
@@ -9,6 +9,8 @@ import YT from '../../assets/iconsRedes/yt.png';
 import TIK from '../../assets/iconsRedes/tiktok.png';
 
 const Footer = () => {
+
+  
   return (
     <div className="relative w-full h-auto mt-5">
       {/* Imagen de fondo para pantallas grandes */}
@@ -24,6 +26,7 @@ const Footer = () => {
         alt="Footer background image mobile"
         className="object-cover lg:hidden"
       />
+      
 
 <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 ">        
         {/* Íconos de redes sociales para pantallas grandes */}
@@ -122,9 +125,12 @@ const Footer = () => {
                   Política de privacidad
                 </Link>
               </li>
+              
             </ul>
           </div>
         </div>
+      </div>
+      <div className=''>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import VMFacts from "../../Componentes/VMFacts/VMFacts";
 import GoogleReviews from '../../Componentes/Review/GooglReviews';
 import LoaderAvionPopUp from '../../Componentes/LoaderAvion/LoaderAvionPopUp';
 
+
 const Landing = () => {
     const [showLoader, setShowLoader] = useState(false);
 
@@ -35,7 +36,7 @@ const Landing = () => {
             <GoogleReviews /> 
             <Blogs />
             <Partners />
-             <Footer />
+            <Footer />
             
         </>
     );
