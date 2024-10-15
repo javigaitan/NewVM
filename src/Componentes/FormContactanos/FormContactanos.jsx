@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/footerExp.png";
+import BGF from "../../assets/Textura/footernewgris.png";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
 import YT from '../../assets/iconsRedes/yt.png';
 import TIK from '../../assets/iconsRedes/tiktok.png';
-import BGFG from '../../assets/Textura/footerbackgris.png';
+import BGFG from '../../assets/Textura/footergrisrespondive 1.png';
 
 const FormContactanos = () => {
     useEffect(() => {
