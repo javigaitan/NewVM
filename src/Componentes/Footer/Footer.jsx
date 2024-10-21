@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/footernew.png";
-import BGFM from '../../assets/Textura/footerresponsivenew 1.png';
+import BGF from "../../assets/Textura/footerdesk.png";
+import BGFM from '../../assets/Textura/Footermovile1 1.png';
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
