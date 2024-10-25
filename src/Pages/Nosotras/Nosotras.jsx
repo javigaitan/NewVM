@@ -6,8 +6,12 @@ import IMG1 from '../../assets/Nosotros/nosotros1.png';
 import IMG2 from '../../assets/Nosotros/nosotros2.png';
 import IMG3 from '../../assets/Nosotros/nosotros3.png';
 import IMG4 from '../../assets/Nosotros/nosotros5.png';
+import {useTranslation} from "react-i18next";
+
 
 const Nosotras = () => {
+  const [t, i18n] = useTranslation("navbar");
+
   return (
     <>
       <Navbar />
@@ -22,14 +26,14 @@ const Nosotras = () => {
         <div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container relative z-10">
           <div className="md:flex items-center justify-between w-full">
             <div className="w-full text-left mb-8">
-              <h1 className="lg:text-5xl text-4xl b-10 lg:pb-10 lg:text-start text-center font-bold text-primaryVio">¿Quiénes somos?</h1>
+              <h1 className="lg:text-5xl text-4xl b-10 lg:pb-10 lg:text-start text-center font-bold text-primaryVio">{t("about.title")}</h1>
             </div>
           </div>
 
           {/* Bloque de texto-imagen para lg, texto primero en mobile */}
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="lg:text-2xl  text-xl text-primaryVio">Somos una agencia de turismo educativo de origen latino pensada para <strong>latinos</strong> con más de <strong>7 años</strong> de experiencia.</p>
+              <p className="lg:text-2xl  text-xl text-primaryVio">{t("about.text1")}</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -50,13 +54,13 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-2 md:mb-0 p-2">
-              <p className="lg:text-xl text-xl text-primaryVio pl-0 md:pl-14">Nuestra sede central está en Dublín, Irlanda y tenemos más de <strong>20 representantes</strong> de diferentes nacionalidades para ayudarte en distintas partes del mundo.</p>
+              <p className="lg:text-xl text-xl text-primaryVio pl-0 md:pl-14">{t("about.text2")}</p>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center w-full p-6 space-y-8 md:space-y-0 md:space-x-8 relative z-10">
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
-              <p className="lg:text-2xl text-xl text-primaryVio">Nuestra comunidad ya suma <strong>+3.000 travellers</strong> quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.</p>
+              <p className="lg:text-2xl text-xl text-primaryVio">{t("about.text3")}</p>
             </div>
             <div className="w-full md:w-1/2">
               <img
@@ -76,15 +80,14 @@ const Nosotras = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-4 pb-8">
-              <p className="lg:text-2xl  text-xl text-primaryVio pl-0 md:pl-5">Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.</p>
+              <p className="lg:text-2xl  text-xl text-primaryVio pl-0 md:pl-5">{t("about.text4")}</p>
             </div>
           </div>
 
           {/* Video */}
           <div className="relative z-10 pt-6 pb-3">
             <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-8 text-primaryVio mt-6 text-center">
-              Conoce a nuestra Comunidad
-            </h1>
+            {t("about.title2")}</h1>
             <div className="flex justify-center mt-8">
               <div className="w-full md:w-2/3 lg:w-1/2">
                 <div className="relative overflow-hidden pb-[56.25%] h-0">

@@ -35,6 +35,15 @@
         "opcion2":"Contáctanos",
         "opcion3":"Términos y condiciones",
         "opcion4":"Política de privacidad"
+    },
+
+    "about":{
+        "title":"¿Quiénes somos?",
+        "text1":"Somos una agencia de turismo educativo de origen latino pensada para latinos con más de 7 años de experiencia.",
+        "text2":"Nuestra sede central está en Dublín, Irlanda y tenemos más de 20 representantes de diferentes nacionalidades para ayudarte en distintas partes del mundo.",
+        "text3":"Nuestra comunidad ya suma +3.000 travellers quienes nos eligieron para vivir esta experiencia y crecer profesionalmente.",
+        "text4":"Vamos más allá de solo recomendarte una escuela, vivimos la experiencia y sabemos qué necesitas para que tu travesía en el extranjero sea exitosa.",
+        "title2":"Conoce a nuestra Comunidad"
     }
 
 }

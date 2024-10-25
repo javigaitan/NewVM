@@ -36,6 +36,15 @@
     "opcion2": "Contact Us",
     "opcion3": "Terms and Conditions",
     "opcion4": "Privacy Policy"
+},
+
+"about": {
+    "title": "Who are we?",
+    "text1": "We are a Latin American educational tourism agency designed for Latinos, with over 7 years of experience.",
+    "text2": "Our headquarters is in Dublin, Ireland, and we have more than <strong>20 representatives</strong> from different nationalities to assist you in various parts of the world.",
+    "text3": "Our community already includes <strong>+3,000 travellers</strong> who chose us to live this experience and grow professionally.",
+    "text4": "We go beyond just recommending a school. We have lived the experience and know what you need to make your journey abroad a success.",
+    "title2": "Meet our Community"
 }
 
 
