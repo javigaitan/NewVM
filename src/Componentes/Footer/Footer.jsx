@@ -7,8 +7,10 @@ import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
 import YT from '../../assets/iconsRedes/yt.png';
 import TIK from '../../assets/iconsRedes/tiktok.png';
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+  const [t, i18n] = useTranslation("navbar");
 
   
   return (
@@ -55,25 +57,25 @@ const Footer = () => {
               <ul className="menu-list">
                 <li className="menu-item">
                   <Link to="/" className="text-colorWhite">
-                    <p className="text-2xl font-bold hover:text-secondaryTur2">Inicio</p>
+                    <p className="text-2xl font-bold hover:text-secondaryTur2">{t(footer.opcion1)}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/contacto" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Contáctanos</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion2)}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Términos y condiciones</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion3)}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Política de privacidad</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion4)}</p>
                     <hr className="line" />
                   </Link>
                 </li>
@@ -107,23 +109,21 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Inicio
+                {t(footer.opcion1)}
                 </Link>
               </li>
               <li>
                 <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Contáctanos
+                {t(footer.opcion2)}
                 </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Términos y condiciones
-                </Link>
+                {t(footer.opcion3)}                </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Política de privacidad
-                </Link>
+                {t(footer.opcion3)}                </Link>
               </li>
               
             </ul>

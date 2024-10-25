@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "about" : "¿Quiénes somos?",
+        "i-want-to-travel": "¡Quiero viajar!",
+        "finance-your-trip": "Financia tu viaje",
+        "other-services": "Otros servicios"
+    },
+    "countries":{
+        "ireland": "Irlanda",
+        "germany": "Alemania",
+        "france": "Francia",
+        "malta": "Malta",
+        "españa":"España"
+    },
+
+    "banner":{
+        "title":"¡El mundo te espera!",
+        "subtitle":"Vive, estudia y trabaja en el extranjero",
+        "btn":"Solicita tu cotización"
+    },
+
+    "service":{
+        "title":"¿Qué experiencias ofrecemos?",
+        "tipe1":"Cursos de Idiomas",
+        "tipe2":"Estudio y trabajo en el exterior",
+        "tipe3":"Carreras y posgrados universitarios"
+    },
+
+    "fact":{
+        "title":"¿Por qué"
+    },
+
+    "footer":{
+        "opcion1":"Inicio",
+        "opcion2":"Contáctanos",
+        "opcion3":"Términos y condiciones",
+        "opcion4":"Política de privacidad"
+    }
+
+}

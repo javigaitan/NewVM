@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 import ScrollReveal from 'scrollreveal';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
@@ -14,9 +15,12 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import { Button } from "@material-tailwind/react";
+import IconTraductor from "../../assets/traductor.png";
 
 
 function Navbar() {
+    const [t, i18n] = useTranslation("navbar");
     const [showMenu, setShowMenu] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -89,7 +93,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotros'>
                                         <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
+                                        {t("navbar.about")}
                                         </button>
                                     </Link>
                                 </li>
@@ -99,7 +103,7 @@ function Navbar() {
                                         onClick={toggleDropdown}
                                         className="dark:text-colorWhite text-lg flex items-center focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                     >
-                                        <span>¡Quiero viajar!</span>
+                                        <span>{t("navbar.i-want-to-travel")}</span>
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
 
@@ -108,31 +112,31 @@ function Navbar() {
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                             <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -142,7 +146,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/ahorro'>
                                         <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Financia tu viaje
+                                        {t("navbar.finance-your-trip")}
                                         </button>
                                     </Link>
                                 </li>
@@ -150,7 +154,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/servicios'>
                                         <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Otros servicios
+                                        {t("navbar.other-services")}
                                         </button>
                                     </Link>
                                 </li>
@@ -164,6 +168,11 @@ function Navbar() {
                                 </li>
                             </ul>
 
+                            
+
+
+
+
                             <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
                                 <div className="hidden lg:flex items-center space-x-4 xl:space-x-8"></div>
                                 <div className="flex lg:hidden">
@@ -176,6 +185,10 @@ function Navbar() {
                                     </button>
                                 </div>
                             </div>
+                            {/* boton de traduccion */}
+
+                            <Button onClick={()=> i18n.changeLanguage("es")}> ES  </Button>
+                            <Button onClick={()=> i18n.changeLanguage("en")}> EN  </Button>
                         </div>
                     </div>
 
@@ -209,46 +222,45 @@ function Navbar() {
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
+                                        {t("navbar.about")}
                                         </button>
                                     </Link>
                                 </li>
 
                                 <li>
                                     <button onClick={toggleDropdown} className="dark:text-colorWhite text-white text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
-                                        ¡Quiero viajar!
-                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    {t("navbar.i-want-to-travel")}                                        <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
 
                                     {isDropdownOpen && (
         <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                             <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -258,7 +270,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Financia tu viaje
+                                        {t("navbar.finance-your-trip")}
                                         </button>
                                     </Link>
                                 </li>
@@ -266,7 +278,7 @@ function Navbar() {
                                 <li>
                                     <Link to='/servicios' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Otros servicios
+                                        {t("navbar.other-services")}
                                         </button>
                                     </Link>
                                 </li>

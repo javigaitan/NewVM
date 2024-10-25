@@ -1,0 +1,44 @@
+{
+    "navbar": {
+        "about" : "About",
+        "i-want-to-travel": "I want to travel!",
+        "finance-your-trip": "Finance your trip",
+        "other-services": "Other services"
+    },
+
+    "countries":{
+        "ireland": "Ireland",
+        "germany": "Germany",
+        "france": "France",
+        "malta": "Malta",
+        "españa":"Spain"
+    },
+
+    "banner": {
+        "title": "The world awaits you!",
+        "subtitle": "Live, study, and work abroad",
+        "btn": "Request your quote"
+    },
+
+    "service": {
+    "title": "What experiences do we offer?",
+    "tipe1": "Language Courses",
+    "tipe2": "Study and work abroad",
+    "tipe3": "Undergraduate and postgraduate degrees"
+    },
+
+    "fact": {
+    "title": "Why"
+    },
+
+    "footer": {
+    "opcion1": "Home",
+    "opcion2": "Contact Us",
+    "opcion3": "Terms and Conditions",
+    "opcion4": "Privacy Policy"
+}
+
+
+
+
+}

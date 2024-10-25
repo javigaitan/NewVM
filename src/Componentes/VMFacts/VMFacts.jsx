@@ -7,8 +7,12 @@ import Icon4 from '../../assets/Facts/Fact4.png';
 import Icon5 from '../../assets/Facts/Fact5.png';
 import IconPass from '../../assets/Facts/pasaporte.png';
 import './VMFacts.css';
+import {useTranslation} from "react-i18next";
+
 
 const VMFacts = () => {
+    const [t, i18n] = useTranslation("navbar");
+
     useEffect(() => {
         // Configuración de ScrollReveal
         ScrollReveal().reveal('.facts-container', {
@@ -29,7 +33,7 @@ const VMFacts = () => {
                         <div className="flex justify-center items-center flex-col">
                             <div className="lg:mt-20">
                                 <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold  leading-10 text-white mt-5 text-center md:pb-8">
-                                    ¿Por qué <strong>Vaga-Mundo</strong>?
+                                    {t("fact.title")}<strong> Vaga-Mundo</strong>?
                                 </h2>
                             </div>
                         </div>
