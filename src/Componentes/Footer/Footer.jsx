@@ -57,25 +57,25 @@ const Footer = () => {
               <ul className="menu-list">
                 <li className="menu-item">
                   <Link to="/" className="text-colorWhite">
-                    <p className="text-2xl font-bold hover:text-secondaryTur2">{t(footer.opcion1)}</p>
+                    <p className="text-2xl font-bold hover:text-secondaryTur2">{t("end.opcion1")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/contacto" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion2)}</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion2")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion3)}</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion3")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t(footer.opcion4)}</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion4")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
@@ -109,21 +109,21 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t(footer.opcion1)}
+                {t("end.opcion1")}
                 </Link>
               </li>
               <li>
                 <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t(footer.opcion2)}
+                {t("end.opcion2")}
                 </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t(footer.opcion3)}                </Link>
+                {t("end.opcion3")}                </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t(footer.opcion3)}                </Link>
+                {t("end.opcion4")}                </Link>
               </li>
               
             </ul>
