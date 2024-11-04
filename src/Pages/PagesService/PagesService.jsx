@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
+import {useTranslation} from "react-i18next";
 import Logo from "../../assets/Logos/LogoVioleta.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import Icons1 from '../../assets/OtrosServicios/Icono1.png';
@@ -24,6 +25,8 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import { Button } from "@material-tailwind/react";
+
 
 
 
@@ -39,6 +42,8 @@ const PagesService = () => {
     const [showServiceMenu, setShowServiceMenu] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [t, i18n] = useTranslation("navbar");
+
 
     // Función para manejar el clic en el botón del dropdown
     const handleDropdownClick = () => {
@@ -120,16 +125,14 @@ const PagesService = () => {
                                     <Link to='/nosotros'>
 
                                         <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
-                                        </button>
+                                        {t("navbar.about")}                                        </button>
                                     </Link>
                                 </li>
 
                                 <li className="relative">
                                     <div className="flex items-center" onClick={handleDropdownClick}>
                                         <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            ¡Quiero viajar!
-                                        </button>
+                                        {t("navbar.i-want-to-travel")}                                        </button>
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </div>
 
@@ -137,31 +140,31 @@ const PagesService = () => {
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -173,7 +176,7 @@ const PagesService = () => {
                                         <button
                                             className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Financia tu viaje
+                                        {t("navbar.finance-your-trip")}
                                         </button>
                                     </Link>
                                 </li>
@@ -185,8 +188,7 @@ const PagesService = () => {
                                         <button
                                             className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Otros servicios
-                                        </button>
+{t("navbar.other-services")}                                        </button>
                                     </Link>
 
 
@@ -229,7 +231,12 @@ const PagesService = () => {
                                     </button>
                                 </div>
                             </div>
+                            {/* boton de traduccion */}
+
+                        <Button onClick={()=> i18n.changeLanguage("es")}> ES  </Button>
+                            <Button onClick={()=> i18n.changeLanguage("en")}> EN  </Button>
                         </div>
+                        
                     </div>
 
 
@@ -260,45 +267,43 @@ const PagesService = () => {
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
-                                        </button>
+                                        {t("navbar.about")}                                        </button>
                                     </Link>
                                 </li>
                                 <li>
                                     <button onClick={handleDropdownClick} className="dark:text-colorWhite text-primaryVio text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
-                                        ¡Quiero viajar!
-                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    {t("navbar.i-want-to-travel")}                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -309,16 +314,14 @@ const PagesService = () => {
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Financia tu viaje
-                                        </button>
+                                        {t("navbar.finance-your-trip")}                                          </button>
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link to='/servicios' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Otros servicios
-                                        </button>
+                                        {t("navbar.other-services")}                                          </button>
                                     </Link>
                                 </li>
                                 <li>
@@ -336,11 +339,10 @@ const PagesService = () => {
                 </div>
 
                 <div className="text w-full bg-secondariVerde px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-5xl font-bold text-primaryVio dark:text-white mb-10 pt-14">Otros Servicios</h1>
+                    <h1 className="text-5xl font-bold text-primaryVio dark:text-white mb-10 pt-14">{t("other-services.title")}</h1>
                     <div className="w-4/5">
                         <p className="text-lg text-primaryVio dark:text-primaryVio pb-5">
-                            En <strong>Vaga-Mundo</strong> nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones <strong>360º</strong> diseñadas para maximizar su experiencia de viaje.
-                        </p>
+                        {t("other-services.banner")}                        </p>
                     </div>
                 </div>
 
@@ -361,19 +363,16 @@ const PagesService = () => {
                             <img src={Icons1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
                         <div className="md:mt-3 pl-4 ">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Seguros y asistencias al viajero</h2>
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">{t("other-services.seccion1-title")}  </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                             <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.
+                            {t("other-services.seccion1.text1")}                                <br />
+                                <br />
+                                {t("other-services.seccion1.text2")} 
                                 <br />
                                 <br />
-                                Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida
-                                y asistencia médica 24/7 en tu mismo idioma.
-                                <br />
-                                <br />
-                                Ya sea que viajes a estudiar, de vacaciones, por trabajo, solo o acompañado, tenemos la cobertura ideal para ti.
-                            </p>
+                                {t("other-services.seccion1.text3")}                             </p>
                         </div>
                         <div className="lg:pl-4 mt-8" style={{
                             marginBottom: '20px',
@@ -383,8 +382,7 @@ const PagesService = () => {
                         }}>
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                    Solicita más información
-                                </button>
+                                {t("other-services.seccion1.btn")}                                 </button>
                             </Link>
                         </div>
                     </div>
@@ -415,16 +413,15 @@ const PagesService = () => {
                             <img src={Icons2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">                                Tickets aéreos, alquiler de autos, atracciones y mucho más.
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
+                                {t("other-services.seccion2-title")} 
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                         <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Uno de los primeros pasos que realizamos para materializar el viaje de nuestros sueños es la compra del boleto de avión, ya sea que viajes solo, acompañado, en familia o con amigos.
+                        {t("other-services.seccion2.text1")}                                <br />
                                 <br />
-                                <br />
-                                Por eso, en Vaga-Mundo tenemos las mejores opciones en tickets aéreos, alquileres de auto, atracciones y mucho más, dentro o fuera de Europa.
-                            </p>
+                                {t("other-services.seccion2.text2")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8" style={{
                             marginBottom: '20px',
@@ -434,8 +431,7 @@ const PagesService = () => {
                         }}>
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
-                                    Solicita más información
-                                </button>
+                                {t("other-services.seccion2.btn")}                                </button>
                             </Link>
                         </div>
                     </div>
@@ -460,19 +456,17 @@ const PagesService = () => {
                             <img src={Icons3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
                         <div className="md:mt-3 pl-4 ">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">                                Alojamiento propio y externos
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">                                
+                            {t("other-services.seccion3-title")} 
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                         <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Un gran miedo que enfrentamos al momento de vivir una experiencia en el exterior es el saber dónde nos alojaremos.
+                        {t("other-services.seccion3-text1")}                                 <br />
                                 <br />
+                                {t("other-services.seccion3-text2")}                                <br />
                                 <br />
-                                Por eso, en Vaga-Mundo contamos con alojamiento propio en Dublín, Irlanda para que nuestros estudiantes se sientan como en casa, una vez arribados a la isla verde.
-                                <br />
-                                <br />
-                                Asimismo, tanto en Irlanda como en otros destinos del mundo tenemos convenios con partners como pueden ser alojamientos estudiantiles, host family o las mismas escuelas de inglés, para que nuestros estudiantes se sientan cómodos.
-                            </p>
+                                {t("other-services.seccion3-text3")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8" style={{
                             marginBottom: '20px',
@@ -482,8 +476,7 @@ const PagesService = () => {
                         }}>
                             <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20alojamientos!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                    Solicita más información
-                                </button>
+                                {t("other-services.seccion2.btn")}                                 </button>
                             </Link>
                         </div>
                     </div>
