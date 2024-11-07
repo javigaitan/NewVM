@@ -41,10 +41,10 @@
 
 "about": {
     "title": "Who are we?",
-    "text1": "We are a Latin American educational tourism agency designed for Latinos, with over 7 years of experience.",
-    "text2": "Our headquarters is in Dublin, Ireland, and we have more than <strong>20 representatives</strong> from different nationalities to assist you in various parts of the world.",
-    "text3": "Our community already includes <strong>+3,000 travellers</strong> who chose us to live this experience and grow professionally.",
-    "text4": "We go beyond just recommending a school. We have lived the experience and know what you need to make your journey abroad a success.",
+    "text1": "We are a Latin American educational tourism agency designed for Latinos, with over 7 years of experience",
+    "text2": "Although we are based in Dublin, Ireland, we have more than 20 representatives from various nationalities to assist you worldwide",
+    "text3": "Our community already includes +3,000 travellers who chose us to live this experience and grow professionally.",
+    "text4": "We go beyond just recommending a school. We have already lived this experience and know what it takes to make your trip abroad successful.",
     "title2": "Meet our Community"
 },
 
@@ -52,20 +52,20 @@
     "title": "Other Services",
     "banner": "At <strong>Vaga-Mundo</strong>, we focus on the complete satisfaction of our clients. That's why we offer <strong>360º</strong> solutions designed to maximize their travel experience.",
     "seccion1-title": "Travel Insurance and Assistance",
-    "seccion1.text1": "Unexpected situations like dental emergencies or non-medical issues like lost luggage can disrupt our plans and are often part of our travels.",
-    "seccion1.text2": "That’s why, at Vaga-Mundo, we have partnerships with leading providers of travel insurance and assistance, so your only concern is to enjoy. All plans offer customized payment options and 24/7 medical assistance in your own language.",
-    "seccion1.text3": "Whether you’re traveling to study, on vacation, for work, alone, or with others, we have the perfect coverage for you.",
+    "seccion1.text1": "Unexpected situations like dental emergencies or non-medical issues like lost luggage can disrupt our plans and often arise while travelling",
+    "seccion1.text2": "That’s why, at Vaga-Mundo, we have partnerships with leading travel insurance and assistance providers, so your only focus will be on enjoying. All plans offer customised payment options and 24/7 medical assistance in your language.",
+    "seccion1.text3": "We have the perfect coverage whether you're travelling for study, holidays or work, alone or with others",
     "seccion1.btn": "Request More Information",
 
     "seccion2-title": "Air Tickets, Car Rentals, Attractions, and More",
-    "seccion2.text1": "One of the first steps in making our dream trip a reality is buying a plane ticket, whether you’re traveling alone, with family, or friends.",
-    "seccion2.text2": "At Vaga-Mundo, we offer the best options for air tickets, car rentals, attractions, and much more, both within and outside of Europe.",
+    "seccion2.text1": "One of the first steps in making our dream trip come true is buying a plane ticket, whether you’re travelling alone, with family, or with friends.",
+    "seccion2.text2": "At Vaga-Mundo, we offer the best options for air tickets, car rentals, attractions, and much more, both within and outside Europe.",
     "seccion2.btn": "Request More Information",
 
     "seccion3-title": "Own and Partner Accommodations",
-    "seccion3-text1": "A major concern when going abroad is knowing where you will stay.",
-    "seccion3-text2": "That’s why, at Vaga-Mundo, we offer our own accommodations in Dublin, Ireland, to make our students feel at home once they arrive on the green island.",
-    "seccion3-text3": "Additionally, in Ireland and other destinations, we have agreements with partners like student accommodations, host families, or even English schools to ensure our students are comfortable.",
+    "seccion3-text1": "A primary concern when going abroad is knowing where you will stay.",
+    "seccion3-text2": "That’s why Vaga-Mundo offers accommodations in Dublin, Ireland, to make our students feel at home once they arrive on the green island.",
+    "seccion3-text3": "In Ireland and other destinations, we also have agreements with partners, such as student accommodations, host families, or English schools, to ensure the comfort of our students.",
 
     "seccion4-title": "Job Placement Programs",
     "seccion4-text1": "A study-abroad experience gains even more meaning if we add a work experience to it.",
@@ -76,7 +76,53 @@
     "seccion5-text1": "At Vaga-Mundo, we understand the importance of building community in different destinations, and group trips are a great way to keep this spirit alive. From weekend getaways within their host countries to trips to other continents, like experiencing the multisensory Morocco.",
     "seccion5-text2": "At Vaga-Mundo, we are always planning the next community travel experience.",
     "seccion5-text3": "To learn more about the activities and benefits of being a member of the VM community, click here."
+},
+"finance": {
+    "title": "Finance Your Trip",
+    "banner": "At Vaga-Mundo, we want to help you fulfill the trip of your dreams, which is why we offer tailored plans so you can finance your educational experience abroad in installments. Don’t forget to consult your advisor on the payment methods that best suit your needs and country of origin.",
+
+    "seccion1-title": "Referral Program",
+    "seccion1.text1": "We created this program to financially reward our community.",
+    "seccion1.text2": "Students who are about to travel, those already at various destinations, and even those who have completed their experience and returned to their home country can participate.",
+    "seccion1.text3": "We want students to refer us to their friends and family, so others can feel the same satisfaction they felt when traveling with us.",
+    "seccion1.btn": "Request more information",
+
+    "seccion2-title": "Raffle Program",
+    "seccion2.text1": "Once you have chosen your English course and paid the deposit, you can access the benefit of financing your course with raffles.",
+    "seccion2.text2": "To facilitate this, we partnered with Planet01 to offer you the opportunity for your family, friends, and acquaintances to financially support you in achieving your dream of living an overseas study experience.",
+    "seccion2.text3": "How does the program work?",
+    "seccion2.item1": "You enroll and make the deposit for your course with Vaga-Mundo.",
+    "seccion2.item2": "Coordinate with your advisor the number of reservation tickets.",
+    "seccion2.item3": "Pick up your raffle tickets at our offices in Uruguay and start selling them.",
+
+    "seccion4-title": "“I’m Committed to Traveling” Program",
+    "seccion4.text1": "Through this crowdfunding program, you can raise funds at events like your birthday, Christmas, etc.",
+    "seccion4.text2": "With a link we provide, your family and friends can gift you an amount equivalent to a product or service for your educational experience abroad, such as airfare, medical insurance, accommodation, language courses, or anything else you might need.",
+
+    "seccion5-title": "VM Ambassador Program",
+    "seccion5.text1": "This program is designed for those who create travel content and want to monetize their channel by promoting Vaga-Mundo's educational experiences, regardless of whether they have contracted with us or not.",
+    "seccion5.text2": "Those selected as VM ambassadors will not only earn money but also access special discounts on all our services through our VM Coins."
+},
+
+  "experiences": {
+    "experiences1.title": "Language Courses",
+    "experiences1.text1": "This type of experience is ideal for those who have limited time to travel or want to incorporate learning or improving a language during their next journey.",
+    "experiences1.text2": "It is also an option for those who want to volunteer or are digital nomads, as they have a remote job that allows them to work from anywhere in the world.",
+    "experiences1.text3": "Participants can choose to study languages for up to 12 weeks, either in general courses or specialized in a specific field or discipline.",
+    "experience.btn": "Request a quote",
+    "experiences1.title2": "Other experiences",
+
+    "experiences2.title": "Study and Work Abroad",
+    "experiences2.text1": "This experience is ideal for those who want to learn or improve a language while having the opportunity to work part-time in their destination to cover expenses.",
+    "experiences2.text2": "Depending on the chosen destination, this type of visa may be extended for one or two additional periods.",
+    "experiences2.text3": "There are no age restrictions, and prior knowledge of English is not required.",
+
+    "experiences3.title": "Undergraduate and Postgraduate Degrees",
+    "experiences3.text1": "This type of experience is ideal for those who have a good level of English and wish to start an undergraduate degree abroad.",
+    "experiences3.text2": "It is also an excellent option for those who already have a university degree in their home country and want to invest in their professional development by pursuing a postgraduate or master’s degree abroad.",
+    "experiences3.text3": "Furthermore, depending on the chosen destination, some academic options allow participants to gain work experience with the same student visa after completing their studies."
 }
+
 
 
 

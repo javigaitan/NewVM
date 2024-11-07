@@ -339,11 +339,10 @@ const Ahorro = () => {
             </div>
 
                 <div className="text w-full bg-primaryVio px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-5xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">Financia tu viaje</h1>
+                    <h1 className="text-5xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">{t("finance.title")}  </h1>
                     <div className="w-4/5">
                         <p className="text-lg text-colorWhite dark:text-primaryVio pb-5">
-                            En <strong>Vaga-Mundo</strong> queremos ayudarte a cumplir el <strong>viaje de tus sueños</strong>, por eso creamos planes a medida para que puedas financiar tu experiencia educativa en el extranjero en cuotas o plazos.
-                            No olvides consultar a tu asesor sobre los medios de pagos que mejor se adapten a tus necesidades y país de origen.                        </p>
+                        {t("finance.banner")}                       </p>
                     </div>
                 </div>
 
@@ -364,24 +363,22 @@ const Ahorro = () => {
                             <img src={Ahorro1} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
                         <div className="md:mt-3 pl-4 ">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">Programa de Referidos</h2>
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4">
+                            {t("finance.seccion1-title")}  
+                            </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                             <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.
+                            {t("finance.seccion1.text1")}                                <br />
                                 <br />
+                                {t("finance.seccion1.text2")}                                  <br />
                                 <br />
-                                Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.
-                                <br />
-                                <br />
-                                Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.
-                            </p>
+                                {t("finance.seccion1.text3")}                              </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
                             <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                    Solicita más información
-                                </button>
+                                {t("finance.seccion1.btn")}                                </button>
                             </Link>
                         </div>
                     </div>
@@ -413,24 +410,23 @@ const Ahorro = () => {
                             <img src={Ahorro2} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4 flex items-center">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl md:pb-6 font-extrabold leading-9">Programa de Rifas</h2>
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl md:pb-6 font-extrabold leading-9">
+                            {t("finance.seccion2-title")} </h2>
                             <img src={Bandera} alt="Bandera" className="w-10 h-8 rounded-lg mr-3 ml-3" />
                         </div>
                         <div className="md:mt-3 pl-4">
                             <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.
+                            {t("finance.seccion2.text1")}                                <br />
                                 <br />
+                                {t("finance.seccion2.text2")}                                <br />
                                 <br />
-                                Para ello, nos aliamos con <strong>Planet01</strong> para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.
-                                <br />
-                                <br />
-                                <i>¿Cómo funciona el programa?</i>
+                                <i>{t("finance.seccion2.text3")}</i>
                                 <br />
                             </p>
                             <ul className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left list-disc pl-5">
-                                <li>Te inscribes y haces la seña de tu curso con Vaga-Mundo.</li>
-                                <li>Coordinas con tu asesor la cantidad de boletas de reserva.</li>
-                                <li>Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.</li>
+                                <li>{t("finance.seccion2.item1")}</li>
+                                <li>{t("finance.seccion2.item2")}</li>
+                                <li>{t("finance.seccion2.item3")}</li>
                             </ul>
                         </div>
                         <div className="lg:pl-4 mt-8 w-full md:w-auto " style={{
@@ -441,7 +437,7 @@ const Ahorro = () => {
                     }}> {/* Ajuste del contenedor del botón */}
                             <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  > 
-                                    Solicita más información
+                                    {t("finance.seccion1.btn")}
                                 </button>
                             </Link>
                         </div>
@@ -466,20 +462,18 @@ const Ahorro = () => {
                             <img src={Ahorro3} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa “Me caso con viajar”</h2>
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">{t("finance.seccion4-title")} </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                             <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.
+                            {t("finance.seccion4.text1")}                                <br />
                                 <br />
-                                <br />
-                                A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.
-                            </p>
+                                {t("finance.seccion4.text2")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
                             <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                    Solicita más información
+                                    {t("finance.seccion1.btn")}
                                 </button>
                             </Link>
                         </div>
@@ -513,19 +507,17 @@ const Ahorro = () => {
                             <img src={Ahorro4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">Programa de Embajadores VM</h2>
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">{t("finance.seccion5-title")}</h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                             <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.
+                            {t("finance.seccion4.text1")}                                <br />
                                 <br />
-                                <br />
-                                Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins.
-                            </p>
+                                {t("finance.seccion4.text2")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
                             <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                Solicita más información
+                                {t("finance.seccion1.btn")}
                             </button>
                         </div>
                     </div>

@@ -5,15 +5,20 @@ import WyS from '../../../assets/ServiciosVM/estudio y trabajo en el exterior.pn
 import universitarios from '../../../assets/ServiciosVM/posgrados.png';
 import { Link } from 'react-router-dom';
 import FormContactanos from '../../FormContactanos/FormContactanos';
+import {useTranslation} from "react-i18next";
+
 
 const CursoDeIdiomas = () => {
+
+    const [t, i18n] = useTranslation("navbar");
+
     return (
         <div>
             <Navbar />
             <div className="container mx-auto px-4 py-7">
                 {/* Flex layout for lg, centered for md */}
                 <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:hidden">
-                    <h1 className="text-4xl font-bold mb-4 text-primaryVio">Cursos de Idioma</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-primaryVio">{t("experiences.experiences1.title")} </h1>
                 </div>
 
                 <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
@@ -23,20 +28,17 @@ const CursoDeIdiomas = () => {
                     </div>
                     <div className="w-full lg:w-1/2 p-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left ">
                     <h1 className="text-4xl font-bold mb-4 text-primaryVio hidden lg:block">
-    Cursos de Idioma
-</h1>
+                    {t("experiences.experiences1.title")}</h1>
 
                         <p className="text-lg text-colorText">
-                            Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.
-                            <br /><br />
-                            También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.
-                            <br /><br />
-                            Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.
-                        </p>
+                        {t("experiences.experiences1.text1")}
+                        <br /><br />
+                        {t("experiences.experiences1.text2")}                            <br /><br />
+                        {t("experiences.experiences1.text3")}                        </p>
                         <div className='pt-10 pb-8'>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
                                 <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
-                                    Solicita tu cotización
+                                {t("experiences.experience.btn")}
                                 </button>
                             </Link>
                         </div>
@@ -47,7 +49,7 @@ const CursoDeIdiomas = () => {
             {/* Centered content for md */}
             <div>
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio mt-6 text-center">
-                    Otras experiencias
+                {t("experiences.experiences1.title2")}
                 </h1>
 
                 <div className="flex flex-wrap justify-center mt-8">
@@ -62,8 +64,7 @@ const CursoDeIdiomas = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/work&study'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Estudio y trabajo en el exterior
-                                        </button>
+                                        {t("experiences.experiences2.title")}                                        </button>
                                     </Link>
                                 </div>
                             </div>
@@ -81,7 +82,7 @@ const CursoDeIdiomas = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/carreras-universitarias'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-base font-semibold leading-none text-center text-gray-800 py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Carreras y posgrados universitarios
+                                        {t("experiences.experiences3.title")}
                                         </button>
                                     </Link>
                                 </div>

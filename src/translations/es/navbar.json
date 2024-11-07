@@ -82,16 +82,55 @@
     "finance":{
         "title":"Financia tu viaje",
         "banner":"En Vaga-Mundo queremos ayudarte a cumplir el viaje de tus sueños, por eso creamos planes a medida para que puedas financiar tu experiencia educativa en el extranjero en cuotas o plazos. No olvides consultar a tu asesor sobre los medios de pagos que mejor se adapten a tus necesidades y país de origen.",
+
+
         "seccion1-title":"Programa de Referidos",
         "seccion1.text1":"Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.",
         "seccion1.text2":"Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.",
         "seccion1.text3":"Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.",
         "seccion1.btn":"Solicita más información",
 
-        "seccion2-title":"Programa de Referidos",
+        "seccion2-title":"Programa de Rifas",
         "seccion2.text1":"Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.",
         "seccion2.text2":"Para ello, nos aliamos con Planet01 para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.",
-        "seccion2.text3":""
-    }
+        "seccion2.text3":"¿Cómo funciona el programa?",
+        "seccion2.item1":"Te inscribes y haces la seña de tu curso con Vaga-Mundo.",
+        "seccion2.item2":"Coordinas con tu asesor la cantidad de boletas de reserva.",
+        "seccion2.item3":"Retiras tus rifas en las oficinas de Uruguay y empiezas a venderlas.",
+
+        
+
+        "seccion4-title":"Programa “Me caso con viajar”",
+        "seccion4.text1":"A través de este programa de crowdfunding puedes recaudar dinero en eventos como tu cumpleaños, navidad, etc.",
+        "seccion4.text2":"A través de un enlace que te enviaremos, tus familiares y amigos van a poder regalarte el dinero equivalente a un producto o servicio para tu experiencia educativa en el extranjero como pueden ser los tickets aéreos, seguros médicos, alojamiento, curso de idioma o lo que consideres necesario.",
+
+
+        "seccion5-title":"Programa de Embajadores VM",
+        "seccion5.text1":"Este programa está diseñado para aquellas personas que crean contenidos sobre viajes y quieran monetizar su canal a través de la promoción de las experiencias educativas de Vaga-Mundo, bien sea que hayan contratado o no con nosotros.",
+        "seccion5.text2":"Quienes sean seleccionados como embajadores de VM podrán no solo ganar dinero, sino también acceder a descuentos preferenciales en todos nuestros servicios a través de nuestras VM Coins."
+
+    },
+
+    "experiences":{
+    "experiences1.title":"Cursos de Idioma",
+    "experiences1.text1":"Este tipo de experiencia es ideal para quienes disponen de poco tiempo para viajar o desean integrar el aprendizaje o perfeccionamiento del idioma durante su próxima travesía.",
+    "experiences1.text2":"También es una opción para aquellos que desean realizar un voluntariado o son nómadas digitales, ya que tienen un trabajo remoto que les permite trabajar desde cualquier parte del mundo.",
+    "experiences1.text3":"Los interesados pueden optar por estudiar idiomas hasta por 12 semanas, ya sea en cursos generales o especializados en algún rubro o disciplina puntual.",
+    "experience.btn":"Solicita tu cotización",
+    "experiences1.title2":"Otras experiencias",
+
+    "experiences2.title":"Estudio y trabajo en el exterior",
+    "experiences2.text1":"Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos.",
+    "experiences2.text2":"Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales.",
+    "experiences2.text3":"Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.",
+
+
+    "experiences3.title":"Carreras y posgrados universitarios",
+    "experiences3.text1":"Este tipo de experiencia es ideal para quienes tienen un buen nivel de inglés y desean comenzar una carrera de grado en el extranjero.",
+    "experiences3.text2":"También es una excelente opción para aquellos que ya tienen un título universitario en su país de origen e invierten en su desarrollo profesional realizando un posgrado o máster en el extranjero.",
+    "experiences3.text3":"Asimismo, dependiendo del destino elegido, algunas opciones académicas permiten que el interesado adquiera experiencia laboral con la misma visa de estudiante luego de finalizada la cursada."
+   
+
+  }
 
 }
