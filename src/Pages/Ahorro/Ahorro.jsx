@@ -24,6 +24,9 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import {useTranslation} from "react-i18next";
+import { Button } from "@material-tailwind/react";
+
 
 
 const Ahorro = () => {
@@ -36,6 +39,8 @@ const Ahorro = () => {
     const [showServiceMenu, setShowServiceMenu] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [t, i18n] = useTranslation("navbar");
+
 
     // Función para manejar el clic en el botón del dropdown
     const handleDropdownClick = () => {
@@ -112,54 +117,52 @@ const Ahorro = () => {
                                 </div>
                             </h1>
 
-                            <ul className="item hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-colorWhite"
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-12 font-semibold  text-colorWhite"
                             >
                                 <li>
                                     <Link to='/nosotros'>
 
                                         <button href="javascript:void(0)" className="font-semibold dark:text-colorWhite text-lg  focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
-                                        </button>
+                                        {t("navbar.about")}                                        </button>
                                     </Link>
                                 </li>
 
                                 <li className="relative">
                                     <div className="flex items-center" onClick={handleDropdownClick}>
                                         <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            ¡Quiero viajar!
-                                        </button>
+                                        {t("navbar.i-want-to-travel")}                                        </button>
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </div>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                           <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -171,7 +174,7 @@ const Ahorro = () => {
                                         <button
                                             className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Financia tu viaje
+                                        {t("navbar.finance-your-trip")}
                                         </button>
                                     </Link>
                                 </li>
@@ -183,8 +186,7 @@ const Ahorro = () => {
                                         <button
                                             className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
                                         >
-                                            Otros servicios
-                                        </button>
+{t("navbar.other-services")}                                        </button>
                                     </Link>
 
 
@@ -227,7 +229,12 @@ const Ahorro = () => {
                                     </button>
                                 </div>
                             </div>
+                            {/* boton de traduccion */}
+
+                        <Button onClick={()=> i18n.changeLanguage("es")}> ES  </Button>
+                            <Button onClick={()=> i18n.changeLanguage("en")}> EN  </Button>
                         </div>
+                        
                     </div>
 
 
@@ -235,7 +242,7 @@ const Ahorro = () => {
 
                     {/* Mobile nav */}
                     {/* For small screen */}
-                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-primaryVio flex-col h-screen w-full`}>
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-50 inset-0 md:hidden bg-secondariVerde flex-col h-screen w-full`}>
                         <div className="dark:bg-gray-900 flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
                             <div className="flex items-center space-x-3">
                                 <div>
@@ -257,46 +264,44 @@ const Ahorro = () => {
 
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
-                                        </button>
+                                        <button className="focus:outline-none text-primaryVio  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        {t("navbar.about")}                                        </button>
                                     </Link>
                                 </li>
                                 <li>
-                                    <button onClick={handleDropdownClick} className="dark:text-colorWhite text-white text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
-                                        ¡Quiero viajar!
-                                        <img src={Flecha} alt="Flecha" className="ml-2" />
+                                    <button onClick={handleDropdownClick} className="dark:text-colorWhite text-primaryVio text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
+                                    {t("navbar.i-want-to-travel")}                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
 
                                     {isDropdownOpen && (
                                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
-                                            <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
+                                           <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -306,22 +311,20 @@ const Ahorro = () => {
 
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Financia tu viaje
-                                        </button>
+                                        <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        {t("navbar.finance-your-trip")}                                          </button>
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link to='/servicios' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Otros servicios
-                                        </button>
+                                        <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        {t("navbar.other-services")}                                          </button>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to='/blogs' onClick={() => setShowMenu(false)}>
-                                        <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        <button className="focus:outline-none text-primaryVio text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
                                             Blog
                                         </button>
                                     </Link>
@@ -329,8 +332,11 @@ const Ahorro = () => {
                             </ul>
                         </div>
 
+
                     </div>
-                </div>
+        
+
+            </div>
 
                 <div className="text w-full bg-primaryVio px-4 py-8 text-left rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
                     <h1 className="text-5xl font-bold text-secondariVerde dark:text-white mb-10 pt-14">Financia tu viaje</h1>
@@ -372,7 +378,7 @@ const Ahorro = () => {
                             </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                                     Solicita más información
                                 </button>
@@ -433,7 +439,7 @@ const Ahorro = () => {
                             paddingBottom: '20px',
                         }
                     }}> {/* Ajuste del contenedor del botón */}
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Rifas!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  > 
                                     Solicita más información
                                 </button>
@@ -471,7 +477,7 @@ const Ahorro = () => {
                             </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20Me%20Caso%20con%20Viajar!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                                     Solicita más información
                                 </button>

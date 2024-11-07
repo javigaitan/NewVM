@@ -1,8 +1,8 @@
 {
     "navbar": {
         "about" : "About",
-        "i-want-to-travel": "I want to travel!",
-        "finance-your-trip": "Finance your trip",
+        "i-want-to-travel": "I’m ready to explore!",
+        "finance-your-trip": "Fund your trip",
         "other-services": "Other services"
     },
 
@@ -15,20 +15,21 @@
     },
 
     "banner": {
-        "title": "The world awaits you!",
+        "title": "The World is yours to take!",
         "subtitle": "Live, study, and work abroad",
         "btn": "Request your quote"
     },
 
     "service": {
-    "title": "What experiences do we offer?",
+    "title": "The Experiences We Bring to You?",
     "tipe1": "Language Courses",
     "tipe2": "Study and work abroad",
     "tipe3": "Undergraduate and postgraduate degrees"
     },
 
     "fact": {
-    "title": "Why"
+    "title": "What makes ",
+    "title2": " he best choice"
     },
 
     "end": {

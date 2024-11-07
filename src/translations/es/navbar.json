@@ -27,7 +27,8 @@
     },
 
     "fact":{
-        "title":"¿Por qué"
+        "title":"¿Por qué",
+        "title2": ""
     },
 
     "end":{
@@ -76,6 +77,21 @@
         "seccion5-text1":"En Vaga-Mundo sabemos la importancia de hacer comunidad en los diferentes destinos y una forma de mantener vivo este espíritu son los viajes grupales. Ya sea una escapada de fin de semana al interior de los países donde están estudiando, o bien un viaje a otro continente, como puede ser conocer la multisensorial Marruecos.",
         "seccion5-text2":"En Vaga-Mundo siempre estamos planificando una próxima experiencia viajera en comunidad.",
         "seccion5-text3":"Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí."
+    },
+
+    "finance":{
+        "title":"Financia tu viaje",
+        "banner":"En Vaga-Mundo queremos ayudarte a cumplir el viaje de tus sueños, por eso creamos planes a medida para que puedas financiar tu experiencia educativa en el extranjero en cuotas o plazos. No olvides consultar a tu asesor sobre los medios de pagos que mejor se adapten a tus necesidades y país de origen.",
+        "seccion1-title":"Programa de Referidos",
+        "seccion1.text1":"Creamos este programa con el objetivo de recompensar económicamente a nuestra comunidad.",
+        "seccion1.text2":"Pueden participar estudiantes que estén próximos a viajar, quienes estén en los distintos destinos o incluso aquellos que ya culminaron su experiencia y volvieron a su país de origen.",
+        "seccion1.text3":"Queremos que los estudiantes nos refieran entre sus amigos y familiares, para que otros puedan sentir la misma satisfacción que sintieron al viajar con nosotros.",
+        "seccion1.btn":"Solicita más información",
+
+        "seccion2-title":"Programa de Referidos",
+        "seccion2.text1":"Una vez elegido tu curso de inglés y abonada la seña, puedes acceder al beneficio de financiar tu curso con rifas.",
+        "seccion2.text2":"Para ello, nos aliamos con Planet01 para brindarte la posibilidad de que tus familiares, amigos y conocidos puedan ayudarte económicamente a cumplir tu sueño de vivir una experiencia de estudios en el exterior.",
+        "seccion2.text3":""
     }
 
 }

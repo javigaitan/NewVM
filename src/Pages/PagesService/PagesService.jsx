@@ -380,7 +380,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                                 {t("other-services.seccion1.btn")}                                 </button>
                             </Link>
@@ -429,7 +429,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
                                 {t("other-services.seccion2.btn")}                                </button>
                             </Link>
@@ -474,7 +474,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20alojamientos!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20alojamientos!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                                 {t("other-services.seccion2.btn")}                                 </button>
                             </Link>
@@ -505,19 +505,17 @@ const PagesService = () => {
                             <img src={Icons4} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4" />
                         </div>
                         <div className="md:mt-3 pl-4">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">                                Programas de inserción laboral
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9">
+                            {t("other-services.seccion4-title")}
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                         <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                Una experiencia de estudio en el extranjero se termina de resignificar si a esta le sumamos una experiencia laboral.
+                        {t("other-services.seccion4-text1")}                                <br />
                                 <br />
+                                {t("other-services.seccion4-text2")}                                 <br />
                                 <br />
-                                Por eso, desde Vaga-Mundo, además de los talleres que brindamos de forma gratuita para ayudar a nuestros estudiantes a conseguir empleo en Europa, ofrecemos este programa de inserción laboral.
-                                <br />
-                                <br />
-                                La propuesta consiste en un diagnóstico situacional del aplicante para poder ofrecer una eficiente proximidad con el mercado laboral postulante. El proceso inicia con el interés de la persona y finaliza concretando entrevistas con empresas del rubro seleccionado.
-                            </p>
+                                {t("other-services.seccion4-text3")}                             </p>
                         </div>
                         <div className="lg:pl-4 mt-8" style={{
                             marginBottom: '20px',
@@ -525,10 +523,9 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
-                                    Solicita más información
-                                </button>
+                                {t("other-services.seccion2.btn")}                                 </button>
                             </Link>
                         </div>
                     </div>
@@ -552,20 +549,18 @@ const PagesService = () => {
                             <img src={Icons5} alt="Descripción de la imagen" className="w-16 h-auto rounded-lg mb-2 mx-auto ml-4 md:pt-8" />
                         </div>
                         <div className="md:mt-3 pl-4 ">
-                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4"> Viajes grupales y actividades en comunidad
+                            <h2 className="text-colorText dark:text-white text-left lg:text-3xl text-2xl font-extrabold leading-9 md:mb-4"> 
+                            {t("other-services.seccion5-title")}
                             </h2>
                         </div>
                         <div className="md:mt-3 pl-4">
                         <p className="lg:text-base text-sm leading-normal text-colorText dark:text-gray-300 text-left">
-                                En Vaga-Mundo sabemos la importancia de hacer comunidad en los diferentes destinos y una forma de mantener vivo este espíritu son los viajes grupales.
-                                Ya sea una escapada de fin de semana al interior de los países donde están estudiando, o bien un viaje a otro continente, como puede ser conocer la multisensorial Marruecos.
+                        {t("other-services.seccion5-text1")}
                                 <br />
                                 <br />
-                                En Vaga-Mundo siempre estamos planificando una próxima experiencia viajera en comunidad.
+                                {t("other-services.seccion5-text2")}                                <br />
                                 <br />
-                                <br />
-                                Para conocer más sobre las actividades y beneficios de ser miembros de la comunidad VM visita aquí.
-                            </p>
+                                {t("other-services.seccion5-text3")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8" style={{
                             marginBottom: '20px',
@@ -573,10 +568,9 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541138750336/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20viajes%20grupales!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20viajes%20grupales!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                    Solicita más información
-                                </button>
+                                {t("other-services.seccion2.btn")}                                 </button>
                             </Link>
                         </div>
                     </div>

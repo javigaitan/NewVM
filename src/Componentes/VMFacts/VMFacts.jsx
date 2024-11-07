@@ -33,7 +33,7 @@ const VMFacts = () => {
                         <div className="flex justify-center items-center flex-col">
                             <div className="lg:mt-20">
                                 <h2 className="lg:text-5xl md:text-4xl text-2xl font-semibold  leading-10 text-white mt-5 text-center md:pb-8">
-                                    {t("fact.title")}<strong> Vaga-Mundo</strong>?
+                                    {t("fact.title")}<strong> Vaga-Mundo</strong>{ t("fact.title2")}?
                                 </h2>
                             </div>
                         </div>
