@@ -7,8 +7,12 @@ import LINK from '../../assets/iconsRedes/link.png';
 import YT from '../../assets/iconsRedes/yt.png';
 import TIK from '../../assets/iconsRedes/tiktok.png';
 import BGFG from '../../assets/Textura/Footermovilegris.png';
+import {useTranslation} from "react-i18next";
+
 
 const FormContactanos = () => {
+  const [t, i18n] = useTranslation("navbar");
+
     useEffect(() => {
         const existingScript = document.querySelector('script[src="//js-eu1.hsforms.net/forms/embed/v2.js"]');
         if (!existingScript) {
@@ -46,7 +50,7 @@ const FormContactanos = () => {
 
       {/* Contenedor para el h1 */}
       <div className="absolute top-20 text-center z-20 w-full">
-        <h1 className="text-primaryVio text-4xl font-bold mb-4">ESCRÍBENOS</h1>
+        <h1 className="text-primaryVio text-4xl font-bold mb-4">{t("contact.title")}</h1>
       </div>
 
       {/* Contenedor del formulario con margen superior */}
@@ -99,25 +103,25 @@ const FormContactanos = () => {
               <ul className="menu-list">
                 <li className="menu-item">
                   <Link to="/" className="text-colorWhite">
-                    <p className="text-2xl font-bold hover:text-secondaryTur2">Inicio</p>
+                    <p className="text-2xl font-bold hover:text-secondaryTur2">{t("end.opcion1")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/contacto" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Contáctanos</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion2")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Términos y condiciones</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion3")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">Política de privacidad</p>
+                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion4")}</p>
                     <hr className="line" />
                   </Link>
                 </li>
@@ -151,22 +155,23 @@ const FormContactanos = () => {
             <ul className="space-y-4">
               <li>
                 <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Inicio
+                {t("end.opcion1")}
                 </Link>
               </li>
               <li>
                 <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Contáctanos
+                {t("end.opcion2")}
+
                 </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Términos y condiciones
+                {t("end.opcion3")}
                 </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  Política de privacidad
+                {t("end.opcion4")}
                 </Link>
               </li>
             </ul>
