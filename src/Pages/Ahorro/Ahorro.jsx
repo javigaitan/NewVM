@@ -25,7 +25,7 @@ import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
 import {useTranslation} from "react-i18next";
-import { Button } from "@material-tailwind/react";
+import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
 
 
 
@@ -229,10 +229,8 @@ const Ahorro = () => {
                                     </button>
                                 </div>
                             </div>
-                            {/* boton de traduccion */}
-
-                        <Button onClick={()=> i18n.changeLanguage("es")}> ES  </Button>
-                            <Button onClick={()=> i18n.changeLanguage("en")}> EN  </Button>
+                            {/* boton de traduccion*/}
+                            <BtnIdiomas/>
                         </div>
                         
                     </div>
@@ -265,7 +263,8 @@ const Ahorro = () => {
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-primaryVio  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        {t("navbar.about")}                                        </button>
+                                        {t("navbar.about")}                                        
+                                        </button>
                                     </Link>
                                 </li>
                                 <li>

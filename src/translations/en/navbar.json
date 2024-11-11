@@ -21,7 +21,7 @@
     },
 
     "service": {
-    "title": "The Experiences We Bring to You?",
+    "title": "The Experiences We Bring to You",
     "tipe1": "Language Courses",
     "tipe2": "Study and work abroad",
     "tipe3": "Undergraduate and postgraduate degrees"
@@ -50,7 +50,7 @@
 
 "other-services": {
     "title": "Other Services",
-    "banner": "At <strong>Vaga-Mundo</strong>, we focus on the complete satisfaction of our clients. That's why we offer <strong>360º</strong> solutions designed to maximize their travel experience.",
+    "banner": "At Vaga-Mundo, we focus on the complete satisfaction of our clients. That's why we offer 360º solutions designed to maximize their travel experience.",
     "seccion1-title": "Travel Insurance and Assistance",
     "seccion1.text1": "Unexpected situations like dental emergencies or non-medical issues like lost luggage can disrupt our plans and often arise while travelling",
     "seccion1.text2": "That’s why, at Vaga-Mundo, we have partnerships with leading travel insurance and assistance providers, so your only focus will be on enjoying. All plans offer customised payment options and 24/7 medical assistance in your language.",
@@ -79,25 +79,25 @@
 },
 "finance": {
     "title": "Finance Your Trip",
-    "banner": "At Vaga-Mundo, we want to help you fulfill the trip of your dreams, which is why we offer tailored plans so you can finance your educational experience abroad in installments. Don’t forget to consult your advisor on the payment methods that best suit your needs and country of origin.",
+    "banner": "At Vaga-Mundo, we want to help you fulfil the trip of your dreams. That’s why we offer tailored plans to help you finance your educational experience abroad in instalments. Don’t forget to ask your advisor about the payment methods that best suit your needs and country of origin.",
 
     "seccion1-title": "Referral Program",
-    "seccion1.text1": "We created this program to financially reward our community.",
-    "seccion1.text2": "Students who are about to travel, those already at various destinations, and even those who have completed their experience and returned to their home country can participate.",
-    "seccion1.text3": "We want students to refer us to their friends and family, so others can feel the same satisfaction they felt when traveling with us.",
+    "seccion1.text1": "We created this program to reward our community financially",
+    "seccion1.text2": "Students who are about to travel, those already at various destinations, and even those who have completed their experience and returned to their home countries can participate.",
+    "seccion1.text3": "We want students to refer us to their friends and family so that others can join us in this adventure. ",
     "seccion1.btn": "Request more information",
 
     "seccion2-title": "Raffle Program",
-    "seccion2.text1": "Once you have chosen your English course and paid the deposit, you can access the benefit of financing your course with raffles.",
+    "seccion2.text1": "Once you have chosen your English course and paid the deposit (book your place), you can finance it through raffles. To facilitate this, we partnered with Planet01, allowing your family, friends, and acquaintances the opportunity to financially support you in achieving your dream of studying abroad.",
     "seccion2.text2": "To facilitate this, we partnered with Planet01 to offer you the opportunity for your family, friends, and acquaintances to financially support you in achieving your dream of living an overseas study experience.",
     "seccion2.text3": "How does the program work?",
-    "seccion2.item1": "You enroll and make the deposit for your course with Vaga-Mundo.",
+    "seccion2.item1": "You enrol and deposit for your course with Vaga-Mundo.",
     "seccion2.item2": "Coordinate with your advisor the number of reservation tickets.",
     "seccion2.item3": "Pick up your raffle tickets at our offices in Uruguay and start selling them.",
 
     "seccion4-title": "“I’m Committed to Traveling” Program",
-    "seccion4.text1": "Through this crowdfunding program, you can raise funds at events like your birthday, Christmas, etc.",
-    "seccion4.text2": "With a link we provide, your family and friends can gift you an amount equivalent to a product or service for your educational experience abroad, such as airfare, medical insurance, accommodation, language courses, or anything else you might need.",
+    "seccion4.text1": "What if we were given a trip, similar to the gifts we receive for birthdays, weddings, Christmas, and other occasions? Through this crowdfunding program, you can raise funds at traditional events because a travel decision is also a reason for celebration.",
+    "seccion4.text2": "Using the link provided, your family and friends can gift you an amount equivalent to a product or service for your educational experiences abroad, such as airfare, medical insurance, accommodation, language courses, or anything else you might need.",
 
     "seccion5-title": "VM Ambassador Program",
     "seccion5.text1": "This program is designed for those who create travel content and want to monetize their channel by promoting Vaga-Mundo's educational experiences, regardless of whether they have contracted with us or not.",
@@ -120,12 +120,12 @@
     "experiences3.title": "Undergraduate and Postgraduate Degrees",
     "experiences3.text1": "This type of experience is ideal for those who have a good level of English and wish to start an undergraduate degree abroad.",
     "experiences3.text2": "It is also an excellent option for those who already have a university degree in their home country and want to invest in their professional development by pursuing a postgraduate or master’s degree abroad.",
-    "experiences3.text3": "Furthermore, depending on the chosen destination, some academic options allow participants to gain work experience with the same student visa after completing their studies."
+    "experiences3.text3": "Furthermore, depending on their choice, those who complete a postgraduate program (level 9) can apply for a two-year full-time work visa."
 },
 
 
 "contact":{
-    "title":"WRITE TO US"
+    "title":"Reach Out"
 }
 
 

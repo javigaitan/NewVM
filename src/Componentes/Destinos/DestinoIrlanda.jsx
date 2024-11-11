@@ -27,12 +27,16 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import {useTranslation} from "react-i18next";
+import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
 
 
 
 
 const DestinoIrlanda = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [t, i18n] = useTranslation("navbar");
+
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -129,16 +133,14 @@ const DestinoIrlanda = () => {
                             <li>
                                 <Link to='/nosotros'>
                                     <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                    ¿Quiénes somos?
-                                    </button>
+                                    {t("navbar.about")}                                    </button>
                                 </Link>
                             </li>
 
                             <li className="relative">
                                 <div className="flex items-center" onClick={handleDropdownClick}>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¡Quiero viajar!
-                                    </button>
+                                    {t("navbar.i-want-to-travel")}                                     </button>
                                     <img src={Flecha} alt="Flecha" className="ml-2" />
                                 </div>
 
@@ -146,31 +148,31 @@ const DestinoIrlanda = () => {
                                     <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                     <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                         <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                        <span className="text-primaryVio">Irlanda</span>
+                                        <span className="text-primaryVio">{t("countries.ireland")}</span>
                                         <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
                                     <Link to='/destino-malta' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                         <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                        <span className="text-primaryVio">Malta</span>
+                                        <span className="text-primaryVio">{t("countries.malta")}</span>
                                         <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
                                     <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                         <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                        <span className="text-primaryVio">España</span>
+                                        <span className="text-primaryVio">{t("countries.españa")}</span>
                                         <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
                                     <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                         <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                        <span className="text-primaryVio">Francia</span>
+                                        <span className="text-primaryVio">{t("countries.france")}</span>
                                         <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
                                     <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                         <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                        <span className="text-primaryVio">Alemania</span>
+                                        <span className="text-primaryVio">{t("countries.germany")}</span>
                                         <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                 </div>
@@ -179,15 +181,14 @@ const DestinoIrlanda = () => {
                             <li className="relative">
                                 <Link to='/ahorro'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Financia tu viaje
+                                    {t("navbar.finance-your-trip")}
                                     </button>
                                 </Link>
                             </li>
                             <li className="relative">
                                 <Link to='/servicios'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Otros servicios
-                                    </button>
+                                    {t("navbar.other-services")}                                     </button>
                                 </Link>
                             </li>
                             <li>
@@ -210,6 +211,8 @@ const DestinoIrlanda = () => {
                                     </svg>
                                 </button>
                             </div>
+                              {/* boton de traduccion*/}
+                              <BtnIdiomas/>
                         </div>
 
 
@@ -245,14 +248,14 @@ const DestinoIrlanda = () => {
                                 <li>
                                     <Link to='/nosotros' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white  text-lg text-left focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¿Quiénes somos?
+                                        {t("navbar.about")}                                        
                                         </button>
                                     </Link>
                                 </li>
 
                                 <li>
                                     <button onClick={toggleDropdown} className="dark:text-colorWhite text-white text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline flex items-center">
-                                        ¡Quiero viajar!
+                                    {t("navbar.i-want-to-travel")} 
                                         <img src={Flecha} alt="Flecha" className="ml-2" />
                                     </button>
 
@@ -260,31 +263,31 @@ const DestinoIrlanda = () => {
                                         <div className="absolute left-1/2 transform -translate-x-1/2 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                                            <Link to='/destino-irlanda' onClick={handleLinkClick} className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100">
                                                 <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Irlanda</span>
+                                                <span className="text-primaryVio">{t("countries.ireland")}</span>
                                                 <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/destino-malta' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Malta</span>
+                                                <span className="text-primaryVio">{t("countries.malta")}</span>
                                                 <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">España</span>
+                                                <span className="text-primaryVio">{t("countries.españa")}</span>
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Francia</span>
+                                                <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
                                             <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                                                <span className="text-primaryVio">Alemania</span>
+                                                <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                         </div>
@@ -294,7 +297,7 @@ const DestinoIrlanda = () => {
                                 <li>
                                     <Link to='/ahorro' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Financia tu viaje
+                                        {t("navbar.finance-your-trip")}
                                         </button>
                                     </Link>
                                 </li>
@@ -302,8 +305,7 @@ const DestinoIrlanda = () => {
                                 <li>
                                     <Link to='/servicios' onClick={() => setShowMenu(false)}>
                                         <button className="focus:outline-none text-white text-left  text-lg focus:ring-2 focus:ring-gray-800 hover:underline">
-                                            Otros servicios
-                                        </button>
+                                        {t("navbar.other-services")}                                          </button>
                                     </Link>
                                 </li>
 
@@ -324,18 +326,19 @@ const DestinoIrlanda = () => {
                     {/* Título en Banner para pantallas grandes (lg) */}
                     <div className="hidden lg:flex items-center text-7xl justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Se oculta en pantallas más pequeñas */}
                         <h1 className="text-white text-8xl md:text-6xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
-                            ¡Bienvenidos a Irlanda
+                        {t("irlanda.title")}
+
                             <img src={IrlandaBandera} alt="Bandera de Irlanda" className="w-15 h-11 inline-block mx-2" />
-                            <span style={{ display: 'block', lineHeight: '5rem' }}>la isla esmeralda!</span>
+                            <span style={{ display: 'block', lineHeight: '5rem' }}>{t("irlanda.title2")}</span>
                         </h1>
                     </div>
 
                     {/* Título en Banner para pantallas medianas (md) */}
                     <div className="lg:hidden flex items-center text-5xl md:text-6xl justify-center md:justify-start relative mt-4 md:ml-8 md:pl-5"> {/* Visible solo en pantallas medianas */}
                         <h1 className="text-white text-6xl md:text-5xl font-bold text-center md:text-start" style={{ lineHeight: '2rem' }}>
-                            ¡Bienvenidos a Irlanda
+                        {t("irlanda.title")}
                             <img src={IrlandaBandera} alt="Bandera de Irlanda" className="w-12 h-10 inline-block mx-2" />
-                            <span style={{ display: 'block', lineHeight: '3.5rem' }}>la isla esmeralda!</span>
+                            <span style={{ display: 'block', lineHeight: '3.5rem' }}>{t("irlanda.title2")}</span>
                         </h1>
                     </div>
 
@@ -351,7 +354,7 @@ const DestinoIrlanda = () => {
                 <div className="flex pt-14">
                     {/* Parte izquierda */}
                     <div className="w-1/2 flex flex-col justify-center items-end p-8 ml-3">
-                        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">Exploremos Irlanda</h1>
+                        <h1 className="text-white text-5xl font-bold self-end pb-10 text-end">{t("irlanda.title3")}</h1>
 
                         <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" /> {/* Ajuste de tamaño */}
                     </div>
@@ -372,26 +375,34 @@ const DestinoIrlanda = () => {
             <div className="flex my-10 py-12 ml-6 ">
                 {/* Parte izquierda con el texto */}
                 <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-10 text-left pt-0">
-                    <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">¿Por qué es el <br />destino más elegido?</h2>
+                    <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">{t("irlanda.opcion-title")}<br />{t("irlanda.opcion-title2")}</h2>
                     <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
                         <p className="flex items-start text-primaryVio text-base mt-4">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Su <strong>ubicación geográfica</strong> te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.</span>
+                            <span>
+                            {t("irlanda.opcion-item1")}
+                            </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Es un <strong>destino multicultural</strong> con su población proveniente de todas partes del mundo y con un fuerte <strong>legado vikingo</strong>.</span>
+                            <span>
+                            {t("irlanda.opcion-item2")}
+                            </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>El <strong>inglés</strong> es su <strong>lengua oficial</strong>, por lo que estarás en contacto con el idioma todo el tiempo.</span>
+                            <span>
+                            {t("irlanda.opcion-item3")}
+                            </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Tiene buena <strong>calidad de vida</strong>, siendo uno de los países más seguros del mundo y con una <strong>economía en crecimiento</strong>.</span>
+                            <span>{t("irlanda.opcion-item4")}
+
+                            </span>
                         </p>
                     </div>
                 </div>

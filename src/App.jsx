@@ -13,7 +13,7 @@ import PagesService from "./Pages/PagesService/PagesService";
 import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
 import AdaptadorDestinos from "./Componentes/Destinos/AdaptadorDestinos";
 import AdaptadorDestinosMalta from "./Componentes/Destinos/AdaptadorDestinoMalta";
-import AdaptadorDestinosEspana from "./Componentes/Destinos/AdaptadorDestinoMalta";
+import AdaptadorDestinosEspana from "./Componentes/Destinos/AdaptadorDestinoEspana";
 
 
 

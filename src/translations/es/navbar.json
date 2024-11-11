@@ -49,7 +49,7 @@
 
     "other-services":{
         "title":"Otros Servicios",
-        "banner":"En <strong>Vaga-Mundo</strong> nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones <strong>360º</strong> diseñadas para maximizar su experiencia de viaje.",
+        "banner":"En Vaga-Mundo nos enfocamos en la satisfacción integral de nuestros clientes. Por eso, ofrecemos soluciones 360º diseñadas para maximizar su experiencia de viaje.",
         "seccion1-title":"Seguros y asistencias al viajero",
         "seccion1.text1":"Los imprevistos médicos como pueden ser una urgencia odontológica o bien uno no médico como la pérdida de equipaje, suelen formar parte de nuestros viajes y alterar nuestra planificación.",
         "seccion1.text2":"Por eso, desde Vaga-Mundo tenemos alianzas con los principales proveedores de seguros y asistencias al viajero, para que tu única preocupación sea la de disfrutar. Todas ellas ofrecen planes de pago a medida y asistencia médica 24/7 en tu mismo idioma.",
@@ -134,6 +134,19 @@
   },
   "contact":{
     "title":"ESCRÍBENOS"
+},
+
+
+"irlanda":{
+    "title":"¡Bienvenidos a Irlanda",
+    "title2":"la isla esmeralda!",
+    "title3":"Exploremos Irlanda",
+    "opcion-title":"¿Por qué es el ",
+    "opcion-title2":"destino más elegido?",
+    "item1":"Su ubicación geográfica te permitirá viajar y conocer otros países de Europa en cuestión de horas y de forma económica.",
+    "item2":"Es un destino multicultural con su población proveniente de todas partes del mundo y con un fuerte legado vikingo.",
+    "item3":"El inglés es su lengua oficial, por lo que estarás en contacto con el idioma todo el tiempo.",
+    "item4":"Tiene buena calidad de vida, siendo uno de los países más seguros del mundo y con una economía en crecimiento."
 }
 
 }

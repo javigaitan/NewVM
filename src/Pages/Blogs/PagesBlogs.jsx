@@ -15,6 +15,10 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import {useTranslation} from "react-i18next";
+import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
+
+
 
 
 const PagesBlogs = () => {
@@ -27,6 +31,8 @@ const PagesBlogs = () => {
     const [showServiceMenu, setShowServiceMenu] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [t, i18n] = useTranslation("navbar");
+
 
     // Función para manejar el clic en el botón del dropdown
     const handleDropdownClick = () => {
@@ -218,6 +224,10 @@ const PagesBlogs = () => {
                                     </button>
                                 </div>
                             </div>
+
+                            {/* boton de traduccion*/}
+                            <BtnIdiomas/>
+
                         </div>
                     </div>
 

@@ -15,8 +15,7 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
-import { Button } from "@material-tailwind/react";
-import IconTraductor from "../../assets/traductor.png";
+import BtnIdiomas from "../BtnIdioma/BtnIdiomas"
 
 
 function Navbar() {
@@ -185,10 +184,10 @@ function Navbar() {
                                     </button>
                                 </div>
                             </div>
-                            {/* boton de traduccion */}
 
-                            <Button onClick={()=> i18n.changeLanguage("es")}> ES  </Button>
-                            <Button onClick={()=> i18n.changeLanguage("en")}> EN  </Button>
+                            {/* boton de traduccion*/}
+                            <BtnIdiomas/>
+
                         </div>
                     </div>
 
