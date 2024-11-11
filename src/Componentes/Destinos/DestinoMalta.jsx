@@ -27,9 +27,14 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import {useTranslation} from "react-i18next";
+import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
+
 
 
 const DestinoMalta = () => {
+    const [t, i18n] = useTranslation("navbar");
+
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     // Función para manejar el clic en el botón del dropdown
@@ -72,31 +77,31 @@ const DestinoMalta = () => {
             <div className="absolute left-0 mt-1 w-80 h-auto bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                 <Link to='/destino-irlanda' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Irlanda} alt="Irlanda" className="w-24 h-18 object-cover rounded-lg mr-3" />
-                    <span className="text-primaryVio">Irlanda</span>
+                    <span className="text-primaryVio">{t("countries.ireland")}</span>
                     <img src={IrlandaBandera} alt="BanderaIrlanda" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/destino-malta' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Malta} alt="Malta" className="w-24 h-18 rounded-lg mr-3" />
-                    <span className="text-primaryVio">Malta</span>
+                    <span className="text-primaryVio">{t("countries.malta")}</span>
                     <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
-                    <span className="text-primaryVio">España</span>
+                    <span className="text-primaryVio">{t("countries.españa")}</span>
                     <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
-                    <span className="text-primaryVio">Francia</span>
+                    <span className="text-primaryVio">{t("countries.france")}</span>
                     <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
                 <Link to='/not-found' className="flex items-center px-4 py-3 rounded-lg hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
-                    <span className="text-primaryVio">Alemania</span>
+                    <span className="text-primaryVio">{t("countries.germany")}</span>
                     <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
             </div>
@@ -149,7 +154,7 @@ const DestinoMalta = () => {
                             <li>
                                 <Link to='/nosotros'>
                                     <button className="font-semibold dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                    ¿Quiénes somos?
+                                    {t("navbar.about")} 
                                     </button>
                                 </Link>
                             </li>
@@ -157,7 +162,7 @@ const DestinoMalta = () => {
                             <li className="relative">
                                 <div className="flex items-center" onClick={handleDropdownClick}>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        ¡Quiero viajar!
+                                    {t("navbar.i-want-to-travel")} 
                                     </button>
                                     <img src={Flecha} alt="Flecha" className="ml-2" />
                                 </div>
@@ -199,14 +204,13 @@ const DestinoMalta = () => {
                             <li className="relative">
                                 <Link to='/ahorro'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Financia tu viaje
-                                    </button>
+                                    {t("navbar.finance-your-trip")}                                    </button>
                                 </Link>
                             </li>
                             <li className="relative">
                                 <Link to='/servicios'>
                                     <button className="dark:text-colorWhite text-lg focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
-                                        Otros servicios
+                                        {t("navbar.other-services")} 
                                     </button>
                                 </Link>
                             </li>
@@ -217,7 +221,10 @@ const DestinoMalta = () => {
                                     </button>
                                 </Link>
                             </li>
+
                         </ul>
+                         {/* boton de traduccion*/}
+                         <BtnIdiomas/>
 
 
                     </div>
@@ -226,9 +233,9 @@ const DestinoMalta = () => {
 
                     <div className="flex items-center justify-start ml-12 pl-9 relative mt-8" style={{ top: '90px' }}> {/* Ajusta el valor de top */}
                         <h1 className="text-white text-8xl md:text-6xl font-bold text-start" style={{ lineHeight: '2.5rem' }}>
-                            ¡Bienvenidos a Malta
+                        {t("malta.title")}
                             <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-13 h-9 inline-block mx-2" />
-                            <span style={{ display: 'block', lineHeight: '5rem' }}>el paraíso del mediterráneo!</span>
+                            <span style={{ display: 'block', lineHeight: '5rem' }}>{t("malta.title2")}</span>
                         </h1>
                     </div>
 
@@ -243,15 +250,15 @@ const DestinoMalta = () => {
                 >
                     {/* Parte izquierda */}
                     <div className="w-1/2 flex flex-col justify-center items-end p-8">
-                        <h1 className="text-primaryVio text-5xl font-bold self-end pb-10 text-end">Exploremos Malta</h1>
-                        <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" />
+                        <h1 className="text-primaryVio text-5xl font-bold self-end pb-10 text-end">{t("malta.title3")}</h1>
+                        <img src={MapIrlanda} alt="Mapa de Malta" className="mt-4 w-3/4 self-end" />
                     </div>
 
                     {/* Parte derecha con 3 imágenes en columna */}
                     <div className="w-1/2 flex flex-col justify-center items-center p-8">
-                        <img src={Julian} alt="Dublín" className="mb-4 w-1/3" />
-                        <img src={Sliema} alt="Cork" className="mb-4 w-1/3" />
-                        <img src={Valletta} alt="Galway" className="mb-4 w-1/3" />
+                        <img src={Julian} alt="Julian" className="mb-4 w-1/3" />
+                        <img src={Sliema} alt="Sliema" className="mb-4 w-1/3" />
+                        <img src={Valletta} alt="Valletta" className="mb-4 w-1/3" />
                     </div>
                 </div>
 
@@ -263,27 +270,24 @@ const DestinoMalta = () => {
 
                 {/* Parte izquierda con el texto */}
                 <div className="w-1/2 flex flex-col justify-center items-center p-8 pb-10 text-left pt-0">
-                    <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">¿Por qué es el <br />destino más elegido?</h2>
+                    <h2 className="text-primaryVio text-5xl font-semibold pl-12 pt-0 mt-0 pb-9">{t("malta.opcion-title")} <br />{t("malta.opcion-title2")}</h2>
                     <div className="max-w-[60%] mr-7"> {/* Ajuste del ancho del contenedor de los párrafos */}
                         <p className="flex items-start  text-start text-primaryVio text-base mt-4">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Malta es un archipiélago con <strong>3 islas principales</strong> ubicado al sur de Italia, desde donde puedes conocer Europa a precios súper bajos.</span>
-                        </p>        <br />
+
+                            {t("malta.item1")}                        </p>        <br />
 
                         <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Tiene un <strong>clima mediterráneo </strong>con temperaturas cálidas de mayo a octubre, lo que la convierte en un <strong>verano casi eterno.</strong></span>
-                        </p>        <br />
+                            {t("malta.item2")}                        </p>        <br />
 
                         <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>El<strong> inglés </strong>es su <strong>lengua oficial, junto al maltés,</strong> y estudiarlo allí es de los más económico.</span>
-                        </p>        <br />
+                            {t("malta.item3")}                        </p>        <br />
 
                         <p className="flex items-start text-primaryVio text-base mt-2 text-start">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>Es un <strong>destino multicultural </strong>con población de todas partes del mundo y con <strong>buena calidad de vida.</strong></span>
-                        </p>
+                            {t("malta.item4")}                        </p>
                     </div>
 
                 </div>
@@ -304,7 +308,7 @@ const DestinoMalta = () => {
 
             <div className="container mx-auto px-4 pt-10 pb-20">
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-colorText mt-6 text-center">
-                    ¿Qué experiencia educativa <br />te gustaría hacer?
+                {t("malta.title4")} <br />{t("malta.title4-2")}
                 </h1>
                 <div className="flex flex-wrap justify-center mt-8">
 
@@ -320,8 +324,7 @@ const DestinoMalta = () => {
                             <div className="absolute bottom-0 left-0 w-full">
                                 <Link to='/curso-de-idiomas'>
                                     <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Cursos de Idiomas
-                                    </button>
+                                    {t("service.tipe1")}                                    </button>
                                 </Link>
                             </div>
                         </div>
@@ -338,8 +341,7 @@ const DestinoMalta = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/work&study'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Estudio y trabajo en el exterior
-                                        </button>
+                                        {t("service.tipe2")}                                        </button>
                                     </Link>
                                 </div>
                             </div>
@@ -357,8 +359,7 @@ const DestinoMalta = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/carreras-universitarias'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Carreras y posgrados universitarios
-                                        </button>
+                                        {t("service.tipe3")}                                        </button>
                                     </Link>
                                 </div>
                             </div>
@@ -371,8 +372,7 @@ const DestinoMalta = () => {
             <div className="mt-6 mb-8">
                 <div className="flex items-center justify-center">
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
-                        Comunidad VM en Malta
-                    </h1>
+                    {t("malta.title5")}                     </h1>
                     <img src={BanderaMalta} alt="Bandera de Irlanda" className="w-14 h-9" />
                 </div>
 

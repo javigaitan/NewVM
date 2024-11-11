@@ -142,7 +142,23 @@
 "title4-2": "would you like to pursue?",
 "title5": "VM Community in Ireland"
 
+},
+
+"malta": {
+    "title": "Welcome to Malta",
+    "title2": "the paradise of the Mediterranean",
+    "title3": "Let's explore Malta",
+    "opcion-title": "Why is it the",
+    "opcion-title2": "most popular destination?",
+    "item1": "Malta is an archipelago with 3 main islands located south of Italy, from where you can explore Europe at super low prices.",
+    "item2": "It has a Mediterranean climate with warm temperatures from May to October, making it feel like an endless summer.",
+    "item3": "English is one of its official languages, alongside Maltese, making it one of the most affordable places to study English.",
+    "item4": "It's a multicultural destination with a diverse population and a good quality of life.",
+    "title4": "What educational experience",
+    "title4-2": "would you like to pursue?",
+    "title5": "VM Community in Malta"
 }
+
 
 
 }
