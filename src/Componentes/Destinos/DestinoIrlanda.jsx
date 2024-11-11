@@ -380,27 +380,27 @@ const DestinoIrlanda = () => {
                         <p className="flex items-start text-primaryVio text-base mt-4">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
                             <span>
-                            {t("irlanda.opcion-item1")}
+                            {t("irlanda.item1")}
                             </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
                             <span>
-                            {t("irlanda.opcion-item2")}
+                            {t("irlanda.item2")}
                             </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
                             <span>
-                            {t("irlanda.opcion-item3")}
+                            {t("irlanda.item3")}
                             </span>
                         </p>
                         <br />
                         <p className="flex items-start text-primaryVio text-base mt-2">
                             <img src={Icon} alt="Viñeta" className="mr-2" />
-                            <span>{t("irlanda.opcion-item4")}
+                            <span>{t("irlanda.item4")}
 
                             </span>
                         </p>
@@ -425,7 +425,7 @@ const DestinoIrlanda = () => {
 
             <div className="container mx-auto px-4 pt-10 pb-20">
                 <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-colorText mt-6 text-center">
-                    ¿Qué experiencia educativa <br />te gustaría hacer?
+                {t("irlanda.title4")} <br />{t("irlanda.title4-2")}
                 </h1>
                 <div className="flex flex-wrap justify-center mt-8">
 
@@ -441,7 +441,7 @@ const DestinoIrlanda = () => {
                             <div className="absolute bottom-0 left-0 w-full">
                                 <Link to='/curso-de-idiomas'>
                                     <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Cursos de Idiomas
+                                    {t("service.tipe1")}
                                     </button>
                                 </Link>
                             </div>
@@ -459,7 +459,7 @@ const DestinoIrlanda = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/work&study'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Estudio y trabajo en el exterior
+                                        {t("service.tipe2")}
                                         </button>
                                     </Link>
                                 </div>
@@ -478,7 +478,7 @@ const DestinoIrlanda = () => {
                                 <div className="absolute bottom-0 left-0 w-full">
                                     <Link to='/carreras-universitarias'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Carreras y posgrados universitarios
+                                        {t("service.tipe3")}
                                         </button>
                                     </Link>
                                 </div>
@@ -492,8 +492,7 @@ const DestinoIrlanda = () => {
             <div className="mt-6 mb-8">
                 <div className="flex items-center justify-center">
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center mr-2">
-                        Comunidad VM en Irlanda
-                    </h1>
+                    {t("irlanda.title5")}                    </h1>
                     <img src={IrlandaBandera} alt="Bandera de Irlanda" className="w-14 h-9 " />
                 </div>
 

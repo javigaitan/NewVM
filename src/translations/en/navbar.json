@@ -126,8 +126,23 @@
 
 "contact":{
     "title":"Reach Out"
-}
+},
 
+"irlanda":{
+    "title": "Welcome to Ireland",
+    "title2": "the Emerald Isle!",
+    "title3": "Let's explore Ireland",
+    "opcion-title": "Why is it the",
+    "opcion-title2": "most chosen destination?",
+    "item1": "Its geographical location allows you to travel and explore other European countries within hours and at an affordable cost.",
+    "item2": "It's a multicultural destination with a population from all over the world and a strong Viking heritage.",
+    "item3": "English is its official language, so you'll be in constant contact with it.",
+    "item4": "It offers a high quality of life, being one of the safest countries in the world with a growing economy.",
+    "title4": "What educational experience",
+"title4-2": "would you like to pursue?",
+"title5": "VM Community in Ireland"
+
+}
 
 
 }
