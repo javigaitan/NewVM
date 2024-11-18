@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
-import Idiomas from '../../assets/ServiciosVM/curso idioma.png';
-import WyS from '../../assets/ServiciosVM/estudio y trabajo en el exterior.png';
-import universitarios from '../../assets/ServiciosVM/posgrados.png';
+import Gastronomia from '../../assets/ServiciosVM/España/practicas profesionales(1).png';
+import Doctorados from '../../assets/ServiciosVM/España/Master y doctorado1.png';
+import Diplomaturas from '../../assets/ServiciosVM/España/cursos y diploma superiores (1).png';
 import Logo from "../../assets/Logos/LogoTurquesa.png";
 import Flecha from '../../assets/Textura/Vector.png';
 import BannerIrlanda from '../../Componentes/Destinos/DestinosImg/bannerespana.png';
 import FondoVioleta from '../../assets/Textura/texturafondoexperienciairlanda.png';
-import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapamalta.png';
-import Sliema from '../../Componentes/Destinos/DestinosImg/sliema.png';
-import Julian from '../../Componentes/Destinos/DestinosImg/julian.png';
-import Valletta from '../../Componentes/Destinos/DestinosImg/valletta.png';
+import MapIrlanda from '../../Componentes/Destinos/DestinosImg/mapaespana.png';
+import Madrid from '../../Componentes/Destinos/DestinosImg/madrid.png';
+import Barcelona from '../../Componentes/Destinos/DestinosImg/barcelona.png';
+import Murcia from '../../Componentes/Destinos/DestinosImg/murcia.png';
+import Valencia from '../../Componentes/Destinos/DestinosImg/valencia.png';
 import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
 import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
@@ -26,9 +27,13 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import {useTranslation} from "react-i18next";
+import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
 
 
 const DestinoEspana = () => {
+    const [t, i18n] = useTranslation("navbar");
+
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     // Función para manejar el clic en el botón del dropdown
@@ -81,7 +86,7 @@ const DestinoEspana = () => {
                     <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                 </Link>
                 <hr className="border-gray-300" />
-                <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                <Link to='/destino-espana' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                     <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
                     <span className="text-primaryVio">España</span>
                     <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
@@ -217,6 +222,8 @@ const DestinoEspana = () => {
                                 </Link>
                             </li>
                         </ul>
+                        {/* boton de traduccion*/}
+                        <BtnIdiomas/>
 
 
                     </div>
@@ -246,12 +253,13 @@ const DestinoEspana = () => {
                         <img src={MapIrlanda} alt="Mapa de Irlanda" className="mt-4 w-3/4 self-end" />
                     </div>
 
-                    {/* Parte derecha con 3 imágenes en columna */}
-                    <div className="w-1/2 flex flex-col justify-center items-center p-8">
-                        <img src={Julian} alt="Dublín" className="mb-4 w-1/3" />
-                        <img src={Sliema} alt="Cork" className="mb-4 w-1/3" />
-                        <img src={Valletta} alt="Galway" className="mb-4 w-1/3" />
-                    </div>
+                    <div className="w-1/2 grid grid-cols-2 gap-2 p-8">
+    <img src={Madrid} alt="Madrid" className="w-2/3 object-cover" />
+    <img src={Murcia} alt="Murcia" className="w-2/3 object-cover" />
+    <img src={Barcelona} alt="Barcelona" className="w-2/3 object-cover" />
+    <img src={Valencia} alt="Valencia" className="w-2/3 object-cover" />
+</div>
+
                 </div>
 
 
@@ -312,15 +320,15 @@ const DestinoEspana = () => {
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img
-                                    src={Idiomas}
-                                    alt="Trabajo"
+                                    src={Gastronomia}
+                                    alt="Prácticas Profesionales en el área de Gastronomía y Turismo"
                                     className="w-full h-auto rounded-lg "
                                 />
                             </div>
                             <div className="absolute bottom-0 left-0 w-full">
-                                <Link to='/curso-de-idiomas'>
+                                <Link to='/gastronomia'>
                                     <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                        Cursos de Idiomas
+                                    Prácticas Profesionales en el área de Gastronomía y Turismo
                                     </button>
                                 </Link>
                             </div>
@@ -331,14 +339,14 @@ const DestinoEspana = () => {
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img
-                                    src={WyS}
-                                    alt="Viajes Grupales"
+                                    src={Diplomaturas}
+                                    alt="Cursos y Diplomas Superiores"
                                     className="w-full h-auto rounded-lg "
                                 />
                                 <div className="absolute bottom-0 left-0 w-full">
-                                    <Link to='/work&study'>
+                                    <Link to='/diplomaturas'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Estudio y trabajo en el exterior
+                                        Cursos y Diplomas Superiores
                                         </button>
                                     </Link>
                                 </div>
@@ -350,14 +358,14 @@ const DestinoEspana = () => {
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img
-                                    src={universitarios}
-                                    alt="Carreras Universitarias"
+                                    src={Doctorados}
+                                    alt="Másters y Doctorados"
                                     className="w-full h-auto rounded-lg "
                                 />
                                 <div className="absolute bottom-0 left-0 w-full">
-                                    <Link to='/carreras-universitarias'>
+                                    <Link to='/doctorados'>
                                         <button className="transition-transform duration-300 transform hover:scale-105 w-full hover:bg-secondaryTur2 transition duration-150 text-lg font-semibold leading-none text-center text-colorText py-6 bg-white rounded-lg shadow-lg focus:outline-none">
-                                            Carreras y posgrados universitarios
+                                        Másters y Doctorados
                                         </button>
                                     </Link>
                                 </div>

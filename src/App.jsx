@@ -14,6 +14,10 @@ import ContactanosNew from "./Pages/Contactanos/ContactanosNew";
 import AdaptadorDestinos from "./Componentes/Destinos/AdaptadorDestinos";
 import AdaptadorDestinosMalta from "./Componentes/Destinos/AdaptadorDestinoMalta";
 import AdaptadorDestinosEspana from "./Componentes/Destinos/AdaptadorDestinoEspana";
+import Gastronomy from "./Pages/ExperienceEspana/Gastronomy/Gastronomy";
+import Doctorates from "./Pages/ExperienceEspana/Doctorates/Doctorates";
+import AdvancedDiplomas from "./Pages/ExperienceEspana/Advanced Diplomas/AdvancedDiplomas";
+
 
 
 
@@ -41,6 +45,9 @@ function App() {
         <Route path="/destino-irlanda" element={<AdaptadorDestinos />} />
         <Route path="/destino-malta" element={<AdaptadorDestinosMalta />} />
         <Route path="/destino-espana" element={<AdaptadorDestinosEspana />} />
+        <Route path="/gastronomia" element={<Gastronomy />} />
+        <Route path="/doctorados" element={<Doctorates />} />
+        <Route path="/diplomaturas" element={<AdvancedDiplomas />} />
 
 
         </Routes>

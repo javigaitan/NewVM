@@ -23,7 +23,10 @@
         "title":"¿Qué experiencias ofrecemos?",
         "tipe1":"Cursos de Idiomas",
         "tipe2":"Estudio y trabajo en el exterior",
-        "tipe3":"Carreras y posgrados universitarios"
+        "tipe3":"Carreras y posgrados universitarios",
+        "tipe4":"Prácticas Profesionales en el área de Gastronomía y Turismo",
+        "tipe5":"Cursos y Diplomas Superiores",
+        "tipe6":"Másters y Doctorados"
     },
 
     "fact":{
@@ -165,6 +168,26 @@
 "title4-2": "te gustaría hacer?",
 "title5": "Comunidad VM en Malta"
 
-}
+},
+"experiencesEs":{
+    "experiences1.title":"Prácticas Profesionales en el área de Gastronomía y Turismo",
+    "experiences1.text1":"El programa de Formación y Pasantías Remuneradas en España se especializa en las áreas de Gastronomía (Cocina Española) y Turismo (Gestión Hotelera). ",
+    "experiences1.text2":"Este programa representa una oportunidad única para aprender de la mano de profesionales destacados y prepararse para el mercado laboral con una sólida base práctica.",
+    "experiences1.text3":"La experiencia incluye un mes de formación presencial en Valencia, gestionado por el estudiante, seguido de cinco meses de prácticas en diversos destinos de España, con beneficios de alojamiento, comida y una remuneración mensual. ",
+    "experiences1.text4":"Al completar los seis meses, el estudiante tiene la opción de extender su estancia por otros seis meses, dedicándose completamente a las prácticas en los destinos asignados.",
+    "experience.btn":"Solicita tu cotización",
+    "experiences1.title2":"Otras experiencias",
+
+    "experiences2.title":"Cursos y Diplomas Superiores",
+    "experiences2.text1":"Los cursos profesionales en España ofrecen títulos válidos adaptados a las demandas actuales del mercado. ",
+    "experiences2.text2":"Son accesibles para quienes buscan adquirir habilidades en sectores específicos como marketing, hotelería y tendencias digitales, sin necesidad de contar con estudios previos. Con un enfoque altamente práctico, estos cursos, de duración generalmente breve (menos de un año), brindan la posibilidad de realizar prácticas remuneradas o no, permitiendo aplicar conocimientos en un entorno real. ",
+    "experiences2.text3":"Su estructura los convierte en una opción ideal para quienes buscan una inserción laboral rápida y efectiva.",
+
+
+    "experiences3.title":"Másters y Doctorados",
+    "experiences3.text1":"Los másters y doctorados son programas académicos de nivel superior, diseñados para la especialización profesional o el inicio en la investigación académica, y requieren estudios de grado previo. ",
+    "experiences3.text2":"Estas titulaciones exigen criterios de admisión rigurosos que garantizan un sólido conocimiento de base, facilitando así una inmersión en temas avanzados y complejos. Aunque la duración es más extensa y exige un compromiso considerable, ofrecen reconocimiento académico y profesional tanto en España como internacionalmente, convirtiéndose en una excelente opción para quienes desean avanzar en sus carreras, asumir roles de liderazgo o desarrollar una trayectoria en investigación."   
+
+  }
 
 }

@@ -134,10 +134,10 @@
     "title3": "Let's explore Ireland",
     "opcion-title": "Why is it the",
     "opcion-title2": "most chosen destination?",
-    "item1": "Its geographical location allows you to travel and explore other European countries within hours and at an affordable cost.",
-    "item2": "It's a multicultural destination with a population from all over the world and a strong Viking heritage.",
-    "item3": "English is its official language, so you'll be in constant contact with it.",
-    "item4": "It offers a high quality of life, being one of the safest countries in the world with a growing economy.",
+    "item1": "Its location enables you to travel to and explore other European countries within hours at an affordable cost within hours and an affordable price",
+    "item2": "It is a multicultural destination with a diverse population worldwide and a strong Viking heritage.",
+    "item3": "English is the official language so you will be in constant contact with it daily.",
+    "item4": "It offers a high quality of life, is one of the safest countries in the world, and has a growing economy.",
     "title4": "What educational experience",
 "title4-2": "would you like to pursue?",
 "title5": "VM Community in Ireland"
@@ -150,14 +150,37 @@
     "title3": "Let's explore Malta",
     "opcion-title": "Why is it the",
     "opcion-title2": "most popular destination?",
-    "item1": "Malta is an archipelago with 3 main islands located south of Italy, from where you can explore Europe at super low prices.",
-    "item2": "It has a Mediterranean climate with warm temperatures from May to October, making it feel like an endless summer.",
+    "item1": "Malta is an archipelago with three main islands located south of Italy. It offers low prices for exploring Europe.",
+    "item2": "It has a Mediterranean climate with warm temperatures from May to October, which creates an endless summer feel.",
     "item3": "English is one of its official languages, alongside Maltese, making it one of the most affordable places to study English.",
     "item4": "It's a multicultural destination with a diverse population and a good quality of life.",
     "title4": "What educational experience",
     "title4-2": "would you like to pursue?",
     "title5": "VM Community in Malta"
-}
+},
+
+"experiencesEs":{
+    "experiences1.title":"Professional Internships in the Gastronomy and Tourism Field",
+    "experiences1.text1":"The paid Training and Internship Program in Spain specializes in gastronomy (Spanish cuisine) and tourism (hotel management). ",
+    "experiences1.text2":"This program offers a unique opportunity to learn directly from distinguished professionals and prepares students with a solid practical foundation for the job market.",
+    "experiences1.text3":"he experience includes one month of in-person training in Valencia, overseen by instructors, followed by five months of internships in various destinations across Spain, with benefits such as accommodation, meals, and a monthly stipend. ",
+    "experiences1.text4":"After completing the six-month program, students may extend their stay for an additional six months to fully dedicate themselves to the internships in their assigned destinations.",
+    "experience.btn":"Request your quote",
+    "experiences1.title2":"Other experiences",
+
+    "experiences2.title":"Estudio y trabajo en el exterior",
+    "experiences2.text1":"Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos.",
+    "experiences2.text2":"Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales.",
+    "experiences2.text3":"Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.",
+
+
+    "experiences3.title":"Carreras y posgrados universitarios",
+    "experiences3.text1":"Este tipo de experiencia es ideal para quienes tienen un buen nivel de inglés y desean comenzar una carrera de grado en el extranjero.",
+    "experiences3.text2":"También es una excelente opción para aquellos que ya tienen un título universitario en su país de origen e invierten en su desarrollo profesional realizando un posgrado o máster en el extranjero.",
+    "experiences3.text3":"Asimismo, dependiendo del destino elegido, algunas opciones académicas permiten que el interesado adquiera experiencia laboral con la misma visa de estudiante luego de finalizada la cursada."
+   
+
+  }
 
 
 
