@@ -132,7 +132,7 @@ const DestinoIrlandaResponsive = () => {
                                         <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                     </Link>
                                     <hr className="border-gray-300" />
-                                    <Link to='/not-found' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
+                                    <Link to='/destino-espana' className="flex items-center px-4 py-3 hover:bg-gray-100" onClick={handleOptionClick}>
                                         <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
                                         <span className="text-primaryVio">España</span>
                                         <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
@@ -241,7 +241,7 @@ const DestinoIrlandaResponsive = () => {
                                             <img src={MaltaBandera} alt="BanderaMalta" className="w-10 h-6 rounded-lg mr-3" />
                                         </Link>
                                         <hr className="border-gray-300" />
-                                        <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                        <Link to='/destino-espana' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                             <img src={Espana} alt="ESPAÑA" className="w-24 h-18 rounded-lg mr-3" />
                                             <span className="text-primaryVio">España</span>
                                             <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />

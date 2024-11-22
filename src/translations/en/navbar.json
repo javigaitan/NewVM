@@ -24,7 +24,10 @@
     "title": "The Experiences We Bring to You",
     "tipe1": "Language Courses",
     "tipe2": "Study and work abroad",
-    "tipe3": "Undergraduate and postgraduate degrees"
+    "tipe3": "Undergraduate and postgraduate degrees",
+    "tipe4":"Professional Internships in the Gastronomy and Tourism Field",
+        "tipe5":"Professional Courses and Advanced Diplomas",
+        "tipe6":"Master’s Degrees and Doctorates"
     },
 
     "fact": {
@@ -168,18 +171,15 @@
     "experience.btn":"Request your quote",
     "experiences1.title2":"Other experiences",
 
-    "experiences2.title":"Estudio y trabajo en el exterior",
-    "experiences2.text1":"Esta experiencia es ideal para quienes quieren aprender o mejorar un idioma mientras tienen la posibilidad de trabajar medio tiempo en el destino para solventar sus gastos.",
-    "experiences2.text2":"Dependiendo del destino elegido, este tipo de visado puede extenderse por uno o dos períodos adicionales.",
-    "experiences2.text3":"Los interesados no tienen restricciones de edad y no necesitan tener conocimientos previos en inglés.",
+    "experiences2.title":"Professional Courses and Advanced Diplomas",
+    "experiences2.text1":"Professional courses in Spain offer internationally recognised certifications tailored to current market demands. ",
+    "experiences2.text2":"These courses are accessible to individuals seeking skills in specific sectors, such as marketing, hospitality, and digital trends, without requiring previous educational qualifications. They are convenient because they focus on particular sectors and typically have shorter durations (less than a year).",
+    "experiences2.text3":"Additionally, these courses provide opportunities for paid or unpaid internships, allowing students to apply their knowledge in real-world settings. This structure makes them an ideal option for individuals seeking rapid and effective job placement.",
 
 
-    "experiences3.title":"Carreras y posgrados universitarios",
-    "experiences3.text1":"Este tipo de experiencia es ideal para quienes tienen un buen nivel de inglés y desean comenzar una carrera de grado en el extranjero.",
-    "experiences3.text2":"También es una excelente opción para aquellos que ya tienen un título universitario en su país de origen e invierten en su desarrollo profesional realizando un posgrado o máster en el extranjero.",
-    "experiences3.text3":"Asimismo, dependiendo del destino elegido, algunas opciones académicas permiten que el interesado adquiera experiencia laboral con la misma visa de estudiante luego de finalizada la cursada."
-   
-
+    "experiences3.title":"Master’s Degrees and Doctorates",
+    "experiences3.text1":"Master’s and doctoral programs are advanced academic courses designed for professional specialisation or entry into educational research. They require prior undergraduate studies and have rigorous admission criteria that ensure solid foundational knowledge while facilitating immersion in advanced and complex topics.",
+    "experiences3.text2":"Although they are longer and require a significant commitment, they offer academic and professional recognition both in Spain and internationally, making them an excellent choice for those seeking to advance their careers, take on leadership roles, or develop a research trajectory."   
   }
 
 
