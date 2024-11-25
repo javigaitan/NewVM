@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
-import Linea from '../../Componentes/Destinos/DestinosImg/lineablanca.png';
-import IconoMundo from '../../Componentes/Destinos/DestinosImg/iconoidioma.png';
-import Flecha from '../../assets/Textura/Vector.png';
+import React, { useState, useRef, useEffect } from 'react'; 
+import Linea from '../../Componentes/Destinos/DestinosImg/lineablanca.svg';
+import IconoMundo from '../../Componentes/Destinos/DestinosImg/iconoidioma.svg';
+import Flecha from '../../assets/Textura/Vector 12.svg';
 import i18n from 'i18next';
 
 const BtnIdiomas = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('ES'); // Estado para el idioma seleccionado
+  const ref = useRef(null);
+
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
 
   // Función para alternar el menú desplegable
   const toggleMenu = () => {
@@ -21,7 +36,7 @@ const BtnIdiomas = () => {
   };
 
   return (
-    <div className="relative inline-block flex items-center space-x-2">
+    <div  ref={ref} className="relative inline-block flex items-center space-x-2">
       {/* Imágenes y botón */}
       <img src={Linea} alt="Línea" className="ml-2" />
       <img src={IconoMundo} alt="Icono Mundo" className="ml-2" />

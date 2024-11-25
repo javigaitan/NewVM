@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import ScrollReveal from 'scrollreveal';
-import Logo from "../../assets/Logos/LogoTurquesa.png";
+import Logo from "../../assets/Logos/LogoTurquesa 1.svg";
 import WhatsAppButton from "../BtnWs/WhatsAppButton";
-import Flecha from '../../assets/Textura/Vector.png';
-import Irlanda from '../../assets/PaisesDesplegables/IRLANDA.png';
-import Malta from "../../assets/PaisesDesplegables/MALTA.png";
-import Espana from '../../assets/PaisesDesplegables/ESPAÑA.png';
-import Francia from '../../assets/PaisesDesplegables/FRANCIA.png';
-import Alemania from '../../assets/PaisesDesplegables/ALEMANIA.png';
-import IrlandaBandera from '../../assets/PaisesDesplegables/BanderaIrlanda.png';
-import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
-import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
-import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
-import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
+import Flecha from '../../assets/Textura/Vector 12.svg';
+import Irlanda from '../../assets/PaisesDesplegables/IRLANDA.svg';
+import Malta from "../../assets/PaisesDesplegables/MALTA.svg";
+import Espana from '../../assets/PaisesDesplegables/ESPAÑA.svg';
+import Francia from '../../assets/PaisesDesplegables/FRANCIA.svg';
+import Alemania from '../../assets/PaisesDesplegables/ALEMANIA.svg';
+import IrlandaBandera from '../../assets/PaisesDesplegables/BanderaIrlanda.svg';
+import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.svg";
+import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.svg';
+import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.svg';
+import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.svg';
 import BtnIdiomas from "../BtnIdioma/BtnIdiomas"
 
 
@@ -22,6 +22,7 @@ function Navbar() {
     const [t, i18n] = useTranslation("navbar");
     const [showMenu, setShowMenu] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const ref = useRef(null);
 
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
@@ -45,33 +46,31 @@ function Navbar() {
     }, []);
 
     useEffect(() => {
-        ScrollReveal().reveal('.card', {
+        const scrollRevealConfig = {
             delay: 300,
             distance: '50px',
-            origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
-        });
-
-        ScrollReveal().reveal('.item', {
-            delay: 300,
-            distance: '50px',
-            origin: 'top',
-            duration: 1000,
-            easing: 'ease-in-out',
-            reset: true
-        });
-
-        ScrollReveal().reveal('.text', {
-            delay: 300,
-            distance: '50px',
-            origin: 'left',
-            duration: 1000,
-            easing: 'ease-in-out',
-            reset: true
-        });
+            reset: true,
+        };
+    
+        ScrollReveal().reveal('.card', { ...scrollRevealConfig, origin: 'bottom' });
+        ScrollReveal().reveal('.item', { ...scrollRevealConfig, origin: 'top' });
+        ScrollReveal().reveal('.text', { ...scrollRevealConfig, origin: 'left' });
     }, []);
+
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (ref.current && !ref.current.contains(event.target)) {
+            setDropdownOpen(false);
+          }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+      }, []);
 
     return (
         <div className="dark:bg-gray-900">
@@ -97,7 +96,7 @@ function Navbar() {
                                     </Link>
                                 </li>
 
-                                <li className="relative">
+                                <li  ref={ref} className="relative">
                                     <button
                                         onClick={toggleDropdown}
                                         className="dark:text-colorWhite text-lg flex items-center focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline"
