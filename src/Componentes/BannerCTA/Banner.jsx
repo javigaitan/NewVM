@@ -1,8 +1,8 @@
 import React from 'react';
 import {useTranslation} from "react-i18next";
 import { Link } from 'react-router-dom';
-import BGR from '../../assets/BannerHome/FOTO BANNER.png';
-import BGTMOVILE from '../../assets/BannerHome/bannerbackok.png';
+import BGR from '../../assets/BannerHome/FOTO BANNER 1.svg';
+import BGTMOVILE from '../../assets/BannerHome/bannerbackok 1.svg';
 import './BannerCTA.css';
 
 
