@@ -430,33 +430,7 @@ const DestinoEspana = () => {
             </div>
 
 
-            <div className="mt-6 mb-8 ">
-                <div className="flex items-center justify-center m-4 ">
-                    <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio text-center ">
-                        Comunidad VM en España
-                    </h1>
-                    <div className=" mt-7">
-                    <img src={EspanaBandera} alt="Bandera de Irlanda" className="w-14 h-9 " />
-                    </div>
-                </div>
-
-
-
-                <div className="flex justify-center mt-8 p-3">
-                    <div className="w-full md:w-2/3 lg:w-1/2">
-                        <div className="relative overflow-hidden pb-[56.25%] h-0">
-                            <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/wPG3UiqACSU?si=RcgT5wDjcL0i5RCw"
-                                frameBorder="0"
-                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                title="YouTube video player"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
 
             <Footer />
 

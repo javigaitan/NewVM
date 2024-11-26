@@ -3,20 +3,20 @@ import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ALAN from '../../assets/Partners/Group.png'
-import ASSIST from '../../assets/Partners/Group (1).png';
-import ASSISTCARD from '../../assets/Partners/Group (2).png';
-import ERASMUSU from '../../assets/Partners/Group (3).png';
-import HOLAFLY from '../../assets/Partners/Group (4).png';
-import HOLASIM from '../../assets/Partners/Group (5).png';
-import MONEY from '../../assets/Partners/Group (6).png';
-import PAMPA from '../../assets/Partners/Group (7).png';
-import PAX from '../../assets/Partners/Group (8).png';
-import PLANET01 from '../../assets/Partners/Group (9).png';
-import AMERICANSHOP from '../../assets/Partners/Group (10).png';
-import SPOTHOME from '../../assets/Partners/Group (11).png';
-import TWC from '../../assets/Partners/Group (12).png';
-import WORD from '../../assets/Partners/Group 106.png';
+import ALAN from '../../assets/Partners/Alanxelmundo.svg'
+import ASSIST from '../../assets/Partners/Assist365.svg';
+import ASSISTCARD from '../../assets/Partners/AssistCard.svg';
+import ERASMUSU from '../../assets/Partners/Erasmusu.svg';
+import HOLAFLY from '../../assets/Partners/Holafly.svg';
+import HOLASIM from '../../assets/Partners/Holasim.svg';
+import MONEY from '../../assets/Partners/Moneyjar.svg';
+import PAMPA from '../../assets/Partners/pampadirecto.svg';
+import PAX from '../../assets/Partners/pax.svg';
+import PLANET01 from '../../assets/Partners/planet01.svg';
+import AMERICANSHOP from '../../assets/Partners/SAS.svg';
+import SPOTHOME from '../../assets/Partners/SPOT.svg';
+import TWC from '../../assets/Partners/TWC.svg';
+import WORD from '../../assets/Partners/WP.svg';
 
 
 const Partners = () => {
