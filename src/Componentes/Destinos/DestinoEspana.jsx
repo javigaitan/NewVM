@@ -13,8 +13,8 @@ import Madrid from '../../Componentes/Destinos/DestinosImg/madrid.png';
 import Barcelona from '../../Componentes/Destinos/DestinosImg/barcelona.png';
 import Murcia from '../../Componentes/Destinos/DestinosImg/murcia.png';
 import Valencia from '../../Componentes/Destinos/DestinosImg/valencia.png';
-import Foto1 from '../../Componentes/Destinos/DestinosImg/foto1palmera.png';
-import Foto2 from '../../Componentes/Destinos/DestinosImg/foto2ventana.png';
+import Foto1 from '../../Componentes/Destinos/DestinosImg/Espanafoto1.svg';
+import Foto2 from '../../Componentes/Destinos/DestinosImg/espanafoto2.svg';
 import Icon from '../../Componentes/Destinos/DestinosImg/icontext.png';
 import Footer from "../Footer/Footer";
 import Irlanda from '../../assets/PaisesDesplegables/IRLANDA.png';
@@ -67,7 +67,7 @@ const DestinoEspana = () => {
             origin: 'bottom',
             duration: 1000,
             easing: 'ease-in-out',
-            reset: true
+            reset: false
         });
     }, []);
 
