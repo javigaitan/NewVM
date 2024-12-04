@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, HashRouter, } from "react-router-dom";
 import NotFound from './Componentes/NotFound';
 import Nosotras from "./Pages/Nosotras/Nosotras";
 import Landing from "./Pages/Landing/Landing";
@@ -28,7 +28,8 @@ function App() {
 
   return (
     <>
-      <Router>
+    <HashRouter>
+      
         <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/nosotros" element={<Nosotras />} />
@@ -51,7 +52,7 @@ function App() {
 
 
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   )
 }
