@@ -515,9 +515,11 @@ const Ahorro = () => {
                                 {t("finance.seccion4.text2")}                            </p>
                         </div>
                         <div className="lg:pl-4 mt-8">
-                            <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                {t("finance.seccion1.btn")}
-                            </button>
+                        <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20embajadores!'>
+                                <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
+                                    {t("finance.seccion1.btn")}
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

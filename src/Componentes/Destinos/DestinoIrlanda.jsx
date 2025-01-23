@@ -429,7 +429,7 @@ const DestinoIrlanda = () => {
                 </h1>
                 <div className="flex flex-wrap justify-center mt-8">
 
-                    <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div className=" w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img
@@ -448,7 +448,7 @@ const DestinoIrlanda = () => {
                         </div>
                     </div>
 
-                    <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div className=" w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img
@@ -467,7 +467,7 @@ const DestinoIrlanda = () => {
                         </div>
                     </div>
 
-                    <div className="card w-full sm:w-1/2 lg:w-1/3 p-4">
+                    <div className=" w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="relative bg-cover flex justify-center flex-col rounded-lg">
                             <div className="relative">
                                 <img

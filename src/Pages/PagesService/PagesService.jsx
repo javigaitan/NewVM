@@ -521,7 +521,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20programas%laborales!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
                                 {t("other-services.seccion2.btn")}                                 </button>
                             </Link>
