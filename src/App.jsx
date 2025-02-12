@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, HashRouter, } from "react-router-dom";
-import NotFound from './Componentes/NotFound';
+import NotFound from "./Componentes/Notfound/NotFound";
 import Nosotras from "./Pages/Nosotras/Nosotras";
 import Landing from "./Pages/Landing/Landing";
 import CursoDeIdiomas from "./Componentes/Experienciasvm/WorkStudy/CursoDeIdiomas";
@@ -17,6 +17,7 @@ import AdaptadorDestinosEspana from "./Componentes/Destinos/AdaptadorDestinoEspa
 import Gastronomy from "./Pages/ExperienceEspana/Gastronomy/Gastronomy";
 import Doctorates from "./Pages/ExperienceEspana/Doctorates/Doctorates";
 import AdvancedDiplomas from "./Pages/ExperienceEspana/Advanced Diplomas/AdvancedDiplomas";
+import BlogDetail1 from "./Pages/Blogs/BlogDetail/BlogDetail1";
 
 
 
@@ -29,7 +30,7 @@ function App() {
   return (
     <>
     <HashRouter>
-      
+
         <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/nosotros" element={<Nosotras />} />
@@ -49,6 +50,8 @@ function App() {
         <Route path="/gastronomia" element={<Gastronomy />} />
         <Route path="/doctorados" element={<Doctorates />} />
         <Route path="/diplomaturas" element={<AdvancedDiplomas />} />
+
+        <Route path="/blog-detail" element={<BlogDetail1/>} />
 
 
         </Routes>

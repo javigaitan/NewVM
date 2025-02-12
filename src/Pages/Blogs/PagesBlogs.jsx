@@ -17,6 +17,7 @@ import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
 import {useTranslation} from "react-i18next";
 import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
+import IMG from "../../assets/Blogs-Img/Irlanda.png";
 
 
 
@@ -342,26 +343,126 @@ const PagesBlogs = () => {
             </div>
 
             {/* Comienza los contenedores */}
-            <div className="card dark:bg-[#F2F2F2] pt-12 pb-10 rounded-lg">
-                <div className="h-screen pb-8 mb-32 rounded-lg"> {/* Ajusté mb-32 para más espacio */}
-                    <div className="flex items-center justify-center py-12">
-                        <div className="bg-white border rounded-md flex items-center justify-center mx-4 md:w-2/3 ">
-                            <div className="flex flex-col items-center py-16 ">
-                                <img className="px-4 hidden md:block" src={Error404} alt="" />
-                                <img className="md:hidden" src={Error404} alt="" />
-                                <h1 className="px-4 pt-8 pb-4 text-center text-5xl font-bold leading-10 text-gray-800">OOPS!</h1>
-                                <p className="px-4 pb-10 text-base leading-none text-center text-gray-600">¡Ni Google Maps nos encuentra aquí! ¿Intentamos de nuevo?</p>
-                                <Link to='/'>
-                                    <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
-                                        Volver a Home
-                                    </button>
-                                </Link> </div>
+            <div className="py-24 flex-col items-center justify-center  px-4">
+                {/* Comienza los contenedores 
+                <h1 role="heading" className="text-center xl:text-5xl md:text-4xl text-2xl font-bold text-gray-800">
+                    Read Our Latest
+                </h1>
+                <p role="contentinfo" className="text-base leading-normal text-center text-gray-600 mt-4">
+                    Whether article spirits new her covered hastily sitting her. Money witty books nor son
+                </p>*/}
+                <div className="2xl:container 2xl:mx-auto flex flex-wrap items-start justify-center pt-6 gap-6">
+                
+                {/* Comienza los contenedor blog */}
+
+                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto ">
+                    <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+  <img
+    className=" rounded-lg"
+    src={IMG}
+    alt="woman smiling"
+  />
+  <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+    Descubre Irlanda: El Destino Perfecto para Aprender Inglés
+  </h2>
+  <div className="mt-6 flex items-center cursor-pointer">
+    <Link to={"/blog-detail"}>
+      <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+        Leer más
+      </button>
+    </Link>
+  </div>
+  <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
+</div>
+
+ {/*
+                        <div className="lg:mt-10">
+                            <img src="https://i.ibb.co/WkCydhJ/blog-4.png" alt="coffe pouring" />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
+                            <div className="mt-6 flex items-center cursor-pointer">
+                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
+                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                        </div>
+                    </div>
+
+                    Fin los contenedor blog 
+
+                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto">
+                        <div>
+                            <img src="https://i.ibb.co/SmNSVs8/blog-2.png" alt="plant held by a man" />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
+                            <div className="mt-6 flex items-center cursor-pointer">
+                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
+                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                        </div>
+                        <div className="lg:mt-10">
+                            <img src="https://i.ibb.co/3pMc5WS/blog-5.png" alt="lady with plant" />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
+                            <div className="mt-6 flex items-center cursor-pointer">
+                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
+                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                        </div>
+                    </div>
+                    <div className="flex xl:flex-col sm:flex-row flex-col items-start xl:gap-0 gap-6 xl:w-96 w-auto">
+                        <div>
+                            <img src="https://i.ibb.co/TLJdmSt/new-img-2.png" alt="Delighful breakfast" />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
+                            <div className="mt-6 flex items-center cursor-pointer">
+                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
+                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                        </div>
+                        <div className="xl:mt-10">
+                            <img src="https://i.ibb.co/c8dPSYB/blog-6.png" alt="hats with image frame in middle" />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
+                            <div className="mt-6 flex items-center cursor-pointer">
+                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
+                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Fin de los contenedores */}
+            Fin de los contenedores */}
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
             <div className="pt-12">
                 <Footer />
             </div>

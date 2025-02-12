@@ -8,6 +8,7 @@ import ServiciosNew from "../../Componentes/ServiciosNew/ServiciosNew";
 import VMFacts from "../../Componentes/VMFacts/VMFacts";
 import GoogleReviews from '../../Componentes/Review/GooglReviews';
 import LoaderAvionPopUp from '../../Componentes/LoaderAvion/LoaderAvionPopUp';
+import FooterActual from "../../Componentes/Footer/FooterActual";
 
 
 const Landing = () => {
@@ -36,7 +37,7 @@ const Landing = () => {
             <GoogleReviews /> 
             <Blogs />
             <Partners />
-            <Footer />
+            <Footer/>
             
         </>
     );

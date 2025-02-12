@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BGF from "../../assets/Textura/footerdesk.png";
+import BGF from "../../assets/Textura/footerdesk.png"; {/*backdeskprueba.svg*/}
 import BGFM from '../../assets/Textura/Footermovile1 1.png';
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
 import LINK from '../../assets/iconsRedes/link.png';
 import YT from '../../assets/iconsRedes/yt.png';
 import TIK from '../../assets/iconsRedes/tiktok.png';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [t, i18n] = useTranslation("navbar");
 
-  
+  useEffect(() => {
+    // Crear un script y agregarlo al footer
+    const script = document.createElement('script');
+    script.src = "https://www-cdn.icef.com/scripts/iasbadgeid.js";
+    script.async = true;
+    script.defer = true;
+    script.crossOrigin = "anonymous";
+
+    document.body.appendChild(script);
+
+    return () => {
+      // Remover el script cuando el componente se desmonte
+      document.body.removeChild(script);
+    };
+  }, []);
+
+
   return (
-    <div className="relative w-full h-auto mt-5">
+    <div className="relative w-full h-[850px] lg:h-auto mt-5"> {/* Added explicit height */}
       {/* Imagen de fondo para pantallas grandes */}
       <img
         src={BGF}
@@ -28,9 +44,14 @@ const Footer = () => {
         alt="Footer background image mobile"
         className="object-cover lg:hidden"
       />
-      
+<div className='absolute  left-0 z-20 p-4'>
+        {/* Contenedor del badge en la esquina inferior izquierda */}
+        <div className=" left-0 z-20 ">
+          <span id="iasBadge" data-account-id="5281"></span>
+        </div>
+        </div>
 
-<div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 ">        
+      <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 ">
         {/* Íconos de redes sociales para pantallas grandes */}
         <div className="hidden lg:flex space-x-4">
           <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
@@ -109,30 +130,36 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t("end.opcion1")}
+                  {t("end.opcion1")}
                 </Link>
               </li>
               <li>
                 <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t("end.opcion2")}
+                  {t("end.opcion2")}
                 </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t("end.opcion3")}                </Link>
+                  {t("end.opcion3")}                </Link>
               </li>
               <li>
                 <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                {t("end.opcion4")}                </Link>
+                  {t("end.opcion4")}                </Link>
               </li>
-              
+
             </ul>
           </div>
+
+        </div>
+        
+{/* Contenedor del badge en la esquina inferior izquierda */}
+<div className="absolute bottom-0 left-0 z-20 p-4"> {/* Only ONE badge container */}
+        <span id="iasBadge" data-account-id="5281"></span>
         </div>
       </div>
-      <div className=''>
-      </div>
+        
     </div>
+    
   );
 };
 
