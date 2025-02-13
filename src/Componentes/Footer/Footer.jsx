@@ -19,7 +19,7 @@ const Footer = () => {
 
 
   return (
-    <div className="w-full h-[850px]  mt-11 sm:relative"> {/* Added explicit height */}
+    <div className="w-full min-h-[850px] mt-11 relative flex flex-col justify-end"> {/* Added explicit height */}
       {/* Imagen de fondo para pantallas grandes */}
       <img
         src={BGF}
@@ -33,14 +33,9 @@ const Footer = () => {
         alt="Footer background image mobile"
         className=" object-cover lg:hidden"
       />
-      <div className='absolute  left-0 z-20 p-4'>
-        {/* Contenedor del badge en la esquina inferior izquierda */}
-        <div className=" left-0 z-20 ">
-          <span id="iasBadge" data-account-id="5281"></span>
-        </div>
-      </div>
+     
 
-      <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 pt-[70px]">
+      <div className="p-6 text-center z-10 flex flex-col items-center lg:pt-8 md:pt-1 pt-[70px] relative">
 
         {/* Íconos de redes sociales para pantallas grandes */}
         <div className="hidden lg:flex space-x-4">
@@ -62,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Menú para pantallas grandes */}
-        <div className="hidden lg:block text-center relative" style={{ paddingLeft: '460px' }}>
+        <div className="hidden lg:block text-center sm:relative" style={{ paddingLeft: '460px' }}>
           <div className="flex flex-col items-center mt-60">
             <div className="w-full">
               <ul className="menu-list">

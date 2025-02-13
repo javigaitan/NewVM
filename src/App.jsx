@@ -51,7 +51,7 @@ function App() {
         <Route path="/doctorados" element={<Doctorates />} />
         <Route path="/diplomaturas" element={<AdvancedDiplomas />} />
 
-        <Route path="/blog-detail" element={<BlogDetail1/>} />
+        <Route path="/irlanda-el-destino-perfecto" element={<BlogDetail1/>} />
 
 
         </Routes>

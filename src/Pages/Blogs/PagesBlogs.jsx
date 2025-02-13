@@ -15,9 +15,10 @@ import MaltaBandera from "../../assets/PaisesDesplegables/BanderaMalta.png";
 import EspanaBandera from '../../assets/PaisesDesplegables/BanderaEspa.png';
 import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
 import IMG from "../../assets/Blogs-Img/Irlanda.png";
+
 
 
 
@@ -227,7 +228,7 @@ const PagesBlogs = () => {
                             </div>
 
                             {/* boton de traduccion*/}
-                            <BtnIdiomas/>
+                            <BtnIdiomas />
 
                         </div>
                     </div>
@@ -335,7 +336,7 @@ const PagesBlogs = () => {
                 </div>
 
                 <div className="text w-full bg-primaryVio px-4 py-8 text-center rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-4xl font-bold text-colorWhite dark:text-white mb-10 pt-14">Vaga Mundo Blog
+                    <h1 className="text-6xl font-bold text-colorWhite dark:text-white mb-10 pt-14">Vaga Mundo Blog
                     </h1>
 
                 </div>
@@ -352,30 +353,30 @@ const PagesBlogs = () => {
                     Whether article spirits new her covered hastily sitting her. Money witty books nor son
                 </p>*/}
                 <div className="2xl:container 2xl:mx-auto flex flex-wrap items-start justify-center pt-6 gap-6">
-                
-                {/* Comienza los contenedor blog */}
+
+                    {/* Comienza los contenedor blog */}
 
                     <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto ">
-                    <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
-  <img
-    className=" rounded-lg"
-    src={IMG}
-    alt="woman smiling"
-  />
-  <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
-    Descubre Irlanda: El Destino Perfecto para Aprender Inglés
-  </h2>
-  <div className="mt-6 flex items-center cursor-pointer">
-    <Link to={"/blog-detail"}>
-      <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
-        Leer más
-      </button>
-    </Link>
-  </div>
-  <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
-</div>
+                        <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                            <img
+                                className=" rounded-lg"
+                                src={IMG}
+                                alt="woman smiling"
+                            />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                                Descubre Irlanda: <br/>El Destino Perfecto para Aprender Inglés
+                            </h2>
+                            <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                <Link to={"/irlanda-el-destino-perfecto"}>
+                                    <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                        Leer más
+                                    </button>
+                                </Link>
+                            </div>
+                            <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
+                        </div>
 
- {/*
+                        {/*
                         <div className="lg:mt-10">
                             <img src="https://i.ibb.co/WkCydhJ/blog-4.png" alt="coffe pouring" />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
@@ -455,9 +456,9 @@ const PagesBlogs = () => {
             Fin de los contenedores */}
 
 
-</div>
-</div>
-</div>
+                    </div>
+                </div>
+            </div>
 
 
 
