@@ -346,7 +346,7 @@ const PagesBlogs = () => {
                 </div>
 
                 <div className="text w-full bg-primaryVio px-4 py-8 text-center rounded-b-[50px]  " style={{ paddingLeft: '80px' }}>
-                    <h1 className="text-4xl font-bold text-colorWhite dark:text-white mb-10 pt-14">Vaga Mundo Blog
+                    <h1 className="text-6xl font-bold text-colorWhite dark:text-white mb-10 pt-14">Vaga Mundo Blog
                     </h1>
 
                 </div>
@@ -358,6 +358,8 @@ const PagesBlogs = () => {
                 {/* Flex layout for lg, centered for md */}
                 <div className=" w-full  px-4 py-8 text-center">
                     <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold leading-10 text-primaryVio mt-6 text-center">Descubre Irlanda<img src={IrlandaBandera} alt="Bandera de Irlanda" className="w-12 h-10 inline-block mx-2" />:
+                    </h1>
+                    <h1 className="lg:text-5xl md:text-4xl text-2xl  leading-10 text-primaryVio mt-6 text-center">
                         <br /> El Destino Perfecto para Aprender Inglés </h1>
                 </div>
 
@@ -367,53 +369,53 @@ const PagesBlogs = () => {
 
             </div>
 
-            <div className=" p-8 mt-10">
-                <h2 className="text-primaryVio text-5xl font-semibold pl-10 pt-0 mt-0 pb-9  mx-auto text-center">
-                    ¿Por qué elegir Irlanda para estudiar inglés?
-                </h2>
+            <div className="p-8 mt-10 ">
+  <h2 className="text-primaryVio text-5xl font-semibold pl-8 pt-0 mt-0 pb-9 text-center mx-auto">
+    ¿Por qué elegir Irlanda para estudiar inglés?
+  </h2>
 
-                <div className="space-y-6 max-w-[980px] mx-auto">
-                    <div className="flex items-start">
-                        <span className="text-secondaryTur2 text-2xl font-bold mr-3">✓</span>
-                        <p className="text-gray-700">
-                            <span className="font-semibold">Educación de primera calidad:</span>
-                            Irlanda es hogar de algunas de las escuelas de idiomas más prestigiosas del mundo. Sus programas están diseñados para ofrecerte una formación dinámica y de alto nivel.
-                        </p>
-                    </div>
+  <div className="space-y-6 max-w-[980px] mx-auto pl-5">
+    <div className="flex items-start">
+      <span className="text-secondaryTur2 text-2xl font-bold ">✓</span>
+      <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
+        <span className="font-semibold">Educación de primera calidad:</span>
+        Irlanda es hogar de algunas de las escuelas de idiomas más prestigiosas del mundo. Sus programas están diseñados para ofrecerte una formación dinámica y de alto nivel.
+      </p>
+    </div>
 
-                    <div className="flex items-start">
-                        <span className="text-secondaryTur2 text-2xl font-bold mr-3">✓</span>
-                        <p className="text-gray-700">
-                            <span className="font-semibold">Un destino acogedor y seguro:</span>
-                            Los irlandeses son famosos por su hospitalidad y calidez, creando un ambiente perfecto para que los estudiantes internacionales se adapten rápidamente y se sientan como en casa.
-                        </p>
-                    </div>
+    <div className="flex items-start">
+      <span className="text-secondaryTur2 text-2xl font-bold ">✓</span>
+      <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
+        <span className="font-semibold">Un destino acogedor y seguro:</span>
+        Los irlandeses son famosos por su hospitalidad y calidez, creando un ambiente perfecto para que los estudiantes internacionales se adapten rápidamente y se sientan como en casa.
+      </p>
+    </div>
 
-                    <div className="flex items-start">
-                        <span className="text-secondaryTur2 text-2xl font-bold mr-3">✓</span>
-                        <p className="text-gray-700">
-                            <span className="font-semibold">Oportunidades laborales para estudiantes:</span>
-                            Como estudiante internacional en Irlanda, podrás trabajar medio tiempo mientras estudias. Esta oportunidad te permitirá ganar experiencia laboral, conocer la cultura local y cubrir parte de tus gastos.
-                        </p>
-                    </div>
+    <div className="flex items-start">
+      <span className="text-secondaryTur2 text-2xl font-bold ">✓</span>
+      <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
+        <span className="font-semibold">Oportunidades laborales para estudiantes:</span>
+        Como estudiante internacional en Irlanda, podrás trabajar medio tiempo mientras estudias. Esta oportunidad te permitirá ganar experiencia laboral, conocer la cultura local y cubrir parte de tus gastos.
+      </p>
+    </div>
 
-                    <div className="flex items-start">
-                        <span className="text-secondaryTur2 text-2xl font-bold mr-3">✓</span>
-                        <p className="text-gray-700">
-                            <span className="font-semibold">Inmersión lingüística total:</span>
-                            Estudiar en un país de habla inglesa acelera tu aprendizaje de manera natural y efectiva. La práctica diaria del idioma en tu entorno te ayudará a mejorar rápidamente.
-                        </p>
-                    </div>
+    <div className="flex items-start">
+      <span className="text-secondaryTur2 text-2xl font-bold ">✓</span>
+      <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
+        <span className="font-semibold">Inmersión lingüística total:</span>
+        Estudiar en un país de habla inglesa acelera tu aprendizaje de manera natural y efectiva. La práctica diaria del idioma en tu entorno te ayudará a mejorar rápidamente.
+      </p>
+    </div>
 
-                    <div className="flex items-start">
-                        <span className="text-secondaryTur2 text-2xl font-bold mr-3">✓</span>
-                        <p className="text-gray-700">
-                            <span className="font-semibold">Paisajes impresionantes y cultura vibrante:</span>
-                            Irlanda es famosa por su belleza natural, desde sus castillos medievales hasta los acantilados sobre el océano Atlántico. Además, su rica cultura te brindará una experiencia única fuera del aula.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div className="flex items-start">
+      <span className="text-secondaryTur2 text-2xl font-bold ">✓</span>
+      <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
+        <span className="font-semibold">Paisajes impresionantes y cultura vibrante:</span>
+        Irlanda es famosa por su belleza natural, desde sus castillos medievales hasta los acantilados sobre el océano Atlántico. Además, su rica cultura te brindará una experiencia única fuera del aula.
+      </p>
+    </div>
+  </div>
+</div>
 
             <div className=" py-12 px-6 lg:px-24">
                 <div className="max-w-4xl mx-auto text-center">
@@ -425,7 +427,7 @@ const PagesBlogs = () => {
 
                 <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-white p-6 shadow-lg rounded-lg">
-                        <h2 className="text-2xl font-semibold text-colorText">Cursos <br/>de inglés general</h2>
+                        <h2 className="text-2xl font-semibold text-colorText">Cursos <br />de inglés general</h2>
                         <p className="text-gray-600 mt-2">
                             Disponibles para todos los niveles, desde principiantes hasta avanzados. Puedes elegir entre cursos cortos
                             de hasta 3 meses o programas más largos que te permiten obtener una visa de estudio y trabajo.
@@ -441,7 +443,7 @@ const PagesBlogs = () => {
                     </div>
 
                     <div className="bg-white p-6 shadow-lg rounded-lg">
-                        <h2 className="text-2xl font-semibold text-colorText">Inglés <br/>intensivo</h2>
+                        <h2 className="text-2xl font-semibold text-colorText">Inglés <br />intensivo</h2>
                         <p className="text-gray-600 mt-2">
                             Si deseas avanzar rápidamente, los cursos intensivos son ideales. Con horarios más concentrados y clases intensas,
                             mejorarás tu nivel de inglés en poco tiempo.
@@ -505,183 +507,189 @@ const PagesBlogs = () => {
                 </div>
             </div>
 
-{/* Contenedor del footer */}
+            <div className="container mx-auto px-4 py-7">
+                {/* Flex layout for lg, centered for md */}
+                <div className=" w-full  px-4 py-8 text-center">
 
-<div className="w-full h-[850px]  mt-11 sm:relative"> {/* Added explicit height */}
-      {/* Imagen de fondo para pantallas grandes */}
-      <img
-        src={BGF}
-        alt="Footer background image"
-        className="object-cover w-full h-[850px] absolute inset-0 z-0 hidden lg:block"
-      />
+                    <h1 className="lg:text-5xl md:text-4xl text-2xl  leading-10 text-primaryVio mt-6 text-center">
 
-      {/* Imagen de fondo para pantallas medianas y pequeñas */}
-      <img
-        src={BGFG}
-        alt="Footer background image mobile"
-        className=" object-cover lg:hidden"
-      />
-      <div className='absolute  left-0 z-20 p-4'>
-        {/* Contenedor del badge en la esquina inferior izquierda */}
-        <div className=" left-0 z-20 ">
-          <span id="iasBadge" data-account-id="5281"></span>
-        </div>
-      </div>
+                    ¡Haz realidad tu sueño de aprender inglés en Irlanda!
+                    </h1>
+                </div>
 
-      <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 pt-[70px]">
+                <p className=" text-lg leading-6 text-colorText mt-6">No pierdas la oportunidad de vivir una experiencia transformadora. Con Vaga-Mundo, tendrás todo el apoyo necesario para estudiar inglés en Irlanda y disfrutar al máximo de esta aventura única.
 
-        {/* Íconos de redes sociales para pantallas grandes */}
-        <div className="hidden lg:flex space-x-4">
-          <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
-            <img src={INTA} alt="Instagram icon" className="w-16 h-16 hover:scale-105" />
-          </a>
-          <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
-            <img src={FB} alt="Facebook icon" className="w-16 h-16 hover:scale-105" />
-          </a>
-          <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
-            <img src={LINK} alt="Link icon" className="w-16 h-16 hover:scale-105" />
-          </a>
-          <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
-            <img src={YT} alt="YouTube icon" className="w-16 h-16 hover:scale-105" />
-          </a>
-          <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
-            <img src={TIK} alt="TikTok icon" className="w-16 h-16 hover:scale-105" />
-          </a>
-        </div>
 
-        {/* Menú para pantallas grandes */}
-        <div className="hidden lg:block text-center relative" style={{ paddingLeft: '460px' }}>
-          <div className="flex flex-col items-center mt-60">
-            <div className="w-full">
-              <ul className="menu-list">
-                <li className="menu-item">
-                  <Link to="/" className="text-colorWhite">
-                    <p className="text-2xl font-bold hover:text-secondaryTur2">{t("end.opcion1")}</p>
-                    <hr className="line" />
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link to="/contacto" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion2")}</p>
-                    <hr className="line" />
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion3")}</p>
-                    <hr className="line" />
-                  </Link>
-                </li>
-                <li className="menu-item">
-                  <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
-                    <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion4")}</p>
-                    <hr className="line" />
-                  </Link>
-                </li>
-              </ul>
+
+                    <br /><br />¡Contáctanos hoy mismo y comienza tu viaje para aprender inglés en Irlanda!
+
+                </p>
+
+                <div className="inline-block py-8 lg:pl-0 pl-8">
+                    <Link to='https://wa.me/541171366335/?text=Hola%20Vaga-Mundo,%20quisiera%20explorar%20opciones%20educativas%20en%20el%20extranjero'>
+                        <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
+                        {t("banner.btn")}                        </button>
+                    </Link>
+                </div>
+
+
             </div>
-          </div>
-        </div>
 
-        {/* Íconos de redes sociales para pantallas medianas y pequeñas */}
-        <div className="lg:hidden flex flex-col items-center">
-          <div className="flex space-x-4 z-4 mb-5">
-            <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
-              <img src={INTA} alt="Instagram icon" className="w-9 h-9 hover:scale-105" />
-            </a>
-            <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
-              <img src={FB} alt="Facebook icon" className="w-9 h-9 hover:scale-105" />
-            </a>
-            <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
-              <img src={LINK} alt="LinkedIn icon" className="w-9 h-9 hover:scale-105" />
-            </a>
-            <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
-              <img src={YT} alt="YouTube icon" className="w-9 h-9 hover:scale-105" />
-            </a>
-            <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
-              <img src={TIK} alt="TikTok icon" className="w-9 h-9 hover:scale-105" />
-            </a>
-          </div>
 
-          {/* Menú para pantallas medianas y pequeñas */}
-          <div className="text-start pt-4 z-20">
-            <ul className="space-y-4">
-              <li>
-                <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  {t("end.opcion1")}
-                </Link>
-              </li>
-              <li>
-                <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  {t("end.opcion2")}
-                </Link>
-              </li>
-              <li>
-                <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  {t("end.opcion3")}                </Link>
-              </li>
-              <li>
-                <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
-                  {t("end.opcion4")}                </Link>
-              </li>
 
-            </ul>
-          </div>
+            {/* Contenedor del footer */}
 
-        </div>
+            <div className="w-full h-[850px]  mt-11 sm:relative"> {/* Added explicit height */}
+                {/* Imagen de fondo para pantallas grandes */}
+                <img
+                    src={BGF}
+                    alt="Footer background image"
+                    className="object-cover w-full h-[850px] absolute inset-0 z-0 hidden lg:block"
+                />
 
-        {/* Contenedor de certificados solo visible en lg */}
-        <div className="absolute bottom-0 left-0 z-20 pl-14 flex space-x-8 curse-point w-full pb-6 hidden md:hidden lg:flex">
-          <a href="https://www.icef.com/agency/0016M00002KTcRTQA1" target="_blank" rel="noopener noreferrer">
-            <img
-              src={ICEF}
-              alt="ICEF Logo"
-              className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
-            />
-          </a>
-          <img
-            src={Logo2}
-            alt="Otro Certificado"
-            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
-          />
-          <img
-            src={Logo3}
-            alt="Otro Certificado 2"
-            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
-          />
-          {/*
+                {/* Imagen de fondo para pantallas medianas y pequeñas */}
+                <img
+                    src={BGFG}
+                    alt="Footer background image mobile"
+                    className=" object-cover lg:hidden"
+                />
+                <div className='absolute  left-0 z-20 p-4'>
+                    {/* Contenedor del badge en la esquina inferior izquierda */}
+                    <div className=" left-0 z-20 ">
+                        <span id="iasBadge" data-account-id="5281"></span>
+                    </div>
+                </div>
+
+                <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 pt-[70px]">
+
+                    {/* Íconos de redes sociales para pantallas grandes */}
+                    <div className="hidden lg:flex space-x-4">
+                        <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
+                            <img src={INTA} alt="Instagram icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
+                            <img src={FB} alt="Facebook icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
+                            <img src={LINK} alt="Link icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
+                            <img src={YT} alt="YouTube icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
+                            <img src={TIK} alt="TikTok icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                    </div>
+
+                    {/* Menú para pantallas grandes */}
+                    <div className="hidden lg:block text-center relative" style={{ paddingLeft: '460px' }}>
+                        <div className="flex flex-col items-center mt-60">
+                            <div className="w-full">
+                                <ul className="menu-list">
+                                    <li className="menu-item">
+                                        <Link to="/" className="text-colorWhite">
+                                            <p className="text-2xl font-bold hover:text-secondaryTur2">{t("end.opcion1")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="/contacto" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion2")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion3")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion4")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Íconos de redes sociales para pantallas medianas y pequeñas */}
+                    <div className="lg:hidden flex flex-col items-center">
+                        <div className="flex space-x-4 z-4 mb-5">
+                            <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
+                                <img src={INTA} alt="Instagram icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
+                                <img src={FB} alt="Facebook icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
+                                <img src={LINK} alt="LinkedIn icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
+                                <img src={YT} alt="YouTube icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
+                                <img src={TIK} alt="TikTok icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                        </div>
+
+                        {/* Menú para pantallas medianas y pequeñas */}
+                        <div className="text-start pt-4 z-20">
+                            <ul className="space-y-4">
+                                <li>
+                                    <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion1")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion2")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion3")}                </Link>
+                                </li>
+                                <li>
+                                    <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion4")}                </Link>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    {/* Contenedor de certificados solo visible en lg */}
+                    <div className="absolute bottom-0 left-0 z-20 pl-14 flex space-x-8 curse-point w-full pb-6 hidden md:hidden lg:flex">
+                        <a href="https://www.icef.com/agency/0016M00002KTcRTQA1" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={ICEF}
+                                alt="ICEF Logo"
+                                className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                            />
+                        </a>
+                        <img
+                            src={Logo2}
+                            alt="Otro Certificado"
+                            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                        />
+                        <img
+                            src={Logo3}
+                            alt="Otro Certificado 2"
+                            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                        />
+                        {/*
   <div className="text-2xl text-colorWhite pl-10">
     <p>©2024 Vaga-Mundo • Todos los derechos reservados</p>
   </div>
   */}
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
-
-
-      </div>
-
-
-    </div>
-      
-
-      
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
     )
 }
 

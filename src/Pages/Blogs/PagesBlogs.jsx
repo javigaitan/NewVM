@@ -18,6 +18,16 @@ import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png'
 import { useTranslation } from "react-i18next";
 import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
 import IMG from "../../assets/Blogs-Img/Irlanda.png";
+import BGF from "../../assets/Textura/backdeskprueba.svg";
+import INTA from '../../assets/iconsRedes/ig.png';
+import FB from '../../assets/iconsRedes/fb.png';
+import LINK from '../../assets/iconsRedes/link.png';
+import YT from '../../assets/iconsRedes/yt.png';
+import TIK from '../../assets/iconsRedes/tiktok.png';
+import BGFG from '../../assets/Textura/Footermovile1 1.png';
+import ICEF from '../../Componentes/ICEF/iceflogo.svg';
+import Logo2 from "../../assets/Textura/English Education logo.svg";
+import Logo3 from "../../assets/Textura/ST_ReferenceChecked-CMYK 1.svg";
 
 
 
@@ -364,7 +374,7 @@ const PagesBlogs = () => {
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
-                                Descubre Irlanda: <br/>El Destino Perfecto para Aprender Inglés
+                                Descubre Irlanda: <br />El Destino Perfecto para Aprender Inglés
                             </h2>
                             <div className="mt-6 flex items-center justify-center cursor-pointer">
                                 <Link to={"/irlanda-el-destino-perfecto"}>
@@ -375,39 +385,55 @@ const PagesBlogs = () => {
                             </div>
                             <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
                         </div>
+                        
 
-                        {/*
+                    
                         <div className="lg:mt-10">
-                            <img src="https://i.ibb.co/WkCydhJ/blog-4.png" alt="coffe pouring" />
-                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
-                            <div className="mt-6 flex items-center cursor-pointer">
-                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
-                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                            {/*
+                        <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                            <img
+                                className=" rounded-lg"
+                                src={IMG}
+                                alt="woman smiling"
+                            />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                                Descubre Irlanda: <br />El Destino Perfecto para Aprender Inglés
+                            </h2>
+                            <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                <Link to={"/irlanda-el-destino-perfecto"}>
+                                    <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                        Leer más
+                                    </button>
+                                </Link>
                             </div>
-                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
-                        </div>
+                            <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
+                        </div> */}
+                    </div>
                     </div>
 
-                    Fin los contenedor blog 
+
 
                     <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto">
-                        <div>
-                            <img src="https://i.ibb.co/SmNSVs8/blog-2.png" alt="plant held by a man" />
-                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
-                            <div className="mt-6 flex items-center cursor-pointer">
-                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
-                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                    <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                            <img
+                                className=" rounded-lg"
+                                src={IMG}
+                                alt="woman smiling"
+                            />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                            Guía Completa:<br/>  Estudiar y Trabajar en<br/>Irlanda
+                            </h2>
+                            <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                <Link to={"/estudia-trabaja-irlanda"}>
+                                    <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                        Leer más
+                                    </button>
+                                </Link>
                             </div>
-                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                            <p className="text-base mt-4 italic leading-4 text-colorText">18, Febrero 2025</p>
                         </div>
+
+                        {/*
                         <div className="lg:mt-10">
                             <img src="https://i.ibb.co/3pMc5WS/blog-5.png" alt="lady with plant" />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
@@ -448,27 +474,171 @@ const PagesBlogs = () => {
                                 </svg>
                             </div>
                             <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
+                        </div>*/}
+                    </div>
+                </div>
+            </div>
+
+
+
+                    
+
+
+
+
+            {/* Contenedor del footer */}
+
+            <div className="w-full h-[850px]  mt-11 sm:relative"> {/* Added explicit height */}
+                {/* Imagen de fondo para pantallas grandes */}
+                <img
+                    src={BGF}
+                    alt="Footer background image"
+                    className="object-cover w-full h-[850px] absolute inset-0 z-0 hidden lg:block"
+                />
+
+                {/* Imagen de fondo para pantallas medianas y pequeñas */}
+                <img
+                    src={BGFG}
+                    alt="Footer background image mobile"
+                    className=" object-cover lg:hidden"
+                />
+                <div className='absolute  left-0 z-20 p-4'>
+                    {/* Contenedor del badge en la esquina inferior izquierda */}
+                    <div className=" left-0 z-20 ">
+                        <span id="iasBadge" data-account-id="5281"></span>
+                    </div>
+                </div>
+
+                <div className="p-6 text-center absolute inset-0 z-10 flex flex-col items-center lg:pt-8 md:pt-1 pt-[70px]">
+
+                    {/* Íconos de redes sociales para pantallas grandes */}
+                    <div className="hidden lg:flex space-x-4">
+                        <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
+                            <img src={INTA} alt="Instagram icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
+                            <img src={FB} alt="Facebook icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
+                            <img src={LINK} alt="Link icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
+                            <img src={YT} alt="YouTube icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                        <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
+                            <img src={TIK} alt="TikTok icon" className="w-16 h-16 hover:scale-105" />
+                        </a>
+                    </div>
+
+                    {/* Menú para pantallas grandes */}
+                    <div className="hidden lg:block text-center relative" style={{ paddingLeft: '460px' }}>
+                        <div className="flex flex-col items-center mt-60">
+                            <div className="w-full">
+                                <ul className="menu-list">
+                                    <li className="menu-item">
+                                        <Link to="/" className="text-colorWhite">
+                                            <p className="text-2xl font-bold hover:text-secondaryTur2">{t("end.opcion1")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="/contacto" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion2")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion3")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                    <li className="menu-item">
+                                        <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-colorWhite">
+                                            <p className="text-2xl font-semibold hover:text-secondaryTur2">{t("end.opcion4")}</p>
+                                            <hr className="line" />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            Fin de los contenedores */}
+                    {/* Íconos de redes sociales para pantallas medianas y pequeñas */}
+                    <div className="lg:hidden flex flex-col items-center">
+                        <div className="flex space-x-4 z-4 mb-5">
+                            <a href="https://www.instagram.com/vagamundo_travellers/" target="_blank" rel="noopener noreferrer">
+                                <img src={INTA} alt="Instagram icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.facebook.com/VagaMundoTravellers/" target="_blank" rel="noopener noreferrer">
+                                <img src={FB} alt="Facebook icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/vaga-mundo/" target="_blank" rel="noopener noreferrer">
+                                <img src={LINK} alt="LinkedIn icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.youtube.com/@vaga-mundo" target="_blank" rel="noopener noreferrer">
+                                <img src={YT} alt="YouTube icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                            <a href="https://www.tiktok.com/@vaga_mundo_travellers" target="_blank" rel="noopener noreferrer">
+                                <img src={TIK} alt="TikTok icon" className="w-9 h-9 hover:scale-105" />
+                            </a>
+                        </div>
 
+                        {/* Menú para pantallas medianas y pequeñas */}
+                        <div className="text-start pt-4 z-20">
+                            <ul className="space-y-4">
+                                <li>
+                                    <Link to="/" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion1")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/contacto" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion2")}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="https://blog.vaga-mundo.com/es/terminos-y-condiciones-0" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion3")}                </Link>
+                                </li>
+                                <li>
+                                    <Link to="https://blog.vaga-mundo.com/es/politicas-privacidad" className="text-xl text-colorWhite font-semibold hover:text-secondaryTur2">
+                                        {t("end.opcion4")}                </Link>
+                                </li>
 
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    {/* Contenedor de certificados solo visible en lg */}
+                    <div className="absolute bottom-0 left-0 z-20 pl-14 flex space-x-8 curse-point w-full pb-6 hidden md:hidden lg:flex">
+                        <a href="https://www.icef.com/agency/0016M00002KTcRTQA1" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={ICEF}
+                                alt="ICEF Logo"
+                                className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                            />
+                        </a>
+                        <img
+                            src={Logo2}
+                            alt="Otro Certificado"
+                            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                        />
+                        <img
+                            src={Logo3}
+                            alt="Otro Certificado 2"
+                            className="w-37 h-auto cursor-pointer transition-transform duration-300 hover:scale-110"
+                        />
+                        {/*
+  <div className="text-2xl text-colorWhite pl-10">
+    <p>©2024 Vaga-Mundo • Todos los derechos reservados</p>
+  </div>
+  */}
                     </div>
                 </div>
             </div>
-
-
-
-
-
-            <div className="pt-12">
-                <Footer />
-            </div>
         </div >
-
     )
 }
 

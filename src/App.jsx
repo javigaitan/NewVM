@@ -18,6 +18,8 @@ import Gastronomy from "./Pages/ExperienceEspana/Gastronomy/Gastronomy";
 import Doctorates from "./Pages/ExperienceEspana/Doctorates/Doctorates";
 import AdvancedDiplomas from "./Pages/ExperienceEspana/Advanced Diplomas/AdvancedDiplomas";
 import BlogDetail1 from "./Pages/Blogs/BlogDetail/BlogDetail1";
+import BlogDetail2 from "./Pages/Blogs/BlogDetail/BlogDetail2";
+
 
 
 
@@ -52,6 +54,7 @@ function App() {
         <Route path="/diplomaturas" element={<AdvancedDiplomas />} />
 
         <Route path="/irlanda-el-destino-perfecto" element={<BlogDetail1/>} />
+        <Route path="/estudia-trabaja-irlanda" element={<BlogDetail2/>} />
 
 
         </Routes>

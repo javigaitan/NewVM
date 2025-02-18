@@ -10,8 +10,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const blogData = [
     {
-      title: "Induction Day",
-      description: "Tu asesore inicial, que conociste cuando diste tus primeros pasos con nosotres, y te supo leer y escuchar, conocer y generar un lazo...",
+      title: "Descubre Irlanda: El Destino Perfecto para Aprender Inglés",
+      description: "Si estás buscando un destino que combine educación de calidad, una cultura fascinante y una experiencia de vida única, Irlanda es tu lugar ideal....",
       image: IrlandaInd
     },
     {
@@ -20,8 +20,8 @@ const blogData = [
       image: Blog
     },
     {
-      title: "Experiencia de Majo",
-      description: "A todos los que aún no se animaron y tienen la oportunidad, les digo que viajen y que conozcan lugares que queden grabados en su retina",
+      title: "Guía Completa para Estudiar y Trabajar en Irlanda",
+      description: "Si estás buscando una experiencia única para mejorar tu inglés o realizar estudios superiores, Irlanda es el destino perfecto para ti",
       image: Irlanda3
     }
   ];
