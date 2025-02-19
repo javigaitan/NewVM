@@ -19,6 +19,7 @@ import Doctorates from "./Pages/ExperienceEspana/Doctorates/Doctorates";
 import AdvancedDiplomas from "./Pages/ExperienceEspana/Advanced Diplomas/AdvancedDiplomas";
 import BlogDetail1 from "./Pages/Blogs/BlogDetail/BlogDetail1";
 import BlogDetail2 from "./Pages/Blogs/BlogDetail/BlogDetail2";
+import TPBLOG from "./Pages/TP-Blog/tpblog"
 
 
 
@@ -55,6 +56,8 @@ function App() {
 
         <Route path="/irlanda-el-destino-perfecto" element={<BlogDetail1/>} />
         <Route path="/estudia-trabaja-irlanda" element={<BlogDetail2/>} />
+        <Route path="/gracias-formulario-web" element={<TPBLOG/>} />
+
 
 
         </Routes>
