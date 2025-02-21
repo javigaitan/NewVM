@@ -385,11 +385,34 @@ const PagesBlogs = () => {
                             </div>
                             <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
                         </div>
-                        
 
-                    
+
+
                         <div className="lg:mt-10">
-                            {/*
+                            <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                                <img
+                                    className=" rounded-lg"
+                                    src={IMG}
+                                    alt="woman smiling"
+                                />
+                                <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                                    Guía Completa para Estudiar y Trabajar en Irlanda
+                                </h2>
+                                <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                    <Link to={"/estudia-trabaja-irlanda"}>
+                                        <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                            Leer más
+                                        </button>
+                                    </Link>
+                                </div>
+                                <p className="text-base mt-4 italic leading-4 text-colorText">18, Febrero 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto ">
                         <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                             <img
                                 className=" rounded-lg"
@@ -397,91 +420,96 @@ const PagesBlogs = () => {
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
-                                Descubre Irlanda: <br />El Destino Perfecto para Aprender Inglés
+                                Descubre Dublín sin gastar un euro: Lugares y experiencias gratuitas
                             </h2>
                             <div className="mt-6 flex items-center justify-center cursor-pointer">
-                                <Link to={"/irlanda-el-destino-perfecto"}>
+                                <Link to={"/irlanda-gratuito"}>
                                     <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
                                         Leer más
                                     </button>
                                 </Link>
                             </div>
-                            <p className="text-base mt-4 italic leading-4 text-colorText">11, Febrero 2025</p>
-                        </div> */}
+                            <p className="text-base mt-4 italic leading-4 text-colorText">20, Febrero 2025</p>
+                        </div>
+
+
+
+                        <div className="lg:mt-10">
+                            <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                                <img
+                                    className=" rounded-lg"
+                                    src={IMG}
+                                    alt="woman smiling"
+                                />
+                                <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                                    Disfruta de la auténtica gastronomía irlandesa: Un viaje de sabores
+                                </h2>
+                                <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                    <Link to={"/gastronomia-irlanda"}>
+                                        <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                            Leer más
+                                        </button>
+                                    </Link>
+                                </div>
+                                <p className="text-base mt-4 italic leading-4 text-colorText">21, Febrero 2025</p>
+                            </div>
+                        </div>
                     </div>
-                    </div>
 
 
-
-                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto">
-                    <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto ">
+                        <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                             <img
                                 className=" rounded-lg"
                                 src={IMG}
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
-                            Guía Completa:<br/>  Estudiar y Trabajar en<br/>Irlanda
-                            </h2>
+                            10 Lugares Increíbles para Visitar en Irlanda
+                                                        </h2>
                             <div className="mt-6 flex items-center justify-center cursor-pointer">
-                                <Link to={"/estudia-trabaja-irlanda"}>
+                                <Link to={"/lugares-increibles"}>
                                     <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
                                         Leer más
                                     </button>
                                 </Link>
                             </div>
-                            <p className="text-base mt-4 italic leading-4 text-colorText">18, Febrero 2025</p>
+                            <p className="text-base mt-4 italic leading-4 text-colorText">22, Febrero 2025</p>
                         </div>
 
-                        {/*
+{/* nota 6
+
                         <div className="lg:mt-10">
-                            <img src="https://i.ibb.co/3pMc5WS/blog-5.png" alt="lady with plant" />
-                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
-                            <div className="mt-6 flex items-center cursor-pointer">
-                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
-                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                            <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                                <img
+                                    className=" rounded-lg"
+                                    src={IMG}
+                                    alt="woman smiling"
+                                />
+                                <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                                    Disfruta de la auténtica gastronomía irlandesa: Un viaje de sabores
+                                </h2>
+                                <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                    <Link to={"/irlanda-el-destino-perfecto"}>
+                                        <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                            Leer más
+                                        </button>
+                                    </Link>
+                                </div>
+                                <p className="text-base mt-4 italic leading-4 text-colorText">21, Febrero 2025</p>
                             </div>
-                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
                         </div>
                     </div>
-                    <div className="flex xl:flex-col sm:flex-row flex-col items-start xl:gap-0 gap-6 xl:w-96 w-auto">
-                        <div>
-                            <img src="https://i.ibb.co/TLJdmSt/new-img-2.png" alt="Delighful breakfast" />
-                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
-                            <div className="mt-6 flex items-center cursor-pointer">
-                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
-                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
-                        </div>
-                        <div className="xl:mt-10">
-                            <img src="https://i.ibb.co/c8dPSYB/blog-6.png" alt="hats with image frame in middle" />
-                            <h2 className="text-xl font-semibold leading-5 mt-8 text-gray-800">Busting myths about hair</h2>
-                            <div className="mt-6 flex items-center cursor-pointer">
-                                <p className="pr-3 text-base font-medium leading-4 underline text-gray-800">5 min read</p>
-                                <svg width={16} height={10} viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 5H15" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 9L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 1L15 5" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <p className="text-base mt-4 italic font-italic leading-4 text-gray-600">23, Feburary 2021</p>
-                        </div>*/}
-                    </div>
+*/}                
+</div>
+
+
                 </div>
             </div>
 
 
 
-                    
+
 
 
 
