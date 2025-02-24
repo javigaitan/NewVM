@@ -17,7 +17,11 @@ import FranciaBandera from '../../assets/PaisesDesplegables/BanderaFrancia.png';
 import AlemaniaBandera from '../../assets/PaisesDesplegables/BanderaAlemani.png';
 import { useTranslation } from "react-i18next";
 import BtnIdiomas from "../../Componentes/BtnIdioma/BtnIdiomas";
-import IMG from "../../assets/Blogs-Img/Irlanda.png";
+import IMG1 from "../../assets/Blogs-Img/blog 1.png";
+import IMG2 from "../../assets/Blogs-Img/blog 2.png";
+import IMG3 from "../../assets/Blogs-Img/blog 3.png";
+import IMG4 from "../../assets/Blogs-Img/blog 4.png";
+import IMG5 from "../../assets/Blogs-Img/blog 5.png"
 import BGF from "../../assets/Textura/backdeskprueba.svg";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
@@ -370,7 +374,7 @@ const PagesBlogs = () => {
                         <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                             <img
                                 className=" rounded-lg"
-                                src={IMG}
+                                src={IMG1}
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
@@ -392,7 +396,7 @@ const PagesBlogs = () => {
                             <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                                 <img
                                     className=" rounded-lg"
-                                    src={IMG}
+                                    src={IMG2}
                                     alt="woman smiling"
                                 />
                                 <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
@@ -416,7 +420,7 @@ const PagesBlogs = () => {
                         <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                             <img
                                 className=" rounded-lg"
-                                src={IMG}
+                                src={IMG3}
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
@@ -438,7 +442,7 @@ const PagesBlogs = () => {
                             <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                                 <img
                                     className=" rounded-lg"
-                                    src={IMG}
+                                    src={IMG4}
                                     alt="woman smiling"
                                 />
                                 <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
@@ -461,7 +465,7 @@ const PagesBlogs = () => {
                         <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                             <img
                                 className=" rounded-lg"
-                                src={IMG}
+                                src={IMG5}
                                 alt="woman smiling"
                             />
                             <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
