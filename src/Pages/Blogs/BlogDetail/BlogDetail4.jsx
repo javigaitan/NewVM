@@ -474,7 +474,7 @@ const BlogDetail4 = () => {
         <div className="flex items-start">
             <span className="text-secondaryTur2 text-2xl font-bold">✓</span>
             <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
-                <span className="font-semibold">Coddle:</span>
+                <span className="font-semibold">Coddle: </span>
                 El Coddle es una mezcla de salchichas irlandesas y papas, con cebolla, perejil y otras especias para darle un toque especial. ¡Este platillo tiene que estar crujiente y con mucho sabor!
             </p>
         </div>
@@ -482,7 +482,7 @@ const BlogDetail4 = () => {
         <div className="flex items-start">
             <span className="text-secondaryTur2 text-2xl font-bold">✓</span>
             <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
-                <span className="font-semibold">Colcannon:</span>
+                <span className="font-semibold">Colcannon: </span>
                 Este es un clásico del oeste de Escocia y de Irlanda. El Colcannon se prepara con puré de papas, col, mantequilla y sal. Algunas versiones incluyen cebollas, ajos o crema. Este platillo se originó como una comida para las clases humildes, pero hoy es muy popular entre todos los irlandeses.
             </p>
         </div>
@@ -490,7 +490,7 @@ const BlogDetail4 = () => {
         <div className="flex items-start">
             <span className="text-secondaryTur2 text-2xl font-bold">✓</span>
             <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
-                <span className="font-semibold">Champ:</span>
+                <span className="font-semibold">Champ: </span>
                 Este es un platillo muy sencillo pero delicioso, que consiste únicamente en puré de papas con cebolla picada.
             </p>
         </div>
@@ -498,7 +498,7 @@ const BlogDetail4 = () => {
         <div className="flex items-start">
             <span className="text-secondaryTur2 text-2xl font-bold">✓</span>
             <p className="text-gray-700 text-left w-full md:w-[100%] pl-3">
-                <span className="font-semibold">Fish and Chips:</span>
+                <span className="font-semibold">Fish and Chips: </span>
                 Aunque este platillo no es originalmente irlandés (es de Escocia), las famosas tiendas de Fish and Chips en Dublín han hecho que se considere una de las comidas más típicas de Irlanda. Se trata de pescado frito acompañado de papas fritas.
             </p>
         </div>

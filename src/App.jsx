@@ -22,6 +22,10 @@ import BlogDetail2 from "./Pages/Blogs/BlogDetail/BlogDetail2";
 import BlogDetail3 from "./Pages/Blogs/BlogDetail/BlogDetail3";
 import BlogDetail4 from "./Pages/Blogs/BlogDetail/BlogDetail4";
 import BlogDetail5 from "./Pages/Blogs/BlogDetail/BlogDetail5";
+import BlogDetail6 from "./Pages/Blogs/BlogDetail/BlogDetail6";
+import BlogDetail7 from "./Pages/Blogs/BlogDetail/BlogDetail7";
+
+
 
 
 
@@ -65,6 +69,10 @@ function App() {
         <Route path="/irlanda-gratuito" element={<BlogDetail3/>} />
         <Route path="/gastronomia-irlanda" element={<BlogDetail4/>} />
         <Route path="/lugares-increibles" element={<BlogDetail5/>} />
+         <Route path="/conduccion-autos-irlanda" element={<BlogDetail6/>} />
+         <Route path="/deportes-irlanda" element={<BlogDetail7/>} />
+
+
 
 
 

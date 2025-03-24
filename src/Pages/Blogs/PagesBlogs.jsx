@@ -22,6 +22,9 @@ import IMG2 from "../../assets/Blogs-Img/blog 2.png";
 import IMG3 from "../../assets/Blogs-Img/blog 3.png";
 import IMG4 from "../../assets/Blogs-Img/blog 4.png";
 import IMG5 from "../../assets/Blogs-Img/blog 5.png"
+import IMG6 from "../../assets/Blogs-Img/blog 6.svg"
+import IMG7 from "../../assets/Blogs-Img/blog 7.svg"
+
 import BGF from "../../assets/Textura/backdeskprueba.svg";
 import INTA from '../../assets/iconsRedes/ig.png';
 import FB from '../../assets/iconsRedes/fb.png';
@@ -481,31 +484,56 @@ const PagesBlogs = () => {
                             <p className="text-base mt-4 italic leading-4 text-colorText">22, Febrero 2025</p>
                         </div>
 
-{/* nota 6
 
                         <div className="lg:mt-10">
                             <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
                                 <img
                                     className=" rounded-lg"
-                                    src={IMG}
+                                    src={IMG6}
                                     alt="woman smiling"
                                 />
                                 <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
-                                    Disfruta de la auténtica gastronomía irlandesa: Un viaje de sabores
+                                Guía para Conducir en Irlanda: Requisitos, Normas y Consejos para tu Viaje
                                 </h2>
                                 <div className="mt-6 flex items-center justify-center cursor-pointer">
-                                    <Link to={"/irlanda-el-destino-perfecto"}>
+                                    <Link to={"/conduccion-autos-irlanda"}>
                                         <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
                                             Leer más
                                         </button>
                                     </Link>
                                 </div>
-                                <p className="text-base mt-4 italic leading-4 text-colorText">21, Febrero 2025</p>
+                                <p className="text-base mt-4 italic leading-4 text-colorText">10, Marzo 2025</p>
                             </div>
                         </div>
+
+                        
                     </div>
-*/}                
-</div>
+
+                    <div className="flex lg:flex-col sm:flex-row flex-col items-start lg:gap-0 gap-6 lg:w-96 w-auto ">
+                        <div className="bg-white p-6 shadow-lg shadow-gray-600 rounded-xl transition-transform duration-300 hover:scale-105">
+                            <img
+                                className=" rounded-lg"
+                                src={IMG7}
+                                alt="woman smiling"
+                            />
+                            <h2 className="text-xl font-semibold leading-5 mt-8 text-colorText">
+                            Deporte en la isla de Irlanda                                                        </h2>
+                            <div className="mt-6 flex items-center justify-center cursor-pointer">
+                                <Link to={"/deportes-irlanda"}>
+                                    <button className="text-base font-medium leading-4 bg-secondaryTur2 text-primaryVio rounded-full text-xl font-semibold py-3 px-8  hover:bg-primaryVio hover:text-colorWhite">
+                                        Leer más
+                                    </button>
+                                </Link>
+                            </div>
+                            <p className="text-base mt-4 italic leading-4 text-colorText">20, Marzo 2025</p>
+                        </div>
+
+
+                        
+
+                        
+                    </div>
+             
 
 
                 </div>
