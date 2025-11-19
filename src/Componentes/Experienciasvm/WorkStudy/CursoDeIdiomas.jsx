@@ -36,7 +36,7 @@ const CursoDeIdiomas = () => {
                         {t("experiences.experiences1.text2")}                            <br /><br />
                         {t("experiences.experiences1.text3")}                        </p>
                         <div className='pt-10 pb-8'>
-                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
+                            <Link to='https://wa.me/541170585095/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20cotizar%20mi%20viaje!'>
                                 <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
                                 {t("experiences.experience.btn")}
                                 </button>

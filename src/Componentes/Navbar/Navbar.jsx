@@ -126,13 +126,13 @@ function Navbar() {
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
-                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                            <Link to='/contactanos' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
                                                 <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
-                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                            <Link to='/contactanos' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
                                                 <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />
@@ -250,13 +250,13 @@ function Navbar() {
                                                 <img src={EspanaBandera} alt="ESPAÑA" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
-                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                            <Link to='/contactanos' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Francia} alt="FRANCIA" className="w-24 h-18 rounded-lg mr-3" />
                                                 <span className="text-primaryVio">{t("countries.france")}</span>
                                                 <img src={FranciaBandera} alt="BanderaFrancia" className="w-10 h-6 rounded-lg mr-3" />
                                             </Link>
                                             <hr className="border-gray-300" />
-                                            <Link to='/not-found' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
+                                            <Link to='/contactanos' onClick={handleLinkClick} className="flex items-center px-4 py-3 hover:bg-gray-100">
                                                 <img src={Alemania} alt="ALEMANIA" className="w-24 h-18 rounded-lg mr-3" />
                                                 <span className="text-primaryVio">{t("countries.germany")}</span>
                                                 <img src={AlemaniaBandera} alt="BanderaAlemania" className="w-10 h-6 rounded-lg mr-3" />

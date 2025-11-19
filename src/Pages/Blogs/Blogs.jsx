@@ -15,8 +15,8 @@ const blogData = [
       image: IrlandaInd
     },
     {
-      title: "Nuevo destino ATHLONE",
-      description: "Athlone es una histórica ciudad medieval irlandesa que atrae a muchos turistas. Al estar en un punto estratégico...",
+      title: "Guía Completa para Estudiar y Trabajar en Irlanda",
+      description: "Si estás buscando una experiencia única para mejorar tu inglés o realizar estudios superiores...",
       image: Blog
     },
     {

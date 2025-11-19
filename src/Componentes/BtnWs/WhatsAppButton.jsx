@@ -5,10 +5,10 @@ import './WhatsAppButton.css';
 function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const mensajeWhatsApp = "Hola, quiero mas informacion de sus servicios! ";
+  const mensajeWhatsApp = "Hola, visite su web y quiero mas informacion de sus servicios! ";
 
   const handleWhatsAppClick = () => {
-    window.open(`https://api.whatsapp.com/send?phone=3512117686&text=${encodeURIComponent(mensajeWhatsApp)}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=1170585095&text=${encodeURIComponent(mensajeWhatsApp)}`, '_blank');
   };
 
   useEffect(() => {
