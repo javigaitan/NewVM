@@ -46,7 +46,6 @@ const Landing = () => {
     <>
     
       <Navbar />
-<PopupImage />     
  <WhatsAppButton />
 
       <Banner />
