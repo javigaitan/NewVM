@@ -8,7 +8,7 @@ function WhatsAppButton() {
   const mensajeWhatsApp = "Hola, visite su web y quiero mas informacion de sus servicios! ";
 
   const handleWhatsAppClick = () => {
-    window.open(`https://api.whatsapp.com/send?phone=1170585095&text=${encodeURIComponent(mensajeWhatsApp)}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=5491170585095&text=${encodeURIComponent(mensajeWhatsApp)}`, '_blank');
   };
 
   useEffect(() => {

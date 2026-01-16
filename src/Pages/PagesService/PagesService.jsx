@@ -388,7 +388,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20programa%20de%20referido!'>
+                            <Link to='https://wa.me/34614526535/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20del%20seguros!'>
                                 <button className="elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300">
                                 {t("other-services.seccion1.btn")}                                 </button>
                             </Link>
@@ -437,7 +437,7 @@ const PagesService = () => {
                                 paddingBottom: '20px',
                             }
                         }}>
-                            <Link to='https://wa.me/541171366335/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
+                            <Link to='https://wa.me/34614526535/?text=¡Hola,%20Vaga-Mundo!%20Quiero%20tener%20más%20info%20de%20Tickets%20aéreos!'>
                                 <button className=" elementor-button border-2 border-primaryVio text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-7 transition-all duration-300 w-full md:w-auto"  >
                                 {t("other-services.seccion2.btn")}                                </button>
                             </Link>

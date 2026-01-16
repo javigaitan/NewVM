@@ -42,7 +42,7 @@ const Banner = () => {
                 {t("banner.subtitle")}                </h2>
                 
                 <div className="inline-block py-8 lg:pl-0 pl-8">
-                    <Link to='https://wa.me/1170585095/?text=Hola%20Vaga-Mundo,%20quisiera%20explorar%20opciones%20educativas%20en%20el%20extranjero'>
+                    <Link to='https://wa.me/5491170585095/?text=Hola%20Vaga-Mundo,%20quisiera%20explorar%20opciones%20educativas%20en%20el%20extranjero'>
                         <button className="elementor-button bg-secondaryTur2 text-primaryVio rounded-full text-xl font-medium font-semibold py-3 px-8 transition-all duration-300 hover:scale-105">
                         {t("banner.btn")}                        </button>
                     </Link>
